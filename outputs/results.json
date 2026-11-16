@@ -1,0 +1,623 @@
+{
+  "config": {
+    "client": "Cedar Scholarship Foundation",
+    "assets": 20000000,
+    "quarterly_spending": 150000,
+    "horizon_years": 10,
+    "real_return_objective": 0.03,
+    "cpi_assumption": 0.025,
+    "cpi_status": "Prior Lab 15 illustration; not client-confirmed",
+    "funds": [
+      "BIL",
+      "IEF",
+      "LQD",
+      "VT"
+    ],
+    "benchmark": [
+      0,
+      0,
+      0.4,
+      0.6
+    ],
+    "benchmark_status": "Inherited Lab 14 comparator; Cedar-specific approval not recovered",
+    "reserve_asset": "BIL",
+    "reserve_min": 0.03,
+    "reserve_proxy_confirmed": false,
+    "liquidity_min": 0.95,
+    "issuer_max": 0.05,
+    "annual_turnover_max": 0.2,
+    "risk_measure": "Annualized sample volatility",
+    "risk_limit": null,
+    "max_weight": 1.0,
+    "min_weight": 0.0,
+    "ongoing_cost_bps": 0,
+    "trading_cost_bps": 10,
+    "cost_status": "Explicit analyst scenario, not confirmed client cost schedule",
+    "current_weights": null,
+    "estimation_months": 60,
+    "decision_date": "2026-11-02",
+    "max_price_age_days": 62,
+    "max_weight_instability": 0.2,
+    "signal_confirmed": false,
+    "signal_policy": "Proposed fallback: CPIAUCSL YoY >3% raises analytical BIL reserve floor to 5%; never lowers client reserve floor",
+    "signal_trigger": 0.03,
+    "signal_reserve_floor": 0.05
+  },
+  "as_of": "2026-11-02",
+  "price_end": "2026-09-30",
+  "estimate_start": "2021-10-31",
+  "observations": 60,
+  "mean_estimates": [
+    0.03594271295180573,
+    -0.017887144266186827,
+    -0.008059961935426019,
+    0.11895231342459986
+  ],
+  "covariance": [
+    [
+      2.5684080521839976e-05,
+      8.046850761617903e-05,
+      0.00012941522578312196,
+      0.0001579723659554712
+    ],
+    [
+      8.046850761617903e-05,
+      0.005858117513645679,
+      0.006995898670736767,
+      0.007171046058162501
+    ],
+    [
+      0.00012941522578312196,
+      0.006995898670736767,
+      0.009581194193405487,
+      0.011592499928822735
+    ],
+    [
+      0.0001579723659554712,
+      0.007171046058162501,
+      0.011592499928822735,
+      0.02225217756511537
+    ]
+  ],
+  "signal": {
+    "status": "Pass",
+    "reason": "Authenticated-source vintage identity and prior-day cutoff verified by code; student source checks pending",
+    "cutoff": "2026-11-01",
+    "observation_date": "2026-09-01",
+    "value": 336.298,
+    "prior_value": 324.245,
+    "yoy": 0.03717250844268993,
+    "metadata": {
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=CPIAUCSL&vintage_date=2026-11-01",
+      "vintage": "2026-11-01",
+      "series": "CPIAUCSL",
+      "retrieved_at": "2026-11-16T23:56:24.673657+00:00",
+      "sha256": "b3609b10508eb543eebd4fbc53e14aac127fcc4a5541b499305dbd0c3544f9f2",
+      "availability": "Present in historical ALFRED snapshot by cutoff; exact original release timestamp not inferred"
+    },
+    "history": [
+      {
+        "date": "2024-09-01",
+        "value": 314.732
+      },
+      {
+        "date": "2024-10-01",
+        "value": 315.631
+      },
+      {
+        "date": "2024-11-01",
+        "value": 316.528
+      },
+      {
+        "date": "2024-12-01",
+        "value": 317.604
+      },
+      {
+        "date": "2025-01-01",
+        "value": 318.961
+      },
+      {
+        "date": "2025-02-01",
+        "value": 319.679
+      },
+      {
+        "date": "2025-03-01",
+        "value": 319.785
+      },
+      {
+        "date": "2025-04-01",
+        "value": 320.302
+      },
+      {
+        "date": "2025-05-01",
+        "value": 320.62
+      },
+      {
+        "date": "2025-06-01",
+        "value": 321.435
+      },
+      {
+        "date": "2025-07-01",
+        "value": 322.169
+      },
+      {
+        "date": "2025-08-01",
+        "value": 323.291
+      },
+      {
+        "date": "2025-09-01",
+        "value": 324.245
+      },
+      {
+        "date": "2025-11-01",
+        "value": 325.063
+      },
+      {
+        "date": "2025-12-01",
+        "value": 326.031
+      },
+      {
+        "date": "2026-01-01",
+        "value": 326.588
+      },
+      {
+        "date": "2026-02-01",
+        "value": 327.46
+      },
+      {
+        "date": "2026-03-01",
+        "value": 330.293
+      },
+      {
+        "date": "2026-04-01",
+        "value": 332.407
+      },
+      {
+        "date": "2026-05-01",
+        "value": 333.979
+      },
+      {
+        "date": "2026-06-01",
+        "value": 332.568
+      },
+      {
+        "date": "2026-07-01",
+        "value": 332.813
+      },
+      {
+        "date": "2026-08-01",
+        "value": 334.131
+      },
+      {
+        "date": "2026-09-01",
+        "value": 336.298
+      }
+    ]
+  },
+  "effective_reserve_floor": 0.05,
+  "portfolios": {
+    "Equal weight": {
+      "weights": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "expected_return": 0.03223698004369819,
+      "variance": 0.005623235929177621,
+      "volatility": 0.07498823860564816,
+      "net_return_before_trade_cost": 0.03223698004369819,
+      "turnover": null,
+      "trading_cost": null,
+      "net_first_year_return": null,
+      "estimated_excess_return_over_bil": -0.003705732908107544,
+      "estimated_sharpe_bil_proxy": -0.04941752169424107,
+      "compliance": {
+        "rules": {
+          "Weights sum to 100%": true,
+          "Long only": true,
+          "Position bounds": true,
+          "BIL reserve floor": true,
+          "Liquidity >= mandate minimum (course fund classification)": true,
+          "Direct nonexempt issuer <=5% (all allowed funds exempt)": true,
+          "Illustrative return hurdle": false,
+          "Numeric volatility cap": null,
+          "Actual annual turnover <=20%": null,
+          "BIL reserve proxy approved": null,
+          "Realized rolling-five-year CPI+3% after costs": null
+        },
+        "failed": [
+          "Illustrative return hurdle"
+        ],
+        "unknown": [
+          "Numeric volatility cap",
+          "Actual annual turnover <=20%",
+          "BIL reserve proxy approved",
+          "Realized rolling-five-year CPI+3% after costs"
+        ],
+        "mandate_status": "Fail",
+        "testable_constraints": "Fail"
+      },
+      "estimated_return_vs_benchmark": -0.035910423236891316
+    },
+    "Inverse volatility": {
+      "weights": [
+        0.8680829428177009,
+        0.05747966051607173,
+        0.04494520988480462,
+        0.029492186781422663
+      ],
+      "expected_return": 0.03331901621678236,
+      "variance": 0.00019482848388035373,
+      "volatility": 0.013958097430536645,
+      "net_return_before_trade_cost": 0.03331901621678236,
+      "turnover": null,
+      "trading_cost": null,
+      "net_first_year_return": null,
+      "estimated_excess_return_over_bil": -0.0026236967350233703,
+      "estimated_sharpe_bil_proxy": -0.18796951003389703,
+      "compliance": {
+        "rules": {
+          "Weights sum to 100%": true,
+          "Long only": true,
+          "Position bounds": true,
+          "BIL reserve floor": true,
+          "Liquidity >= mandate minimum (course fund classification)": true,
+          "Direct nonexempt issuer <=5% (all allowed funds exempt)": true,
+          "Illustrative return hurdle": false,
+          "Numeric volatility cap": null,
+          "Actual annual turnover <=20%": null,
+          "BIL reserve proxy approved": null,
+          "Realized rolling-five-year CPI+3% after costs": null
+        },
+        "failed": [
+          "Illustrative return hurdle"
+        ],
+        "unknown": [
+          "Numeric volatility cap",
+          "Actual annual turnover <=20%",
+          "BIL reserve proxy approved",
+          "Realized rolling-five-year CPI+3% after costs"
+        ],
+        "mandate_status": "Fail",
+        "testable_constraints": "Fail"
+      },
+      "estimated_return_vs_benchmark": -0.03482838706380714
+    },
+    "Constrained": {
+      "weights": [
+        0.7704206871273767,
+        1.6591711613796401e-15,
+        0.0,
+        0.22957931292253947
+      ],
+      "expected_return": 0.054999999996118404,
+      "variance": 0.0012439646958511336,
+      "volatility": 0.03526988369489094,
+      "net_return_before_trade_cost": 0.054999999996118404,
+      "turnover": null,
+      "trading_cost": null,
+      "net_first_year_return": null,
+      "estimated_excess_return_over_bil": 0.01905728704431267,
+      "estimated_sharpe_bil_proxy": 0.540327470574371,
+      "compliance": {
+        "rules": {
+          "Weights sum to 100%": true,
+          "Long only": true,
+          "Position bounds": true,
+          "BIL reserve floor": true,
+          "Liquidity >= mandate minimum (course fund classification)": true,
+          "Direct nonexempt issuer <=5% (all allowed funds exempt)": true,
+          "Illustrative return hurdle": true,
+          "Numeric volatility cap": null,
+          "Actual annual turnover <=20%": null,
+          "BIL reserve proxy approved": null,
+          "Realized rolling-five-year CPI+3% after costs": null
+        },
+        "failed": [],
+        "unknown": [
+          "Numeric volatility cap",
+          "Actual annual turnover <=20%",
+          "BIL reserve proxy approved",
+          "Realized rolling-five-year CPI+3% after costs"
+        ],
+        "mandate_status": "Not Known",
+        "testable_constraints": "Pass"
+      },
+      "estimated_return_vs_benchmark": -0.013147403284471101
+    }
+  },
+  "benchmark": {
+    "weights": [
+      0.0,
+      0.0,
+      0.4,
+      0.6
+    ],
+    "expected_return": 0.0681474032805895,
+    "variance": 0.015108174960221323,
+    "volatility": 0.1229153162149507,
+    "net_return_before_trade_cost": 0.0681474032805895,
+    "turnover": null,
+    "trading_cost": null,
+    "net_first_year_return": null,
+    "estimated_excess_return_over_bil": 0.03220469032878377,
+    "estimated_sharpe_bil_proxy": 0.26200713890256894
+  },
+  "solver": {
+    "success": true,
+    "message": "Optimization terminated successfully",
+    "weights": [
+      0.7704206871273767,
+      1.6591711613796401e-15,
+      0.0,
+      0.22957931292253947
+    ],
+    "iterations": 13,
+    "verified": {
+      "rules": {
+        "Weights sum to 100%": true,
+        "Long only": true,
+        "Position bounds": true,
+        "BIL reserve floor": true,
+        "Liquidity >= mandate minimum (course fund classification)": true,
+        "Direct nonexempt issuer <=5% (all allowed funds exempt)": true,
+        "Illustrative return hurdle": true,
+        "Numeric volatility cap": null,
+        "Actual annual turnover <=20%": null,
+        "BIL reserve proxy approved": null,
+        "Realized rolling-five-year CPI+3% after costs": null
+      },
+      "failed": [],
+      "unknown": [
+        "Numeric volatility cap",
+        "Actual annual turnover <=20%",
+        "BIL reserve proxy approved",
+        "Realized rolling-five-year CPI+3% after costs"
+      ],
+      "mandate_status": "Not Known",
+      "testable_constraints": "Pass"
+    }
+  },
+  "stress": [
+    {
+      "scenario": "VT return estimate minus 1 percentage point",
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "weights": [
+        0.7389756015115787,
+        2.880305623414393e-12,
+        4.552592777482199e-17,
+        0.26102439848717257
+      ],
+      "assumption": "Scenario, not a new client mandate",
+      "expected_return": 0.05499999999890921,
+      "variance": 0.0015910924831509243,
+      "volatility": 0.039888500638040086,
+      "net_return_before_trade_cost": 0.05499999999890921,
+      "turnover": null,
+      "trading_cost": null,
+      "net_first_year_return": null,
+      "estimated_excess_return_over_bil": 0.01905728704710348,
+      "estimated_sharpe_bil_proxy": 0.4777639355270551,
+      "largest_weight_change": 0.03144508561579795,
+      "mandate": {
+        "rules": {
+          "Weights sum to 100%": true,
+          "Long only": true,
+          "Position bounds": true,
+          "BIL reserve floor": true,
+          "Liquidity >= mandate minimum (course fund classification)": true,
+          "Direct nonexempt issuer <=5% (all allowed funds exempt)": true,
+          "Illustrative return hurdle": true,
+          "Numeric volatility cap": null,
+          "Actual annual turnover <=20%": null,
+          "BIL reserve proxy approved": null,
+          "Realized rolling-five-year CPI+3% after costs": null
+        },
+        "failed": [],
+        "unknown": [
+          "Numeric volatility cap",
+          "Actual annual turnover <=20%",
+          "BIL reserve proxy approved",
+          "Realized rolling-five-year CPI+3% after costs"
+        ],
+        "mandate_status": "Not Known",
+        "testable_constraints": "Pass"
+      }
+    },
+    {
+      "scenario": "Last 36 monthly observations",
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "weights": [
+        0.9285923215082473,
+        9.05876748601166e-14,
+        6.429617054597516e-14,
+        0.07140767849159783
+      ],
+      "assumption": "Scenario, not a new client mandate",
+      "expected_return": 0.054999999999982056,
+      "variance": 7.872411503889646e-05,
+      "volatility": 0.008872661102448153,
+      "net_return_before_trade_cost": 0.054999999999982056,
+      "turnover": null,
+      "trading_cost": null,
+      "net_first_year_return": null,
+      "estimated_excess_return_over_bil": 0.011340393954644472,
+      "estimated_sharpe_bil_proxy": 1.2781277030309903,
+      "largest_weight_change": 0.15817163443094162,
+      "mandate": {
+        "rules": {
+          "Weights sum to 100%": true,
+          "Long only": true,
+          "Position bounds": true,
+          "BIL reserve floor": true,
+          "Liquidity >= mandate minimum (course fund classification)": true,
+          "Direct nonexempt issuer <=5% (all allowed funds exempt)": true,
+          "Illustrative return hurdle": true,
+          "Numeric volatility cap": null,
+          "Actual annual turnover <=20%": null,
+          "BIL reserve proxy approved": null,
+          "Realized rolling-five-year CPI+3% after costs": null
+        },
+        "failed": [],
+        "unknown": [
+          "Numeric volatility cap",
+          "Actual annual turnover <=20%",
+          "BIL reserve proxy approved",
+          "Realized rolling-five-year CPI+3% after costs"
+        ],
+        "mandate_status": "Not Known",
+        "testable_constraints": "Pass"
+      }
+    },
+    {
+      "scenario": "Trading cost 50 bps per side",
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "weights": [
+        0.7704206870040211,
+        6.248783281920187e-20,
+        5.736605662599453e-20,
+        0.22957931299599824
+      ],
+      "assumption": "Scenario, not a new client mandate",
+      "expected_return": 0.055000000000422794,
+      "variance": 0.001243964696605728,
+      "volatility": 0.03526988370558837,
+      "net_return_before_trade_cost": 0.055000000000422794,
+      "turnover": 9.840798700583939e-11,
+      "trading_cost": 9.840798700583939e-13,
+      "net_first_year_return": 0.05499999999943871,
+      "estimated_excess_return_over_bil": 0.01905728704861706,
+      "estimated_sharpe_bil_proxy": 0.54032747053253,
+      "largest_weight_change": 1.233555479984716e-10,
+      "mandate": {
+        "rules": {
+          "Weights sum to 100%": true,
+          "Long only": true,
+          "Position bounds": true,
+          "BIL reserve floor": true,
+          "Liquidity >= mandate minimum (course fund classification)": true,
+          "Direct nonexempt issuer <=5% (all allowed funds exempt)": true,
+          "Illustrative return hurdle": true,
+          "Numeric volatility cap": null,
+          "Actual annual turnover <=20%": true,
+          "BIL reserve proxy approved": null,
+          "Realized rolling-five-year CPI+3% after costs": null
+        },
+        "failed": [],
+        "unknown": [
+          "Numeric volatility cap",
+          "BIL reserve proxy approved",
+          "Realized rolling-five-year CPI+3% after costs"
+        ],
+        "mandate_status": "Not Known",
+        "testable_constraints": "Pass"
+      },
+      "cost_of_baseline_to_equal_weight": 0.005204206871024178
+    },
+    {
+      "scenario": "BIL analytical reserve minimum 10%",
+      "success": true,
+      "message": "Optimization terminated successfully",
+      "weights": [
+        0.7704206870185141,
+        5.977972478120884e-12,
+        4.528714959292808e-12,
+        0.22957931298877732
+      ],
+      "assumption": "Scenario, not a new client mandate",
+      "expected_return": 0.05499999999994133,
+      "variance": 0.0012439646965772498,
+      "volatility": 0.03526988370518465,
+      "net_return_before_trade_cost": 0.05499999999994133,
+      "turnover": null,
+      "trading_cost": null,
+      "net_first_year_return": null,
+      "estimated_excess_return_over_bil": 0.0190572870481356,
+      "estimated_sharpe_bil_proxy": 0.5403274705250641,
+      "largest_weight_change": 1.0886258561271234e-10,
+      "mandate": {
+        "rules": {
+          "Weights sum to 100%": true,
+          "Long only": true,
+          "Position bounds": true,
+          "BIL reserve floor": true,
+          "Liquidity >= mandate minimum (course fund classification)": true,
+          "Direct nonexempt issuer <=5% (all allowed funds exempt)": true,
+          "Illustrative return hurdle": true,
+          "Numeric volatility cap": null,
+          "Actual annual turnover <=20%": null,
+          "BIL reserve proxy approved": null,
+          "Realized rolling-five-year CPI+3% after costs": null
+        },
+        "failed": [],
+        "unknown": [
+          "Numeric volatility cap",
+          "Actual annual turnover <=20%",
+          "BIL reserve proxy approved",
+          "Realized rolling-five-year CPI+3% after costs"
+        ],
+        "mandate_status": "Not Known",
+        "testable_constraints": "Pass"
+      }
+    }
+  ],
+  "decision": {
+    "status": "Not Known",
+    "failed": [],
+    "unknown": [
+      "Cedar numeric risk limit not documented",
+      "Actual holdings/trades unavailable; turnover and transition costs unverified",
+      "BIL reserve-proxy acceptance not confirmed",
+      "Proposed CPI signal and source-value checks await student review",
+      "Cedar benchmark approval not recovered",
+      "Forward CPI and cost assumptions not client-confirmed",
+      "Realized rolling-five-year real objective is not established by an arithmetic estimate"
+    ],
+    "recommendation": "Reject",
+    "committee_ask": "Reject deployment pending resolution of the listed failures and unknowns; retain the app for analytical review.",
+    "new_process_allocation_range": "0%-0% pending evidence clearance"
+  },
+  "warnings": [],
+  "holdout": {
+    "label": "Chronological holdout diagnostic using a later downloaded adjusted-price snapshot; NOT a point-in-time implementable backtest. Signal not applied retrospectively.",
+    "train_end": "2025-09-30",
+    "evaluation_start": "2025-10-31",
+    "evaluation_end": "2026-09-30",
+    "results": {
+      "Equal weight": {
+        "weights": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "realized_gross_return": 0.030839566901070148,
+        "realized_volatility": 0.05114799250109694
+      },
+      "Inverse volatility": {
+        "weights": [
+          0.8629741219176711,
+          0.05971733178788709,
+          0.04575879131004785,
+          0.03154975498439412
+        ],
+        "realized_gross_return": 0.032704246051532104,
+        "realized_volatility": 0.008357921190803854
+      },
+      "Benchmark": {
+        "weights": [
+          0,
+          0,
+          0.4,
+          0.6
+        ],
+        "realized_gross_return": 0.08259581228532875,
+        "realized_volatility": 0.0918324714673181
+      }
+    }
+  }
+}

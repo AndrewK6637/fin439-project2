@@ -1,0 +1,14 @@
+test_dashboard_controls (test_lab15.Lab15Tests.test_dashboard_controls) ... 2026-10-22 09:26:17.880 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_estimates_and_bad_csv (test_lab15.Lab15Tests.test_estimates_and_bad_csv) ... ok
+test_grid_and_validation (test_lab15.Lab15Tests.test_grid_and_validation) ... ok
+test_meridian (test_lab15.Lab15Tests.test_meridian) ... ok
+test_original_output (test_lab15.Lab15Tests.test_original_output) ... ok
+test_source_correlation_connection (test_lab15.Lab15Tests.test_source_correlation_connection) ... ok
+test_upload_integration (test_lab15.Lab15Tests.test_upload_integration) ... 2026-10-22 09:26:22.204 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 6.362s
+
+OK

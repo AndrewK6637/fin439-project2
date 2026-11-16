@@ -1,0 +1,141 @@
+COMMAND: python verify_lab13.py
+Python executable: C:\Users\jklai\Documents\Courses\AIFinance2026\JKLai\.venv\Scripts\python.exe
+
+SYNTAX: ast.parse(mandate.py) PASS
+
+COMMAND: python mandate.py
+Exit code: 0
+Reserve minimum: 3.0%
+
+Candidate A
+Weight total: 100.0% pass
+Minimum weight: 0.0% pass
+Reserve: 14.0% pass
+Five-day liquidity: 100.0% pass
+Largest company: 0.0% pass
+requires CIO clarification
+passes every checkable rule
+
+Candidate B
+Weight total: 100.0% pass
+Minimum weight: 0.0% pass
+Reserve: 1.0% FAIL
+Five-day liquidity: 85.0% FAIL
+Largest company: 9.0% FAIL
+requires CIO clarification
+fails 3 rule(s)
+
+Candidate C
+Weight total: 100.0% pass
+Minimum weight: 0.0% pass
+Reserve: 2.0% FAIL
+Five-day liquidity: 100.0% pass
+Largest company: 8.0% pass
+requires CIO clarification
+fails 1 rule(s)
+
+Candidate D
+Weight total: 100.0% pass
+Minimum weight: 0.0% pass
+Reserve: 100.0% pass
+Five-day liquidity: 100.0% pass
+Largest company: 0.0% pass
+requires CIO clarification
+passes every checkable rule
+
+
+PASS: all A/B/C/D measured values and rule outcomes; reserve minimum 3.0%
+
+COMMAND: python mandate.py
+Exit code: 0
+Reserve minimum: 3.0%
+
+Candidate A
+Weight total: 100.0% pass
+Minimum weight: -2.0% FAIL
+Reserve: 10.0% pass
+Five-day liquidity: 100.0% pass
+Largest company: 0.0% pass
+requires CIO clarification
+fails 1 rule(s)
+
+Candidate B
+Weight total: 100.0% pass
+Minimum weight: 0.0% pass
+Reserve: 1.0% FAIL
+Five-day liquidity: 85.0% FAIL
+Largest company: 9.0% FAIL
+requires CIO clarification
+fails 3 rule(s)
+
+Candidate C
+Weight total: 100.0% pass
+Minimum weight: 0.0% pass
+Reserve: 2.0% FAIL
+Five-day liquidity: 100.0% pass
+Largest company: 8.0% pass
+requires CIO clarification
+fails 1 rule(s)
+
+Candidate D
+Weight total: 100.0% pass
+Minimum weight: 0.0% pass
+Reserve: 100.0% pass
+Five-day liquidity: 100.0% pass
+Largest company: 0.0% pass
+requires CIO clarification
+passes every checkable rule
+
+
+PASS: negative-weight probe; actual output saved in probe_results.txt
+
+COMMAND: python mandate.py
+Exit code: 0
+Reserve minimum: 3.0%
+
+Candidate A
+Weight total: 100.0% pass
+Minimum weight: 0.0% pass
+Reserve: 14.0% pass
+Five-day liquidity: 100.0% pass
+Largest company: 0.0% pass
+requires CIO clarification
+passes every checkable rule
+
+Candidate B
+Weight total: 100.0% pass
+Minimum weight: 0.0% pass
+Reserve: 1.0% FAIL
+Five-day liquidity: 85.0% FAIL
+Largest company: 9.0% FAIL
+requires CIO clarification
+fails 3 rule(s)
+
+Candidate C
+Weight total: 100.0% pass
+Minimum weight: 0.0% pass
+Reserve: 2.0% FAIL
+Five-day liquidity: 100.0% pass
+Largest company: 8.0% pass
+requires CIO clarification
+fails 1 rule(s)
+
+Candidate D
+Weight total: 100.0% pass
+Minimum weight: 0.0% pass
+Reserve: 100.0% pass
+Five-day liquidity: 100.0% pass
+Largest company: 0.0% pass
+requires CIO clarification
+passes every checkable rule
+
+
+PASS: original weights restored and normal output reproduced exactly
+
+PASS: changed inputs affect reserve, issuer exposure, and liquidity; exactly five numeric checks
+
+PASS: report includes S1-S10, A-H, code understanding, coverage map, and exact D output
+
+SOURCE REVIEW: results derive from inputs; S9 is printed only, never tested numerically.
+
+GITHUB: no .git in workspace or any ancestor; no existing remote available. No commit or push performed.

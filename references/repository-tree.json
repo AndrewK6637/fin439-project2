@@ -1,0 +1,1497 @@
+{
+  "sha": "bb73c5fe49648b5076e8419ff3dd095ffdc13f45",
+  "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/bb73c5fe49648b5076e8419ff3dd095ffdc13f45",
+  "tree": [
+    {
+      "path": ".nojekyll",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "PROJECT-SUBMISSION-ARCHITECTURE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0ad7a93618dc703f2ee5ffe26662594c9801619",
+      "size": 21894,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/b0ad7a93618dc703f2ee5ffe26662594c9801619"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56d853cba1bb646a8bf3105bf956e46f54ef35ed",
+      "size": 4172,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/56d853cba1bb646a8bf3105bf956e46f54ef35ed"
+    },
+    {
+      "path": "index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b236fb0881e5dcd88e8f00acf05de23373bda53e",
+      "size": 260,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/b236fb0881e5dcd88e8f00acf05de23373bda53e"
+    },
+    {
+      "path": "lessons",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b740ef213de55715b8a3db134bd1fb7a0a8602c5",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/b740ef213de55715b8a3db134bd1fb7a0a8602c5"
+    },
+    {
+      "path": "lessons/private-return-invitation.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a92eba692705d17e7f42f6365b5e30a68deee13",
+      "size": 1071,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/7a92eba692705d17e7f42f6365b5e30a68deee13"
+    },
+    {
+      "path": "lessons/week-00",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2cf9c2bb50c446b816bd7a96572206c884058a05",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/2cf9c2bb50c446b816bd7a96572206c884058a05"
+    },
+    {
+      "path": "lessons/week-00/about-your-instructor.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "144aeefb4506e89dcfddfc8067b0df34e8ef90e9",
+      "size": 1405,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/144aeefb4506e89dcfddfc8067b0df34e8ef90e9"
+    },
+    {
+      "path": "lessons/week-00/ai-access-and-no-cost-route.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2214694ea2e17c095c68a13b102028a35fb316c",
+      "size": 4613,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/a2214694ea2e17c095c68a13b102028a35fb316c"
+    },
+    {
+      "path": "lessons/week-00/ai-data-safety-card.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e56df993ab8ce669c8af087063cb2aaba810d742",
+      "size": 983,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/e56df993ab8ce669c8af087063cb2aaba810d742"
+    },
+    {
+      "path": "lessons/week-00/course-environment-quickstart.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a1f7c5b1f64d0ae62aec3b7cd480b3347c33cf3",
+      "size": 4512,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/6a1f7c5b1f64d0ae62aec3b7cd480b3347c33cf3"
+    },
+    {
+      "path": "lessons/week-00/entry-diagnostic-and-recovery-router.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5549dd3483c4ce7bd94df336456bddf449a9976a",
+      "size": 3221,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/5549dd3483c4ce7bd94df336456bddf449a9976a"
+    },
+    {
+      "path": "lessons/week-00/open-ended-challenge.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c771b6fae96adfa7fe041aebbcdd1753493ad03a",
+      "size": 327,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/c771b6fae96adfa7fe041aebbcdd1753493ad03a"
+    },
+    {
+      "path": "lessons/week-00/pre-arrival-checklist.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6236d1c23c73f5e60423a9cbf415412514904c54",
+      "size": 888,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/6236d1c23c73f5e60423a9cbf415412514904c54"
+    },
+    {
+      "path": "lessons/week-00/starter",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5fcfa33e589f3d320556bb0e27a1a369f7f7f798",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/5fcfa33e589f3d320556bb0e27a1a369f7f7f798"
+    },
+    {
+      "path": "lessons/week-00/starter/orientation_audit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3b0622ab90a2f4ebc2ea61ae62e7aac90aa112f",
+      "size": 626,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/c3b0622ab90a2f4ebc2ea61ae62e7aac90aa112f"
+    },
+    {
+      "path": "lessons/week-00/starter/orientation_template.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33bb6acc050fcad08bd62223371fe568fd3b930f",
+      "size": 193,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/33bb6acc050fcad08bd62223371fe568fd3b930f"
+    },
+    {
+      "path": "lessons/week-00/student-handout.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da665f9dbad8b5a5236a698322df93d252ccf605",
+      "size": 1766,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/da665f9dbad8b5a5236a698322df93d252ccf605"
+    },
+    {
+      "path": "lessons/week-00/student-orientation.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e596333d4fb4f412e729845488bd23326d826bb",
+      "size": 1947,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/9e596333d4fb4f412e729845488bd23326d826bb"
+    },
+    {
+      "path": "lessons/week-00/support-map.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42837529ffe6397f3f258b5020b1f6c75ba6fa7c",
+      "size": 961,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/42837529ffe6397f3f258b5020b1f6c75ba6fa7c"
+    },
+    {
+      "path": "lessons/week-00/week-01-dual-system-output-packet.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "210b837e7ff07f3854bd9195d081a4f511977e03",
+      "size": 6339,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/210b837e7ff07f3854bd9195d081a4f511977e03"
+    },
+    {
+      "path": "lessons/week-01",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "df7706991d84192aa1dc1de089474b4ca48b5864",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/df7706991d84192aa1dc1de089474b4ca48b5864"
+    },
+    {
+      "path": "lessons/week-01/driver-video.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa92803536cfc5eb2c27149ad46a22a4e643054e",
+      "size": 1697,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/fa92803536cfc5eb2c27149ad46a22a4e643054e"
+    },
+    {
+      "path": "lessons/week-01/open-ended-challenge.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc4ccc0c99f9db1745a4b23448f9a0154c29a8f8",
+      "size": 1235,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/fc4ccc0c99f9db1745a4b23448f9a0154c29a8f8"
+    },
+    {
+      "path": "lessons/week-01/provider-definition-check.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86a00fd940fcea2b26497c61460e74f245e2f632",
+      "size": 1505,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/86a00fd940fcea2b26497c61460e74f245e2f632"
+    },
+    {
+      "path": "lessons/week-01/slides-session-01.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "525ce5dc9fc6ac67ac0458f546f5bac30f711058",
+      "size": 12777,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/525ce5dc9fc6ac67ac0458f546f5bac30f711058"
+    },
+    {
+      "path": "lessons/week-01/slides-session-01.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "696e0d8ef927c893de60133e26976d2e73bc99c2",
+      "size": 8163,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/696e0d8ef927c893de60133e26976d2e73bc99c2"
+    },
+    {
+      "path": "lessons/week-01/slides-session-02.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5160d3c97fc316c8e2215529a737ce13a701af1d",
+      "size": 10584,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/5160d3c97fc316c8e2215529a737ce13a701af1d"
+    },
+    {
+      "path": "lessons/week-01/slides-session-02.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82475e118b28067b39eeb625c6a8a455fe7f9e43",
+      "size": 6713,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/82475e118b28067b39eeb625c6a8a455fe7f9e43"
+    },
+    {
+      "path": "lessons/week-01/starter",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6c71126add43fb1dd62532bf9e3fefeeddb8c086",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/6c71126add43fb1dd62532bf9e3fefeeddb8c086"
+    },
+    {
+      "path": "lessons/week-01/starter/offline-screening-case.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62791623228798aa3d88b6f1119f02640b9fa44e",
+      "size": 1174,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/62791623228798aa3d88b6f1119f02640b9fa44e"
+    },
+    {
+      "path": "lessons/week-01/starter/preflight_check.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74e50cdaaf7996a1578047baf8cce3ee7b34925e",
+      "size": 5029,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/74e50cdaaf7996a1578047baf8cce3ee7b34925e"
+    },
+    {
+      "path": "lessons/week-01/starter/preflight_debug_challenge.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f504750e36103f97196153eb771792a985bbe1c7",
+      "size": 1885,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/f504750e36103f97196153eb771792a985bbe1c7"
+    },
+    {
+      "path": "lessons/week-01/starter/requirements-week1.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78902b631d6b6b730c43fb76ff7ba86191f344b0",
+      "size": 69,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/78902b631d6b6b730c43fb76ff7ba86191f344b0"
+    },
+    {
+      "path": "lessons/week-01/starter/screening_starter.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38ed371fc1da839dfa3f8cc5d0fa9fdf0e0e9adf",
+      "size": 6411,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/38ed371fc1da839dfa3f8cc5d0fa9fdf0e0e9adf"
+    },
+    {
+      "path": "lessons/week-01/student-handout.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd2cc0001b5db38b36e2cf28f5ab349f8e31d83a",
+      "size": 16581,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/bd2cc0001b5db38b36e2cf28f5ab349f8e31d83a"
+    },
+    {
+      "path": "lessons/week-01/student-prework.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e05cbe7e36ec5c041e8b00a8e85d5c55d0350c3",
+      "size": 3062,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/4e05cbe7e36ec5c041e8b00a8e85d5c55d0350c3"
+    },
+    {
+      "path": "lessons/week-02",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e274707f9f549dfe4c5d2d49a5401ce37b5bebe3",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/e274707f9f549dfe4c5d2d49a5401ce37b5bebe3"
+    },
+    {
+      "path": "lessons/week-02/lab-03-valuation-edition-a.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "741fe2897d447efc47411dc96802b5a86c49cb72",
+      "size": 4313,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/741fe2897d447efc47411dc96802b5a86c49cb72"
+    },
+    {
+      "path": "lessons/week-02/lab-04-evidence-and-bridge.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ecedc47ed37d82e9114fa73e14911b10c4f0be5f",
+      "size": 4610,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/ecedc47ed37d82e9114fa73e14911b10c4f0be5f"
+    },
+    {
+      "path": "lessons/week-02/offline-fallback.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37def599020238c54ddad877fa90613bf85f4e6b",
+      "size": 1404,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/37def599020238c54ddad877fa90613bf85f4e6b"
+    },
+    {
+      "path": "lessons/week-02/open-ended-challenge.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a96c8a6a5b1a264d2e2f762be99db7d58b7d18f",
+      "size": 897,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/2a96c8a6a5b1a264d2e2f762be99db7d58b7d18f"
+    },
+    {
+      "path": "lessons/week-02/slides-session-03.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "320dca04b257065750838d2f8748658924b8a275",
+      "size": 9904,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/320dca04b257065750838d2f8748658924b8a275"
+    },
+    {
+      "path": "lessons/week-02/slides-session-03.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b70f57d36f53de00da0650cb44e5d91634e5da17",
+      "size": 6236,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/b70f57d36f53de00da0650cb44e5d91634e5da17"
+    },
+    {
+      "path": "lessons/week-02/slides-session-04.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb6dcfac594b216555dd82bf1958b4576701f272",
+      "size": 15482,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/cb6dcfac594b216555dd82bf1958b4576701f272"
+    },
+    {
+      "path": "lessons/week-02/slides-session-04.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82586b06cf830d2ee5470ff7224a2391ed0bc956",
+      "size": 11063,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/82586b06cf830d2ee5470ff7224a2391ed0bc956"
+    },
+    {
+      "path": "lessons/week-02/starter",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "820b30c1beb23c576ea88918f3fa2196290f2f18",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/820b30c1beb23c576ea88918f3fa2196290f2f18"
+    },
+    {
+      "path": "lessons/week-02/starter/evidence_ledger_template.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c15992104726c59a045d8acc7b9c2997ee29017",
+      "size": 408,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/0c15992104726c59a045d8acc7b9c2997ee29017"
+    },
+    {
+      "path": "lessons/week-02/starter/mini_case.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c9c5e077da1ea8858fa804fc98944dddafd7ed7",
+      "size": 390,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/4c9c5e077da1ea8858fa804fc98944dddafd7ed7"
+    },
+    {
+      "path": "lessons/week-02/starter/valuation_foundations_starter.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07804db17fc2182dc97cb235681fdb5188621d53",
+      "size": 3241,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/07804db17fc2182dc97cb235681fdb5188621d53"
+    },
+    {
+      "path": "lessons/week-02/student-handout.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fb3f943eaad510652731d728b94858ff9cf2685",
+      "size": 15877,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/3fb3f943eaad510652731d728b94858ff9cf2685"
+    },
+    {
+      "path": "lessons/week-02/student-prework.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64bb7e1a3362809c4b69ed89de60a349920a685e",
+      "size": 3295,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/64bb7e1a3362809c4b69ed89de60a349920a685e"
+    },
+    {
+      "path": "lessons/week-03",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f706079fc855b8fd584b92bf1aa4e741c7a33186",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/f706079fc855b8fd584b92bf1aa4e741c7a33186"
+    },
+    {
+      "path": "lessons/week-03/lab-05-dcf-build.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34f912a3c026405115a6ec1e5b314c38b28fb49d",
+      "size": 5203,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/34f912a3c026405115a6ec1e5b314c38b28fb49d"
+    },
+    {
+      "path": "lessons/week-03/lab-06-sensitivity-and-reverse-dcf.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7126a7aa7ccb60368c5a243765f9ae4735da0687",
+      "size": 7479,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/7126a7aa7ccb60368c5a243765f9ae4735da0687"
+    },
+    {
+      "path": "lessons/week-03/open-ended-challenge.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "570b8bbaf1df28cc6c69f49d30ad53504a6c3f47",
+      "size": 3244,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/570b8bbaf1df28cc6c69f49d30ad53504a6c3f47"
+    },
+    {
+      "path": "lessons/week-03/slides-session-05.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79e226cd3ee7f53563a1ade3d8cfda66edce23d8",
+      "size": 8530,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/79e226cd3ee7f53563a1ade3d8cfda66edce23d8"
+    },
+    {
+      "path": "lessons/week-03/slides-session-05.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c8af2914aaae021be943181d2a17f77a99315bb",
+      "size": 4227,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/3c8af2914aaae021be943181d2a17f77a99315bb"
+    },
+    {
+      "path": "lessons/week-03/slides-session-06.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f06bd1a625f87163f459d802993b0e4c5c9ecb27",
+      "size": 10230,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/f06bd1a625f87163f459d802993b0e4c5c9ecb27"
+    },
+    {
+      "path": "lessons/week-03/slides-session-06.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccf7494fe135768535d137fe423a8d828a5add8c",
+      "size": 5666,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/ccf7494fe135768535d137fe423a8d828a5add8c"
+    },
+    {
+      "path": "lessons/week-03/student-handout.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8b2ce2b0f332c971b72d3715095bbe25ddde6c0",
+      "size": 2382,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/e8b2ce2b0f332c971b72d3715095bbe25ddde6c0"
+    },
+    {
+      "path": "lessons/week-03/student-prework.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be41b3fde501b83de29e610050a276f7a0734f91",
+      "size": 2770,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/be41b3fde501b83de29e610050a276f7a0734f91"
+    },
+    {
+      "path": "lessons/week-03/teach-dcf-worked-example.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09c0a6b0dd894edae2904d373ae7907524e18da0",
+      "size": 14602,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/09c0a6b0dd894edae2904d373ae7907524e18da0"
+    },
+    {
+      "path": "lessons/week-04",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2c61a638718b0db51dc06d58815ece01cc94bdd0",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/2c61a638718b0db51dc06d58815ece01cc94bdd0"
+    },
+    {
+      "path": "lessons/week-04/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65454070c6954cfb26246ff393fd1ebad9bb437d",
+      "size": 3981,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/65454070c6954cfb26246ff393fd1ebad9bb437d"
+    },
+    {
+      "path": "lessons/week-04/lab-07-comparable-policy.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a980ad2d2dfcd3b2c29376705dcd471644fe45ff",
+      "size": 6024,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/a980ad2d2dfcd3b2c29376705dcd471644fe45ff"
+    },
+    {
+      "path": "lessons/week-04/lab-08-deal-triangulation.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cf3d094e4efc36eed94517c4c0f0cc21a7af628",
+      "size": 7950,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/6cf3d094e4efc36eed94517c4c0f0cc21a7af628"
+    },
+    {
+      "path": "lessons/week-04/open-ended-challenge.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61e07b623b16fc7a76db84ccf6d841bbc4300501",
+      "size": 938,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/61e07b623b16fc7a76db84ccf6d841bbc4300501"
+    },
+    {
+      "path": "lessons/week-04/real-deal-source-packet.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fbcd634c6fff8ed9c003f4ef81c1448879c900c",
+      "size": 613,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/4fbcd634c6fff8ed9c003f4ef81c1448879c900c"
+    },
+    {
+      "path": "lessons/week-04/slides-session-07.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "182dff7791b01b5793f016f79182bf753b7b08b6",
+      "size": 11178,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/182dff7791b01b5793f016f79182bf753b7b08b6"
+    },
+    {
+      "path": "lessons/week-04/slides-session-07.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9140632d326c5562aa591cbc9d2152c87db92bc",
+      "size": 6087,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/e9140632d326c5562aa591cbc9d2152c87db92bc"
+    },
+    {
+      "path": "lessons/week-04/slides-session-08.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "540871c3f4cf7f2ead52b63b5db3b415993bb7ff",
+      "size": 9150,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/540871c3f4cf7f2ead52b63b5db3b415993bb7ff"
+    },
+    {
+      "path": "lessons/week-04/slides-session-08.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4a07138210e7351450b7f5faf2942d0a909a295",
+      "size": 5812,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/b4a07138210e7351450b7f5faf2942d0a909a295"
+    },
+    {
+      "path": "lessons/week-04/student-handout.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34977fc606ac3c4034ff8f75a4004d3f43ca85a7",
+      "size": 2908,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/34977fc606ac3c4034ff8f75a4004d3f43ca85a7"
+    },
+    {
+      "path": "lessons/week-04/student-prework.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0f2270890e619465d860ba50099c8404615c2f9",
+      "size": 1815,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/a0f2270890e619465d860ba50099c8404615c2f9"
+    },
+    {
+      "path": "lessons/week-04/teach-comps-worked-example.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c131965f82f9775e2cdce0eccc1e2b77fa1d0c4",
+      "size": 9105,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/4c131965f82f9775e2cdce0eccc1e2b77fa1d0c4"
+    },
+    {
+      "path": "lessons/week-05",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "354c95a5ac8e97f7bbaad9655972acc89a7106e0",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/354c95a5ac8e97f7bbaad9655972acc89a7106e0"
+    },
+    {
+      "path": "lessons/week-05/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fdb6e1c22d9b8884b4a9c24880e19f03c379724",
+      "size": 4050,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/3fdb6e1c22d9b8884b4a9c24880e19f03c379724"
+    },
+    {
+      "path": "lessons/week-05/credit-baseline-switch-sheet.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b664dd94462d61069c4b25d432ca7bd38dcc398d",
+      "size": 163,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/b664dd94462d61069c4b25d432ca7bd38dcc398d"
+    },
+    {
+      "path": "lessons/week-05/credit-label-convention.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b664dd94462d61069c4b25d432ca7bd38dcc398d",
+      "size": 163,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/b664dd94462d61069c4b25d432ca7bd38dcc398d"
+    },
+    {
+      "path": "lessons/week-05/lab-09-credit-evidence.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b409e29c515ba951b306872b2f79311a0131b9c",
+      "size": 157,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/2b409e29c515ba951b306872b2f79311a0131b9c"
+    },
+    {
+      "path": "lessons/week-05/lab-09-proforma-build.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03f6730aafc3a0236eeabf97c0f1a25a6b2572e7",
+      "size": 7367,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/03f6730aafc3a0236eeabf97c0f1a25a6b2572e7"
+    },
+    {
+      "path": "lessons/week-05/lab-10-proforma-your-company.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a3266ea2645b2bb82b5d668203c1a90d0d3997d",
+      "size": 5704,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/6a3266ea2645b2bb82b5d668203c1a90d0d3997d"
+    },
+    {
+      "path": "lessons/week-05/lab-10-screen-calibration.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a29bc1617d6cc7769507bdc8b6fd6a09d587a4fb",
+      "size": 164,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/a29bc1617d6cc7769507bdc8b6fd6a09d587a4fb"
+    },
+    {
+      "path": "lessons/week-05/open-ended-challenge.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18f4e33044a1842ca55ee07efe1953cf4e4ac312",
+      "size": 1357,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/18f4e33044a1842ca55ee07efe1953cf4e4ac312"
+    },
+    {
+      "path": "lessons/week-05/pro-forma-abg-tutorial.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "357e4607ad75ef4b4a745cb493f7ceea7070c99c",
+      "size": 3672,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/357e4607ad75ef4b4a745cb493f7ceea7070c99c"
+    },
+    {
+      "path": "lessons/week-05/pro-forma-abg-tutorial",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fb9085588945eb4970ec9a44e49b39946b3eabf4",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/fb9085588945eb4970ec9a44e49b39946b3eabf4"
+    },
+    {
+      "path": "lessons/week-05/pro-forma-abg-tutorial/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4816b8d5710640559a46d758032ac6c3c4e14eb8",
+      "size": 182,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/4816b8d5710640559a46d758032ac6c3c4e14eb8"
+    },
+    {
+      "path": "lessons/week-05/pro-forma-abg-tutorial/video-1-build-the-base-case-slides.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b565f490d63efde83aa296bdf4450392bf23d9b",
+      "size": 121961,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/1b565f490d63efde83aa296bdf4450392bf23d9b"
+    },
+    {
+      "path": "lessons/week-05/pro-forma-abg-tutorial/video-1-captions.vtt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "319ce16f433b7adab4ce7d204da255ba7c6d6ad0",
+      "size": 34613,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/319ce16f433b7adab4ce7d204da255ba7c6d6ad0"
+    },
+    {
+      "path": "lessons/week-05/pro-forma-abg-tutorial/video-2-captions.vtt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22ad01a78bccb64d72b30a55cee6250a537ba428",
+      "size": 29380,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/22ad01a78bccb64d72b30a55cee6250a537ba428"
+    },
+    {
+      "path": "lessons/week-05/pro-forma-abg-tutorial/video-2-take-it-apart-and-present-slides.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b01afff2378b2ba739edbb3b7e1e0d15fb1db68",
+      "size": 441696,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/2b01afff2378b2ba739edbb3b7e1e0d15fb1db68"
+    },
+    {
+      "path": "lessons/week-05/project-1-credit-transfer-and-recovery.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b664dd94462d61069c4b25d432ca7bd38dcc398d",
+      "size": 163,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/b664dd94462d61069c4b25d432ca7bd38dcc398d"
+    },
+    {
+      "path": "lessons/week-05/student-handout.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a649dc5867e65191cc9d038936c83ca1300b5927",
+      "size": 2631,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/a649dc5867e65191cc9d038936c83ca1300b5927"
+    },
+    {
+      "path": "lessons/week-05/student-prework.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ed5f0f6be829db0ad773e3b6b844fb1b258eca9",
+      "size": 1243,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/8ed5f0f6be829db0ad773e3b6b844fb1b258eca9"
+    },
+    {
+      "path": "lessons/week-06",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5d44c59e9feee75b16f478eb7ae64e614931be45",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/5d44c59e9feee75b16f478eb7ae64e614931be45"
+    },
+    {
+      "path": "lessons/week-06/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f1a7b79a3251db0a8288f7057cca1a98c40d7bf",
+      "size": 3875,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/1f1a7b79a3251db0a8288f7057cca1a98c40d7bf"
+    },
+    {
+      "path": "lessons/week-06/lab-11-proforma-what-if.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65ef032b42a11b03a3472984a9d4e105af0f43af",
+      "size": 8348,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/65ef032b42a11b03a3472984a9d4e105af0f43af"
+    },
+    {
+      "path": "lessons/week-06/lab-12-proforma-present.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9755f86a91164751ccc4cf5fde6f7129262f4ca",
+      "size": 8751,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/a9755f86a91164751ccc4cf5fde6f7129262f4ca"
+    },
+    {
+      "path": "lessons/week-06/open-ended-challenge.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42acbdd6f6255c4ead8626c52957f3d456879064",
+      "size": 1128,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/42acbdd6f6255c4ead8626c52957f3d456879064"
+    },
+    {
+      "path": "lessons/week-06/student-handout.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf9534ad4e619d23633cdcb69f399af408cb1c65",
+      "size": 7822,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/cf9534ad4e619d23633cdcb69f399af408cb1c65"
+    },
+    {
+      "path": "lessons/week-06/student-prework.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96bf782f27f959c9073be57a3fd96a80dd2a7ecd",
+      "size": 1455,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/96bf782f27f959c9073be57a3fd96a80dd2a7ecd"
+    },
+    {
+      "path": "lessons/week-07",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "48b13ad06064b4d3285e829b1ca0f230ee509dbd",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/48b13ad06064b4d3285e829b1ca0f230ee509dbd"
+    },
+    {
+      "path": "lessons/week-07/open-ended-challenge.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "790dc30bfda5401e826af9fcff154f1e3b9b5c5d",
+      "size": 724,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/790dc30bfda5401e826af9fcff154f1e3b9b5c5d"
+    },
+    {
+      "path": "lessons/week-07/starter",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9ef6d366ce28db0dae9af79e1aaceac50b75f0aa",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/9ef6d366ce28db0dae9af79e1aaceac50b75f0aa"
+    },
+    {
+      "path": "lessons/week-07/starter/project_audit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4958bbf0b9804da4182f8dc7f50381805d625bc",
+      "size": 2100,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/b4958bbf0b9804da4182f8dc7f50381805d625bc"
+    },
+    {
+      "path": "lessons/week-07/student-handout.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5eb190d82500a1fd0c5d299da17e66717c5f8f2",
+      "size": 2459,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/b5eb190d82500a1fd0c5d299da17e66717c5f8f2"
+    },
+    {
+      "path": "lessons/week-07/student-prework.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f606a9b9045d576cf3f59a542cfb14592fd76515",
+      "size": 1425,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/f606a9b9045d576cf3f59a542cfb14592fd76515"
+    },
+    {
+      "path": "lessons/week-07/studio-guide.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27b1ce908c0820f5068f93570c308d397fcac8a8",
+      "size": 1823,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/27b1ce908c0820f5068f93570c308d397fcac8a8"
+    },
+    {
+      "path": "lessons/week-08",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "580e63bdd63f77947811c44844b2c635d30383da",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/580e63bdd63f77947811c44844b2c635d30383da"
+    },
+    {
+      "path": "lessons/week-08/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ea3fdc54cc79826d84db38a4943f9616f14d419",
+      "size": 3409,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/8ea3fdc54cc79826d84db38a4943f9616f14d419"
+    },
+    {
+      "path": "lessons/week-08/common-cio-case.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f50e06d9b7b860cf0fe86969fe7d9a48c619ddb0",
+      "size": 383,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/f50e06d9b7b860cf0fe86969fe7d9a48c619ddb0"
+    },
+    {
+      "path": "lessons/week-08/lab-13-portfolio-mandate.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27fd1589454cd7b52f5601580ddba0ca33b2df68",
+      "size": 8543,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/27fd1589454cd7b52f5601580ddba0ca33b2df68"
+    },
+    {
+      "path": "lessons/week-08/no-class-fall-break.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13a4b6fc6fcd2cb5e6461214a514e57a105a5880",
+      "size": 242,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/13a4b6fc6fcd2cb5e6461214a514e57a105a5880"
+    },
+    {
+      "path": "lessons/week-08/open-ended-challenge.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "385813333c35977702f18e97675e2c2b7d65dbf5",
+      "size": 854,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/385813333c35977702f18e97675e2c2b7d65dbf5"
+    },
+    {
+      "path": "lessons/week-08/student-handout.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d78fb1b635e0bb17656edf10f9b54954ae2c119",
+      "size": 1844,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/6d78fb1b635e0bb17656edf10f9b54954ae2c119"
+    },
+    {
+      "path": "lessons/week-08/student-prework.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5934b91a662b880353065d3dfb933f5a8cf317ee",
+      "size": 976,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/5934b91a662b880353065d3dfb933f5a8cf317ee"
+    },
+    {
+      "path": "lessons/week-09",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8dd8ba5851d27012f192d9af64b4820bb98d7707",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/8dd8ba5851d27012f192d9af64b4820bb98d7707"
+    },
+    {
+      "path": "lessons/week-09/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd1b93191fc1a0958548123658d872ae40ba0953",
+      "size": 4367,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/dd1b93191fc1a0958548123658d872ae40ba0953"
+    },
+    {
+      "path": "lessons/week-09/lab-14-portfolio-baselines.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90763a34b56813bdb01c1ec0c1a9a6e0cda57010",
+      "size": 7055,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/90763a34b56813bdb01c1ec0c1a9a6e0cda57010"
+    },
+    {
+      "path": "lessons/week-09/lab-15-portfolio-stability.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0bdf32cdc3947122e9726f14f37ae30140f8c25",
+      "size": 8778,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/c0bdf32cdc3947122e9726f14f37ae30140f8c25"
+    },
+    {
+      "path": "lessons/week-09/open-ended-challenge.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0aa370104b5a969b9859de14104cb9e0f75f7545",
+      "size": 953,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/0aa370104b5a969b9859de14104cb9e0f75f7545"
+    },
+    {
+      "path": "lessons/week-09/slides-session-14.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "394fb6db3969d20ebd0e5cff51b75bf681fccdee",
+      "size": 12510,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/394fb6db3969d20ebd0e5cff51b75bf681fccdee"
+    },
+    {
+      "path": "lessons/week-09/slides-session-14.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83eebf1392f9ec918a2fede123a08d3811350c69",
+      "size": 6287,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/83eebf1392f9ec918a2fede123a08d3811350c69"
+    },
+    {
+      "path": "lessons/week-09/slides-session-15.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73cda0a14c023d66f8fa01c22e420e0d8d79e54e",
+      "size": 12511,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/73cda0a14c023d66f8fa01c22e420e0d8d79e54e"
+    },
+    {
+      "path": "lessons/week-09/slides-session-15.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74cffa2c1269a1fe7acacb5c7e10374e5cfc8d61",
+      "size": 7379,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/74cffa2c1269a1fe7acacb5c7e10374e5cfc8d61"
+    },
+    {
+      "path": "lessons/week-09/student-handout.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25418415be1887c182f4a153129fff9c3b923851",
+      "size": 3417,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/25418415be1887c182f4a153129fff9c3b923851"
+    },
+    {
+      "path": "lessons/week-09/student-prework.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e98153f514707cb3055d2a09c120df766afc7b0",
+      "size": 1706,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/8e98153f514707cb3055d2a09c120df766afc7b0"
+    },
+    {
+      "path": "lessons/week-10",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9cfc16160a587f4ebf75ea55e418516389c4535f",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/9cfc16160a587f4ebf75ea55e418516389c4535f"
+    },
+    {
+      "path": "lessons/week-10/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdaae472ec9273578f948e4e61085e6d073edf23",
+      "size": 3979,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/bdaae472ec9273578f948e4e61085e6d073edf23"
+    },
+    {
+      "path": "lessons/week-10/lab-16-provenance-gate.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d483e680c0b612d99afcd3f0f4e6088bcf18bf6",
+      "size": 7845,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/1d483e680c0b612d99afcd3f0f4e6088bcf18bf6"
+    },
+    {
+      "path": "lessons/week-10/lab-17-point-in-time.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5a927560727eb0af8ad9892ce58b17aebaddfb9",
+      "size": 8920,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/f5a927560727eb0af8ad9892ce58b17aebaddfb9"
+    },
+    {
+      "path": "lessons/week-10/open-ended-challenge.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0a2fa6fe2572219b5ad31dbff74c8f896d0bff8",
+      "size": 783,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/e0a2fa6fe2572219b5ad31dbff74c8f896d0bff8"
+    },
+    {
+      "path": "lessons/week-10/slides-session-16.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dbf8b585f6f4a51cb404abb3e5c8307762bf703",
+      "size": 14892,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/3dbf8b585f6f4a51cb404abb3e5c8307762bf703"
+    },
+    {
+      "path": "lessons/week-10/slides-session-16.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e21d66e2597e840cd1c58eb7f051f4d8ffdccfce",
+      "size": 7264,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/e21d66e2597e840cd1c58eb7f051f4d8ffdccfce"
+    },
+    {
+      "path": "lessons/week-10/slides-session-17.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "311247eacecd822b7589d2babed256d70beb4bf9",
+      "size": 10671,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/311247eacecd822b7589d2babed256d70beb4bf9"
+    },
+    {
+      "path": "lessons/week-10/slides-session-17.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fad0eb80c95a4f68e2806d235e6e0de83b6f419",
+      "size": 6056,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/2fad0eb80c95a4f68e2806d235e6e0de83b6f419"
+    },
+    {
+      "path": "lessons/week-10/student-handout.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8737d465cd5d5b1234b2d1a34d9d15f341ecc2dc",
+      "size": 2518,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/8737d465cd5d5b1234b2d1a34d9d15f341ecc2dc"
+    },
+    {
+      "path": "lessons/week-10/student-prework.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e2543a4e6a404aff9be59837c391126618cbf70",
+      "size": 1025,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/2e2543a4e6a404aff9be59837c391126618cbf70"
+    },
+    {
+      "path": "lessons/week-11",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "195e75a6725bcea528c7deb5c1963a2fca9be2a3",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/195e75a6725bcea528c7deb5c1963a2fca9be2a3"
+    },
+    {
+      "path": "lessons/week-11/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "222d413cce0665d27603122c20e8d4f3fed9ca72",
+      "size": 3634,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/222d413cce0665d27603122c20e8d4f3fed9ca72"
+    },
+    {
+      "path": "lessons/week-11/lab-18-legend-investor-as-skill.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c81534685d66c2b89e01fbc10a8cdddc5644891",
+      "size": 7378,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/5c81534685d66c2b89e01fbc10a8cdddc5644891"
+    },
+    {
+      "path": "lessons/week-11/lab-19-legend-panel.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50057f233a71a6a00dec38086041949488bdc5eb",
+      "size": 7090,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/50057f233a71a6a00dec38086041949488bdc5eb"
+    },
+    {
+      "path": "lessons/week-11/open-ended-challenge.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "362eaa7aad073631c085fa1ebea21332db06bd50",
+      "size": 897,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/362eaa7aad073631c085fa1ebea21332db06bd50"
+    },
+    {
+      "path": "lessons/week-11/slides-session-18.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b829225fae3beecec7fdd62ec56201519650bc05",
+      "size": 14093,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/b829225fae3beecec7fdd62ec56201519650bc05"
+    },
+    {
+      "path": "lessons/week-11/slides-session-18.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c1974c85df9cd467abb07e74023e5054dee0f46",
+      "size": 7596,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/7c1974c85df9cd467abb07e74023e5054dee0f46"
+    },
+    {
+      "path": "lessons/week-11/slides-session-19.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4fed2c5677a4ecabfb1fb96c5fe2eea919fa955",
+      "size": 10465,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/d4fed2c5677a4ecabfb1fb96c5fe2eea919fa955"
+    },
+    {
+      "path": "lessons/week-11/slides-session-19.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "accf1b610d789c6a51b4673ddca9c64b8a2a85e9",
+      "size": 5562,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/accf1b610d789c6a51b4673ddca9c64b8a2a85e9"
+    },
+    {
+      "path": "lessons/week-11/student-handout.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "488aa98fa209733779243295514e819fa9417a6f",
+      "size": 3433,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/488aa98fa209733779243295514e819fa9417a6f"
+    },
+    {
+      "path": "lessons/week-11/student-prework.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d7c34210fdb60fc6cdb5fb5a92bf3da577accd1",
+      "size": 1023,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/1d7c34210fdb60fc6cdb5fb5a92bf3da577accd1"
+    },
+    {
+      "path": "lessons/week-12",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "03088189c3e18ba34b2e28c63c9e3015ded11b1b",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/03088189c3e18ba34b2e28c63c9e3015ded11b1b"
+    },
+    {
+      "path": "lessons/week-12/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60c7390f5b196fe076809404ef48f33a2a1e7c44",
+      "size": 2739,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/60c7390f5b196fe076809404ef48f33a2a1e7c44"
+    },
+    {
+      "path": "lessons/week-12/open-ended-challenge.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4a912414f9b94cdde60c1e37605d346b216e997",
+      "size": 751,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/d4a912414f9b94cdde60c1e37605d346b216e997"
+    },
+    {
+      "path": "lessons/week-12/student-handout.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3672850f23f5f14b2e6f7d6c2425f58dab67144c",
+      "size": 4336,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/3672850f23f5f14b2e6f7d6c2425f58dab67144c"
+    },
+    {
+      "path": "lessons/week-12/student-prework.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a505b21f51743d967c6fb2ea4bbf303cfe8abef",
+      "size": 956,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/2a505b21f51743d967c6fb2ea4bbf303cfe8abef"
+    },
+    {
+      "path": "lessons/week-12/studio-guide.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dbcc76e0aeb4c87db53221f14e2637a8379519a",
+      "size": 1279,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/3dbcc76e0aeb4c87db53221f14e2637a8379519a"
+    },
+    {
+      "path": "lessons/week-13",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9885f90f69087137819c1003d37227f8ca40751c",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/9885f90f69087137819c1003d37227f8ca40751c"
+    },
+    {
+      "path": "lessons/week-13/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "784756587005ea2dcee13ea6692487eaa7eea451",
+      "size": 446,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/784756587005ea2dcee13ea6692487eaa7eea451"
+    },
+    {
+      "path": "lessons/week-13/lab-20-project2-readiness.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e8ae460bdf546a591f3852eae4965c49aa0085c",
+      "size": 3981,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/6e8ae460bdf546a591f3852eae4965c49aa0085c"
+    },
+    {
+      "path": "lessons/week-13/slides-session-20.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a4469c235797d79ecddc296b8a0e96ed3f75294",
+      "size": 8496,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/3a4469c235797d79ecddc296b8a0e96ed3f75294"
+    },
+    {
+      "path": "lessons/week-13/slides-session-20.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6bd19e9fc38115b87e029e5246c4ece5d4c9076",
+      "size": 4618,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/f6bd19e9fc38115b87e029e5246c4ece5d4c9076"
+    },
+    {
+      "path": "lessons/week-14",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3e4c134a19b1749c102a480eeed84615a63a5a85",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/3e4c134a19b1749c102a480eeed84615a63a5a85"
+    },
+    {
+      "path": "lessons/week-14/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7f3262837b55ef44306b857723e38b26fcb15c4",
+      "size": 327,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/f7f3262837b55ef44306b857723e38b26fcb15c4"
+    },
+    {
+      "path": "lessons/week-14/no-class-thanksgiving.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ba3d256c8cef8d39800e6caa9af3f2239765af6",
+      "size": 109,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/6ba3d256c8cef8d39800e6caa9af3f2239765af6"
+    },
+    {
+      "path": "lessons/week-15",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "81e850fcb98c281dd246fe4a63bee08d19580a3d",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/81e850fcb98c281dd246fe4a63bee08d19580a3d"
+    },
+    {
+      "path": "lessons/week-15/changed-input-return.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cc37475881e48ac1f86af5469197651617bdafc",
+      "size": 1721,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/1cc37475881e48ac1f86af5469197651617bdafc"
+    },
+    {
+      "path": "lessons/week-15/equivalent-access-clinic-details.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54fff34239cff4a521f80ff104046d9d18765637",
+      "size": 1546,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/54fff34239cff4a521f80ff104046d9d18765637"
+    },
+    {
+      "path": "lessons/week-15/open-ended-challenge.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed432cb058bfbce9814f44d66bf0908363859ab1",
+      "size": 859,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/ed432cb058bfbce9814f44d66bf0908363859ab1"
+    },
+    {
+      "path": "lessons/week-15/starter",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "41819b87837a321dd8124eccf1e130fe30349440",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/41819b87837a321dd8124eccf1e130fe30349440"
+    },
+    {
+      "path": "lessons/week-15/starter/capstone_audit.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "764e1f61e8413934da723db2ea17b2f2d742e010",
+      "size": 777,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/764e1f61e8413934da723db2ea17b2f2d742e010"
+    },
+    {
+      "path": "lessons/week-15/starter/evidence_graph_template.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83e1203947c39661b99fa620ffdcca36dadb2365",
+      "size": 153,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/83e1203947c39661b99fa620ffdcca36dadb2365"
+    },
+    {
+      "path": "lessons/week-15/student-handout.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f89db3c946db98956f48b4278e2870da24a6fc09",
+      "size": 8114,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/f89db3c946db98956f48b4278e2870da24a6fc09"
+    },
+    {
+      "path": "lessons/week-15/studio-1-interface-audit.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f65268355ec9cdee9ef6202a0a8dfa9a4ca0567",
+      "size": 862,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/8f65268355ec9cdee9ef6202a0a8dfa9a4ca0567"
+    },
+    {
+      "path": "lessons/week-15/studio-2-cold-review.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "424220f502e99df9b4a0aad49666910eee1b0572",
+      "size": 893,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/424220f502e99df9b4a0aad49666910eee1b0572"
+    },
+    {
+      "path": "lessons/week-16",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6d230a8b43927c2746cd19b475005b27fa53dca5",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/6d230a8b43927c2746cd19b475005b27fa53dca5"
+    },
+    {
+      "path": "lessons/week-16/capstone-submission-week.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cb94eb53371481e5cb77f166c66203e91cffb78",
+      "size": 2582,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/0cb94eb53371481e5cb77f166c66203e91cffb78"
+    },
+    {
+      "path": "projects",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "28a25dbc807140530425359c20a7f1e90fcb24c8",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/28a25dbc807140530425359c20a7f1e90fcb24c8"
+    },
+    {
+      "path": "projects/AI-BOUNDARY-CARD.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fe5352008c737a8ac4fcaa9d3a94df00cfbb320",
+      "size": 5238,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/9fe5352008c737a8ac4fcaa9d3a94df00cfbb320"
+    },
+    {
+      "path": "projects/capstone-integrated-financial-analysis-system.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5edfbf3033129dfe856c84cb734ed3636152541b",
+      "size": 3566,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/5edfbf3033129dfe856c84cb734ed3636152541b"
+    },
+    {
+      "path": "projects/major-project-student-checklist.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cebd4ac2f5be115aba5ea1af7856f6a3c416215",
+      "size": 3337,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/5cebd4ac2f5be115aba5ea1af7856f6a3c416215"
+    },
+    {
+      "path": "projects/project-1-corporate-finance-application.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5dc43aaf26fd2b5ad85a49ebff49e5060e3723b3",
+      "size": 10860,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/5dc43aaf26fd2b5ad85a49ebff49e5060e3723b3"
+    },
+    {
+      "path": "projects/project-2-investment-management-application.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1212b7acc46f5bcf12d96a59331864b987a5ebfa",
+      "size": 2422,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/1212b7acc46f5bcf12d96a59331864b987a5ebfa"
+    },
+    {
+      "path": "syllabus",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "26355941c4619665d1e465e49cb7f150611c35f0",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/26355941c4619665d1e465e49cb7f150611c35f0"
+    },
+    {
+      "path": "syllabus/FIN43900-Fall2026-syllabus.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9cd99197d09c37d3c1b99e2321e71fae6e4a69bf",
+      "size": 282158,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/9cd99197d09c37d3c1b99e2321e71fae6e4a69bf"
+    },
+    {
+      "path": "tracks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ace7295d59f7f361d745edd1478c5f282fd8c440",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/ace7295d59f7f361d745edd1478c5f282fd8c440"
+    },
+    {
+      "path": "tracks/robo-advisory",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "024fd938ceaf682757f17f795b4fd300274b614d",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/024fd938ceaf682757f17f795b4fd300274b614d"
+    },
+    {
+      "path": "tracks/robo-advisory/week-13",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3b901d9131f6fa4c700e6c0f8e87389f57c9bb77",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/3b901d9131f6fa4c700e6c0f8e87389f57c9bb77"
+    },
+    {
+      "path": "tracks/robo-advisory/week-13/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c242d6fa0cb19290dad53fcc5e2ae3276851ccc8",
+      "size": 4632,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/c242d6fa0cb19290dad53fcc5e2ae3276851ccc8"
+    },
+    {
+      "path": "tracks/robo-advisory/week-14",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "261d1ea145014f64d8d734758c0e966cf59f6e09",
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/trees/261d1ea145014f64d8d734758c0e966cf59f6e09"
+    },
+    {
+      "path": "tracks/robo-advisory/week-14/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbf488a97f5fed01f0dcdb0b755bc241fd7836c4",
+      "size": 2981,
+      "url": "https://api.github.com/repos/CinderZhang/FIN43900-Fall2026/git/blobs/bbf488a97f5fed01f0dcdb0b755bc241fd7836c4"
+    }
+  ],
+  "truncated": false
+}

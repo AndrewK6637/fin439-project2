@@ -1,0 +1,37 @@
+Reserve minimum: 3.0%
+
+Candidate A
+Weight total: 100.0% pass
+Minimum weight: 0.0% pass
+Reserve: 14.0% pass
+Five-day liquidity: 100.0% pass
+Largest company: 0.0% pass
+requires CIO clarification
+passes every checkable rule
+
+Candidate B
+Weight total: 100.0% pass
+Minimum weight: 0.0% pass
+Reserve: 1.0% FAIL
+Five-day liquidity: 85.0% FAIL
+Largest company: 9.0% FAIL
+requires CIO clarification
+fails 3 rule(s)
+
+Candidate C
+Weight total: 100.0% pass
+Minimum weight: 0.0% pass
+Reserve: 2.0% FAIL
+Five-day liquidity: 100.0% pass
+Largest company: 8.0% pass
+requires CIO clarification
+fails 1 rule(s)
+
+Candidate D
+Weight total: 100.0% pass
+Minimum weight: 0.0% pass
+Reserve: 100.0% pass
+Five-day liquidity: 100.0% pass
+Largest company: 0.0% pass
+requires CIO clarification
+passes every checkable rule

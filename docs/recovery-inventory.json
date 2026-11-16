@@ -1,0 +1,326 @@
+[
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab13\\Lab13_Report.md",
+    "copy": "recovered\\Lab13\\Lab13_Report.md",
+    "sha256": "d820e80689b60e62844bfa84be220a757dc2cd78f5b44db5e9fe0b43313ebd28",
+    "lab": "Lab13"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab13\\mandate.py",
+    "copy": "recovered\\Lab13\\mandate.py",
+    "sha256": "55b550667b054803a666ef112855873413557a97471da188375159a33d5d09a0",
+    "lab": "Lab13"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab13\\normal_results.txt",
+    "copy": "recovered\\Lab13\\normal_results.txt",
+    "sha256": "1f60db66bb7c419fac866516037922424a21259fbaec0e9dc78958494905b417",
+    "lab": "Lab13"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab13\\probe_results.txt",
+    "copy": "recovered\\Lab13\\probe_results.txt",
+    "sha256": "22f3cef0307939c6e1bb54c689182947896b1fee99b31407188fb39b2f618593",
+    "lab": "Lab13"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab13\\verification.txt",
+    "copy": "recovered\\Lab13\\verification.txt",
+    "sha256": "7c613361235e6782fb3b1a44bedb085a7a3769969ff56a270d36fa6155905628",
+    "lab": "Lab13"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab13\\verify_lab13.py",
+    "copy": "recovered\\Lab13\\verify_lab13.py",
+    "sha256": "c75c57c37ea2c38702962bb8c96d796030a24a3c2abf9cac61bb94cf3a4e1ee7",
+    "lab": "Lab13"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab14\\download_prices.py",
+    "copy": "recovered\\Lab14\\download_prices.py",
+    "sha256": "9861b95964568665d6aa5d55d0efd170fca415f0eaeaa661bc54ce32a498602c",
+    "lab": "Lab14"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab14\\Lab14_Report.md",
+    "copy": "recovered\\Lab14\\Lab14_Report.md",
+    "sha256": "4e781fe85f3a8d266bb0dc6b205601211d7685b88ec00154df89ea97bc95853b",
+    "lab": "Lab14"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab14\\mandate.py",
+    "copy": "recovered\\Lab14\\mandate.py",
+    "sha256": "55b550667b054803a666ef112855873413557a97471da188375159a33d5d09a0",
+    "lab": "Lab14"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab14\\portfolio.py",
+    "copy": "recovered\\Lab14\\portfolio.py",
+    "sha256": "cf7401940a717f144a6ebd2c1c70c441281fc213b63632c032965e04fe94525f",
+    "lab": "Lab14"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab14\\portfolio_results.txt",
+    "copy": "recovered\\Lab14\\portfolio_results.txt",
+    "sha256": "b9a4082f7c1465ff8b9d95d99250d774d909875984f95a4ba5d159b1f21eaf98",
+    "lab": "Lab14"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab14\\prices.csv",
+    "copy": "recovered\\Lab14\\prices.csv",
+    "sha256": "121f737d7e0a14a09957eac25d9f0a68a3bdc40114a343827bfb356186f1dbf7",
+    "lab": "Lab14"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab14\\verification.txt",
+    "copy": "recovered\\Lab14\\verification.txt",
+    "sha256": "316c05a4a1a003155710fb2077cea3333ac2155ff0b63ef9f7fe84ac20fec5f3",
+    "lab": "Lab14"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab14\\verify_lab14.py",
+    "copy": "recovered\\Lab14\\verify_lab14.py",
+    "sha256": "6737a51da19f84b781bd92ae2569e82c1af36680255f222987054334b8d8ab98",
+    "lab": "Lab14"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab14\\sources\\BIL_monthly.json",
+    "copy": "recovered\\Lab14\\sources\\BIL_monthly.json",
+    "sha256": "c56428eb5b1c7aa56f80c12714434609cc128d5f1415ebc492d3df96326eccd2",
+    "lab": "Lab14"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab14\\sources\\download_metadata.json",
+    "copy": "recovered\\Lab14\\sources\\download_metadata.json",
+    "sha256": "dcc3a208bbc8dbcdfa1ab405f0df09233c85855de24f7f432fa019938328c734",
+    "lab": "Lab14"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab14\\sources\\IEF_monthly.json",
+    "copy": "recovered\\Lab14\\sources\\IEF_monthly.json",
+    "sha256": "d4acd60e439d1b8220740be69fc854b5fe4e2f062614fe40875cafd71cbd07b6",
+    "lab": "Lab14"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab14\\sources\\LQD_monthly.json",
+    "copy": "recovered\\Lab14\\sources\\LQD_monthly.json",
+    "sha256": "b4155b964473459fe1671e178cb8e13c537a6739606d6fa3b3d359c8004afb83",
+    "lab": "Lab14"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab14\\sources\\prices_table.json",
+    "copy": "recovered\\Lab14\\sources\\prices_table.json",
+    "sha256": "ce3193aad0b829c0eb98025e7a6561c798449cbb226fbfb9d288c742c42d6f4b",
+    "lab": "Lab14"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab14\\sources\\VT_monthly.json",
+    "copy": "recovered\\Lab14\\sources\\VT_monthly.json",
+    "sha256": "0b3af3ceae525b6a78dd22991c78332dcfd8ef5ab78d1b0de851183048c5d433",
+    "lab": "Lab14"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\app.py",
+    "copy": "recovered\\Lab15\\app.py",
+    "sha256": "4bfb136d99da8e67e7bc769f511259d1d63222a26f4e86b66c6e04bd443b1ee5",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\Lab14_Source_Report.md",
+    "copy": "recovered\\Lab15\\Lab14_Source_Report.md",
+    "sha256": "4e781fe85f3a8d266bb0dc6b205601211d7685b88ec00154df89ea97bc95853b",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\Lab15_Checkout.md",
+    "copy": "recovered\\Lab15\\Lab15_Checkout.md",
+    "sha256": "08b0cdd91cf7c353d234498f5198de30afc36daeffd6caddb7389d2562050a1b",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\Lab15_Portfolio_Stability.md",
+    "copy": "recovered\\Lab15\\Lab15_Portfolio_Stability.md",
+    "sha256": "e20e424e6a617e4df42bca475056ce8c6f845e677bbfc440fe52ed9f03cf37a2",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\original_output.txt",
+    "copy": "recovered\\Lab15\\original_output.txt",
+    "sha256": "b9a4082f7c1465ff8b9d95d99250d774d909875984f95a4ba5d159b1f21eaf98",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\portfolio.py",
+    "copy": "recovered\\Lab15\\portfolio.py",
+    "sha256": "730e50f7400bb5d8094b9bf9a0ef81afa7980a2c8dedee2d6613029721dd04d7",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\portfolio_results.txt",
+    "copy": "recovered\\Lab15\\portfolio_results.txt",
+    "sha256": "b9a4082f7c1465ff8b9d95d99250d774d909875984f95a4ba5d159b1f21eaf98",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\prices.csv",
+    "copy": "recovered\\Lab15\\prices.csv",
+    "sha256": "121f737d7e0a14a09957eac25d9f0a68a3bdc40114a343827bfb356186f1dbf7",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\Project2_Mandate_Source.md",
+    "copy": "recovered\\Lab15\\Project2_Mandate_Source.md",
+    "sha256": "d820e80689b60e62844bfa84be220a757dc2cd78f5b44db5e9fe0b43313ebd28",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\project2_results.json",
+    "copy": "recovered\\Lab15\\project2_results.json",
+    "sha256": "652546e9a89a090ef610ca4a5cae90add75957e2e18d3d055c6d81511c527cc7",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\README.md",
+    "copy": "recovered\\Lab15\\README.md",
+    "sha256": "d0aba4cfa12cf97f885a343ca851b3142afb746e09f40675a9aa32efc857c885",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\requirements.txt",
+    "copy": "recovered\\Lab15\\requirements.txt",
+    "sha256": "a004ba0df36b5215c5bc8a0e75616b3fac94cec5daae4000811b0d1145854274",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\server_health.txt",
+    "copy": "recovered\\Lab15\\server_health.txt",
+    "sha256": "3084b855d8f1554c841f26bd61dd89394ae99dbe1b43fb07f65db661569a85cc",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\submission_manifest.json",
+    "copy": "recovered\\Lab15\\submission_manifest.json",
+    "sha256": "12d91d0c0843ab0a461eb4e3420f94d4c7b824af56225b804230b7943b5d81eb",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\test_lab15.py",
+    "copy": "recovered\\Lab15\\test_lab15.py",
+    "sha256": "551f14c53c0ebd6a70b805590dda8b69d2b405d868a7af8baa3073278f90c512",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\verification.txt",
+    "copy": "recovered\\Lab15\\verification.txt",
+    "sha256": "b7b83bbe9b5d5aed49c010951128264c9b45f5783c1ed9749a0a1b9c578807b9",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\verify_submission.py",
+    "copy": "recovered\\Lab15\\verify_submission.py",
+    "sha256": "b6ad725230afd10ad3e807913c6b43b28a936445345d0c59c58a11093bfaf4f0",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\sources\\BIL_monthly.json",
+    "copy": "recovered\\Lab15\\sources\\BIL_monthly.json",
+    "sha256": "c56428eb5b1c7aa56f80c12714434609cc128d5f1415ebc492d3df96326eccd2",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\sources\\download_metadata.json",
+    "copy": "recovered\\Lab15\\sources\\download_metadata.json",
+    "sha256": "dcc3a208bbc8dbcdfa1ab405f0df09233c85855de24f7f432fa019938328c734",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\sources\\IEF_monthly.json",
+    "copy": "recovered\\Lab15\\sources\\IEF_monthly.json",
+    "sha256": "d4acd60e439d1b8220740be69fc854b5fe4e2f062614fe40875cafd71cbd07b6",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\sources\\LQD_monthly.json",
+    "copy": "recovered\\Lab15\\sources\\LQD_monthly.json",
+    "sha256": "b4155b964473459fe1671e178cb8e13c537a6739606d6fa3b3d359c8004afb83",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\sources\\prices_table.json",
+    "copy": "recovered\\Lab15\\sources\\prices_table.json",
+    "sha256": "ce3193aad0b829c0eb98025e7a6561c798449cbb226fbfb9d288c742c42d6f4b",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab15\\sources\\VT_monthly.json",
+    "copy": "recovered\\Lab15\\sources\\VT_monthly.json",
+    "sha256": "0b3af3ceae525b6a78dd22991c78332dcfd8ef5ab78d1b0de851183048c5d433",
+    "lab": "Lab15"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab16\\asof.py",
+    "copy": "recovered\\Lab16\\asof.py",
+    "sha256": "f7fa44f8377d7d934ad1509fe7add53e6976cf4404a2d1d69c22f1eecf51820b",
+    "lab": "Lab16"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab16\\Lab16_Checkout.md",
+    "copy": "recovered\\Lab16\\Lab16_Checkout.md",
+    "sha256": "96ee81908be0794e7a243919e8c7aa76f73cee008ce4c5a70c6c9d8fda16c08a",
+    "lab": "Lab16"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab16\\LAB16_REFLECTION.md",
+    "copy": "recovered\\Lab16\\LAB16_REFLECTION.md",
+    "sha256": "08a06a54912aa6bded35058d0d5374805310160742486fedeeb7000d0df6c814",
+    "lab": "Lab16"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab16\\prepare_submission.py",
+    "copy": "recovered\\Lab16\\prepare_submission.py",
+    "sha256": "f51263f3c29a8f37bb55e91c0680c634ec2669783ee6d215b95ab6f4e9ad0461",
+    "lab": "Lab16"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab16\\README.md",
+    "copy": "recovered\\Lab16\\README.md",
+    "sha256": "b530f2096f4e4e31a00336af93812430afde5ea5d9e17d442be65e2326b72701",
+    "lab": "Lab16"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab16\\SUBMISSION.md",
+    "copy": "recovered\\Lab16\\SUBMISSION.md",
+    "sha256": "ec61e97fe6bdd8041c7b47f4ab977c34554b3391be11da4c5b442305232253fc",
+    "lab": "Lab16"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab16\\submission_checks.txt",
+    "copy": "recovered\\Lab16\\submission_checks.txt",
+    "sha256": "9f773ddaa810a49eff07689b33df800e488276e7a561d8f9a257ae7968dbc5d3",
+    "lab": "Lab16"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab16\\test_asof.py",
+    "copy": "recovered\\Lab16\\test_asof.py",
+    "sha256": "dc267da70a9c008c6f23bc16e1730c2b33d1b7136afc351254041e1bad33fd00",
+    "lab": "Lab16"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\Lab16\\validation_output.txt",
+    "copy": "recovered\\Lab16\\validation_output.txt",
+    "sha256": "9f773ddaa810a49eff07689b33df800e488276e7a561d8f9a257ae7968dbc5d3",
+    "lab": "Lab16"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\asof_app.py",
+    "copy": "recovered\\asof_app.py",
+    "sha256": "d221b976a04ea259a47182ea2f56058be593150950fc90ad7a095a0e2b160c11",
+    "lab": "Lab17"
+  },
+  {
+    "original": "C:\\Users\\jklai\\Documents\\Courses\\AIFinance2026\\JKLai\\LAB17_POINT_IN_TIME_AUDIT.md",
+    "copy": "recovered\\LAB17_POINT_IN_TIME_AUDIT.md",
+    "sha256": "8181add5d66f7cef2027313d3d1a0cf4b228277f856e3a86c3ee857b023a9597",
+    "lab": "Lab17"
+  }
+]

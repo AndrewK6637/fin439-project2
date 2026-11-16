@@ -1,0 +1,74 @@
+APRIL 15: independent edited source copy
+COMMAND: python asof.py
+Decision date: 2026-04-15
+ROW FUNNEL
+Rule 1: 12 -> 11; removed 1; original rows [11]
+Rule 2: 11 -> 10; removed 1; original rows [7]
+Rule 3: 10 -> 10; removed 0; original rows []
+Rule 4: 10 -> 8; removed 2; original rows [2, 12]
+
+AS-OF PANEL
+ row  ticker  month     published    price
+   1  AAA     2026-01  2026-02-10    101.0
+   4  AAA     2026-02  2026-03-25    103.0
+   3  AAA     2026-03  2026-04-10    109.0
+   5  BBB     2026-01  2026-02-10     98.0
+   6  BBB     2026-02  2026-03-10     97.0
+   8  BBB     2026-03  2026-04-10     92.0
+   9  CCC     2026-01  2026-02-10    110.0
+  10  CCC     2026-02  2026-04-05    112.0
+
+SIGNALS (fund returns from price changes, %)
+Ticker   AS-OF                          NAIVE (includes later publications/revisions)
+AAA      +5.83%, March 2026             +5.83%, March 2026
+BBB      -5.15%, March 2026             -5.15%, March 2026
+CCC      +1.82%, February 2026          +1.82%, February 2026
+
+EXIT: 0
+
+PASS: all three April 15 as-of signals equal naive signals.
+PASS: delivered source retains March 31 unchanged.
+COMMAND: python asof.py
+Decision date: 2026-03-31
+ROW FUNNEL
+Rule 1: 12 -> 11; removed 1; original rows [11]
+Rule 2: 11 -> 10; removed 1; original rows [7]
+Rule 3: 10 -> 7; removed 3; original rows [3, 8, 10]
+Rule 4: 7 -> 6; removed 1; original rows [2]
+
+AS-OF PANEL
+ row  ticker  month     published    price
+   1  AAA     2026-01  2026-02-10    101.0
+   4  AAA     2026-02  2026-03-25    103.0
+   5  BBB     2026-01  2026-02-10     98.0
+   6  BBB     2026-02  2026-03-10     97.0
+   9  CCC     2026-01  2026-02-10    110.0
+  12  CCC     2026-02  2026-03-10    111.0
+
+SIGNALS (fund returns from price changes, %)
+Ticker   AS-OF                          NAIVE (includes later publications/revisions)
+AAA      +1.98%, February 2026          +5.83%, March 2026
+BBB      -1.02%, February 2026          -5.15%, March 2026
+CCC      +0.91%, February 2026          +1.82%, February 2026
+
+EXIT: 0
+
+COMMAND: python -m unittest -v test_asof.py
+test_april_convergence (test_asof.ProvenanceTests.test_april_convergence) ... ok
+test_both_signals_months_and_rounding (test_asof.ProvenanceTests.test_both_signals_months_and_rounding) ... ok
+test_default_and_printed_output (test_asof.ProvenanceTests.test_default_and_printed_output) ... ok
+test_duplicate_fields_and_original_id (test_asof.ProvenanceTests.test_duplicate_fields_and_original_id) ... ok
+test_inclusive_cutoff (test_asof.ProvenanceTests.test_inclusive_cutoff) ... ok
+test_insufficient_history_and_zero (test_asof.ProvenanceTests.test_insufficient_history_and_zero) ... ok
+test_known_funnel_and_panel (test_asof.ProvenanceTests.test_known_funnel_and_panel) ... ok
+test_missing_ticker (test_asof.ProvenanceTests.test_missing_ticker) ... ok
+test_order_independence_and_no_mutation (test_asof.ProvenanceTests.test_order_independence_and_no_mutation) ... ok
+test_previous_available_month (test_asof.ProvenanceTests.test_previous_available_month) ... ok
+test_revision_and_tie (test_asof.ProvenanceTests.test_revision_and_tie) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.012s
+
+OK
+
+EXIT: 0
