@@ -1,0 +1,6 @@
+data/raw/** -text
+data/processed/** -text
+recovered/** -text
+references/** -text
+*.py text eol=lf
+*.md text eol=lf

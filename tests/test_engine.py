@@ -127,3 +127,10 @@ def test_recovered_lab15_estimates():
     expected=old['all_months']['estimates']['sleeves']
     assert mu==pytest.approx([expected[t][0] for t in ['BIL','IEF','LQD','VT']])
     assert np.sqrt(np.diag(cov))==pytest.approx([expected[t][1] for t in ['BIL','IEF','LQD','VT']])
+
+
+def test_explicit_return_override():
+    from src.workflow import run,load_config
+    c=load_config();c['mean_overrides']={'VT':.08}
+    r=run(c)
+    assert r['mean_estimates'][-1]==.08

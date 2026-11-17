@@ -286,20 +286,20 @@
     },
     "Constrained": {
       "weights": [
-        0.7704206871273767,
-        1.6591711613796401e-15,
+        0.770420687009088,
         0.0,
-        0.22957931292253947
+        0.0,
+        0.22957931299091328
       ],
-      "expected_return": 0.054999999996118404,
-      "variance": 0.0012439646958511336,
-      "volatility": 0.03526988369489094,
-      "net_return_before_trade_cost": 0.054999999996118404,
+      "expected_return": 0.05500000000000005,
+      "variance": 0.0012439646965531038,
+      "volatility": 0.035269883704842346,
+      "net_return_before_trade_cost": 0.05500000000000005,
       "turnover": null,
       "trading_cost": null,
       "net_first_year_return": null,
-      "estimated_excess_return_over_bil": 0.01905728704431267,
-      "estimated_sharpe_bil_proxy": 0.540327470574371,
+      "estimated_excess_return_over_bil": 0.019057287048194316,
+      "estimated_sharpe_bil_proxy": 0.5403274705319729,
       "compliance": {
         "rules": {
           "Weights sum to 100%": true,
@@ -324,7 +324,7 @@
         "mandate_status": "Not Known",
         "testable_constraints": "Pass"
       },
-      "estimated_return_vs_benchmark": -0.013147403284471101
+      "estimated_return_vs_benchmark": -0.013147403280589456
     }
   },
   "benchmark": {
@@ -348,12 +348,12 @@
     "success": true,
     "message": "Optimization terminated successfully",
     "weights": [
-      0.7704206871273767,
-      1.6591711613796401e-15,
+      0.770420687009088,
       0.0,
-      0.22957931292253947
+      0.0,
+      0.22957931299091328
     ],
-    "iterations": 13,
+    "iterations": 3,
     "verified": {
       "rules": {
         "Weights sum to 100%": true,
@@ -385,22 +385,22 @@
       "success": true,
       "message": "Optimization terminated successfully",
       "weights": [
-        0.7389756015115787,
-        2.880305623414393e-12,
-        4.552592777482199e-17,
-        0.26102439848717257
+        0.7389756014992083,
+        0.0,
+        0.0,
+        0.26102439850079373
       ],
       "assumption": "Scenario, not a new client mandate",
-      "expected_return": 0.05499999999890921,
-      "variance": 0.0015910924831509243,
-      "volatility": 0.039888500638040086,
-      "net_return_before_trade_cost": 0.05499999999890921,
+      "expected_return": 0.05500000000000016,
+      "variance": 0.0015910924832997224,
+      "volatility": 0.03988850063990526,
+      "net_return_before_trade_cost": 0.05500000000000016,
       "turnover": null,
       "trading_cost": null,
       "net_first_year_return": null,
-      "estimated_excess_return_over_bil": 0.01905728704710348,
-      "estimated_sharpe_bil_proxy": 0.4777639355270551,
-      "largest_weight_change": 0.03144508561579795,
+      "estimated_excess_return_over_bil": 0.019057287048194427,
+      "estimated_sharpe_bil_proxy": 0.4777639355320649,
+      "largest_weight_change": 0.031445085509880455,
       "mandate": {
         "rules": {
           "Weights sum to 100%": true,
@@ -431,22 +431,22 @@
       "success": true,
       "message": "Optimization terminated successfully",
       "weights": [
-        0.9285923215082473,
-        9.05876748601166e-14,
-        6.429617054597516e-14,
-        0.07140767849159783
+        0.9285923216020424,
+        1.942890293094024e-16,
+        0.0,
+        0.07140767839795747
       ],
       "assumption": "Scenario, not a new client mandate",
-      "expected_return": 0.054999999999982056,
-      "variance": 7.872411503889646e-05,
-      "volatility": 0.008872661102448153,
-      "net_return_before_trade_cost": 0.054999999999982056,
+      "expected_return": 0.05499999998511171,
+      "variance": 7.872411485030742e-05,
+      "volatility": 0.008872661091820618,
+      "net_return_before_trade_cost": 0.05499999998511171,
       "turnover": null,
       "trading_cost": null,
       "net_first_year_return": null,
-      "estimated_excess_return_over_bil": 0.011340393954644472,
-      "estimated_sharpe_bil_proxy": 1.2781277030309903,
-      "largest_weight_change": 0.15817163443094162,
+      "estimated_excess_return_over_bil": 0.011340393939774124,
+      "estimated_sharpe_bil_proxy": 1.278127702885938,
+      "largest_weight_change": 0.1581716345929558,
       "mandate": {
         "rules": {
           "Weights sum to 100%": true,
@@ -477,22 +477,22 @@
       "success": true,
       "message": "Optimization terminated successfully",
       "weights": [
-        0.7704206870040211,
-        6.248783281920187e-20,
-        5.736605662599453e-20,
-        0.22957931299599824
+        0.7704206869910314,
+        0.0,
+        2.0966055523482993e-16,
+        0.2295793130089685
       ],
       "assumption": "Scenario, not a new client mandate",
-      "expected_return": 0.055000000000422794,
-      "variance": 0.001243964696605728,
-      "volatility": 0.03526988370558837,
-      "net_return_before_trade_cost": 0.055000000000422794,
-      "turnover": 9.840798700583939e-11,
-      "trading_cost": 9.840798700583939e-13,
-      "net_first_year_return": 0.05499999999943871,
-      "estimated_excess_return_over_bil": 0.01905728704861706,
-      "estimated_sharpe_bil_proxy": 0.54032747053253,
-      "largest_weight_change": 1.233555479984716e-10,
+      "expected_return": 0.05500000000149875,
+      "variance": 0.0012439646967399506,
+      "volatility": 0.035269883707491165,
+      "net_return_before_trade_cost": 0.05500000000149875,
+      "turnover": 1.8055994946663926e-11,
+      "trading_cost": 1.8055994946663926e-13,
+      "net_first_year_return": 0.055000000001318196,
+      "estimated_excess_return_over_bil": 0.01905728704969302,
+      "estimated_sharpe_bil_proxy": 0.5403274705338861,
+      "largest_weight_change": 1.8056556250201083e-11,
       "mandate": {
         "rules": {
           "Weights sum to 100%": true,
@@ -516,29 +516,29 @@
         "mandate_status": "Not Known",
         "testable_constraints": "Pass"
       },
-      "cost_of_baseline_to_equal_weight": 0.005204206871024178
+      "cost_of_baseline_to_equal_weight": 0.005204206870090873
     },
     {
-      "scenario": "BIL analytical reserve minimum 10%",
+      "scenario": "Maximum fund weight 70%",
       "success": true,
       "message": "Optimization terminated successfully",
       "weights": [
-        0.7704206870185141,
-        5.977972478120884e-12,
-        4.528714959292808e-12,
-        0.22957931298877732
+        0.6999999999999996,
+        0.04271862218902687,
+        6.915554829216116e-16,
+        0.2572813778109728
       ],
       "assumption": "Scenario, not a new client mandate",
-      "expected_return": 0.05499999999994133,
-      "variance": 0.0012439646965772498,
-      "volatility": 0.03526988370518465,
-      "net_return_before_trade_cost": 0.05499999999994133,
+      "expected_return": 0.05499999999999987,
+      "variance": 0.001715572604948902,
+      "volatility": 0.04141947132628448,
+      "net_return_before_trade_cost": 0.05499999999999987,
       "turnover": null,
       "trading_cost": null,
       "net_first_year_return": null,
-      "estimated_excess_return_over_bil": 0.0190572870481356,
-      "estimated_sharpe_bil_proxy": 0.5403274705250641,
-      "largest_weight_change": 1.0886258561271234e-10,
+      "estimated_excess_return_over_bil": 0.019057287048194135,
+      "estimated_sharpe_bil_proxy": 0.4601045459530172,
+      "largest_weight_change": 0.07042068700908832,
       "mandate": {
         "rules": {
           "Weights sum to 100%": true,
@@ -587,6 +587,7 @@
     "train_end": "2025-09-30",
     "evaluation_start": "2025-10-31",
     "evaluation_end": "2026-09-30",
+    "constrained_solver_status": "Optimization terminated successfully",
     "results": {
       "Equal weight": {
         "weights": [
@@ -617,6 +618,16 @@
         ],
         "realized_gross_return": 0.08259581228532875,
         "realized_volatility": 0.0918324714673181
+      },
+      "Constrained": {
+        "weights": [
+          0.7370606653739014,
+          0.0,
+          0.0,
+          0.2629393346260987
+        ],
+        "realized_gross_return": 0.07025132147803381,
+        "realized_volatility": 0.03504900439154359
       }
     }
   }

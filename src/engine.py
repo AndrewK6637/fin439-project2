@@ -66,7 +66,7 @@ def optimize(mu,cov,config,reserve_floor):
     if config['risk_limit'] is not None:constraints.append({'type':'ineq','fun':lambda w:config['risk_limit']**2-float(w@cov@w)})
     if config.get('current_weights') is not None:constraints.append({'type':'ineq','fun':lambda w:config['annual_turnover_max']-turnover(w,config['current_weights'])})
     x0=lower+(1-lower.sum())*(upper-lower)/(upper-lower).sum() if (upper-lower).sum()>0 else lower
-    res=minimize(lambda w:float(w@cov@w)*10000,x0,method='SLSQP',bounds=list(zip(lower,upper)),constraints=constraints,options={'ftol':1e-11,'maxiter':1000})
+    res=minimize(lambda w:float(w@cov@w)*100,x0,jac=lambda w:200*cov@w,method='SLSQP',bounds=list(zip(lower,upper)),constraints=constraints,options={'ftol':1e-10,'maxiter':1000})
     verified=rules(res.x,mu,cov,config,reserve_floor)
     success=bool(res.success and not verified['failed'])
     return {'success':success,'message':str(res.message),'weights':res.x.tolist() if success else None,'iterations':int(res.nit),'verified':verified}

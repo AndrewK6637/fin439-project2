@@ -1,5 +1,6 @@
 """Lab 17's previous-calendar-day ALFRED admission rule."""
 import json
+import hashlib
 from datetime import date,timedelta
 import pandas as pd
 from .data import ROOT
@@ -11,6 +12,8 @@ def evaluate_signal(decision_date, path=None):
     meta=csv.with_suffix('.meta.json')
     if not csv.exists() or not meta.exists():return {'status':'Not Known','reason':f'No authentic ALFRED snapshot for {cutoff}','cutoff':cutoff,'yoy':None}
     metadata=json.loads(meta.read_text())
+    if metadata.get('sha256') and hashlib.sha256(csv.read_bytes()).hexdigest()!=metadata['sha256']:
+        return {'status':'Not Known','reason':'Signal snapshot checksum mismatch','cutoff':cutoff,'yoy':None}
     if metadata.get('vintage')!=cutoff or 'alfred.stlouisfed.org' not in metadata.get('url',''):
         return {'status':'Not Known','reason':'Vintage identity does not match prior-day cutoff','cutoff':cutoff,'yoy':None}
     frame=pd.read_csv(csv,na_values=['.'])

@@ -1,0 +1,19 @@
+# Methodology and assumptions
+
+The production engine extends the recovered Lab 14/15 formulas and replaces the 5-percentage-point grid with a continuous SciPy SLSQP minimum-variance solution. Recovered source files remain unchanged and separately identifiable. Equal weight and inverse volatility are unchanged transparent rules; they are evaluated, not repaired, when they fail the objective.
+
+Monthly returns are P(t)/P(t-1)-1 on aligned adjusted prices. Missing months are inserted as missing, pct_change uses no filling, and incomplete cross-asset return rows are excluded with warnings. Mean annual estimate is 12 times monthly arithmetic mean. Annual covariance is 12 times sample monthly covariance (ddof=1). Portfolio return is dot(w, mu), variance w.T @ covariance @ w, and volatility its square root. Covariance must be finite, symmetric and positive semidefinite.
+
+Yahoo monthly Adj Close is retained from Lab 14's October 20 download and includes distribution/split adjustments per the course requirement. It is a provider-adjusted return proxy, not an independently reconstructed total-return index. Fund expenses embedded in NAV must not be deducted twice; additional ongoing costs are a separate explicit assumption. The source archive is reconciled to the working CSV. The frozen decision uses the archived September price end; it is not represented as current November 16 data.
+
+The expected-return hurdle is the inherited 2.5% CPI illustration plus Cedar's 3% spread. This additive estimate is not a guarantee of a realized rolling five-year geometric real return. That mandate outcome remains unknown. The covariance-based minimum-risk objective is inherited from Lab 15; a Cedar-specific maximum volatility limit was not recovered. The app does not silently invent one.
+
+The 60/40 VT/LQD comparator is inherited from the previous risk engine and marked pending Cedar approval. BIL is the prior documented reserve proxy but the ETF itself does not mature; formal acceptance remains unresolved. All four funds are classified as eligible, five-day liquid and diversified/sovereign-exempt under the recovered course assumptions. Those classifications do not establish stressed-market liquidation capacity.
+
+For an equal-value, fully invested hypothetical rebalance, one-way turnover is 0.5 * sum(abs(new - old)). This matches smaller purchases/sales divided by portfolio value only with no outside flows and the stated equal-value approximation. Actual mandate turnover requires purchases, sales and average portfolio value. Cost is 2 * one-way turnover * per-side bps / 10,000; without current holdings, actual turnover and net first-year return remain unknown. The cost stress explicitly uses hypothetical holdings.
+
+The independent holdout diagnostic estimates solely on the first 48 return observations and evaluates the subsequent 12, with drifting weights between annual rebalances. It does not apply the current macro signal retrospectively. Because all prices come from a later adjusted snapshot, it is not claimed to be an executable historical point-in-time backtest. The current candidate's full-window estimate is not labeled out-of-sample performance.
+
+SLSQP success is necessary but insufficient: every candidate is checked against explicit constraints afterward. Failed solvers produce no usable weights. An initial holdout solve returned a linesearch failure despite apparently feasible weights; the agent did not accept that as success. Scaling the objective and supplying its exact gradient corrected the numerical issue, then tests and reports were rerun.
+
+Stop rules for missing/invalid signal, stale data and instability are explicit analyst process proposals, distinct from recovered client constraints. The current proposed conclusion rejects deployment due unresolved evidence, rather than presuming that every research prototype deserves a pilot.

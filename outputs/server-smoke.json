@@ -1,0 +1,7 @@
+{
+  "url": "http://127.0.0.1:8520",
+  "health_status": 200,
+  "health_body": "ok",
+  "visual_browser_verified": false,
+  "note": "Streamlit AppTest tested six tabs and controls; browser access host unavailable in this environment."
+}

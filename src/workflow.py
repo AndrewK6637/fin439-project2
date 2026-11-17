@@ -10,7 +10,7 @@ def load_config():return json.loads((ROOT/'config/mandate.json').read_text())
 
 def stress_cases(returns,mu,cov,config,floor,base_weights):
     cases=[]
-    for name in ['VT return estimate minus 1 percentage point','Last 36 monthly observations','Trading cost 50 bps per side','BIL analytical reserve minimum 10%']:
+    for name in ['VT return estimate minus 1 percentage point','Last 36 monthly observations','Trading cost 50 bps per side','Maximum fund weight 70%']:
         c=copy.deepcopy(config);m=mu.copy();s=cov.copy();f=floor
         if name.startswith('VT'):m[-1]-=.01
         elif name.startswith('Last'):m,s=estimates(returns,36)
@@ -18,7 +18,7 @@ def stress_cases(returns,mu,cov,config,floor,base_weights):
             c['trading_cost_bps']=50
             # Explicit hypothetical transition from baseline candidate; not actual holdings.
             c['current_weights']=base_weights
-        else:f=max(floor,.10)
+        else:c['max_weight']=min(c['max_weight'],.70)
         result=optimize(m,s,c,f)
         row={'scenario':name,'success':result['success'],'message':result['message'],'weights':result['weights'],'assumption':'Scenario, not a new client mandate'}
         if result['success']:
@@ -52,6 +52,10 @@ def run(config=None):
     if list(prices.columns)!=c['funds']:raise ValueError('Price universe differs from recovered mandate.')
     prices=prices.loc[prices.index<pd.Timestamp(c['decision_date'])]
     returns,warnings=monthly_returns(prices);mu,cov=estimates(returns,c['estimation_months'])
+    overrides=c.get('mean_overrides',{})
+    for ticker,value in overrides.items():
+        if ticker not in c['funds'] or not np.isfinite(value):raise ValueError('Invalid expected-return override')
+        mu[c['funds'].index(ticker)]=float(value)
     if (pd.Timestamp(c['decision_date'])-prices.index[-1]).days>c['max_price_age_days']:warnings.append('Prices exceed analyst freshness threshold')
     for item in snapshot_metadata():
         if pd.Timestamp(item['downloaded_at_utc']).tz_localize(None)>=pd.Timestamp(c['decision_date']):warnings.append('Price snapshot was retrieved after decision date; historical availability not established');break
@@ -67,7 +71,7 @@ def run(config=None):
     train,test=returns.iloc[:-12],returns.iloc[-12:];tm,tc=estimates(train)
     historical_solution=optimize(tm,tc,c,c['reserve_min'])
     holdout={'label':'Chronological holdout diagnostic using a later downloaded adjusted-price snapshot; NOT a point-in-time implementable backtest. Signal not applied retrospectively.',
-      'train_end':str(train.index[-1].date()),'evaluation_start':str(test.index[0].date()),'evaluation_end':str(test.index[-1].date()),'results':{}}
+      'train_end':str(train.index[-1].date()),'evaluation_start':str(test.index[0].date()),'evaluation_end':str(test.index[-1].date()),'constrained_solver_status':historical_solution['message'],'results':{}}
     historical_choices={'Equal weight':equal_weight(len(mu)),'Inverse volatility':inverse_volatility(tc),'Benchmark':c['benchmark']}
     if historical_solution['success']:historical_choices['Constrained']=historical_solution['weights']
     for name,w in historical_choices.items():
