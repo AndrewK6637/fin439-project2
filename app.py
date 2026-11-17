@@ -24,7 +24,11 @@ with st.sidebar:
  st.caption('Actual risk limit, current holdings, costs and BIL approval remain unconfirmed. Full compliance cannot be certified.')
  with st.expander('Override annual return estimates'):
   if st.checkbox('Use analyst return assumptions'):
-   c['mean_overrides']={t:st.number_input(t+' annual expected return (%)',-100.0,100.0,5.5,.25)/100 for t in c['funds']}
+   try:
+    reference=calculate(json.dumps(c,sort_keys=True))['mean_estimates']
+   except Exception as e:
+    st.error(f'Unable to load baseline return estimates: {e}');st.stop()
+   c['mean_overrides']={t:st.number_input(t+' annual expected return (%)',-100.0,100.0,float(reference[i]*100),.25,format='%.4f')/100 for i,t in enumerate(c['funds'])}
  st.button('Rerun model',type='primary')
 try:
  with st.spinner('Calculating allocations and checking constraints...'):r=calculate(json.dumps(c,sort_keys=True))
@@ -40,6 +44,7 @@ with tabs[0]:
  st.caption(f"Frozen research decision: {r['as_of']} | Latest price month: {r['price_end']} | Historical estimation observations: {r['observations']}")
  if r['solver']['success']:
   p=r['portfolios']['Constrained'];a,b,d=st.columns(3);a.metric('Annual mean estimate',f"{p['expected_return']:.2%}");b.metric('Annual volatility',f"{p['volatility']:.2%}");d.metric('Full mandate',p['compliance']['mandate_status'])
+  st.caption(f"After the additional annual cost assumption ({c['ongoing_cost_bps']} bps): {p['net_return_before_trade_cost']:.2%} estimated annual return before transition costs. Actual transition costs remain unverified without client holdings.")
  else:st.error('No verified feasible constrained portfolio: '+r['solver']['message'])
  st.write('Process status:',r['decision']['status']);st.json({'Failed':r['decision']['failed'],'Unresolved':r['decision']['unknown']})
 with tabs[1]:

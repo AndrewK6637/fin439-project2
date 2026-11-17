@@ -79,3 +79,24 @@ Read docs/project2-final-audit.md and docs/project2-grade-audit.md. Resolve/reco
 .venv/Scripts/python.exe scripts/audit_sources.py
 .venv/Scripts/python.exe -m streamlit run app.py --server.port 8521
 Audit server currently running at http://127.0.0.1:8521; use existing server or another port if occupied. Detailed logs in outputs/audit-tests.txt and outputs/audit-clean-environment-tests.txt. Ignored .validation-work/ holds audit-venv and audit-portable; do not submit these environments.
+
+
+## Tuesday studio preparation ? November 17, 2026 (in progress)
+
+Latest user instruction explicitly forbids automatic commits/pushes. Leave all preparation changes uncommitted until approval. Starting HEAD 5fd1d50; no configured remote. Fresh official Week 12 handout says open studios with NO checkout points, contrary to the user's 25-or-0 premise. Prepared README-first navigation, generated baseline results, blank partner/classroom/studio records and code guide. Original locked reserve protocol preserved. Separate proposed annual-cost scenario is reserved and UNRUN; no prediction/result fields supplied.
+
+Confirmed UI fix: enabling return overrides now starts from loaded estimates rather than replacing all funds with 5.5%; regression test added. Baseline and investment methodology unchanged. First current suite: 66 passed in 48.07s. New isolated .validation-work/tuesday-cold environment setup underway; final test and startup evidence pending. Do not claim partner cold run, GitHub publication or classroom evidence completed. Next: finish clean-environment tests/startup, write Tuesday validation/status and report readiness without committing.
+
+
+### Tuesday preparation completed
+
+Final report: docs/tuesday-preparation-report.md. Final main tests 66 passed in 12.01s; new isolated environment 66 passed in 17.34s. First deeply nested install failed due Windows path length; preserved outputs/tuesday-fresh-install.txt. Shorter .validation-work/c install succeeded; pip check and fresh-server HTTP 200 verified. Main server 8522 remains running; fresh server 8523 stopped. No visual/partner claim. No core strategy/configuration or locked record changed. No reserved annual-cost scenario executed.
+
+All current preparation changes intentionally UNCOMMITTED and UNPUSHED; starting/latest HEAD remains 5fd1d50. Next exact action is owner review/approval for publication, then genuine AI-off studio decision and partner README-only run. Do not auto-commit based on older project instructions; latest user explicitly requires approval. Final submission videos/transcripts/URLs and genuine locked record still missing. README links generated results and all new classroom templates. Windows short-path troubleshooting added after actual failure. Source and independent arithmetic audits rerun successfully.
+
+### Student checklist added November 17
+Created START_HERE_Project_2_Checklist.docx, START_HERE.md, and scripts/build_student_checklist.py in the existing comprehensive project folder. Ten ordered student review and submission steps remain unchecked. DOCX reopened successfully and all guide links exist. Packaged renderer failed because bundled LibreOffice is absent; visual layout unverified. No strategy changes, file moves, commits, pushes, or student-only experiments. Previous next actions unchanged.
+
+### GitHub publication preparation November 17
+Owner explicitly authorized uploading the complete project to the public repository https://github.com/AndrewK6637/fin439-project2 (supersedes earlier no-push instruction and private preference). Remote verified reachable and empty. Latest pytest: 66 passed in 6.08s; source audit: 244 exact prices and 54 recovery hashes. Heuristic credential scan: 176 current files and 177 historical blobs, no matches; no files over 5MB. Environments/caches remain ignored. README now contains the real clone/download destination. Publication commit and push are next; verify remote HEAD before claiming success. AI-off prediction and partner records remain incomplete; no reserved experiment was run.
+

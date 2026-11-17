@@ -28,3 +28,14 @@ def test_missing_data_shows_error_not_exception(monkeypatch):
     at=AppTest.from_file(str(ROOT/'app.py'),default_timeout=60).run()
     assert not at.exception and any('Missing data audit fixture' in x.value for x in at.error)
     st.cache_data.clear()
+
+
+def test_enabling_overrides_preserves_loaded_estimates():
+    from src.workflow import run
+    import pytest
+    expected=run()['mean_estimates']
+    at=AppTest.from_file(str(ROOT/'app.py'),default_timeout=60).run()
+    next(x for x in at.checkbox if x.label=='Use analyst return assumptions').check().run()
+    actual=[next(x for x in at.number_input if x.label==t+' annual expected return (%)').value/100 for t in ['BIL','IEF','LQD','VT']]
+    assert actual==pytest.approx(expected,abs=1e-12)
+    assert not at.exception

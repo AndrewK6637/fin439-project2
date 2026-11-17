@@ -67,3 +67,8 @@ Independent plain-Python scalar calculations verified all portfolio and benchmar
 Confirmed corrections: stricter vintage URL/hash validation; no silent fallback from missing latest CPI; rejection of nonfinite CPI; removal of present holdings from historical optimization; separate hypothetical rebalance versus actual annual turnover; safe fixed-bound solver metadata; explicit invalid input checks; visible nonzero transaction-cost sensitivity; frozen model/input gate for the locked experiment; binary authorization gate with unknown financial rules retained; corrected transcript paths and opening disclosures. No original mandate parameter or default allocation was changed.
 
 See `docs/project2-final-audit.md` for findings and `docs/project2-grade-audit.md` for verified weights and pending scoring. The student-only record remains incomplete and was never run. All model freeze tests use gate-only fixtures without authoring student predictions. Historical Git blobs were scanned for common credential patterns; this heuristic does not certify every possible secret format. No remote publication or submission occurred.
+
+
+## November 17 studio preparation
+
+See [Tuesday validation](tuesday-checkout-validation.md) for the latest 66-test run, clean-setup evidence and preserved installation failure. The current official Week 12 handout specifies open studio with no checkout points. The README, visible results, blank classroom/partner records and code study guide are prepared; student and partner evidence is not fabricated. The proposed annual-cost classroom scenario and existing locked reserve scenario remain unrun. Latest user instruction requires approval before any commit or push; preparation changes are left uncommitted.

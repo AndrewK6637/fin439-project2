@@ -1,0 +1,9 @@
+{
+  "http_status": 200,
+  "body": "ok",
+  "port": 8523,
+  "new_environment": true,
+  "partner_run": false,
+  "visual_browser_verified": false,
+  "server_stopped_after_test": true
+}

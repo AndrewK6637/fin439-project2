@@ -6,26 +6,64 @@ The student is responsible for the analysis and final decision; student review i
 
 A six-tab Streamlit investment committee dashboard built from the student's recovered Labs 13-17. The frozen research decision is **November 2, 2026**, using monthly adjusted prices through September 2026. It is not a live trading application.
 
-## Install and run
+## Start here: results and class materials
 
-Python 3.13 was tested. From this project folder in PowerShell:
+**[Read the investment results without running Python](docs/checkout-results.md)** | [Decision memo](docs/decision-memo.md) | [Tuesday preparation and evidence](docs/tuesday-checkout-validation.md)
+
+The application evaluates whether Cedar should deploy the proposed portfolio process. The current AI-assisted draft is **Reject deployment pending unresolved mandate evidence**. It does not recommend selling existing holdings. Results are a frozen educational analysis, not current market forecasts.
+
+## Get your own copy
+
+Open **[AndrewK6637/fin439-project2](https://github.com/AndrewK6637/fin439-project2)**. Choose **Code > Download ZIP**, extract it into a short folder such as `C:\fin439`, and open a terminal in the folder containing **this README, `app.py`, `requirements-lock.txt`, `src/`, `config/` and `data/`**. Alternatively, run `git clone https://github.com/AndrewK6637/fin439-project2.git` and then `cd fin439-project2`. Download the entire project, not just this README. Each person creates their own virtual environment below.
+
+## Install dependencies (Windows PowerShell)
+
+Install Python **3.13**, the tested version. Use a short extraction path on Windows (for example `C:\fin439`) rather than many nested folders. From the project folder:
 
 ```powershell
+python --version
 python -m venv .venv
 .venv\Scripts\python.exe -m pip install -r requirements-lock.txt
-.venv\Scripts\Activate.ps1
-streamlit run app.py
 ```
 
-Activation is optional: `.venv\Scripts\python.exe -m streamlit run app.py` works without changing execution policy. On macOS/Linux use `.venv/bin/python` and `source .venv/bin/activate`. No API keys are required for the bundled frozen analysis. Free dependencies require internet during installation; calculations then run offline.
+If Windows cannot find `python`, use `py -3.13` for the first two commands. Internet is needed for installation; the bundled analysis runs offline afterward. No API key, paid service, login or personal coursework folder is needed.
+
+## RUN THE APPLICATION ? one command
+
+```powershell
+.venv\Scripts\python.exe -m streamlit run app.py
+```
+
+Open **http://localhost:8501** when the terminal reports the server is ready. Leave that terminal running; Ctrl+C stops it. No virtual-environment activation or execution-policy change is necessary. If port 8501 is occupied, append `--server.port 8522` and open the port printed in the terminal. If installation reports `OSError: [Errno 2]` for a very long path inside Streamlit, extract a fresh copy into a shorter folder and repeat installation; do not change system security settings. A missing Streamlit module means the installation step used a different interpreter; rerun the exact pip command above.
+
+On macOS/Linux, use `python3 -m venv .venv`, `.venv/bin/python -m pip install -r requirements.txt`, then `.venv/bin/python -m streamlit run app.py`. Those platform steps are provided for convenience; only Windows/Python 3.13 has been verified.
+
+## Find the result and try a documented demonstration
+
+1. Start at **Executive dashboard**. Read the draft decision, estimated annual return, volatility and full mandate status.
+2. Open **Portfolio comparison** for all three allocations, benchmark differences, failed rules and unknown evidence. **Fail authorization** can mean missing evidence; it is not a fabricated numerical breach.
+3. In the sidebar change **Estimation months** from **60 to 36**. The app recalculates automatically; **Rerun model** also reruns the page. Compare the new weights and estimates with [the already executed stress table](docs/checkout-results.md). Restore **60** afterward.
+4. Open **Stress testing** for four documented scenarios, and **Committee recommendation** for the decision and monitors. The saved memo describes the frozen default; the live values and **Download this scenario** reflect the current controls.
+
+This 36-month demonstration was already executed during development. It is **not your unseen classroom prediction exercise** and must not be presented as one. Use the separate [blank classroom template](docs/tuesday-changed-input-template.md) only after writing your own prediction with AI closed. The existing [locked record](docs/changed-input-record.md) is preserved separately.
+
+## Included inputs and outputs
+
+`config/mandate.json` holds the recovered mandate and labeled assumptions. `data/processed/prices.csv` contains the four funds' monthly adjusted prices. `data/raw/` holds their source responses, metadata and the historical ALFRED signal snapshot. Keep these folders together. `outputs/results.json` and [checkout-results.md](docs/checkout-results.md) contain actual generated default results. Do not replace missing inputs with invented data.
+
+Main controls: estimation window; illustrative CPI; additional annual costs in **basis points**; per-side transaction costs; reserve/position bounds; optional illustrative risk cap; and annual return assumptions in **percent**. Return override boxes start from the loaded estimates, so simply enabling them does not silently replace every fund's return. Overrides are scenarios, not changes to the original client mandate. Unknown holdings mean actual transaction costs cannot be certified.
+
+## Reproduce and validate (optional for first launch)
 
 ```powershell
 .venv\Scripts\python.exe -m pytest -q
 .venv\Scripts\python.exe scripts/audit_sources.py
+.venv\Scripts\python.exe scripts/audit_finance.py
 .venv\Scripts\python.exe scripts/build_reports.py
+.venv\Scripts\python.exe scripts/build_checkout_results.py
 ```
 
-The last command regenerates the default decision memo and visible results. It never runs the locked experiment. Use `requirements.txt` for compatible ranges or the tested `requirements-lock.txt` for the exact environment. No runtime depends on the original absolute coursework paths; those paths are provenance records only.
+The report commands regenerate baseline and existing ordinary stress evidence, never either student-only experiment. Test logs and reproduction limits are in [Tuesday validation](docs/tuesday-checkout-validation.md). A partner must fill [their own cold-run record](docs/partner-cold-run-template.md); agent testing is not partner evidence.
 
 ## Mandate and model
 
@@ -66,9 +104,9 @@ Read `docs/changed-input-record.md`. Write the prediction yourself with AI close
 - `videos/`: timed recording scripts and checklist; not recordings or transcripts.
 - `references/`, `recovered/`: official requirements and original coursework copies.
 
-No GitHub push, Brightspace submission, recording or upload has occurred. The full analytic rubric descriptor file was unavailable; verified syllabus weights are documented without inventing descriptors. See `PROJECT_HANDOFF.md` and `docs/final-review.md` for remaining student actions. The optional investor panel is deferred until mandatory evidence is complete.
+GitHub publication is authorized by the owner. Brightspace submission, video recording and video upload remain student actions. Historical audit files describe their actual earlier state before publication. The full analytic rubric descriptor file was unavailable; verified syllabus weights are documented without inventing descriptors. See `PROJECT_HANDOFF.md` and `docs/final-review.md` for remaining student actions. The optional investor panel is deferred until mandatory evidence is complete.
 
 
-## Final audit
+## Earlier audit (November 16)
 
 The final audit expanded validation to 65 tests, independently reconciled portfolio arithmetic and the ALFRED snapshot, and tested a fresh pinned environment. Run `python scripts/audit_finance.py` for the independent numerical reconciliation. Read `docs/project2-final-audit.md` and `docs/project2-grade-audit.md` for current readiness. The dashboard's authorization gate is binary: unknown mandate evidence fails authorization while the financial rule remains Not Known. The transaction-cost stress exposes a hypothetical nonzero transition at both the sidebar cost and 50 bps; it does not invent client holdings.

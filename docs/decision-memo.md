@@ -44,3 +44,7 @@ Estimation error, the BIL reserve proxy, the unresolved forward CPI/cost basis, 
 Monitor reserve coverage, vintage identity, price age, solver feasibility, costs, annual turnover, real outcomes and weight stability. Stop on an invalid signal, stale prices, infeasible optimization, a failed required stress, or a weight change above the analyst-defined 20-percentage-point stability threshold. That threshold is a disclosed process choice, not a recovered client limit.
 
 The committee should reject deployment until the missing mandate inputs and proposed signal are reviewed, source checks are complete, and the student finishes the genuine AI-off experiment. Revisit the decision only with that evidence; do not relax the objective merely to obtain an allocation. See validation-and-ai-use.md for tests and limitations.
+
+## Final decision line (AI-assisted draft)
+
+Reject deployment of Cedar's proposed portfolio process; reconsider only after the committee documents the missing mandate approvals and actual holdings/costs, the student validates the signal and completes the genuine locked record, and a rerun shows feasible allocations with acceptable stress results.

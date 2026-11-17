@@ -1,0 +1,1 @@
+Generated docs/checkout-results.md from the baseline and existing ordinary stresses only.

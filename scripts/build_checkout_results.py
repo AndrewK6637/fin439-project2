@@ -1,0 +1,25 @@
+﻿"""Publish only baseline and already established ordinary stress results. No classroom exercise."""
+import json,sys
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
+from src.workflow import run,comparison
+from scripts.build_reports import mdtable,DECISION_LINE
+
+def main():
+    r=run();c=r['config'];p=r['portfolios']['Constrained']
+    text='# Cedar: investment results for the studio\n\n**AI-assisted output; student review pending. Educational work, not investment advice.**\n\n'
+    text+='## Decision first\n\n'+DECISION_LINE+'\n\nThe proposed allocation to this unapproved process is **0%-0%**. This does not direct liquidation of existing assets. The research candidate below is not an authorized trade.\n\n'
+    text+=f"## Evidence boundary\n\nFrozen research decision: **{r['as_of']}**. Monthly adjusted prices end **{r['price_end']}**. The baseline estimates use **{r['observations']} monthly returns**, starting {r['estimate_start']}. CPI assumption: **{c['cpi_assumption']:.2%}**; real-return spread: **{c['real_return_objective']:.2%}**; illustrative additive hurdle: **{c['cpi_assumption']+c['real_return_objective']:.2%}**. Additional annual costs: **{c['ongoing_cost_bps']} bps**, an unconfirmed illustration; actual turnover and transaction costs remain unknown. One basis point is 0.01 percentage point.\n\n"
+    text+='## Baseline results\n\nAll weights are percent of portfolio; return estimates and volatility are annualized percentages. Estimates are historical arithmetic summaries, not guaranteed future returns.\n\n'+mdtable([{k:v for k,v in row.items() if k not in ['Failed rules','Unknown rules']} for row in comparison(r)])+'\n\n'
+    text+=f"Benchmark: 60% VT / 40% LQD; annual mean estimate **{r['benchmark']['expected_return']:.2%}**, volatility **{r['benchmark']['volatility']:.2%}**. It is a comparator pending Cedar approval, not a compliant reserve portfolio.\n\n"
+    text+='## Mandate and verdict\n\nCedar has $20 million, a ten-year horizon and $150,000 quarterly scholarships. The goal is CPI+3% after costs over rolling five years. Allowed funds: BIL/IEF/LQD/VT; long only, fully invested. Reserve: $600,000 (3% at inception), 95% five-day liquidity, 5% nonexempt direct issuer maximum, annual rebalance and 20% annual one-way turnover cap. BIL reserve-proxy approval and a numeric risk-policy limit remain unresolved.\n\n'
+    text+=mdtable([{'Constrained candidate rule':rule,'Result':'Not Known' if value is None else 'Pass' if value else 'Fail'} for rule,value in p['compliance']['rules'].items()])+'\n\nUnknown evidence fails authorization; it is not converted into a numerical failure or a pass. The historical arithmetic hurdle does not verify the realized rolling real after-cost objective.\n\n'
+    text+='## Existing ordinary stress evidence (not a classroom prediction record)\n\n'
+    stress=[]
+    for x in r['stress']:
+        stress.append({'Scenario':x['scenario'],'Solver':'Pass' if x['success'] else 'Fail','Weights BIL / IEF / LQD / VT':' / '.join(f'{w:.2%}' for w in x['weights']) if x['success'] else 'Unavailable','Annual mean estimate':f"{x['expected_return']:.2%}" if x['success'] else 'Unavailable','Annual volatility':f"{x['volatility']:.2%}" if x['success'] else 'Unavailable','Largest weight change':f"{100*x['largest_weight_change']:.2f} percentage points" if x['success'] else 'Unavailable'})
+    text+=mdtable(stress)+'\n\nThe cost stress uses hypothetical starting weights equal to the baseline candidate. Its near-zero trading cost does not establish actual client costs. Changing the estimation window alters the displayed research allocation; the unresolved approval evidence still prevents deployment. A no-change decision must be explained, not forced to flip.\n\n'
+    text+='## Monitor and reversal condition\n\nMonitor reserve coverage, price age, signal vintage, feasibility, real after-cost outcomes and turnover. Stop for invalid data, infeasibility, a failed required stress or more than 20 percentage points of allocation instability. '+DECISION_LINE+'\n\nThe present controls cannot certify missing client approvals or actual annual ledger evidence. Reversal requires documented human review and verified evidence; a favorable scenario alone is insufficient.\n\n'
+    text+='## Reproduction and unfinished evidence\n\nRun `python scripts/build_checkout_results.py` in the installed project environment. This reads the same pipeline as the app and does not execute the Tuesday proposed annual-cost experiment or the existing locked reserve experiment. [Full machine-readable results](../outputs/results.json), [decision memo](decision-memo.md), [Tuesday validation](tuesday-checkout-validation.md), [partner record](partner-cold-run-template.md). Publication to GitHub, the partner cold run, student AI-off prediction and actual classroom results remain unperformed.\n'
+    (ROOT/'docs/checkout-results.md').write_text(text,encoding='utf-8');print('Generated docs/checkout-results.md from the baseline and existing ordinary stresses only.')
+if __name__=='__main__':main()
