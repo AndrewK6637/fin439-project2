@@ -5,9 +5,9 @@ Visible executed output,yes,,,,,not checked,,GitHub outputs/visible-results.md
 Decision memo or deck,yes,,,,,not checked,,GitHub docs/decision-memo.md; attach same MD to Brightspace
 Validation-and-AI-Use.pdf,yes,,,,,not checked,,Legacy row title; use GitHub docs/validation-and-ai-use.md and attach same MD
 Video 1,yes,,,,,not checked,,YouTube; <=3:00
-Transcript Video 1,yes,,,,,not checked,,GitHub transcript-video-1.txt after actual recording
+Transcript Video 1,yes,,,,,not checked,,GitHub docs/transcript-video-1.txt after actual recording
 Video 2,yes,,,,,not checked,,YouTube; <=5:00
-Transcript Video 2,yes,,,,,not checked,,GitHub transcript-video-2.txt after actual recording
+Transcript Video 2,yes,,,,,not checked,,GitHub docs/transcript-video-2.txt after actual recording
 Video 3,yes,,,,,not checked,,YouTube; <=5:00; opens live app
-Transcript Video 3,yes,,,,,not checked,,GitHub transcript-video-3.txt after actual recording
+Transcript Video 3,yes,,,,,not checked,,GitHub docs/transcript-video-3.txt after actual recording
 Optional deployed output,no,,,,,not checked,,Optional deployment; all required non-video locations use GitHub

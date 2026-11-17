@@ -1,10 +1,10 @@
-# Video 1: System and thinking
-
-Target 2:40; maximum 3:00. Read disclosures first. Script is a draft, not an actual transcript. Student reflection must be supplied personally.
-
 OpenAI Codex helped recover coursework, develop and test the application, and draft this script.
 
 I am responsible for the analysis and final decision. This is educational work, not investment advice.
+
+# Video 1: System and thinking
+
+Target 2:40; maximum 3:00. Read disclosures first. Script is a draft, not an actual transcript. Student reflection must be supplied personally.
 
 ## 0:00-0:25 | Disclosures and purpose
 

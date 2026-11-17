@@ -22,3 +22,8 @@ These are verified syllabus category weights, not awarded scores. Full analytic 
 5. Authorize GitHub publication, confirm instructional-team access, freeze the final revision, and attach the two required Markdown documents to Brightspace yourself.
 
 No submission, remote push, video upload, student prediction or personal verification has been fabricated. Optional Lab 18-19 panel integration is deferred because mandatory student-controlled evidence remains incomplete.
+
+
+## Final audit update
+
+The authoritative current review is `project2-final-audit.md`, with item statuses in `requirements-matrix.md`. Final main and clean-environment suites pass 65 tests. Independent financial/source checks and corrections are documented there. Read `project2-grade-audit.md` before interpreting the verified category maxima as earned points. No precise total is defensible without full descriptors and missing student evidence.

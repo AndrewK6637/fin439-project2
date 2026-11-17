@@ -1,36 +1,42 @@
-# Requirements matrix
+# Project 2 final-audit requirements matrix
 
-Official sources: [Project 2 assignment](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/projects/project-2-investment-management-application.md), [student checklist](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/projects/major-project-student-checklist.md), and [shared submission architecture](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/PROJECT-SUBMISSION-ARCHITECTURE.md). Downloaded copies are in `references/`. Requirement wording below is a faithful concise transcription, not invented scoring descriptors. Base items have no individually verified point allocation.
+Audit date: November 16, 2026. Authoritative documents were freshly downloaded into `references/final-audit/`, including Labs 13-17, assignment, checklist and shared submission architecture. See `retrieval-log.json` for HTTP status and hashes. Original sources remain preserved.
 
-| Requirement | Feature/file | Evidence | Status | Source / points |
-| --- | --- | --- | --- | --- |
-| Runnable stranger-operated application | app.py; README.md | Streamlit AppTest, server health, portable-copy test | Implemented | Project 2 assignment; individual points not specified |
-| Lab 13 mandate: objective, universe, benchmark, risk measure/limits | config/mandate.json; docs/methodology.md | Recovered Lab13/15 comparison, rule tests | Implemented; numeric limit and approvals unknown | Project 2 assignment; individual points not specified |
-| Equal weight and transparent second baseline plus constrained portfolio; same mandate verdicts | src/engine.py; src/workflow.py | Known-answer variance, inverse-vol, feasibility and rule tests | Implemented | Project 2 assignment; individual points not specified |
-| At least one point-in-time signal and data card | src/signal.py; docs/signal-data-card.md | ALFRED vintage hash, cutoff and transformation tests | Implemented proposed fallback; student review pending | Project 2 assignment; individual points not specified |
-| Stress estimates, window, costs and constraints; process stop condition | src/workflow.py; app.py | Four executed scenarios and stop tests | Implemented | Project 2 assignment; individual points not specified |
-| Locked AI-off prediction committed to GitHub before AI-off changed-input run | docs/changed-input-record.md; scripts/locked_experiment.py | Blank-prediction gate test; no experiment output | STUDENT ACTION REQUIRED | Project 2 assignment; individual points not specified |
-| Committee recommendation, allocation range, triggers | docs/decision-memo.md; app.py | Actual outputs/results.json; Reject until unknowns cleared | Draft; student judgment pending | Project 2 assignment; individual points not specified |
-| Opening AI and responsibility/education disclosures | README.md; docs/decision-memo.md; videos/ | Text inspection; student review explicitly pending | Prepared | Project 2 assignment; individual points not specified |
-| Repository, environment, runnable source, visible output | requirements-lock.txt; outputs/visible-results.md | Tests and source audit; local Git history | Local complete; publication/access pending | Student checklist / shared architecture; individual points not specified |
-| Decision and validation Markdown in docs and attached to Brightspace | docs/decision-memo.md; docs/validation-and-ai-use.md | Files prepared | Attachments/student submission pending | Student checklist / shared architecture; individual points not specified |
-| Video 1 <=3 minutes and corrected transcript | videos/video-1-script.md | Timed script; no recording claimed | STUDENT ACTION REQUIRED | Student checklist / shared architecture; individual points not specified |
-| Video 2 <=5 minutes and corrected transcript | videos/video-2-script.md | Timed script; no recording claimed | STUDENT ACTION REQUIRED | Student checklist / shared architecture; individual points not specified |
-| Video 3 <=5 minutes; opens with live app; corrected transcript | videos/video-3-script.md | Live-demo instructions; no recording claimed | STUDENT ACTION REQUIRED | Student checklist / shared architecture; individual points not specified |
-| Manifest stable links, durations, indices, access checks and frozen state | docs/submission-manifest.md; docs/submission-manifest.csv | 12-row legacy schema; placeholders clearly empty | STUDENT ACTION REQUIRED | Student checklist / shared architecture; individual points not specified |
-| Cold check, accessible repository/videos, corrected finance captions, no secrets | docs/validation-and-ai-use.md; videos/recording-checklist.md | Local cold-run validation; external access not performed | External access checks pending | Student checklist / shared architecture; individual points not specified |
-| Edition A/B and research-evolution excluded for Project 2 | references/projects/major-project-student-checklist.md | Explicit Project 2 owner ruling | Not applicable | Student checklist / shared architecture; individual points not specified |
+Sources: [Project 2](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/projects/project-2-investment-management-application.md), [checklist](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/projects/major-project-student-checklist.md), [submission architecture](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/PROJECT-SUBMISSION-ARCHITECTURE.md). C1-C8 follow the assignment; S1-S6 follow its submission section and checklist. A1-A2 are audit checks, not additional professor-assigned scoring criteria. Wording below preserves each requirement's meaning; no unverified scoring descriptors are invented.
 
-## Verified 300-point categories
+**Counts:** eight core requirements: four Fully verified, four Blocked by student action. Six delivery requirements are Blocked by student action. Across these fourteen assignment/delivery requirements, four are complete and ten await student action. Separately, visual inspection is Implemented but not independently verified, and full-rubric inspection is Incomplete because the source is unavailable. These counts are not a count of unavailable rubric subcriteria or a grade.
 
-The full `MAJOR-PROJECT-ANALYTIC-RUBRIC.md` was referenced but absent from the public tree and returned 404. Detailed level descriptors cannot be verified. Syllabus weights are verified in `references/syllabus/FIN43900-Fall2026-syllabus.pdf` and extracted `references/syllabus.txt`. Points below are weight times 300, not a self-awarded score.
+Final tests: `outputs/audit-tests.txt`; clean-environment results: `outputs/audit-clean-environment-tests.txt`. Each evidence cell refers to actually executed checks, except where explicitly pending.
 
-| Category | Weight | Points | Evidence / remaining weakness |
-| --- | --- | --- | --- |
-| Problem definition and usefulness | 15% | 45 | Authentic Cedar mandate; missing client approvals remain explicit |
-| Data integrity | 15% | 45 | Raw-source reconciliation, hashes, vintage cutoff; student source checks pending |
-| Financial soundness | 20% | 60 | Annualization, constraints, known answers; objective forecast and actual turnover unverified |
-| Technical execution | 15% | 45 | Six-tab app, shared workflow, numerical optimizer, tests |
-| Validation, sensitivity and reproducibility | 25% | 75 | Four stresses, portable run, holdout limitations; locked record incomplete |
-| Communication | 10% | 30 | Draft memo, scripts and manifest; recordings/transcripts/links pending |
-| Total | 100% | 300 | No grade estimate claimed |
+| ID | Requirement | Points | Where satisfied | Evidence/test result | Status | Remaining problem |
+| --- | --- | --- | --- | --- | --- | --- |
+| C1 | The app runs: Python web app started from README and operated by a stranger. | Not separately allocated | app.py; README.md; requirements-lock.txt | Fresh isolated installation, full tests, six-tab AppTest, HTTP 200/ok | Fully verified | Visual inspection is a separate unavailable check. |
+| C2 | Your Lab 13 mandate: objective, universe, benchmark, risk measure and limits. | Not separately allocated | config/mandate.json; recovered/Lab13/Lab13_Report.md section H | Original mandate compared with configuration; no parameter silently changed | Blocked by student action | Confirm missing risk-policy interpretation/limit, benchmark and reserve-proxy approvals; actual holdings and costs missing. |
+| C3 | Equal weight and a second transparent baseline beside the constrained portfolio; each with pass/fail and which rule. | Not separately allocated | src/engine.py; src/workflow.py; app.py | Independent scalar recalculation of all portfolios and benchmark; infeasible tests; explicit authorization Pass/Fail | Fully verified | Financial compliance can remain Not Known; missing evidence fails authorization, not an invented numerical breach. |
+| C4 | One point-in-time signal with its data card. | Not separately allocated | src/signal.py; docs/signal-data-card.md | Fresh ALFRED response: 957 matching rows, zero numeric difference; cutoff/hash/URL/missing-data regression tests | Blocked by student action | Technical vintage verified. Proposed fallback and three personal source checks await student admission decision. |
+| C5 | Stress estimates, window, costs and constraints; condition that stops the process. | Not separately allocated | src/workflow.py; app.py | Four executed ordinary stresses; nonzero hypothetical cost sensitivity; stale/unavailable/instability/infeasibility tests | Fully verified | Actual client costs still unknown; scenarios clearly labeled. |
+| C6 | AI-off prediction committed to GitHub before the run, followed by the result. | Not separately allocated | docs/changed-input-record.md; scripts/locked_experiment.py | Git history inspected; blank fields and absent output confirmed; gate rejection tested without model execution | Blocked by student action | Prediction, genuine GitHub chronology, AI-off run and reconciliation absent. |
+| C7 | Recommendation with allocation range and monitoring triggers. | Not separately allocated | docs/decision-memo.md; app.py | Reject deployment supported by unresolved evidence; 0%-0% new-process allocation; triggers documented | Blocked by student action | Draft recommendation exists and is evidence-based; student must review and own final judgment. |
+| C8 | Two opening statements: AI used and purpose; student responsibility, education, not investment advice. | Not separately allocated | README.md; docs/decision-memo.md; videos/video-1/2/3-script.md | Opening text inspected; video disclosures moved before title/instructions | Fully verified | Actual delivery in videos remains part of recording requirements. |
+| S1 | Accessible GitHub repository with reproducible source and visible output. | Not separately allocated | README.md; outputs/visible-results.md; local Git | Local source/environment/output verified; no configured remote | Blocked by student action | Student must authorize publication and verify instructional-team access. |
+| S2 | Decision and validation Markdown in docs; same files attached to Brightspace. | Not separately allocated | docs/decision-memo.md; docs/validation-and-ai-use.md | Files present, opening disclosures and current outputs reviewed | Blocked by student action | Final student review, locked evidence and Brightspace attachments pending. |
+| S3 | Video 1: system/thinking evolution and checked AI output; <=3:00; corrected transcript. | Not separately allocated | videos/video-1-script.md | Script matches actual recovery and source audit; target 2:40 | Blocked by student action | Personal reflection, recording, YouTube link and docs/transcript-video-1.txt missing. |
+| S4 | Video 2: code walkthrough; <=5:00; corrected transcript. | Not separately allocated | videos/video-2-script.md | Named real functions, tests, limits and reproduction commands; target 4:30 | Blocked by student action | Recording, YouTube link and docs/transcript-video-2.txt missing. |
+| S5 | Video 3: committee presentation opens with live app; <=5:00; corrected transcript. | Not separately allocated | videos/video-3-script.md | Explicit live opening, actual numbers, recommendation and monitoring; target 4:30 | Blocked by student action | Recording, YouTube link and docs/transcript-video-3.txt missing. |
+| S6 | Manifest: every location GitHub except videos; titles, durations, timestamps, access and frozen revision. | Not separately allocated | docs/submission-manifest.csv; docs/submission-manifest.md | Twelve legacy rows retained; research-evolution not required; transcript paths corrected to docs/ | Blocked by student action | URLs and measured durations/access checks missing. Exact CSV column order not independently published in accessible official sources; retained recovered template. |
+| A1 | Visual browser inspection of rendered dashboard. | Not separately allocated | app.py; outputs/audit-server-smoke.json | Server and AppTest verified; browser host retried and unavailable | Implemented but not independently verified | Charts/tables created programmatically; visual layout and real browser interaction not independently inspected. |
+| A2 | Full analytic rubric descriptors and exact item-level score mapping. | Not separately allocated | references/final-audit/retrieval-log.json; references/syllabus.txt | Fresh tree search found no rubric file; root rubric URL returned 404; syllabus category weights verified | Incomplete | Full descriptors cannot be audited or scored; obtain authoritative rubric from professor/Brightspace. |
+
+## Verified category weights, not awarded scores
+
+| Official syllabus category | Weight | Maximum points (weight x 300) |
+| --- | --- | --- |
+| Problem definition and decision usefulness | 15% | 45 |
+| Data integrity and traceability | 15% | 45 |
+| Financial soundness and judgment | 20% | 60 |
+| Technical execution and usability | 15% | 45 |
+| Validation, sensitivity, and reproducibility | 25% | 75 |
+| Professional communication | 10% | 30 |
+| Total | 100% | 300 |
+
+Verified in `references/syllabus.txt`, lines 251-256, extracted from the official syllabus. The full analytic rubric is still unavailable. Exact descriptor-level scoring and item-level point allocations are **unverified**. Edition A/B and research-evolution submission are not required for Project 2 under the current owner ruling. Student-only work is not completed by these documents.

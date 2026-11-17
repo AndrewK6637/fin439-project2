@@ -12,3 +12,8 @@ Agent-controlled implementation is complete for the frozen research application.
 - Locked experiment not executed and student prediction left blank.
 
 Successful commands and detailed evidence: docs/validation-and-ai-use.md and outputs/. Remaining blockers: student mandate/signal review, genuine AI-off record, videos/transcripts/links, external access checks, and unavailable full rubric descriptors. PROJECT_HANDOFF.md records the next exact steps.
+
+
+## Final audit status
+
+Supersedes the original 31-test count: 65 tests pass in the main project and freshly installed isolated environment. Numerical outputs independently reconciled; 957 ALFRED observations matched a fresh source download. Read docs/project2-final-audit.md for ten correction groups and detailed evidence. Four of eight core requirements are fully verified; four await genuine student action. Six delivery requirements also await student action. Browser visuals and full rubric descriptors remain unverified/unavailable. Audit server: http://127.0.0.1:8521. No prediction, locked experiment, push or submission performed.

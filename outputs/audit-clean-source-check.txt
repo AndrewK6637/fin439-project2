@@ -1,0 +1,29 @@
+{
+  "prices": [
+    {
+      "ticker": "BIL",
+      "observations": 61,
+      "max_absolute_difference": 0.0,
+      "sha256": "c56428eb5b1c7aa56f80c12714434609cc128d5f1415ebc492d3df96326eccd2"
+    },
+    {
+      "ticker": "IEF",
+      "observations": 61,
+      "max_absolute_difference": 0.0,
+      "sha256": "d4acd60e439d1b8220740be69fc854b5fe4e2f062614fe40875cafd71cbd07b6"
+    },
+    {
+      "ticker": "LQD",
+      "observations": 61,
+      "max_absolute_difference": 0.0,
+      "sha256": "b4155b964473459fe1671e178cb8e13c537a6739606d6fa3b3d359c8004afb83"
+    },
+    {
+      "ticker": "VT",
+      "observations": 61,
+      "max_absolute_difference": 0.0,
+      "sha256": "0b3af3ceae525b6a78dd22991c78332dcfd8ef5ab78d1b0de851183048c5d433"
+    }
+  ],
+  "recovered_files_verified": 54
+}

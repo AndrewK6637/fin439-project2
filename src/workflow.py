@@ -25,7 +25,12 @@ def stress_cases(returns,mu,cov,config,floor,base_weights):
             row.update(metrics(result['weights'],m,s,c));row['largest_weight_change']=float(np.max(np.abs(np.array(result['weights'])-base_weights)))
             row['mandate']=rules(result['weights'],m,s,c,f)
             if name.startswith('Trading'):
-                row['cost_of_baseline_to_equal_weight']=2*.5*float(np.abs(np.array(base_weights)-equal_weight(len(mu))).sum())*.005
+                transition_turnover=.5*float(np.abs(np.array(base_weights)-equal_weight(len(mu))).sum())
+                row['cost_of_baseline_to_equal_weight']=2*transition_turnover*.005
+                row['transition_cost_sensitivity']={'hypothetical_one_way_turnover':transition_turnover,
+                    'at_sidebar_bps':2*transition_turnover*config['trading_cost_bps']/10000,
+                    'at_stress_50bps':2*transition_turnover*.005,
+                    'note':'Baseline-to-equal-weight illustration only; not a recommended trade or actual holdings.'}
         cases.append(row)
     return cases
 
@@ -69,7 +74,8 @@ def run(config=None):
     decision=stop_decision(solution,signal,warnings,c,stress)
     # Chronological diagnostic re-estimates on training only; uses revised price snapshot.
     train,test=returns.iloc[:-12],returns.iloc[-12:];tm,tc=estimates(train)
-    historical_solution=optimize(tm,tc,c,c['reserve_min'])
+    historical_config=copy.deepcopy(c);historical_config['current_weights']=None
+    historical_solution=optimize(tm,tc,historical_config,c['reserve_min'])
     holdout={'label':'Chronological holdout diagnostic using a later downloaded adjusted-price snapshot; NOT a point-in-time implementable backtest. Signal not applied retrospectively.',
       'train_end':str(train.index[-1].date()),'evaluation_start':str(test.index[0].date()),'evaluation_end':str(test.index[-1].date()),'constrained_solver_status':historical_solution['message'],'results':{}}
     historical_choices={'Equal weight':equal_weight(len(mu)),'Inverse volatility':inverse_volatility(tc),'Benchmark':c['benchmark']}
@@ -83,7 +89,8 @@ def run(config=None):
 def comparison(result):
     return [{'Portfolio':name,**{t:f'{w:.2%}' for t,w in zip(result['config']['funds'],p['weights'])},
       'Annual mean estimate':f"{p['expected_return']:.2%}",'Annual volatility':f"{p['volatility']:.2%}",
-      'Mandate':p['compliance']['mandate_status'],'Failed rules':'; '.join(p['compliance']['failed']) or 'None among testable rules',
+      'Mandate':p['compliance']['mandate_status'],'Authorization gate':p['compliance']['authorization_gate'],
+      'Mean vs benchmark':f"{p['estimated_return_vs_benchmark']*100:+.2f} pp",'Failed rules':'; '.join(p['compliance']['failed']) or 'None among testable rules',
       'Unknown rules':'; '.join(p['compliance']['unknown'])} for name,p in result['portfolios'].items()]
 
 if __name__=='__main__':

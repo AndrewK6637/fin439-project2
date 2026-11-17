@@ -1,0 +1,46 @@
+{
+  "method": "Python CSV, scalar sums, sample denominator n-1; no production estimator or NumPy covariance",
+  "observations": 60,
+  "portfolios": {
+    "Equal weight": {
+      "annual_mean": 0.03223698004369819,
+      "variance": 0.00562323592917762,
+      "volatility": 0.07498823860564816,
+      "return_absolute_error": 0.0,
+      "volatility_absolute_error": 0.0,
+      "weight_sum": 1.0
+    },
+    "Inverse volatility": {
+      "annual_mean": 0.03331901621678237,
+      "variance": 0.00019482848388035373,
+      "volatility": 0.013958097430536645,
+      "return_absolute_error": 6.938893903907228e-18,
+      "volatility_absolute_error": 0.0,
+      "weight_sum": 0.9999999999999999
+    },
+    "Constrained": {
+      "annual_mean": 0.05500000000000004,
+      "variance": 0.0012439646965531042,
+      "volatility": 0.03526988370484235,
+      "return_absolute_error": 6.938893903907228e-18,
+      "volatility_absolute_error": 6.938893903907228e-18,
+      "weight_sum": 1.0000000000000013
+    },
+    "Benchmark": {
+      "annual_mean": 0.0681474032805895,
+      "variance": 0.015108174960221326,
+      "volatility": 0.12291531621495072,
+      "return_absolute_error": 0.0,
+      "volatility_absolute_error": 1.3877787807814457e-17,
+      "weight_sum": 1.0
+    }
+  },
+  "manual_examples": {
+    "two_successive_10pct_returns_compounded": 0.21,
+    "two_asset_return": 0.068,
+    "two_asset_variance": 0.010944,
+    "two_asset_volatility": 0.10461357464497617,
+    "20pct_turnover_50bps_per_side_cost": 0.002,
+    "annual_excess_6pct_divided_by_20pct_volatility": 0.3
+  }
+}

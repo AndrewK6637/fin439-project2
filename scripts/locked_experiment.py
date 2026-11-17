@@ -7,6 +7,12 @@ sys.path.insert(0,str(ROOT))
 def git(*args):
     return subprocess.check_output(['git','-C',str(ROOT),*args],text=True).strip()
 
+def verify_frozen_model(commit):
+    # Freeze the actual model and data as well as the prediction. No model run occurs here.
+    material=['src','config','data','scripts/locked_experiment.py','requirements-lock.txt']
+    if git('status','--porcelain','--',*material):raise ValueError('Material model/input files have uncommitted changes.')
+    if git('diff','--name-only',commit,'HEAD','--',*material):raise ValueError('Model/input files changed after the prediction commit; establish a new AI-off prediction.')
+
 def verify_prediction(commit,remote_branch):
     spec=json.loads(git('show',f'{commit}:config/locked_experiment.json'))
     for field in ['student_prediction','student_reasoning','expected_output_direction','expected_decision_effect']:
@@ -14,6 +20,7 @@ def verify_prediction(commit,remote_branch):
     if spec['experiment_id']!='cedar-reserve-35' or spec['original']!=.03 or spec['changed']!=.35:raise ValueError('Experiment definition changed; establish a new pre-run protocol.')
     if git('status','--porcelain','--','config/locked_experiment.json'):raise ValueError('Prediction file has uncommitted changes.')
     if git('show',f'{commit}:config/locked_experiment.json')!=(ROOT/'config/locked_experiment.json').read_text().strip():raise ValueError('Working prediction differs from committed prediction.')
+    verify_frozen_model(commit)
     remote=git('remote','get-url','origin')
     if not (remote.startswith('https://github.com/') or remote.startswith('git@github.com:')):raise ValueError('Origin must identify the actual student GitHub repository.')
     line=git('ls-remote','origin',f'refs/heads/{remote_branch}')

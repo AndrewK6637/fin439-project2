@@ -97,10 +97,6 @@
     },
     "history": [
       {
-        "date": "2024-09-01",
-        "value": 314.732
-      },
-      {
         "date": "2024-10-01",
         "value": 315.631
       },
@@ -147,6 +143,10 @@
       {
         "date": "2025-09-01",
         "value": 324.245
+      },
+      {
+        "date": "2025-10-01",
+        "value": NaN
       },
       {
         "date": "2025-11-01",
@@ -222,7 +222,8 @@
           "Direct nonexempt issuer <=5% (all allowed funds exempt)": true,
           "Illustrative return hurdle": false,
           "Numeric volatility cap": null,
-          "Actual annual turnover <=20%": null,
+          "Single-rebalance turnover approximation <=20%": null,
+          "Actual annual turnover <=20% (trade ledger required)": null,
           "BIL reserve proxy approved": null,
           "Realized rolling-five-year CPI+3% after costs": null
         },
@@ -231,12 +232,22 @@
         ],
         "unknown": [
           "Numeric volatility cap",
-          "Actual annual turnover <=20%",
+          "Single-rebalance turnover approximation <=20%",
+          "Actual annual turnover <=20% (trade ledger required)",
           "BIL reserve proxy approved",
           "Realized rolling-five-year CPI+3% after costs"
         ],
         "mandate_status": "Fail",
-        "testable_constraints": "Fail"
+        "testable_constraints": "Fail",
+        "authorization_gate": "Fail",
+        "authorization_reasons": [
+          "Illustrative return hurdle",
+          "Numeric volatility cap",
+          "Single-rebalance turnover approximation <=20%",
+          "Actual annual turnover <=20% (trade ledger required)",
+          "BIL reserve proxy approved",
+          "Realized rolling-five-year CPI+3% after costs"
+        ]
       },
       "estimated_return_vs_benchmark": -0.035910423236891316
     },
@@ -266,7 +277,8 @@
           "Direct nonexempt issuer <=5% (all allowed funds exempt)": true,
           "Illustrative return hurdle": false,
           "Numeric volatility cap": null,
-          "Actual annual turnover <=20%": null,
+          "Single-rebalance turnover approximation <=20%": null,
+          "Actual annual turnover <=20% (trade ledger required)": null,
           "BIL reserve proxy approved": null,
           "Realized rolling-five-year CPI+3% after costs": null
         },
@@ -275,12 +287,22 @@
         ],
         "unknown": [
           "Numeric volatility cap",
-          "Actual annual turnover <=20%",
+          "Single-rebalance turnover approximation <=20%",
+          "Actual annual turnover <=20% (trade ledger required)",
           "BIL reserve proxy approved",
           "Realized rolling-five-year CPI+3% after costs"
         ],
         "mandate_status": "Fail",
-        "testable_constraints": "Fail"
+        "testable_constraints": "Fail",
+        "authorization_gate": "Fail",
+        "authorization_reasons": [
+          "Illustrative return hurdle",
+          "Numeric volatility cap",
+          "Single-rebalance turnover approximation <=20%",
+          "Actual annual turnover <=20% (trade ledger required)",
+          "BIL reserve proxy approved",
+          "Realized rolling-five-year CPI+3% after costs"
+        ]
       },
       "estimated_return_vs_benchmark": -0.03482838706380714
     },
@@ -310,19 +332,29 @@
           "Direct nonexempt issuer <=5% (all allowed funds exempt)": true,
           "Illustrative return hurdle": true,
           "Numeric volatility cap": null,
-          "Actual annual turnover <=20%": null,
+          "Single-rebalance turnover approximation <=20%": null,
+          "Actual annual turnover <=20% (trade ledger required)": null,
           "BIL reserve proxy approved": null,
           "Realized rolling-five-year CPI+3% after costs": null
         },
         "failed": [],
         "unknown": [
           "Numeric volatility cap",
-          "Actual annual turnover <=20%",
+          "Single-rebalance turnover approximation <=20%",
+          "Actual annual turnover <=20% (trade ledger required)",
           "BIL reserve proxy approved",
           "Realized rolling-five-year CPI+3% after costs"
         ],
         "mandate_status": "Not Known",
-        "testable_constraints": "Pass"
+        "testable_constraints": "Pass",
+        "authorization_gate": "Fail",
+        "authorization_reasons": [
+          "Numeric volatility cap",
+          "Single-rebalance turnover approximation <=20%",
+          "Actual annual turnover <=20% (trade ledger required)",
+          "BIL reserve proxy approved",
+          "Realized rolling-five-year CPI+3% after costs"
+        ]
       },
       "estimated_return_vs_benchmark": -0.013147403280589456
     }
@@ -364,19 +396,29 @@
         "Direct nonexempt issuer <=5% (all allowed funds exempt)": true,
         "Illustrative return hurdle": true,
         "Numeric volatility cap": null,
-        "Actual annual turnover <=20%": null,
+        "Single-rebalance turnover approximation <=20%": null,
+        "Actual annual turnover <=20% (trade ledger required)": null,
         "BIL reserve proxy approved": null,
         "Realized rolling-five-year CPI+3% after costs": null
       },
       "failed": [],
       "unknown": [
         "Numeric volatility cap",
-        "Actual annual turnover <=20%",
+        "Single-rebalance turnover approximation <=20%",
+        "Actual annual turnover <=20% (trade ledger required)",
         "BIL reserve proxy approved",
         "Realized rolling-five-year CPI+3% after costs"
       ],
       "mandate_status": "Not Known",
-      "testable_constraints": "Pass"
+      "testable_constraints": "Pass",
+      "authorization_gate": "Fail",
+      "authorization_reasons": [
+        "Numeric volatility cap",
+        "Single-rebalance turnover approximation <=20%",
+        "Actual annual turnover <=20% (trade ledger required)",
+        "BIL reserve proxy approved",
+        "Realized rolling-five-year CPI+3% after costs"
+      ]
     }
   },
   "stress": [
@@ -411,19 +453,29 @@
           "Direct nonexempt issuer <=5% (all allowed funds exempt)": true,
           "Illustrative return hurdle": true,
           "Numeric volatility cap": null,
-          "Actual annual turnover <=20%": null,
+          "Single-rebalance turnover approximation <=20%": null,
+          "Actual annual turnover <=20% (trade ledger required)": null,
           "BIL reserve proxy approved": null,
           "Realized rolling-five-year CPI+3% after costs": null
         },
         "failed": [],
         "unknown": [
           "Numeric volatility cap",
-          "Actual annual turnover <=20%",
+          "Single-rebalance turnover approximation <=20%",
+          "Actual annual turnover <=20% (trade ledger required)",
           "BIL reserve proxy approved",
           "Realized rolling-five-year CPI+3% after costs"
         ],
         "mandate_status": "Not Known",
-        "testable_constraints": "Pass"
+        "testable_constraints": "Pass",
+        "authorization_gate": "Fail",
+        "authorization_reasons": [
+          "Numeric volatility cap",
+          "Single-rebalance turnover approximation <=20%",
+          "Actual annual turnover <=20% (trade ledger required)",
+          "BIL reserve proxy approved",
+          "Realized rolling-five-year CPI+3% after costs"
+        ]
       }
     },
     {
@@ -457,19 +509,29 @@
           "Direct nonexempt issuer <=5% (all allowed funds exempt)": true,
           "Illustrative return hurdle": true,
           "Numeric volatility cap": null,
-          "Actual annual turnover <=20%": null,
+          "Single-rebalance turnover approximation <=20%": null,
+          "Actual annual turnover <=20% (trade ledger required)": null,
           "BIL reserve proxy approved": null,
           "Realized rolling-five-year CPI+3% after costs": null
         },
         "failed": [],
         "unknown": [
           "Numeric volatility cap",
-          "Actual annual turnover <=20%",
+          "Single-rebalance turnover approximation <=20%",
+          "Actual annual turnover <=20% (trade ledger required)",
           "BIL reserve proxy approved",
           "Realized rolling-five-year CPI+3% after costs"
         ],
         "mandate_status": "Not Known",
-        "testable_constraints": "Pass"
+        "testable_constraints": "Pass",
+        "authorization_gate": "Fail",
+        "authorization_reasons": [
+          "Numeric volatility cap",
+          "Single-rebalance turnover approximation <=20%",
+          "Actual annual turnover <=20% (trade ledger required)",
+          "BIL reserve proxy approved",
+          "Realized rolling-five-year CPI+3% after costs"
+        ]
       }
     },
     {
@@ -503,20 +565,35 @@
           "Direct nonexempt issuer <=5% (all allowed funds exempt)": true,
           "Illustrative return hurdle": true,
           "Numeric volatility cap": null,
-          "Actual annual turnover <=20%": true,
+          "Single-rebalance turnover approximation <=20%": true,
+          "Actual annual turnover <=20% (trade ledger required)": null,
           "BIL reserve proxy approved": null,
           "Realized rolling-five-year CPI+3% after costs": null
         },
         "failed": [],
         "unknown": [
           "Numeric volatility cap",
+          "Actual annual turnover <=20% (trade ledger required)",
           "BIL reserve proxy approved",
           "Realized rolling-five-year CPI+3% after costs"
         ],
         "mandate_status": "Not Known",
-        "testable_constraints": "Pass"
+        "testable_constraints": "Pass",
+        "authorization_gate": "Fail",
+        "authorization_reasons": [
+          "Numeric volatility cap",
+          "Actual annual turnover <=20% (trade ledger required)",
+          "BIL reserve proxy approved",
+          "Realized rolling-five-year CPI+3% after costs"
+        ]
       },
-      "cost_of_baseline_to_equal_weight": 0.005204206870090873
+      "cost_of_baseline_to_equal_weight": 0.005204206870090873,
+      "transition_cost_sensitivity": {
+        "hypothetical_one_way_turnover": 0.5204206870090873,
+        "at_sidebar_bps": 0.0010408413740181748,
+        "at_stress_50bps": 0.005204206870090873,
+        "note": "Baseline-to-equal-weight illustration only; not a recommended trade or actual holdings."
+      }
     },
     {
       "scenario": "Maximum fund weight 70%",
@@ -549,19 +626,29 @@
           "Direct nonexempt issuer <=5% (all allowed funds exempt)": true,
           "Illustrative return hurdle": true,
           "Numeric volatility cap": null,
-          "Actual annual turnover <=20%": null,
+          "Single-rebalance turnover approximation <=20%": null,
+          "Actual annual turnover <=20% (trade ledger required)": null,
           "BIL reserve proxy approved": null,
           "Realized rolling-five-year CPI+3% after costs": null
         },
         "failed": [],
         "unknown": [
           "Numeric volatility cap",
-          "Actual annual turnover <=20%",
+          "Single-rebalance turnover approximation <=20%",
+          "Actual annual turnover <=20% (trade ledger required)",
           "BIL reserve proxy approved",
           "Realized rolling-five-year CPI+3% after costs"
         ],
         "mandate_status": "Not Known",
-        "testable_constraints": "Pass"
+        "testable_constraints": "Pass",
+        "authorization_gate": "Fail",
+        "authorization_reasons": [
+          "Numeric volatility cap",
+          "Single-rebalance turnover approximation <=20%",
+          "Actual annual turnover <=20% (trade ledger required)",
+          "BIL reserve proxy approved",
+          "Realized rolling-five-year CPI+3% after costs"
+        ]
       }
     }
   ],

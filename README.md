@@ -67,3 +67,8 @@ Read `docs/changed-input-record.md`. Write the prediction yourself with AI close
 - `references/`, `recovered/`: official requirements and original coursework copies.
 
 No GitHub push, Brightspace submission, recording or upload has occurred. The full analytic rubric descriptor file was unavailable; verified syllabus weights are documented without inventing descriptors. See `PROJECT_HANDOFF.md` and `docs/final-review.md` for remaining student actions. The optional investor panel is deferred until mandatory evidence is complete.
+
+
+## Final audit
+
+The final audit expanded validation to 65 tests, independently reconciled portfolio arithmetic and the ALFRED snapshot, and tested a fresh pinned environment. Run `python scripts/audit_finance.py` for the independent numerical reconciliation. Read `docs/project2-final-audit.md` and `docs/project2-grade-audit.md` for current readiness. The dashboard's authorization gate is binary: unknown mandate evidence fails authorization while the financial rule remains Not Known. The transaction-cost stress exposes a hypothetical nonzero transition at both the sidebar cost and 50 bps; it does not invent client holdings.

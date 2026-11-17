@@ -1,0 +1,9 @@
+{
+  "tracked_files_checked": 126,
+  "credential_pattern_paths": [],
+  "tracked_files_over_5MB": [],
+  "scope": "Heuristic scan of current tracked content, not a forensic credential certification; no secret values printed.",
+  "remote_configured": false,
+  "historical_blobs_checked": 132,
+  "historical_credential_pattern_matches": []
+}

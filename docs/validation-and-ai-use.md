@@ -16,7 +16,7 @@ The original Lab 14 Yahoo responses were retrieved October 20, 2026 and supply 6
 
 The CPIAUCSL signal uses an authentic ALFRED November 1 snapshot; its latest observation is September 2026. The transformation is 336.298 / 324.245 - 1 = approximately 3.71725%. Vintage identity, cutoff and source hash are checked. Current revised FRED observations are not substituted for this historical snapshot. The student must verify source observations and decide whether to adopt the proposed policy; Lab 17 had quarantined its unspecified macro input.
 
-## Executed validation
+## Original implementation validation (superseded by the final audit below)
 
 - Main suite: `python -m pytest -q`: **31 passed, 0 failed, 4.62 seconds**. Exact output: `outputs/pytest-results.txt`.
 - Copied project in a separate working directory, excluding the original virtual environment and Git directory: **31 passed, 0 failed, 3.81 seconds**, using the same installed interpreter. Source audit passed there too. Logs: `outputs/portable-test-results.txt`, `outputs/portable-source-audit.txt`.
@@ -25,7 +25,7 @@ The CPIAUCSL signal uses an authentic ALFRED November 1 snapshot; its latest obs
 - Browser visual rendering was not verified: browser host access was unavailable. AppTest and HTTP health are not represented as visual inspection.
 - Dependency installation succeeded in the project's Python 3.13 virtual environment; versions are pinned in `requirements-lock.txt`. The portable check validates relative paths and runtime behavior; it is not claimed to be a second fresh dependency installation or a clean remote clone.
 
-No test warnings were reported in the pytest summaries. Streamlit's server startup message is informational. Tests were run before and after the numerical correction described below; an earlier run passed 30 tests, and the final added return-override test brings the suite to 31.
+No test warnings were displayed in those original pytest summaries; that did not certify an absence of captured runtime logging. Streamlit's server startup message is informational. Tests were run before and after the numerical correction described below; an earlier run passed 30 tests, and the final added return-override test brings the suite to 31.
 
 ## Independently specified known answers and test scope
 
@@ -54,3 +54,16 @@ The numeric Cedar risk limit, benchmark approval, BIL reserve-proxy acceptance, 
 See `docs/changed-input-record.md`. The deterministic experiment is prepared behind a gate. No student prediction has been written by AI, no pre-run student commit fabricated, and no locked experiment run. The student must author and commit/push the prediction with AI closed, then run and reconcile it with AI closed under the official rule.
 
 Student verification status: **pending**. Video recordings, corrected actual transcripts, remote publication/access checks and Brightspace attachments are also pending. The full analytic rubric descriptor file returned 404; verified syllabus category weights are recorded in the requirements matrix without inventing descriptors or a score.
+
+
+## Final independent-method audit ? November 16, 2026
+
+Latest main suite: **65 passed, zero failed** (`outputs/audit-tests.txt`). A fresh isolated virtual environment was installed from the pinned requirements; the final tests also passed from a separate copied project (`outputs/audit-clean-environment-tests.txt`). This supersedes the earlier limitation that only a shared interpreter had been tested. `pip check` found no broken requirements. Initial networking was blocked by sandbox policy; authorized retrieval succeeded. PowerShell surfaced pip's update notice as a native-command warning after installation; installed packages and executed clean-environment tests confirm the successful setup.
+
+The fresh server on port 8521 returned HTTP 200/ok. Browser access was retried and unavailable; visual verification remains unperformed. AppTest covered all tabs, window/constraint/return controls and missing-data error handling. Bare-mode Streamlit context messages are test-harness logging; deprecated width controls were replaced. An intermediate audit test incorrectly assumed one negative equity estimate must make the portfolio infeasible while other assets still met the hurdle. The test fixture was corrected, not the model's valid solution; its failure log is retained.
+
+Independent plain-Python scalar calculations verified all portfolio and benchmark annual means, sample covariance and volatility within 1e-12. A fresh ALFRED response matched all 957 frozen rows exactly, including the final three observations. These are agent checks, not student personal verification. Original 244 price matches and 54 recovery hashes still pass.
+
+Confirmed corrections: stricter vintage URL/hash validation; no silent fallback from missing latest CPI; rejection of nonfinite CPI; removal of present holdings from historical optimization; separate hypothetical rebalance versus actual annual turnover; safe fixed-bound solver metadata; explicit invalid input checks; visible nonzero transaction-cost sensitivity; frozen model/input gate for the locked experiment; binary authorization gate with unknown financial rules retained; corrected transcript paths and opening disclosures. No original mandate parameter or default allocation was changed.
+
+See `docs/project2-final-audit.md` for findings and `docs/project2-grade-audit.md` for verified weights and pending scoring. The student-only record remains incomplete and was never run. All model freeze tests use gate-only fixtures without authoring student predictions. Historical Git blobs were scanned for common credential patterns; this heuristic does not certify every possible secret format. No remote publication or submission occurred.

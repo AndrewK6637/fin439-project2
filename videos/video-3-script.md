@@ -1,10 +1,10 @@
-# Video 3: Investment committee presentation
-
-Target 4:30; maximum 5:00. **Open with the application already running live on the executive dashboard.** The following is a draft recommendation awaiting student review. Script is not a transcript.
-
 OpenAI Codex helped recover coursework, develop and test the application, and draft this script.
 
 I am responsible for the analysis and final decision. This is educational work, not investment advice.
+
+# Video 3: Investment committee presentation
+
+Target 4:30; maximum 5:00. **Open with the application already running live on the executive dashboard.** The following is a draft recommendation awaiting student review. Script is not a transcript.
 
 ## 0:00-0:35 | Live opening and committee ask
 

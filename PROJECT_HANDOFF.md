@@ -47,3 +47,35 @@ If 8520 is already occupied, use the existing server or select a new port; do no
 5. Authorize GitHub publication, verify reviewer access, fill/freeze manifest, attach required MD documents and submit to Brightspace yourself.
 
 Exact remaining context/account token allowance is not exposed. No percentage is claimed. All completed work and next actions are saved here.
+
+## PROJECT 2 FINAL AUDIT PROGRESS
+
+### Objective and completion
+Perform an independent-method audit of the existing project against fresh official requirements, correct confirmed bugs, verify finance and app behavior, and assess submission readiness. Audit completed November 16, 2026; original implementation and history preserved. No original mandate parameter, default allocation or locked prediction was changed.
+
+### Requirements checked and statuses
+Fresh assignment, checklist, shared submission architecture and Labs 13-17 downloaded/read under references/final-audit/. Core requirements: 4 Fully verified (app, alternatives, stress, disclosure); 4 Blocked by student action (mandate clarification, signal admission, locked record, final judgment). Six delivery requirements also student-blocked. Browser visual inspection Implemented but not independently verified; full rubric descriptors Incomplete due 404/absent tree. Verified syllabus maxima total 300; earned score/percentage pending, no invented allocation or grade.
+
+### Bugs discovered and corrected
+Exact ALFRED URL/query/hash validation; missing/nonfinite/latest CPI quarantine; removal of current holdings from historical optimization; one-rebalance turnover separated from actual annual ledger compliance; safe missing solver iteration metadata for fixed bounds; explicit empty/invalid data checks; visible nonzero hypothetical transaction-cost sensitivity; model/input freeze gate for locked experiment; binary authorization gate alongside unknown financial rules; obsolete Streamlit width API, disclosure ordering and transcript docs paths corrected. Ten finding groups recorded in docs/project2-final-audit.md.
+
+### Tests and results
+Baseline 31 passed in 4.55s. Final main suite 65 passed in 5.94s, zero failed. Fresh isolated pinned environment and separate project copy: 65 passed in 6.14s, zero failed. pip check: no broken requirements. HTTP server 8521 health 200/ok. Six-tab AppTest includes input controls, infeasibility and missing-data errors. Browser access host retried, unavailable; no visual claim.
+Independent scalar arithmetic agrees with all three portfolios and benchmark within 1e-12. Raw source audit: 244 exact price matches, 54 recovery hashes. Independent ALFRED download: 957 matching rows and identical hash. Historical credential-pattern scan checked 132 blobs with zero matches; current tracked-file heuristic also zero; no >5MB tracked file at audit scan.
+One intermediate test expected infeasibility from a single negative VT return while other assets still met the hurdle; corrected the erroneous test fixture, retained its failure log. Initial pip network request blocked; authorized retry installed dependencies. PowerShell surfaced pip update notice on stderr after successful installation; package inspection/check/tests verified installation.
+
+### Files modified
+src/engine.py, signal.py, workflow.py, data.py; app.py; scripts/locked_experiment.py; tests/test_app.py, test_locked_gate.py; new tests/test_final_audit.py and scripts/audit_finance.py. Updated README, memo/generated outputs, methodology, signal card, validation record, requirement matrix, manifests, video scripts, PROJECT_STATUS.md. New docs/project2-final-audit.md, docs/project2-grade-audit.md, outputs/audit-* evidence and fresh references/final-audit/.
+
+### Git status and current task
+Audit began at f93f2a8 on main. Initial commit 891dc5e retained. Completed audit corrections/evidence are being saved in a new local commit; use git log -1 --oneline and git status --short for the final identifier. No remote/push/submission. This handoff records completion, not a low-context stop; exact token percentage unavailable.
+
+### Next exact task / student actions
+Read docs/project2-final-audit.md and docs/project2-grade-audit.md. Resolve/record mandate and signal judgments; personally verify source values. With AI closed, author genuine prediction, commit and push, then run and reconcile with AI closed. Do not execute the locked experiment in an AI session. Obtain full rubric and perform human visual review. Record three videos (3/5/5-minute maxima), save corrected actual transcripts in docs/, publish only when authorized, fill real manifest/access fields, attach the two Markdown documents and submit yourself. No remaining autonomous audit task requires a rebuild.
+
+### Resume commands
+.venv/Scripts/python.exe -m pytest -q
+.venv/Scripts/python.exe scripts/audit_finance.py
+.venv/Scripts/python.exe scripts/audit_sources.py
+.venv/Scripts/python.exe -m streamlit run app.py --server.port 8521
+Audit server currently running at http://127.0.0.1:8521; use existing server or another port if occupied. Detailed logs in outputs/audit-tests.txt and outputs/audit-clean-environment-tests.txt. Ignored .validation-work/ holds audit-venv and audit-portable; do not submit these environments.

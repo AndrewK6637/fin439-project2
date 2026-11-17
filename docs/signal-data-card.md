@@ -26,3 +26,5 @@
 `data/raw/signals/CPIAUCSL_2026-11-01.meta.json` retains source, requested vintage, actual retrieval timestamp and SHA-256. Downloading it now is not a claim that the project existed at that historical date. ALFRED is specifically used to recover the historical vintage. See [ALFRED methodology](https://alfred.stlouisfed.org/help).
 
 **STUDENT ACTION REQUIRED:** verify at least three source observations and their vintage identity, record the check, and decide whether to admit this proposed series. Until then, Lab 17's cautious quarantine decision is preserved at the deployment-approval level. The app can evaluate the analytical scenario without asserting that you approved it.
+
+Final audit: an independent download from the same historical ALFRED URL matched all 957 stored observations and the complete file hash. See `outputs/audit-signal-source.json`. This is agent verification, not the required student's source check. The gate now requires exact HTTPS source hostname, matching series/vintage query and checksum; it quarantines missing/nonfinite/nonpositive latest or prior-year data instead of silently selecting an older value.

@@ -1,0 +1,24 @@
+{
+  "source": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=CPIAUCSL&vintage_date=2026-11-01",
+  "requested_vintage": "2026-11-01",
+  "rows_fresh": 957,
+  "rows_frozen": 957,
+  "rows_compared": 957,
+  "max_absolute_numeric_difference": 0.0,
+  "sha256_fresh": "b3609b10508eb543eebd4fbc53e14aac127fcc4a5541b499305dbd0c3544f9f2",
+  "last_three": [
+    {
+      "observation_date": "2026-07-01",
+      "CPIAUCSL_20261101": 332.813
+    },
+    {
+      "observation_date": "2026-08-01",
+      "CPIAUCSL_20261101": 334.131
+    },
+    {
+      "observation_date": "2026-09-01",
+      "CPIAUCSL_20261101": 336.298
+    }
+  ],
+  "student_personal_verification": false
+}

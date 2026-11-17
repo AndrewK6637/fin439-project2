@@ -1,0 +1,47 @@
+[
+  {
+    "path": "lessons/week-08/lab-13-portfolio-mandate.md",
+    "status": 200,
+    "sha256": "09124f509fab4bc2444b24f0a286f61b693349f8175388e16fcdaf897d1a32bb"
+  },
+  {
+    "path": "lessons/week-09/lab-14-portfolio-baselines.md",
+    "status": 200,
+    "sha256": "1ef0d8e40661c05880900a62cf922d99829c2cf8a7a655e53aaa0a24c1198a8e"
+  },
+  {
+    "path": "lessons/week-09/lab-15-portfolio-stability.md",
+    "status": 200,
+    "sha256": "f28dde2d763756054a78e7bed1fb981d011b0ed36e54fa62ddb9fc641e1ef43f"
+  },
+  {
+    "path": "lessons/week-10/lab-16-provenance-gate.md",
+    "status": 200,
+    "sha256": "b83103e8265e4885200dacabb43bb5a0354556dcda319fafbdba43245d1824b5"
+  },
+  {
+    "path": "lessons/week-10/lab-17-point-in-time.md",
+    "status": 200,
+    "sha256": "6674a53c83812cc37d312a7c8a9ea343e8cb83b91e84485a6064ad0abcf64851"
+  },
+  {
+    "path": "projects/project-2-investment-management-application.md",
+    "status": 200,
+    "sha256": "83ccb5bacd20e6be64ecda6b3dbc75586591cfa974449ad1b6ab6cc96929645e"
+  },
+  {
+    "path": "projects/major-project-student-checklist.md",
+    "status": 200,
+    "sha256": "173d36edf0c7890d4dcd48bd36242781b46cd52622b3a06c03c21524baf08225"
+  },
+  {
+    "path": "PROJECT-SUBMISSION-ARCHITECTURE.md",
+    "status": 200,
+    "sha256": "8033b3d30087b5e27a1ca8eb2ca62e37704607f4c4727cb24c0f251c50f909dc"
+  },
+  {
+    "path": "MAJOR-PROJECT-ANALYTIC-RUBRIC.md",
+    "status": 404,
+    "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+  }
+]

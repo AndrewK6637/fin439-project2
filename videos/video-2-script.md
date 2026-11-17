@@ -1,10 +1,10 @@
-# Video 2: Code walkthrough
-
-Target 4:30; maximum 5:00. Script is not a transcript. Keep terminal and editor ready; do not run the locked experiment during recording.
-
 OpenAI Codex helped recover coursework, develop and test the application, and draft this script.
 
 I am responsible for the analysis and final decision. This is educational work, not investment advice.
+
+# Video 2: Code walkthrough
+
+Target 4:30; maximum 5:00. Script is not a transcript. Keep terminal and editor ready; do not run the locked experiment during recording.
 
 ## 0:00-0:30 | Disclosures and map
 
@@ -38,7 +38,7 @@ The ordinary stresses change a return estimate, shorten the estimation window, i
 
 ## 3:20-4:05 | Validation
 
-[Show `tests/test_engine.py`, `tests/test_app.py`, and `outputs/pytest-results.txt`.]
+[Show `tests/test_engine.py`, `tests/test_app.py`, and `outputs/audit-tests.txt`.]
 
 Tests include manually checkable variance and return answers, zero and invalid inputs, infeasible constraints, annualization, missing months, timing boundaries and application interactions. The holdout trains only on the earlier period, but its prices came from a later adjusted snapshot. That limitation is displayed instead of calling it a fully point-in-time trading backtest.
 

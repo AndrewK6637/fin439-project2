@@ -1,0 +1,130 @@
+[
+  {
+    "id": "C1",
+    "requirement": "The app runs: Python web app started from README and operated by a stranger.",
+    "status": "Fully verified",
+    "where": "app.py; README.md; requirements-lock.txt",
+    "evidence": "Fresh isolated installation, full tests, six-tab AppTest, HTTP 200/ok",
+    "remaining": "Visual inspection is a separate unavailable check."
+  },
+  {
+    "id": "C2",
+    "requirement": "Your Lab 13 mandate: objective, universe, benchmark, risk measure and limits.",
+    "status": "Blocked by student action",
+    "where": "config/mandate.json; recovered/Lab13/Lab13_Report.md section H",
+    "evidence": "Original mandate compared with configuration; no parameter silently changed",
+    "remaining": "Confirm missing risk-policy interpretation/limit, benchmark and reserve-proxy approvals; actual holdings and costs missing."
+  },
+  {
+    "id": "C3",
+    "requirement": "Equal weight and a second transparent baseline beside the constrained portfolio; each with pass/fail and which rule.",
+    "status": "Fully verified",
+    "where": "src/engine.py; src/workflow.py; app.py",
+    "evidence": "Independent scalar recalculation of all portfolios and benchmark; infeasible tests; explicit authorization Pass/Fail",
+    "remaining": "Financial compliance can remain Not Known; missing evidence fails authorization, not an invented numerical breach."
+  },
+  {
+    "id": "C4",
+    "requirement": "One point-in-time signal with its data card.",
+    "status": "Blocked by student action",
+    "where": "src/signal.py; docs/signal-data-card.md",
+    "evidence": "Fresh ALFRED response: 957 matching rows, zero numeric difference; cutoff/hash/URL/missing-data regression tests",
+    "remaining": "Technical vintage verified. Proposed fallback and three personal source checks await student admission decision."
+  },
+  {
+    "id": "C5",
+    "requirement": "Stress estimates, window, costs and constraints; condition that stops the process.",
+    "status": "Fully verified",
+    "where": "src/workflow.py; app.py",
+    "evidence": "Four executed ordinary stresses; nonzero hypothetical cost sensitivity; stale/unavailable/instability/infeasibility tests",
+    "remaining": "Actual client costs still unknown; scenarios clearly labeled."
+  },
+  {
+    "id": "C6",
+    "requirement": "AI-off prediction committed to GitHub before the run, followed by the result.",
+    "status": "Blocked by student action",
+    "where": "docs/changed-input-record.md; scripts/locked_experiment.py",
+    "evidence": "Git history inspected; blank fields and absent output confirmed; gate rejection tested without model execution",
+    "remaining": "Prediction, genuine GitHub chronology, AI-off run and reconciliation absent."
+  },
+  {
+    "id": "C7",
+    "requirement": "Recommendation with allocation range and monitoring triggers.",
+    "status": "Blocked by student action",
+    "where": "docs/decision-memo.md; app.py",
+    "evidence": "Reject deployment supported by unresolved evidence; 0%-0% new-process allocation; triggers documented",
+    "remaining": "Draft recommendation exists and is evidence-based; student must review and own final judgment."
+  },
+  {
+    "id": "C8",
+    "requirement": "Two opening statements: AI used and purpose; student responsibility, education, not investment advice.",
+    "status": "Fully verified",
+    "where": "README.md; docs/decision-memo.md; videos/video-1/2/3-script.md",
+    "evidence": "Opening text inspected; video disclosures moved before title/instructions",
+    "remaining": "Actual delivery in videos remains part of recording requirements."
+  },
+  {
+    "id": "S1",
+    "requirement": "Accessible GitHub repository with reproducible source and visible output.",
+    "status": "Blocked by student action",
+    "where": "README.md; outputs/visible-results.md; local Git",
+    "evidence": "Local source/environment/output verified; no configured remote",
+    "remaining": "Student must authorize publication and verify instructional-team access."
+  },
+  {
+    "id": "S2",
+    "requirement": "Decision and validation Markdown in docs; same files attached to Brightspace.",
+    "status": "Blocked by student action",
+    "where": "docs/decision-memo.md; docs/validation-and-ai-use.md",
+    "evidence": "Files present, opening disclosures and current outputs reviewed",
+    "remaining": "Final student review, locked evidence and Brightspace attachments pending."
+  },
+  {
+    "id": "S3",
+    "requirement": "Video 1: system/thinking evolution and checked AI output; <=3:00; corrected transcript.",
+    "status": "Blocked by student action",
+    "where": "videos/video-1-script.md",
+    "evidence": "Script matches actual recovery and source audit; target 2:40",
+    "remaining": "Personal reflection, recording, YouTube link and docs/transcript-video-1.txt missing."
+  },
+  {
+    "id": "S4",
+    "requirement": "Video 2: code walkthrough; <=5:00; corrected transcript.",
+    "status": "Blocked by student action",
+    "where": "videos/video-2-script.md",
+    "evidence": "Named real functions, tests, limits and reproduction commands; target 4:30",
+    "remaining": "Recording, YouTube link and docs/transcript-video-2.txt missing."
+  },
+  {
+    "id": "S5",
+    "requirement": "Video 3: committee presentation opens with live app; <=5:00; corrected transcript.",
+    "status": "Blocked by student action",
+    "where": "videos/video-3-script.md",
+    "evidence": "Explicit live opening, actual numbers, recommendation and monitoring; target 4:30",
+    "remaining": "Recording, YouTube link and docs/transcript-video-3.txt missing."
+  },
+  {
+    "id": "S6",
+    "requirement": "Manifest: every location GitHub except videos; titles, durations, timestamps, access and frozen revision.",
+    "status": "Blocked by student action",
+    "where": "docs/submission-manifest.csv; docs/submission-manifest.md",
+    "evidence": "Twelve legacy rows retained; research-evolution not required; transcript paths corrected to docs/",
+    "remaining": "URLs and measured durations/access checks missing. Exact CSV column order not independently published in accessible official sources; retained recovered template."
+  },
+  {
+    "id": "A1",
+    "requirement": "Visual browser inspection of rendered dashboard.",
+    "status": "Implemented but not independently verified",
+    "where": "app.py; outputs/audit-server-smoke.json",
+    "evidence": "Server and AppTest verified; browser host retried and unavailable",
+    "remaining": "Charts/tables created programmatically; visual layout and real browser interaction not independently inspected."
+  },
+  {
+    "id": "A2",
+    "requirement": "Full analytic rubric descriptors and exact item-level score mapping.",
+    "status": "Incomplete",
+    "where": "references/final-audit/retrieval-log.json; references/syllabus.txt",
+    "evidence": "Fresh tree search found no rubric file; root rubric URL returned 404; syllabus category weights verified",
+    "remaining": "Full descriptors cannot be audited or scored; obtain authoritative rubric from professor/Brightspace."
+  }
+]

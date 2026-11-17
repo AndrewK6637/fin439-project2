@@ -7,6 +7,7 @@ ROOT=Path(__file__).resolve().parents[1]
 
 def load_prices(path=None):
     frame=pd.read_csv(path or ROOT/'data/processed/prices.csv',parse_dates=['Date']).set_index('Date')
+    if frame.index.isna().any():raise ValueError('Missing price date.')
     if frame.index.has_duplicates or not frame.index.is_monotonic_increasing:
         raise ValueError('Prices require unique increasing dates.')
     if frame.empty or not all(pd.api.types.is_numeric_dtype(t) for t in frame.dtypes):

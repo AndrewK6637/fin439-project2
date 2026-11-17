@@ -44,18 +44,18 @@ with tabs[0]:
  st.write('Process status:',r['decision']['status']);st.json({'Failed':r['decision']['failed'],'Unresolved':r['decision']['unknown']})
 with tabs[1]:
  st.subheader('Recovered fund universe and adjusted-price data')
- st.dataframe(load_prices(),use_container_width=True)
+ st.dataframe(load_prices(),width='stretch')
  st.caption('Recovered Yahoo monthly Adj Close, 2026-10-20 download. Includes payout/split adjustment per Lab 14; provider-adjusted return proxy, not independently reconstructed total returns. No forward filling.')
  mu=pd.DataFrame({'Fund':c['funds'],'Annual arithmetic mean':r['mean_estimates']})
  st.dataframe(mu,hide_index=True);st.dataframe(pd.DataFrame(r['covariance'],index=c['funds'],columns=c['funds']))
  st.write('Objective: minimize variance subject to the illustrative return hurdle and explicit allocation constraints. Solver results are independently rechecked.')
  st.json(r['solver'])
- if r['solver']['success']:st.plotly_chart(px.bar(x=c['funds'],y=r['solver']['weights'],labels={'x':'Fund','y':'Weight'},title='Constrained research allocation'),use_container_width=True)
+ if r['solver']['success']:st.plotly_chart(px.bar(x=c['funds'],y=r['solver']['weights'],labels={'x':'Fund','y':'Weight'},title='Constrained research allocation'),width='stretch')
 with tabs[2]:
  st.subheader('Same mandate, different construction rules')
- st.dataframe(pd.DataFrame(comparison(r)),hide_index=True,use_container_width=True)
+ st.dataframe(pd.DataFrame(comparison(r)),hide_index=True,width='stretch')
  st.write(f"Benchmark annual mean estimate: {r['benchmark']['expected_return']:.2%}; volatility: {r['benchmark']['volatility']:.2%}.")
- st.caption('Pass among testable constraints is not full mandate compliance. Unknown inputs stay Not Known. Equal weight and inverse volatility are not repaired to hide failures.')
+ st.caption('Authorization gate is Pass/Fail: missing evidence fails authorization while its underlying financial rule remains Not Known. Pass among testable constraints is not full mandate compliance. Unknown inputs stay Not Known. Equal weight and inverse volatility are not repaired to hide failures.')
  allocation=pd.DataFrame({name:p['weights'] for name,p in r['portfolios'].items()},index=c['funds']);st.bar_chart(allocation)
  st.subheader('Separate chronological holdout diagnostic')
  st.warning(r['holdout']['label']);st.json(r['holdout'])
@@ -73,6 +73,8 @@ with tabs[4]:
  st.error('STOP deployment on infeasibility, invalid/missing signal, stale prices, or more than 20 percentage points of weight instability. Unresolved mandate evidence also blocks authorization.')
  for s in r['stress']:
   with st.expander(s['scenario'],expanded=True):st.json(s)
+ if r['stress']:
+  st.caption('Transaction-cost control: inspect transition_cost_sensitivity for a nonzero hypothetical rebalance. Actual client costs cannot be computed without holdings.')
  st.write('For customized input stresses, change the sidebar controls. Cost stress uses an explicitly hypothetical baseline holding vector; actual client turnover is unknown.')
  st.info('The separate Locked Changed-Input Record is not run here. Its student-authored AI-off prediction must be committed to GitHub before execution.')
 with tabs[5]:

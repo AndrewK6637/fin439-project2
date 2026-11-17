@@ -2,11 +2,11 @@
 
 As-of: 2026-11-02. Price end: 2026-09-30. Estimates from 2021-10-31. All returns and risks are annualized decimals displayed as percentages.
 
-| Portfolio | BIL | IEF | LQD | VT | Annual mean estimate | Annual volatility | Mandate | Failed rules | Unknown rules |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Equal weight | 25.00% | 25.00% | 25.00% | 25.00% | 3.22% | 7.50% | Fail | Illustrative return hurdle | Numeric volatility cap; Actual annual turnover <=20%; BIL reserve proxy approved; Realized rolling-five-year CPI+3% after costs |
-| Inverse volatility | 86.81% | 5.75% | 4.49% | 2.95% | 3.33% | 1.40% | Fail | Illustrative return hurdle | Numeric volatility cap; Actual annual turnover <=20%; BIL reserve proxy approved; Realized rolling-five-year CPI+3% after costs |
-| Constrained | 77.04% | 0.00% | 0.00% | 22.96% | 5.50% | 3.53% | Not Known | None among testable rules | Numeric volatility cap; Actual annual turnover <=20%; BIL reserve proxy approved; Realized rolling-five-year CPI+3% after costs |
+| Portfolio | BIL | IEF | LQD | VT | Annual mean estimate | Annual volatility | Mandate | Authorization gate | Mean vs benchmark | Failed rules | Unknown rules |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Equal weight | 25.00% | 25.00% | 25.00% | 25.00% | 3.22% | 7.50% | Fail | Fail | -3.59 pp | Illustrative return hurdle | Numeric volatility cap; Single-rebalance turnover approximation <=20%; Actual annual turnover <=20% (trade ledger required); BIL reserve proxy approved; Realized rolling-five-year CPI+3% after costs |
+| Inverse volatility | 86.81% | 5.75% | 4.49% | 2.95% | 3.33% | 1.40% | Fail | Fail | -3.48 pp | Illustrative return hurdle | Numeric volatility cap; Single-rebalance turnover approximation <=20%; Actual annual turnover <=20% (trade ledger required); BIL reserve proxy approved; Realized rolling-five-year CPI+3% after costs |
+| Constrained | 77.04% | 0.00% | 0.00% | 22.96% | 5.50% | 3.53% | Not Known | Fail | -1.31 pp | None among testable rules | Numeric volatility cap; Single-rebalance turnover approximation <=20%; Actual annual turnover <=20% (trade ledger required); BIL reserve proxy approved; Realized rolling-five-year CPI+3% after costs |
 
 ## Stress results
 

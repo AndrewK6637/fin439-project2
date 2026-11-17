@@ -14,11 +14,11 @@ This frozen research decision is dated 2026-11-02, using monthly adjusted prices
 
 ## Alternatives and constrained research allocation
 
-| Portfolio | BIL | IEF | LQD | VT | Annual mean estimate | Annual volatility | Mandate |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Equal weight | 25.00% | 25.00% | 25.00% | 25.00% | 3.22% | 7.50% | Fail |
-| Inverse volatility | 86.81% | 5.75% | 4.49% | 2.95% | 3.33% | 1.40% | Fail |
-| Constrained | 77.04% | 0.00% | 0.00% | 22.96% | 5.50% | 3.53% | Not Known |
+| Portfolio | BIL | IEF | LQD | VT | Annual mean estimate | Annual volatility | Mandate | Authorization gate | Mean vs benchmark |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Equal weight | 25.00% | 25.00% | 25.00% | 25.00% | 3.22% | 7.50% | Fail | Fail | -3.59 pp |
+| Inverse volatility | 86.81% | 5.75% | 4.49% | 2.95% | 3.33% | 1.40% | Fail | Fail | -3.48 pp |
+| Constrained | 77.04% | 0.00% | 0.00% | 22.96% | 5.50% | 3.53% | Not Known | Fail | -1.31 pp |
 
 The comparator has an annual mean estimate of 6.81% and volatility of 12.29%, but no BIL reserve. Equal weight and inverse volatility fail the illustrative return hurdle. The constrained candidate passes testable rules, while full compliance stays Not Known because the numeric risk limit, reserve-proxy acceptance and actual turnover evidence are missing. Its allocation is a research result, not an authorized trade.
 

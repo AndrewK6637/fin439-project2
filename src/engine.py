@@ -6,6 +6,7 @@ TOL=1e-7
 
 def validate(mu,cov):
     mu=np.asarray(mu,float);cov=np.asarray(cov,float)
+    if mu.ndim!=1 or mu.size==0:raise ValueError('Expected returns require a nonempty vector.')
     if cov.shape!=(len(mu),len(mu)) or not np.isfinite(mu).all() or not np.isfinite(cov).all():raise ValueError('Invalid estimate dimensions or nonfinite values.')
     if not np.allclose(cov,cov.T,atol=1e-12) or np.linalg.eigvalsh(cov).min() < -1e-10:raise ValueError('Covariance must be symmetric positive semidefinite.')
     return mu,cov
@@ -15,8 +16,10 @@ def equal_weight(n):
     return np.ones(n)/n
 
 def inverse_volatility(cov):
+    cov=np.asarray(cov,float)
+    if cov.ndim!=2 or cov.shape[0]!=cov.shape[1] or cov.size==0 or not np.isfinite(cov).all():raise ValueError('Invalid covariance for inverse volatility.')
     vol=np.sqrt(np.diag(cov))
-    if np.any(vol<=0):raise ValueError('Inverse volatility requires positive volatilities.')
+    if not np.isfinite(vol).all() or np.any(vol<=0):raise ValueError('Inverse volatility requires positive volatilities.')
     inverse=1/vol;return inverse/inverse.sum()
 
 def turnover(weights,current):
@@ -47,12 +50,15 @@ def rules(weights,mu,cov,config,reserve_floor):
       'Direct nonexempt issuer <=5% (all allowed funds exempt)':True,
       'Illustrative return hurdle':bool(m['net_return_before_trade_cost']-(m['trading_cost'] or 0)>=target-TOL),
       'Numeric volatility cap':None if config['risk_limit'] is None else bool(m['volatility']<=config['risk_limit']+TOL),
-      'Actual annual turnover <=20%':None if m['turnover'] is None else bool(m['turnover']<=config['annual_turnover_max']+TOL),
+      'Single-rebalance turnover approximation <=20%':None if m['turnover'] is None else bool(m['turnover']<=config['annual_turnover_max']+TOL),
+      'Actual annual turnover <=20% (trade ledger required)':None,
       'BIL reserve proxy approved':True if config['reserve_proxy_confirmed'] else None,
       'Realized rolling-five-year CPI+3% after costs':None}
     failed=[k for k,v in result.items() if v is False];unknown=[k for k,v in result.items() if v is None]
     return {'rules':result,'failed':failed,'unknown':unknown,'mandate_status':'Fail' if failed else 'Not Known' if unknown else 'Pass',
-      'testable_constraints':'Fail' if failed else 'Pass'}
+      'testable_constraints':'Fail' if failed else 'Pass',
+      'authorization_gate':'Fail' if failed or unknown else 'Pass',
+      'authorization_reasons':failed+unknown}
 
 def optimize(mu,cov,config,reserve_floor):
     mu,cov=validate(mu,cov);n=len(mu);lower=np.full(n,config['min_weight']);lower[0]=max(lower[0],reserve_floor)
@@ -69,7 +75,7 @@ def optimize(mu,cov,config,reserve_floor):
     res=minimize(lambda w:float(w@cov@w)*100,x0,jac=lambda w:200*cov@w,method='SLSQP',bounds=list(zip(lower,upper)),constraints=constraints,options={'ftol':1e-10,'maxiter':1000})
     verified=rules(res.x,mu,cov,config,reserve_floor)
     success=bool(res.success and not verified['failed'])
-    return {'success':success,'message':str(res.message),'weights':res.x.tolist() if success else None,'iterations':int(res.nit),'verified':verified}
+    return {'success':success,'message':str(res.message),'weights':res.x.tolist() if success else None,'iterations':int(getattr(res,'nit',0)),'verified':verified}
 
 def realized_returns(returns,weights):
     # Drift between annual rebalances; weights reset after every twelve monthly observations.
