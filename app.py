@@ -6,7 +6,7 @@ from src.data import ROOT,load_prices,monthly_returns
 from src.workflow import run,load_config,comparison
 st.set_page_config(page_title='Cedar | Investment Committee',page_icon='C',layout='wide')
 st.title('Cedar Investment Committee')
-st.caption('Built with OpenAI Codex assistance. Student review pending. Educational analysis, not investment advice.')
+st.caption('Built with OpenAI Codex assistance. Student selected the analytical design; source checks and final review remain pending. Educational analysis, not investment advice.')
 @st.cache_data(show_spinner=False)
 def calculate(config_json):return run(json.loads(config_json))
 base=load_config();c=copy.deepcopy(base)
@@ -65,12 +65,12 @@ with tabs[2]:
  st.subheader('Separate chronological holdout diagnostic')
  st.warning(r['holdout']['label']);st.json(r['holdout'])
 with tabs[3]:
- st.subheader('Proposed fallback: inflation pressure')
+ st.subheader('Student-selected fallback: inflation pressure')
  st.write('CPIAUCSL, monthly seasonally adjusted CPI index. YoY = latest index / same-month prior-year index - 1. The signal uses the ALFRED snapshot dated the calendar day before the decision.')
  st.json({k:v for k,v in r['signal'].items() if k!='history'})
  if r['signal'].get('history'):st.line_chart(pd.DataFrame(r['signal']['history']).set_index('date'))
  st.write(f"Effective analytical BIL floor: {r['effective_reserve_floor']:.2%}. Proposed policy raises the floor to 5% when observed YoY inflation exceeds 3%, without reducing the client's reserve minimum.")
- st.warning('Lab 17 left the Project 2 signal quarantined. This proposed signal has genuine vintage evidence but is not represented as your prior selection or approval.')
+ st.warning('You chose to keep this AI-proposed fallback for Project 2. It was not your original Lab 17 selection. Personal source-value checks are still pending, so it does not authorize deployment.')
  card=ROOT/'docs/signal-data-card.md'
  if card.exists():st.markdown(card.read_text(encoding='utf-8'))
 with tabs[4]:

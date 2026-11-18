@@ -1,6 +1,6 @@
 OpenAI Codex helped recover coursework, write and debug code, run tests, and draft explanations.
 
-The student is responsible for the analysis and final decision; student review is pending. This is educational work, not investment advice.
+The student is responsible for the analysis and final decision. The student selected the fund universe, comparison benchmark, illustrative BIL proxy and CPI fallback, and agreed with the draft hold on deployment; personal source checks and final submission review remain pending. This is educational work, not investment advice.
 
 # Cedar Scholarship Foundation: FIN 439 Project 2
 
@@ -8,7 +8,7 @@ A six-tab Streamlit investment committee dashboard built from the student's reco
 
 ## Start here: results and class materials
 
-**[My ordered student checklist](WHAT_I_NEED_TO_DO.md)** | [Investment results without running Python](docs/checkout-results.md) | [Decision memo](docs/decision-memo.md) | [Final audit](FINAL_PROJECT_2_AUDIT.md)
+**[Submission review - all required files](SUBMISSION_REVIEW.md)** | [Student checklist](WHAT_I_NEED_TO_DO.md) | [Student decision log](docs/student-decision-log.md) | [Investment results](docs/checkout-results.md) | [Decision memo](docs/decision-memo.md) | [Final audit](FINAL_PROJECT_2_AUDIT.md)
 
 The application evaluates whether Cedar should deploy the proposed portfolio process. The current AI-assisted draft is **Reject deployment pending unresolved mandate evidence**. It does not recommend selling existing holdings. Results are a frozen educational analysis, not current market forecasts.
 
@@ -71,7 +71,7 @@ Cedar has $20 million, a ten-year horizon, quarterly $150,000 scholarships, and 
 
 The model compares equal weight, inverse volatility, and constrained minimum variance. Estimates use arithmetic monthly means multiplied by 12 and sample covariance multiplied by 12. A 2.5% illustrative CPI assumption produces a 5.5% nominal hurdle; this is not a verified forecast. The annual geometric real objective is not equivalent to this arithmetic estimate.
 
-BIL is an unapproved proxy for the $600,000 cash/short-Treasury reserve. All portfolios face the same testable rules. Missing numeric risk limits, actual holdings/trades, and reserve approval remain **Not Known**. Failing baselines stay visible. Infeasible optimization is reported, never replaced with a fake solution.
+BIL is the student's chosen **illustrative stand-in** for the $600,000 cash/short-Treasury reserve, not a documented Cedar-approved reserve holding. All portfolios face the same testable rules. Missing numeric risk limits, actual holdings/trades, and Cedar reserve approval remain **Not Known**. Failing baselines stay visible. Infeasible optimization is reported, never replaced with a fake solution.
 
 The default constrained research allocation is approximately 77.04% BIL and 22.96% VT, with estimated return 5.50% and volatility 3.53%. Full compliance is not established. The draft recommendation is **Reject deployment**, allocating 0% to this unapproved process until missing evidence is resolved. That is not an instruction to liquidate existing client holdings.
 
@@ -79,7 +79,7 @@ The default constrained research allocation is approximately 77.04% BIL and 22.9
 
 `data/raw/` preserves the recovered Yahoo chart responses and download metadata. `data/processed/prices.csv` contains 61 month-end adjusted prices. The source audit reconciles every price exactly to raw adjusted close. These are provider-adjusted return proxies; dividends and splits were not independently reconstructed. Missing months are not bridged or forward-filled.
 
-Lab 17 quarantined an unspecified macro signal. This project proposes CPIAUCSL inflation pressure, explicitly a fallback, not the student's original selection. The ALFRED November 1 snapshot precedes the November 2 decision. September 2026 CPI divided by September 2025 CPI implies 3.717% inflation; above 3% raises the analytical BIL floor to 5%. The default solution already exceeds that floor, so its weights do not change. Read `docs/signal-data-card.md` before interpreting it. Student source-value checks and approval remain pending.
+Lab 17 quarantined an unspecified macro signal. The student chose to keep this AI-proposed CPIAUCSL inflation-pressure fallback for Project 2; it was not the original Lab 17 selection. The ALFRED November 1 snapshot precedes the November 2 decision. September 2026 CPI divided by September 2025 CPI implies 3.717% inflation; above 3% raises the analytical BIL floor to 5%. The default solution already exceeds that floor, so its weights do not change. Read `docs/signal-data-card.md` before interpreting it. Personal source-value checks and Cedar deployment approval remain pending.
 
 The snapshot is reproducible, not automatically refreshed. `scripts/download_signal.py` documents retrieval of the frozen vintage. Archived Lab 14 download code is preserved under `recovered/`; a new date/universe requires deliberate source retrieval, metadata updates and validation, not a silent substitution. The holdout diagnostic separates training and evaluation but uses later revised prices, so it is not an implementable point-in-time backtest.
 

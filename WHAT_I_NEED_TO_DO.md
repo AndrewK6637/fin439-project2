@@ -5,9 +5,10 @@ Start here. The app and public GitHub repository are working, but the Lab 20 evi
 ## First review your decision
 
 - [ ] **Read the results.** Open [checkout-results.md](docs/checkout-results.md). Be able to explain Cedar's $20 million scholarship objective, the four funds, the three portfolios, and why the current draft says **Reject deployment**.
-- [ ] **Confirm the mandate and assumptions.** Compare [your recovered Lab 13 work](recovered/Lab13/Lab13_Report.md) with [the mandate configuration](config/mandate.json). Check the proposed 60% VT/40% LQD benchmark, BIL reserve proxy, missing numerical risk limit, actual holdings and costs. If you lack evidence, leave the item unknown; do not approve it just to clear a warning.
-- [ ] **Review the proposed CPI signal.** Read the [signal data card](docs/signal-data-card.md). Decide whether to use this explicitly labeled fallback and check the dated source observations yourself. The technical source audit does not equal your personal decision.
-- [ ] **Own the committee recommendation.** Read [the draft memo](docs/decision-memo.md). Decide in your own words whether to reject, pilot, adopt, allocate to, or rebalance the process. State what would reverse your decision. Edit the memo only if your judgment differs from the supported draft; keep its numbers consistent with [the results](docs/checkout-results.md).
+- [x] **State your coursework design choices.** You chose to keep BIL/IEF/LQD/VT, use 60% VT/40% LQD as a comparison, use BIL as an illustrative reserve stand-in and keep the proposed CPI fallback. These choices are documented in [the assumption guide](docs/student-assumptions-and-actions.md). Cedar approval, the numeric risk limit, real costs and actual holdings remain unknown.
+- [ ] **Review the short assumption guide.** [This page](docs/student-assumptions-and-actions.md) separates what you previously told AI, what the model assumes, and what only you or your partner can complete. Correct any statement that does not reflect your view.
+- [ ] **Verify the CPI source values.** You chose to keep the explicitly labeled AI-proposed fallback. Read [the signal data card](docs/signal-data-card.md) and personally check three dated CPI observations and the vintage. The technical source audit does not substitute for your check.
+- [ ] **Finish your committee reasoning.** You said the research strategy is good but agreed with **Reject deployment for now**. Read [the draft memo](docs/decision-memo.md) and state in your own words why the missing evidence blocks deployment and what would reverse the decision. Keep its numbers consistent with [the results](docs/checkout-results.md).
 
 ## Complete the graded Lab 20 checkout
 

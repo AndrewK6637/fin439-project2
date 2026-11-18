@@ -44,7 +44,7 @@ def stop_decision(solver,signal,warnings,config,stress):
     if config['risk_limit'] is None:unknown.append('Cedar numeric risk limit not documented')
     if config.get('current_weights') is None:unknown.append('Actual holdings/trades unavailable; turnover and transition costs unverified')
     if not config['reserve_proxy_confirmed']:unknown.append('BIL reserve-proxy acceptance not confirmed')
-    if not config['signal_confirmed']:unknown.append('Proposed CPI signal and source-value checks await student review')
+    if not config['signal_confirmed']:unknown.append('Student selected CPI fallback; personal source-value checks and final evidence review remain incomplete')
     unknown.extend(['Cedar benchmark approval not recovered','Forward CPI and cost assumptions not client-confirmed','Realized rolling-five-year real objective is not established by an arithmetic estimate'])
     status='Fail' if failed else 'Not Known' if unknown else 'Pass'
     # Reject deployment when evidence is insufficient; no automatic favorable recommendation.

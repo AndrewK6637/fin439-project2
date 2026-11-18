@@ -1,6 +1,6 @@
 OpenAI Codex helped recover coursework, implement and debug the application, run automated validation, and draft documentation and scripts.
 
-The student is responsible for the analysis and final decision; personal review and approval are pending. This is educational work, not investment advice.
+The student is responsible for the analysis and final decision. The student selected the coursework fund universe, comparator, illustrative reserve stand-in and CPI fallback, and agreed with the draft hold on deployment in AI-assisted discussion on November 18, 2026. Personal source checks and final submission review remain pending. This is educational work, not investment advice.
 
 # Validation and AI use
 
@@ -10,11 +10,13 @@ Material AI assistance occurred in this Codex session on November 16, 2026. The 
 
 Disposition: retain the tested code for research; treat the generated investment recommendation and proposed signal as drafts. Student-authored original mandate decisions are distinguishable from new analytical assumptions in configuration and the recovery inventory. No claim is made that the student personally checked any output during this session. The locked prediction fields remain blank.
 
+The [student decision log](student-decision-log.md) records the student's actual choices made in AI chat on November 18, including the four-fund universe, comparison benchmark, illustrative BIL stand-in, CPI fallback, and agreement with holding deployment. This is evidence of human direction with AI assistance, not independent AI-off work or source verification.
+
 ## Sources and as-of boundary
 
 The original Lab 14 Yahoo responses were retrieved October 20, 2026 and supply 61 month-end adjusted prices per fund through September 30. The frozen decision is November 2. `scripts/audit_sources.py` reconciled **244 prices exactly** to the raw adjusted-close field (maximum absolute difference zero for each fund) and verified all **54** recovered file hashes. Raw data, URLs and retrieval metadata are retained. These checks establish copying fidelity, not independent verification of provider adjustment methodology.
 
-The CPIAUCSL signal uses an authentic ALFRED November 1 snapshot; its latest observation is September 2026. The transformation is 336.298 / 324.245 - 1 = approximately 3.71725%. Vintage identity, cutoff and source hash are checked. Current revised FRED observations are not substituted for this historical snapshot. The student must verify source observations and decide whether to adopt the proposed policy; Lab 17 had quarantined its unspecified macro input.
+The CPIAUCSL signal uses an authentic ALFRED November 1 snapshot; its latest observation is September 2026. The transformation is 336.298 / 324.245 - 1 = approximately 3.71725%. Vintage identity, cutoff and source hash are checked. Current revised FRED observations are not substituted for this historical snapshot. The student chose to keep this AI-proposed fallback for Project 2 but must personally verify source observations; Lab 17 had quarantined its unspecified macro input.
 
 ## Original implementation validation (superseded by the final audit below)
 
@@ -47,13 +49,13 @@ The default constrained portfolio is 77.04% BIL and 22.96% VT, estimated arithme
 
 The 48-month-training/12-month-evaluation diagnostic avoids estimation leakage, but uses a later downloaded adjusted-price snapshot and does not apply the current signal retrospectively. It cannot establish an implementable historical PIT strategy or forecast. Arithmetic estimates do not establish Cedar's geometric real after-cost five-year objective.
 
-The numeric Cedar risk limit, benchmark approval, BIL reserve-proxy acceptance, actual holdings/trades and forward CPI/cost assumptions remain unresolved. Therefore the process status is Not Known and the draft deployment recommendation is Reject. This is a decision about authorizing the proposed process, not liquidating client assets.
+The student chose 60% VT / 40% LQD as the coursework comparison and BIL as an illustrative reserve stand-in. Cedar approval of the benchmark or BIL, the numeric Cedar risk limit, actual holdings/trades and forward CPI/cost assumptions remain unresolved. The student said Cedar's current investments are unavailable beyond the published project. Therefore the process status is Not Known and the draft deployment recommendation is Reject; the student agreed with the hold on deployment in AI chat. This is a decision about authorizing the proposed process, not liquidating client assets.
 
 ## Locked Changed-Input Record and student verification
 
 See `docs/changed-input-record.md`. The deterministic experiment is prepared behind a gate. No student prediction has been written by AI, no pre-run student commit fabricated, and no locked experiment run. The student must author and commit/push the prediction with AI closed, then run and reconcile it with AI closed under the official rule.
 
-Student verification status: **pending**. Video recordings, corrected actual transcripts and Brightspace attachments are also pending. The public project repository is now published at https://github.com/AndrewK6637/fin439-project2; grader access through the final manifest has not been checked. The full analytic rubric descriptor file returned 404; verified syllabus category weights are recorded in the requirements matrix without inventing descriptors or a score.
+Student verification status: **design and draft-decision choices stated in AI chat; personal source-value checks, independent classroom evidence and final submission review pending**. Video recordings, corrected actual transcripts and Brightspace attachments are also pending. The public project repository is now published at https://github.com/AndrewK6637/fin439-project2; grader access through the final manifest has not been checked. The full analytic rubric descriptor file returned 404; verified syllabus category weights are recorded in the requirements matrix without inventing descriptors or a score.
 
 
 ## Final independent-method audit ? November 16, 2026

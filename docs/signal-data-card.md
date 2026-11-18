@@ -1,9 +1,9 @@
-# Signal data card - proposed fallback, review pending
+# Signal data card - student-selected fallback, source review pending
 
 | Field | Definition |
 |---|---|
 | Name | Inflation pressure / scholarship purchasing-power context |
-| Status | Proposed by the agent; Lab 17 did not select a Project 2 series |
+| Status | Proposed by the agent; student chose to keep it for Project 2 on November 18, 2026. Lab 17 did not select a Project 2 series; personal source-value checks remain pending. |
 | Series | CPIAUCSL |
 | Primary producer / distributor | U.S. Bureau of Labor Statistics / Federal Reserve Bank of St. Louis |
 | Source | https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=CPIAUCSL&vintage_date=2026-11-01 |
@@ -21,10 +21,10 @@
 | Rationale | Higher observed inflation motivates a temporary larger near-term scholarship reserve; this is a policy hypothesis, not an optimized trading predictor |
 | Missing policy | Quarantine missing/wrong/corrupt vintages; stop deployment. No interpolation or invented release lag |
 | Freshness | Signal older than 100 calendar days is unavailable under a disclosed analyst rule |
-| Known limits | SA CPI is revisable; monthly observation dates are not release dates; this fallback and its policy need student approval; no claim that it improves returns |
+| Known limits | SA CPI is revisable; monthly observation dates are not release dates; student selected this fallback but has not recorded the requested personal source-value checks; no claim that it improves returns |
 
 `data/raw/signals/CPIAUCSL_2026-11-01.meta.json` retains source, requested vintage, actual retrieval timestamp and SHA-256. Downloading it now is not a claim that the project existed at that historical date. ALFRED is specifically used to recover the historical vintage. See [ALFRED methodology](https://alfred.stlouisfed.org/help).
 
-**STUDENT ACTION REQUIRED:** verify at least three source observations and their vintage identity, record the check, and decide whether to admit this proposed series. Until then, Lab 17's cautious quarantine decision is preserved at the deployment-approval level. The app can evaluate the analytical scenario without asserting that you approved it.
+**STUDENT ACTION REQUIRED:** verify at least three source observations and their vintage identity, then record the check. The student has chosen to keep the proposed series for this coursework model. Until the personal check and other mandate evidence are complete, Lab 17's cautious quarantine is preserved at the deployment-approval level. The app can evaluate the analytical scenario without asserting Cedar approved it.
 
 Final audit: an independent download from the same historical ALFRED URL matched all 957 stored observations and the complete file hash. See `outputs/audit-signal-source.json`. This is agent verification, not the required student's source check. The gate now requires exact HTTPS source hostname, matching series/vintage query and checksum; it quarantines missing/nonfinite/nonpositive latest or prior-year data instead of silently selecting an older value.

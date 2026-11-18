@@ -1,12 +1,12 @@
 # Cedar: investment results for the studio
 
-**AI-assisted output; student review pending. Educational work, not investment advice.**
+**AI-assisted output; student selected the analytical design and agreed with the draft hold on deployment. Personal source checks and final review remain pending. Educational work, not investment advice.**
 
 ## Decision first
 
 Reject deployment of Cedar's proposed portfolio process; reconsider only after the committee documents the missing mandate approvals and actual holdings/costs, the student validates the signal and completes the genuine locked record, and a rerun shows feasible allocations with acceptable stress results.
 
-The proposed allocation to this unapproved process is **0%-0%**. This does not direct liquidation of existing assets. The research candidate below is not an authorized trade. The full project is published at [AndrewK6637/fin439-project2](https://github.com/AndrewK6637/fin439-project2).
+The proposed allocation to this unapproved process is **0%-0%**: the AI-assisted draft recommends committing no *new* money to this strategy until the missing evidence is reviewed. The model still calculates the research portfolio shown below. This does not direct liquidation of existing assets or claim the student has approved the recommendation. The full project is published at [AndrewK6637/fin439-project2](https://github.com/AndrewK6637/fin439-project2).
 
 ## Evidence boundary
 
@@ -22,11 +22,11 @@ All weights are percent of portfolio; return estimates and volatility are annual
 | Inverse volatility | 86.81% | 5.75% | 4.49% | 2.95% | 3.33% | 1.40% | Fail | Fail | -3.48 pp |
 | Constrained | 77.04% | 0.00% | 0.00% | 22.96% | 5.50% | 3.53% | Not Known | Fail | -1.31 pp |
 
-Benchmark: 60% VT / 40% LQD; annual mean estimate **6.81%**, volatility **12.29%**. It is a comparator pending Cedar approval, not a compliant reserve portfolio.
+Benchmark: 60% VT / 40% LQD; annual mean estimate **6.81%**, volatility **12.29%**. The student selected it as a comparison benchmark; Cedar approval is not documented. It is not a compliant reserve portfolio.
 
 ## Mandate and verdict
 
-Cedar has $20 million, a ten-year horizon and $150,000 quarterly scholarships. The goal is CPI+3% after costs over rolling five years. Allowed funds: BIL/IEF/LQD/VT; long only, fully invested. Reserve: $600,000 (3% at inception), 95% five-day liquidity, 5% nonexempt direct issuer maximum, annual rebalance and 20% annual one-way turnover cap. BIL reserve-proxy approval and a numeric risk-policy limit remain unresolved.
+Cedar has $20 million, a ten-year horizon and $150,000 quarterly scholarships. The goal is CPI+3% after costs over rolling five years. The student chose to keep BIL/IEF/LQD/VT as the coursework fund universe and BIL as an illustrative reserve stand-in. The model is long only and fully invested. Reserve: $600,000 (3% at inception), 95% five-day liquidity, 5% nonexempt direct issuer maximum, annual rebalance and 20% annual one-way turnover cap. Cedar approval of the BIL proxy and a numeric risk-policy limit remain unresolved.
 
 | Constrained candidate rule | Result |
 | --- | --- |
@@ -43,7 +43,7 @@ Cedar has $20 million, a ten-year horizon and $150,000 quarterly scholarships. T
 | BIL reserve proxy approved | Not Known |
 | Realized rolling-five-year CPI+3% after costs | Not Known |
 
-Unknown evidence fails authorization; it is not converted into a numerical failure or a pass. The historical arithmetic hurdle does not verify the realized rolling real after-cost objective.
+**Not Known means the required evidence is missing, not that a calculation failed.** The numeric volatility limit was not recovered; actual holdings and trades are unavailable for turnover; BIL has not been approved as the reserve proxy; and a historical arithmetic return estimate cannot prove a realized rolling-five-year CPI+3% result after costs. The approval gate stays closed until those items are resolved.
 
 ## Existing ordinary stress evidence (not a classroom prediction record)
 
@@ -64,4 +64,4 @@ The present controls cannot certify missing client approvals or actual annual le
 
 ## Reproduction and unfinished evidence
 
-Run `.venv/Scripts/python.exe scripts/build_checkout_results.py` in the installed Windows project environment. This reads the same pipeline as the app and does not execute the proposed annual-cost experiment or the existing locked reserve experiment. [Full machine-readable results](../outputs/results.json), [decision memo](decision-memo.md), [Tuesday validation](tuesday-checkout-validation.md), [partner record](partner-cold-run-template.md). The partner cold run, student AI-off prediction and actual classroom results remain unperformed.
+From the project folder in PowerShell, run `.\.venv\Scripts\python.exe scripts\build_checkout_results.py` to regenerate this baseline page from the same pipeline as the app. This command does **not** run either changed-input experiment. See [the machine-readable results](../outputs/results.json), [decision memo](decision-memo.md), [validation](tuesday-checkout-validation.md), and [blank partner record](partner-cold-run-template.md). The partner run, genuine student AI-off prediction, classroom before/after evidence and personal CPI source checks have not been completed. See [assumptions and next steps](student-assumptions-and-actions.md).

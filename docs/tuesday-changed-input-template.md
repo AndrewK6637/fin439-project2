@@ -12,6 +12,8 @@ Prepared November 17, 2026. This is a proposed input and blank record for the **
 - Why this input: one directly editable scalar enters the modeled net-return calculation and optimizer return constraint. Unlike actual transaction costs, this scenario does not require inventing current holdings. The scenario's numerical result and decision effect have **not** been calculated during preparation.
 - Relevant code: `src/engine.py`, `metrics` and `optimize`; see the code study guide. No predicted direction is supplied here.
 
+Earlier AI-assisted conversation recorded the student's preliminary view that 75 basis points would lower returns after costs, change the weights little, leave the portfolio feasible and probably leave the committee decision unchanged. The student also suggested risk might rise slightly. These are **not** classroom AI-off predictions or verified outcomes; see [the discussion record](student-assumptions-and-actions.md). The prediction fields below remain blank intentionally.
+
 ## Student completes BEFORE running (AI closed)
 
 | Required field | Student entry |

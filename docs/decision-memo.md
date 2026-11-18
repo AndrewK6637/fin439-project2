@@ -6,11 +6,17 @@ The analysis and final decision are the responsibility of the student; this is e
 
 **Recommendation: Reject deployment for now.** Reject deployment pending resolution of the listed failures and unknowns; retain the app for analytical review. The allocation range to this unapproved process is **0%-0% pending evidence clearance**; this is not an instruction to liquidate existing holdings.
 
+In plain terms, **0%-0% means no new allocation to the proposed strategy yet**. It is separate from the model's calculated fund weights below. The student expressed agreement in AI chat, but formal final review and any required independent student statement remain pending. [Your stated views and remaining decisions](student-assumptions-and-actions.md) are recorded separately from model evidence.
+
+In AI-assisted discussion on November 18, 2026, the student said the strategy is good and agreed with the draft recommendation. The sensible reading is that the research approach is worth keeping, while deployment should wait for the missing approval evidence. This statement is student feedback in chat, not a claim that Cedar or an investment committee approved the process.
+
 ## Mandate and evidence boundary
 
 Cedar has $20 million, a ten-year horizon, and quarterly scholarships of $150,000. Its objective is CPI + 3% annually after costs over rolling five-year periods. The recovered universe is BIL, IEF, LQD and VT; the proposed comparator is the inherited 60% VT / 40% LQD mix, whose Cedar-specific approval is not documented. The minimum reserve is $600,000, or 3% at inception; five-day liquidity must cover 95%, direct nonexempt issuers are capped at 5%, and annual one-way turnover is capped at 20% without committee approval.
 
 This frozen research decision is dated 2026-11-02, using monthly adjusted prices ending 2026-09-30 and 60 return observations. The 2.5% CPI assumption and resulting 5.5% nominal hurdle are inherited illustrations, not a confirmed forward CPI forecast. Historical means and sample volatility are estimates, not promises.
+
+In AI-assisted discussion on November 18, 2026, the student chose to keep the BIL/IEF/LQD/VT universe, use 60% VT / 40% LQD as the comparison benchmark, use BIL as an illustrative reserve stand-in, and keep the AI-proposed CPI fallback. These choices support this coursework analysis; they do not establish Cedar approval, an actual reserve holding, or a numerical risk policy.
 
 ## Alternatives and constrained research allocation
 
@@ -24,7 +30,7 @@ The comparator has an annual mean estimate of 6.81% and volatility of 12.29%, bu
 
 ## Point-in-time signal
 
-The proposed fallback is CPIAUCSL year-over-year inflation: 336.298 / 324.245 - 1 = 3.72%. The observation is 2026-09-01, from the 2026-11-01 ALFRED vintage, the calendar day before the decision. The proposed policy raises the analytical BIL floor to 5.00%. This does not change the baseline optimum because its BIL weight already exceeds that floor. The rule influences feasible construction, but is not represented as a proven return predictor or the student's prior Lab 17 choice.
+The student chose to keep the AI-proposed CPIAUCSL fallback for Project 2. Year-over-year inflation is 336.298 / 324.245 - 1 = 3.72%. The observation is 2026-09-01, from the 2026-11-01 ALFRED vintage, the calendar day before the decision. The proposed policy raises the analytical BIL floor to 5.00%. This does not change the baseline optimum because its BIL weight already exceeds that floor. The rule influences feasible construction, but is not represented as a proven return predictor or the student's prior Lab 17 choice. Personal source-value checks remain pending.
 
 ## Stress evidence
 
