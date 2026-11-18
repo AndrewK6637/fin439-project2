@@ -4,7 +4,7 @@ The student is responsible for the analysis and final decision. This is educatio
 
 # Cedar Scholarship Foundation - Committee Decision
 
-**Recommendation: Reject deployment for now.** The strategy is promising as a research process, but it should not receive new money until the missing mandate and implementation evidence is resolved. The allocation range to this process is **0%-0% pending evidence clearance**; this is not an instruction to liquidate existing holdings. The student agrees with this recommendation.
+**Recommendation: Reject deployment for now.** The strategy is promising as a research process, but missing mandate and implementation evidence prevents deployment. **New allocation to this strategy: 0% for now.** This recommendation concerns new investment in the proposed process; it does not call for selling Cedar's existing holdings. A positive allocation range should be set only after the missing evidence is reviewed and the strategy is authorized.
 
 The student chose the BIL/IEF/LQD/VT fund universe, 60% VT / 40% LQD comparison benchmark, BIL as an illustrative reserve stand-in and the CPI fallback for this coursework model. These choices do not establish Cedar approval. The [student decision log](student-decision-log.md) records the student input.
 
