@@ -1,6 +1,6 @@
 # Tuesday studio record ? student and partner complete
 
-Official source: [Week 12 studio](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-12/student-handout.md). The current public handout says both meetings are open studios with **no lab checkout or lab points**. The 25-or-0 category belongs to Lab 11; do not assume it applies to this studio. Any separate newer Brightspace instruction is not verified here.
+Official sources: [Week 12 studio](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-12/student-handout.md) and [Week 13 Lab 20](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-13/lab-20-project2-readiness.md). Week 12 was ungraded preparation; **Lab 20 is a separate 25-or-0 Tuesday completion checkout**. This blank record is preparation, not completed student or partner evidence.
 
 ## 1. Before the partner run ? AI closed
 
@@ -37,4 +37,4 @@ After identifying your own risky claim, request/choose one concrete test, check 
 | | | | | |
 | | | | | |
 
-The prepared repository still needs owner approval to commit and publish; no remote is configured. The locked record, actual videos/transcripts and final submission links remain unresolved. Do not mark them complete until done.
+The project repository is published at [AndrewK6637/fin439-project2](https://github.com/AndrewK6637/fin439-project2); give your partner only its [README link](https://github.com/AndrewK6637/fin439-project2/blob/main/README.md). The locked record, actual partner note, videos/transcripts and final submission links remain unresolved. Do not mark them complete until done.

@@ -1,6 +1,6 @@
 # Student-only changed-input record ? BLANK, NOT EXECUTED
 
-Prepared November 17, 2026. This is an optional Project 2/Week 6-style prediction protocol, not completed classroom evidence. The current Week 12 handout calls Tuesday an open studio with no checkout points; it does not require a new changed-input run before the partner cold run. Follow any newer instructor/Brightspace direction if provided.
+Prepared November 17, 2026. This is a proposed input and blank record for the **graded Week 13 Lab 20 changed-input exercise** and potentially the final Project 2 Locked Record. [Official Lab 20](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-13/lab-20-project2-readiness.md) requires the student's AI-off prediction, commit and push before the run, followed by saved before/after results and a reconciliation. The proposed input remains unrun here.
 
 ## Proposed independent input
 

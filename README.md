@@ -8,7 +8,7 @@ A six-tab Streamlit investment committee dashboard built from the student's reco
 
 ## Start here: results and class materials
 
-**[Read the investment results without running Python](docs/checkout-results.md)** | [Decision memo](docs/decision-memo.md) | [Tuesday preparation and evidence](docs/tuesday-checkout-validation.md)
+**[Read the investment results without running Python](docs/checkout-results.md)** | [Decision memo](docs/decision-memo.md) | [Final Project 2 audit and remaining work](FINAL_PROJECT_2_AUDIT.md) | [Lab 20 record](docs/tuesday-studio-record.md)
 
 The application evaluates whether Cedar should deploy the proposed portfolio process. The current AI-assisted draft is **Reject deployment pending unresolved mandate evidence**. It does not recommend selling existing holdings. Results are a frozen educational analysis, not current market forecasts.
 

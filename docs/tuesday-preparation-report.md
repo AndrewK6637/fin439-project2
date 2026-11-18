@@ -1,5 +1,7 @@
 # Tuesday preparation report
 
+**Historical snapshot, November 17:** The repository was later [published](https://github.com/AndrewK6637/fin439-project2). The separate [Week 13 Lab 20](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-13/lab-20-project2-readiness.md) is a **25-or-0 checkout**. Statements below about no publication and no checkout describe the earlier preparation state only. For current status, use [FINAL_PROJECT_2_AUDIT.md](../FINAL_PROJECT_2_AUDIT.md).
+
 Project: `C:/Users/jklai/Documents/Courses/AIFinance2026/JKLai/fin439_project2_investment_management`.
 
 ## A. READY FOR CLASS

@@ -1,5 +1,7 @@
 # Tuesday studio preparation and validation
 
+**Current status, November 18:** This document records the earlier Week 12 preparation, when the repository had not yet been published. The distinct [Week 13 Lab 20 checkout](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-13/lab-20-project2-readiness.md) is **25 or 0** and requires the partner cold run, committed pre-run AI-off prediction, one fix or recorded clean run, and decision line. The project is now [published on GitHub](https://github.com/AndrewK6637/fin439-project2). The older statements below are dated preparation evidence, not current submission status. See [final audit](../FINAL_PROJECT_2_AUDIT.md) for current testing and remaining work.
+
 OpenAI Codex helped prepare documentation, repair one input-control issue, and run software checks. Student/partner classroom evidence remains blank. Educational work, not investment advice.
 
 ## Official scope verified

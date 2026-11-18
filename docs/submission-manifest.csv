@@ -1,9 +1,9 @@
 item,required,location_or_url,title,duration_or_as_of,timestamp_index,access_checked,frozen_or_commit_id,notes
 Research-Evolution.pdf,no,,,,,not checked,,Not required for Project 2 by current checklist
-Repository,yes,,,,,not checked,,GitHub project root
-Visible executed output,yes,,,,,not checked,,GitHub outputs/visible-results.md
-Decision memo or deck,yes,,,,,not checked,,GitHub docs/decision-memo.md; attach same MD to Brightspace
-Validation-and-AI-Use.pdf,yes,,,,,not checked,,Legacy row title; use GitHub docs/validation-and-ai-use.md and attach same MD
+Repository,yes,https://github.com/AndrewK6637/fin439-project2,FIN 439 Project 2 Cedar Scholarship Foundation,,,automated public clone succeeded,,Final reviewer access and frozen revision pending
+Visible executed output,yes,https://github.com/AndrewK6637/fin439-project2/blob/main/docs/checkout-results.md,Cedar investment results,2026-11-02,,automated public clone succeeded,,Read without running Python; final revision pending
+Decision memo or deck,yes,https://github.com/AndrewK6637/fin439-project2/blob/main/docs/decision-memo.md,Draft committee decision,2026-11-02,,automated public clone succeeded,,Student review pending; attach same MD to Brightspace
+Validation-and-AI-Use.pdf,yes,https://github.com/AndrewK6637/fin439-project2/blob/main/docs/validation-and-ai-use.md,Validation and AI use,,,automated public clone succeeded,,Legacy row title; Locked Record and student verification pending; attach same MD to Brightspace
 Video 1,yes,,,,,not checked,,YouTube; <=3:00
 Transcript Video 1,yes,,,,,not checked,,GitHub docs/transcript-video-1.txt after actual recording
 Video 2,yes,,,,,not checked,,YouTube; <=5:00

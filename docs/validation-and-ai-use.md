@@ -53,7 +53,7 @@ The numeric Cedar risk limit, benchmark approval, BIL reserve-proxy acceptance, 
 
 See `docs/changed-input-record.md`. The deterministic experiment is prepared behind a gate. No student prediction has been written by AI, no pre-run student commit fabricated, and no locked experiment run. The student must author and commit/push the prediction with AI closed, then run and reconcile it with AI closed under the official rule.
 
-Student verification status: **pending**. Video recordings, corrected actual transcripts, remote publication/access checks and Brightspace attachments are also pending. The full analytic rubric descriptor file returned 404; verified syllabus category weights are recorded in the requirements matrix without inventing descriptors or a score.
+Student verification status: **pending**. Video recordings, corrected actual transcripts and Brightspace attachments are also pending. The public project repository is now published at https://github.com/AndrewK6637/fin439-project2; grader access through the final manifest has not been checked. The full analytic rubric descriptor file returned 404; verified syllabus category weights are recorded in the requirements matrix without inventing descriptors or a score.
 
 
 ## Final independent-method audit ? November 16, 2026
@@ -71,4 +71,4 @@ See `docs/project2-final-audit.md` for findings and `docs/project2-grade-audit.m
 
 ## November 17 studio preparation
 
-See [Tuesday validation](tuesday-checkout-validation.md) for the latest 66-test run, clean-setup evidence and preserved installation failure. The current official Week 12 handout specifies open studio with no checkout points. The README, visible results, blank classroom/partner records and code study guide are prepared; student and partner evidence is not fabricated. The proposed annual-cost classroom scenario and existing locked reserve scenario remain unrun. Latest user instruction requires approval before any commit or push; preparation changes are left uncommitted.
+The November 17 preparation evidence is in [Tuesday validation](tuesday-checkout-validation.md): 66 tests, clean setup and preserved installation failure. That document describes Week 12 only. [Week 13 Lab 20](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-13/lab-20-project2-readiness.md) is a distinct 25-or-0 checkout. The public GitHub repository was subsequently published. The README, visible results, blank classroom/partner records and code study guide are prepared; student and partner evidence is not fabricated. The proposed annual-cost classroom scenario and existing locked reserve scenario remain unrun.

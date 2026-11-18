@@ -6,7 +6,7 @@
 
 Reject deployment of Cedar's proposed portfolio process; reconsider only after the committee documents the missing mandate approvals and actual holdings/costs, the student validates the signal and completes the genuine locked record, and a rerun shows feasible allocations with acceptable stress results.
 
-The proposed allocation to this unapproved process is **0%-0%**. This does not direct liquidation of existing assets. The research candidate below is not an authorized trade.
+The proposed allocation to this unapproved process is **0%-0%**. This does not direct liquidation of existing assets. The research candidate below is not an authorized trade. The full project is published at [AndrewK6637/fin439-project2](https://github.com/AndrewK6637/fin439-project2).
 
 ## Evidence boundary
 
@@ -64,4 +64,4 @@ The present controls cannot certify missing client approvals or actual annual le
 
 ## Reproduction and unfinished evidence
 
-Run `python scripts/build_checkout_results.py` in the installed project environment. This reads the same pipeline as the app and does not execute the Tuesday proposed annual-cost experiment or the existing locked reserve experiment. [Full machine-readable results](../outputs/results.json), [decision memo](decision-memo.md), [Tuesday validation](tuesday-checkout-validation.md), [partner record](partner-cold-run-template.md). Publication to GitHub, the partner cold run, student AI-off prediction and actual classroom results remain unperformed.
+Run `.venv/Scripts/python.exe scripts/build_checkout_results.py` in the installed Windows project environment. This reads the same pipeline as the app and does not execute the proposed annual-cost experiment or the existing locked reserve experiment. [Full machine-readable results](../outputs/results.json), [decision memo](decision-memo.md), [Tuesday validation](tuesday-checkout-validation.md), [partner record](partner-cold-run-template.md). The partner cold run, student AI-off prediction and actual classroom results remain unperformed.
