@@ -30,6 +30,13 @@ The earlier unrun 35% proposal was replaced during preparation because the basel
 
 From the project root, inspect and commit your own prediction and freeze all material model/input files first:
 
+Before your student-authored commit, set Git's **local author identity to your own name and GitHub email** (or your verified GitHub no-reply address). Do not use the automation identity from earlier code commits. This changes only this repository's commit metadata, not a financial input:
+
+```powershell
+git config --local user.name "YOUR NAME"
+git config --local user.email "YOUR GITHUB EMAIL"
+```
+
 ```powershell
 git status --short
 git add config/locked_experiment.json docs/changed-input-record.md
