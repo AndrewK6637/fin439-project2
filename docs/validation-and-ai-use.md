@@ -55,6 +55,8 @@ The student chose 60% VT / 40% LQD as the coursework comparison and BIL as an il
 
 See `docs/changed-input-record.md`. The deterministic experiment is prepared behind a gate. No student prediction has been written by AI, no pre-run student commit fabricated, and no locked experiment run. The student must author and commit/push the prediction with AI closed, then run and reconcile it with AI closed under the official rule.
 
+The prepared analytical reserve-floor change is now 3% to 85%. An earlier unrun 35% proposal was replaced because it was below the baseline research allocation's approximately 77% BIL weight and would not test a binding floor. This setup change was AI-assisted; no prediction or outcome has been supplied. The student's own pre-run prediction remains blank.
+
 Student verification status: **design and draft-decision choices stated in AI chat; personal source-value checks, independent classroom evidence and final submission review pending**. Video recordings, corrected actual transcripts and Brightspace attachments are also pending. The public project repository is now published at https://github.com/AndrewK6637/fin439-project2; grader access through the final manifest has not been checked. The full analytic rubric descriptor file returned 404; verified syllabus category weights are recorded in the requirements matrix without inventing descriptors or a score.
 
 

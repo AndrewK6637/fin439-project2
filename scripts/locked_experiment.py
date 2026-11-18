@@ -17,7 +17,7 @@ def verify_prediction(commit,remote_branch):
     spec=json.loads(git('show',f'{commit}:config/locked_experiment.json'))
     for field in ['student_prediction','student_reasoning','expected_output_direction','expected_decision_effect']:
         if not spec.get(field,'').strip():raise ValueError(f'STUDENT ACTION REQUIRED: {field} must be genuinely authored with AI off before committing.')
-    if spec['experiment_id']!='cedar-reserve-35' or spec['original']!=.03 or spec['changed']!=.35:raise ValueError('Experiment definition changed; establish a new pre-run protocol.')
+    if spec['experiment_id']!='cedar-reserve-85' or spec['original']!=.03 or spec['changed']!=.85:raise ValueError('Experiment definition changed; establish a new pre-run protocol.')
     if git('status','--porcelain','--','config/locked_experiment.json'):raise ValueError('Prediction file has uncommitted changes.')
     if git('show',f'{commit}:config/locked_experiment.json')!=(ROOT/'config/locked_experiment.json').read_text().strip():raise ValueError('Working prediction differs from committed prediction.')
     verify_frozen_model(commit)

@@ -1,9 +1,9 @@
 {
-  "experiment_id": "cedar-reserve-35",
+  "experiment_id": "cedar-reserve-85",
   "input": "reserve_min",
   "units": "fraction of portfolio",
   "original": 0.03,
-  "changed": 0.35,
+  "changed": 0.85,
   "student_prediction": "",
   "student_reasoning": "",
   "expected_output_direction": "",
