@@ -5,6 +5,7 @@ Prepared November 17, 2026. This is a proposed input and blank record for the **
 ## Proposed independent input
 
 - Input: additional annual costs, configuration key `ongoing_cost_bps`.
+- This is an AI-prepared example, **not a student-authored AI-off selection**. The student may independently choose another load-bearing input with AI closed and replace the example input, values and units before writing the prediction. Prior discussion of cost and reserve changes in AI chat must not be represented as independent prediction work.
 - Original: **0 basis points per year**, the existing illustrative baseline; not a claim that real costs are zero.
 - Proposed new value: **75 basis points per year** (0.75% of assets annually), a disclosed scenario, not a newly approved client cost assumption.
 - UI location: sidebar **Additional annual costs (bps)**. Change this box only; leave all other controls at startup defaults.
@@ -25,7 +26,7 @@ Prepared November 17, 2026. This is a proposed input and blank record for the **
 | Genuine prediction commit hash | |
 | GitHub link proving prediction published before run | |
 
-Do not ask AI to fill these fields. First obtain authorization to commit/publish the prepared repository and ensure its model/data files are frozen. With AI closed, write your prediction, save this file, commit it, and push that genuine prediction commit before the changed run if using it for the final Project 2 Locked Record. Keep the actual commit URL. Do not backdate anything.
+Do not ask AI to fill these fields. The repository is already published; ensure its model/data files are frozen. With AI closed, write your own prediction, save this file, commit it, and push that genuine prediction commit before the changed run if using it for the final Project 2 Locked Record. Keep the actual commit URL. Do not backdate anything.
 
 ## Student executes AFTER prediction is locked (AI closed)
 

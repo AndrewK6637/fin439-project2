@@ -2,7 +2,7 @@
 
 This folder is the complete Cedar Scholarship Foundation project. Keep its folders together so the app can find its data and configuration.
 
-**Start with [the Word review and submission checklist](START_HERE_Project_2_Checklist.docx).** Check off your own completed work; it does not certify student actions in advance.
+**Start with [the current ordered student checklist](WHAT_I_NEED_TO_DO.md).** The older [Word checklist](START_HERE_Project_2_Checklist.docx) remains for printing; the Markdown checklist includes the corrected Lab 20 requirements and current GitHub status.
 
 | What you need | Where to find it |
 | --- | --- |
