@@ -10,7 +10,7 @@ A six-tab Streamlit investment committee dashboard built from the student's reco
 
 **[Submission review - all required files](SUBMISSION_REVIEW.md)** | [Student checklist](WHAT_I_NEED_TO_DO.md) | [Student decision log](docs/student-decision-log.md) | [Investment results](docs/checkout-results.md) | [Decision memo](docs/decision-memo.md) | [Final audit](FINAL_PROJECT_2_AUDIT.md)
 
-The application evaluates whether Cedar should deploy the proposed portfolio process. The current AI-assisted draft is **Reject deployment pending unresolved mandate evidence**. It does not recommend selling existing holdings. Results are a frozen educational analysis, not current market forecasts.
+The application evaluates whether Cedar should deploy the proposed portfolio process. The recommendation is **Reject deployment pending unresolved mandate evidence**. It does not recommend selling existing holdings. Results are a frozen educational analysis, not current market forecasts. [The student decision record](docs/student-decision-log.md) traces the earlier coursework and the student's later choices.
 
 ## Get your own copy
 
@@ -28,7 +28,7 @@ python -m venv .venv
 
 If Windows cannot find `python`, use `py -3.13` for the first two commands. Internet is needed for installation; the bundled analysis runs offline afterward. No API key, paid service, login or personal coursework folder is needed.
 
-## RUN THE APPLICATION ? one command
+## Run the application - one command
 
 ```powershell
 .venv\Scripts\python.exe -m streamlit run app.py
@@ -73,7 +73,7 @@ The model compares equal weight, inverse volatility, and constrained minimum var
 
 BIL is the student's chosen **illustrative stand-in** for the $600,000 cash/short-Treasury reserve, not a documented Cedar-approved reserve holding. All portfolios face the same testable rules. Missing numeric risk limits, actual holdings/trades, and Cedar reserve approval remain **Not Known**. Failing baselines stay visible. Infeasible optimization is reported, never replaced with a fake solution.
 
-The default constrained research allocation is approximately 77.04% BIL and 22.96% VT, with estimated return 5.50% and volatility 3.53%. Full compliance is not established. The draft recommendation is **Reject deployment**, allocating 0% to this unapproved process until missing evidence is resolved. That is not an instruction to liquidate existing client holdings.
+The default constrained research allocation is approximately 77.04% BIL and 22.96% VT, with estimated return 5.50% and volatility 3.53%. Full compliance is not established. The recommendation is **Reject deployment for now: no new allocation to this process** until missing evidence is resolved. That is not an instruction to liquidate existing client holdings.
 
 ## Data and point-in-time signal
 
