@@ -5,4 +5,8 @@ references/** -text
 *.py text eol=lf
 *.md text eol=lf
 
+# Keep recovered coursework and official references byte-for-byte for hash audits.
+recovered/** -text
+references/** -text
+
 outputs/audit-alfred-response.csv -text
