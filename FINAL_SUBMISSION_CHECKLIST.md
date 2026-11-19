@@ -1,5 +1,7 @@
 # FIN 439 Project 2 final submission checklist
 
+**For November 19, start with [the ordered finish plan](TOMORROW_FINISH_PLAN.md). On Windows, double-click `OPEN_APP.cmd` in the extracted project folder to launch the app.**
+
 **Status on November 18, 2026: technical research app verified; mandatory student evidence and delivery remain incomplete. Do not submit as complete yet.** OpenAI Codex assisted with code, tests, source checks, and drafts. The student owns the analysis and final decision. Educational work, not investment advice.
 
 ## Completed and checked

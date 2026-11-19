@@ -8,7 +8,7 @@ A six-tab Streamlit investment committee dashboard built from the student's reco
 
 ## Start here: results and class materials
 
-**[Submission review - all required files](SUBMISSION_REVIEW.md)** | [Final submission checklist](FINAL_SUBMISSION_CHECKLIST.md) | [Simple explanation](PROJECT_2_SIMPLE_EXPLANATION.md) | [Student checklist](WHAT_I_NEED_TO_DO.md) | [Student decision log](docs/student-decision-log.md) | [Investment results](docs/checkout-results.md) | [Decision memo](docs/decision-memo.md) | [Final audit](FINAL_PROJECT_2_AUDIT.md)
+**[Finish tomorrow](TOMORROW_FINISH_PLAN.md)** | [Submission review - all required files](SUBMISSION_REVIEW.md) | [Final submission checklist](FINAL_SUBMISSION_CHECKLIST.md) | [Simple explanation](PROJECT_2_SIMPLE_EXPLANATION.md) | [Student checklist](WHAT_I_NEED_TO_DO.md) | [Student decision log](docs/student-decision-log.md) | [Investment results](docs/checkout-results.md) | [Decision memo](docs/decision-memo.md) | [Final audit](FINAL_PROJECT_2_AUDIT.md)
 
 The application evaluates whether Cedar should deploy the proposed portfolio process. The recommendation is **Reject deployment pending unresolved mandate evidence**. It does not recommend selling existing holdings. Results are a frozen educational analysis, not current market forecasts. [The student decision record](docs/student-decision-log.md) traces the earlier coursework and the student's later choices.
 
@@ -17,6 +17,8 @@ The application evaluates whether Cedar should deploy the proposed portfolio pro
 Open **[AndrewK6637/fin439-project2](https://github.com/AndrewK6637/fin439-project2)**. Choose **Code > Download ZIP**, extract it into a short folder such as `C:\fin439`, and open a terminal in the folder containing **this README, `app.py`, `requirements-lock.txt`, `src/`, `config/` and `data/`**. Alternatively, run `git clone https://github.com/AndrewK6637/fin439-project2.git` and then `cd fin439-project2`. Download the entire project, not just this README. Each person creates their own virtual environment below.
 
 ## Install dependencies (Windows PowerShell)
+
+**Fastest Windows start:** after extracting the whole repository, double-click `OPEN_APP.cmd`. It creates the Python 3.13 virtual environment, installs pinned requirements on the first run, and starts the app. Keep its terminal window open. The manual steps below do the same thing.
 
 Install Python **3.13**, the tested version. Use a short extraction path on Windows (for example `C:\fin439`) rather than many nested folders. From the project folder:
 
