@@ -22,7 +22,7 @@
 | Before / after committee recommendation |Reject deployment and recommend 0% new capital in both runs. |
 | Difference from prediction |I expected the 85% floor to produce no feasible portfolio and the recommendation to stay at 0% new capital. Both matched. The solver returned no portfolio at 85%, so the run gave me no volatility estimate to compare with my prediction. |
 | Diagnosis and what was learned |At an 85% BIL floor, only 15% was available for the other funds. Even putting that whole 15% into VT gave me a pre-run estimate of about 4.84%, below the 5.50% target. The run confirmed that the model couldn't find a portfolio that met both requirements. |
-| Result file and after-run commit link |`outputs/locked_changed_input.json` |
+| Result file and after-run commit link |`outputs/locked_changed_input.json` — [After-run commit](https://github.com/AndrewK6637/fin439-project2/commit/e1adc62) |
 
 Before running, close AI assistance. In `config/locked_experiment.json`, fill the four blank student fields yourself. Predict the effects on weights, estimated risk/return, feasibility and the committee decision; explain your financial reasoning without asking AI for the answer.
 

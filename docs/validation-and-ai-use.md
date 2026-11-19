@@ -8,9 +8,14 @@ The student is responsible for the analysis and final decision. The student sele
 
 Material AI assistance occurred in this Codex session on November 16, 2026. The environment identifies the agent as Codex based on GPT-6; a more precise deployed model/build identifier was not independently exposed. No other AI model use is claimed. Codex generated the new application code, test code, proposed CPI fallback policy, draft memo and video scripts. Original student coursework remains in `recovered/` with provenance hashes.
 
-Disposition: retain the tested code for research. The student selected the CPI fallback for Project 2 and agreed with the recommendation to withhold new investment for now. These choices are recorded, as is the student's later reported CPI spot check; final judgment and review remain open. Earlier coursework decisions are distinguishable from new analytical assumptions in configuration and the recovery inventory. No claim is made that the student completed the locked prediction; its fields remain blank.
+Disposition: retain the tested code for research. The student selected the CPI fallback for Project 2 and agreed with the recommendation to withhold new investment for now. These choices are recorded, as is the student's later reported CPI spot check; final judgment and review remain open. Earlier coursework decisions are distinguishable from new analytical assumptions in configuration and the recovery inventory. No claim is made that the student completed the locked prediction; the prediction fields were committed before the run. The record and results are linked below.
 
 The [student decision log](student-decision-log.md) records the student's actual choices made in AI chat on November 18, including the four-fund universe, comparison benchmark, illustrative BIL stand-in, CPI fallback, and agreement with holding deployment. This is evidence of human direction with AI assistance, not independent AI-off work or source verification.
+
+## Locked experiment evidence
+
+- [Locked experiment record](changed-input-record.md)
+- [Locked experiment results](../outputs/locked_changed_input.json)
 
 ## Sources and as-of boundary
 
