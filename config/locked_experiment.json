@@ -4,8 +4,8 @@
   "units": "fraction of portfolio",
   "original": 0.03,
   "changed": 0.85,
-  "student_prediction": "",
-  "student_reasoning": "",
-  "expected_output_direction": "",
-  "expected_decision_effect": ""
+  "student_prediction": "I predict that raising the minimum BIL allocation from 3% to 85% will make it impossible for the model to find a portfolio that meets the 5.50% return hurdle. I expect my recommendation to stay at 0% new capital.",
+  "student_reasoning": "The original portfolio held about 23% in VT to reach the 5.50% hurdle. With at least 85% in BIL, there's only 15% left for the other funds. VT has the highest estimated return, so I checked what would happen if the full 15% went into VT. That mix would have an estimated annual return of about 4.84%, which is still below 5.50%. That's why I expect the model to say there's no feasible portfolio.",
+  "expected_output_direction": "I expect the 85% BIL minimum to make it harder to reach the 5.50% return target. With only 15% left for other funds, I expect the model to find no portfolio that meets both requirements. I exptect the 85% BIL / 15% VT test mix to have lower annual volatility than the original 3.53%. The test mix holds less VT and more BIL, so I expect its returns to swing less.",
+  "expected_decision_effect": "I expect the recommendation to stay at 0% new capital. If the model cannot meet the return target with the higher reserve, that gives me another reason to hold off."
 }
