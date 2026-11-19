@@ -1,49 +1,29 @@
-OpenAI Codex helped recover coursework, develop and test the application, and draft this script.
+# Video 2 — How the code reaches the decision
 
-I am responsible for the analysis and final decision. This is educational work, not investment advice.
+**Aim: about 4 minutes. Maximum: 5 minutes.** Keep your webcam on and audio clear. Open the editor and a terminal before recording. This is a speaking guide, not an actual transcript.
 
-# Video 2: Code walkthrough
+## Opening — show the project files
 
-Target 4:30; maximum 5:00. Script is not a transcript. Keep terminal and editor ready; do not run the locked experiment during recording.
+**Say:** “I used OpenAI Codex to help develop and test this app and draft these speaking notes. I am responsible for the analysis and final decision. This is educational work, not investment advice.”
 
-## 0:00-0:30 | Disclosures and map
+“I will trace one result from data to the committee decision. The four fund prices feed return estimates; the optimizer proposes weights; then the mandate and authorization checks determine what we can recommend.”
 
-[Read the disclosures. Show the project tree.]
+## Inputs — show `config/mandate.json` and `src/data.py`
 
-The application separates data, finance calculations, signal timing and presentation. The dashboard calls the same workflow as the report generator, so the memo and application use the same calculations.
+**Say:** “The saved configuration sets a 60-month estimation window, a 2.5% illustrative CPI assumption, and Cedar’s 3% real-return spread. The screening hurdle is therefore 5.50% nominal. This 2.5% is a scenario input, not the historical CPI signal. The loader uses saved adjusted monthly prices for BIL, IEF, LQD, and VT, checks dates and values, and does not fill missing prices.”
 
-## 0:30-1:10 | Inputs and provenance
+## Calculation — show `src/engine.py`
 
-[Show `config/mandate.json`; `src/data.py`: `load_prices`, `monthly_returns`, `estimates`.]
+**Say:** “The app estimates arithmetic annual returns from monthly returns and annualizes the sample covariance. For weights w, expected return is the weighted sum of fund means; variance is w-transpose times the covariance matrix times w. The constrained solver minimizes variance while requiring weights to sum to 100%, remain nonnegative, and meet the illustrative hurdle and reserve floor. It checks the returned weights again against the rules. A solver message alone is not proof of feasibility.”
 
-The configuration preserves the four recovered funds and marks assumptions that still need approval. The loader rejects duplicate dates and invalid prices. It inserts missing months before calculating returns, then drops incomplete common observations without forward filling. Arithmetic monthly means and sample covariance are annualized by twelve. This is an estimate, not a promised return.
+## Signal and decision — show `src/signal.py`, then `src/workflow.py`
 
-## 1:10-2:00 | Portfolio engine
+**Say:** “The saved November 1 ALFRED vintage gives 336.298 divided by 324.245 minus one, about 3.72% historical year-over-year CPI. Under the proposed rule, this raises the BIL floor from the entered 3% to an effective 5%. The baseline candidate already holds 77.04% BIL, so that floor does not bind. The workflow then separates testable constraints from unknown mandate evidence. The candidate passes testable rules, but full mandate status is Not Known and deployment authorization fails. That produces 0% new capital.”
 
-[Show `src/engine.py`: `equal_weight`, `inverse_volatility`, `metrics`, `optimize`, `rules`.]
+## One test — show `docs/changed-input-record.md` and `outputs/locked_changed_input.json`
 
-Equal weight assigns one quarter to each fund. The transparent second baseline divides inverse individual volatility by its total. The constrained model minimizes portfolio variance, which is weights transpose times covariance times weights, subject to the configured rules. SLSQP must report success, and the independent rule check must find no testable failure. Unknown mandate evidence remains unknown. A numerical failure does not become a successful portfolio merely because its weights look reasonable.
+**Say:** “I wrote and committed a prediction before changing the BIL floor to 85%. I expected no portfolio to meet the 5.50% hurdle. The saved run returned no feasible constrained portfolio; the recommendation stayed at 0% new capital. The output records the prediction commit that the script checked on GitHub. I recorded the actual result in a later commit.”
 
-## 2:00-2:40 | Vintage boundary
+## Validation and limit — show `tests/test_app.py` or the test command in README
 
-[Show `src/signal.py`: `evaluate_signal`, `effective_reserve`; then the signal data card.]
-
-The signal uses an ALFRED snapshot from the calendar day before the decision date. The code checks vintage identity, hash, dates, missing observations and freshness. Year-over-year CPI compares the latest available observation with the same month a year earlier. This is a proposed replacement for the quarantined signal, not a recovered student approval. It changes the feasible reserve floor, although the default optimum already exceeds that floor.
-
-## 2:40-3:20 | Robustness and decisions
-
-[Show `src/workflow.py`: `stress_cases`, `stop_decision`, `run`.]
-
-The ordinary stresses change a return estimate, shorten the estimation window, increase transaction costs and tighten the largest fund weight. Trading costs distinguish one-way turnover from two-sided traded notional. Actual client trades are unavailable, so scenario costs are not presented as known client costs. Invalid evidence, infeasibility or excessive instability stops the process. Missing approval evidence blocks deployment even when all numerical stresses succeed.
-
-## 3:20-4:05 | Validation
-
-[Show `tests/test_engine.py`, `tests/test_app.py`, and `outputs/audit-tests.txt`.]
-
-Tests include manually checkable variance and return answers, zero and invalid inputs, infeasible constraints, annualization, missing months, timing boundaries and application interactions. The holdout trains only on the earlier period, but its prices came from a later adjusted snapshot. That limitation is displayed instead of calling it a fully point-in-time trading backtest.
-
-## 4:05-4:30 | Locked record and reproducibility
-
-[Show `docs/changed-input-record.md` and README commands.]
-
-The locked experiment requires my own AI-off prediction and a genuine GitHub commit before an AI-off run. That run has not occurred. The gate was tested only to reject blank prediction fields. A new user can install the pinned dependencies, run pytest and launch Streamlit from the README.
+**Say:** “The automated suite passed 66 tests in the latest local check. The holdout is a diagnostic using a later-downloaded adjusted-price snapshot, so I do not call it an implementable point-in-time backtest. The code cannot infer Cedar’s risk policy, current holdings, actual transaction costs, or approval of the BIL reserve proxy. Those are committee inputs, not missing lines of Python.”
