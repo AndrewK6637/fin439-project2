@@ -13,7 +13,11 @@ h1,h2,h3 {font-family:'Outfit',sans-serif!important;letter-spacing:-.025em;}
 [data-testid="stAppViewContainer"] {background:radial-gradient(circle at 82% 0%,#e7f6ee 0,#f8fbf9 30%,#f8fbf9 100%);}
 [data-testid="stSidebar"] {background:#102d29;}
 [data-testid="stSidebar"] * {color:#f0f7f3!important;}
-[data-testid="stSidebar"] [data-baseweb="input"] input {color:#102d29!important;}
+[data-testid="stSidebar"] [data-testid="stNumberInput"] input,
+[data-testid="stSidebar"] [data-testid="stTextInput"] input,
+[data-testid="stSidebar"] [data-baseweb="input"] input {color:#102d29!important;-webkit-text-fill-color:#102d29!important;background:#fff!important;opacity:1!important;}
+[data-testid="stSidebar"] [data-testid="stNumberInput"] [data-baseweb="input"],
+[data-testid="stSidebar"] [data-testid="stTextInput"] [data-baseweb="input"] {background:#fff!important;}
 [data-testid="stSidebar"] [data-baseweb="select"] * {color:#102d29!important;}
 .block-container {padding-top:2rem;max-width:1480px;}
 .cedar-hero {background:linear-gradient(115deg,#102d29,#155849 60%,#247b62);color:#fff;padding:2rem 2.3rem;border-radius:22px;box-shadow:0 16px 42px #103d3024;margin-bottom:1rem;}
