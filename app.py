@@ -29,7 +29,7 @@ h1,h2,h3 {font-family:'Outfit',sans-serif!important;letter-spacing:-.025em;}
 div[data-testid="stDataFrame"], div[data-testid="stPlotlyChart"] {border-radius:16px;overflow:hidden;}
 </style>''',unsafe_allow_html=True)
 st.markdown('<div class="cedar-hero"><div class="cedar-eyebrow">FIN 439 · Project 2 · Research dashboard</div><h1>Cedar Investment Committee</h1><p>Portfolio construction, mandate evidence, and an honest deployment decision.</p></div>',unsafe_allow_html=True)
-st.caption('Built with OpenAI Codex assistance. Student selected the analytical design; source checks and final review remain pending. Educational analysis, not investment advice.')
+st.caption('Built with OpenAI Codex assistance. Student selected the analytical design and reported checking three CPI source values on November 19, 2026; final review remains pending. Educational analysis, not investment advice.')
 @st.cache_data(show_spinner=False)
 def calculate(config_json):return run(json.loads(config_json))
 base=load_config();c=copy.deepcopy(base)
@@ -109,20 +109,52 @@ with tabs[2]:
  st.warning(r['holdout']['label']);st.json(r['holdout'])
 with tabs[3]:
  st.subheader('Student-selected fallback: inflation pressure')
- st.write('CPIAUCSL, monthly seasonally adjusted CPI index. YoY = latest index / same-month prior-year index - 1. The signal uses the ALFRED snapshot dated the calendar day before the decision.')
- st.json({k:v for k,v in r['signal'].items() if k!='history'})
+ signal=r['signal']
+ st.write('The app checks a historical CPI observation available in the November 1 ALFRED vintage, before the frozen November 2 research decision. This is an inflation-pressure indicator, not a return forecast.')
+ a,b,d=st.columns(3)
+ a.metric('Signal check',signal['status'])
+ b.metric('Year-over-year inflation',f"{signal['yoy']:.2%}" if signal.get('yoy') is not None else 'Unavailable')
+ d.metric('Analytical BIL floor',f"{r['effective_reserve_floor']:.0%}")
+ if signal.get('status')=='Pass':
+  st.write(f"**Calculation:** {signal['value']:.3f} (September 2026 CPI) / {signal['prior_value']:.3f} (September 2025 CPI) - 1 = {signal['yoy']:.2%}.")
+  st.write('**Portfolio effect:** Inflation exceeds the proposed 3% trigger, so the analytical BIL floor rises to 5%. The default constrained portfolio already holds more BIL than that floor; the signal does not change its default weights.')
+ else:st.error('The signal is unavailable or invalid. Do not use it to authorize deployment. '+signal.get('reason',''))
  if r['signal'].get('history'):st.line_chart(pd.DataFrame(r['signal']['history']).set_index('date'))
- st.write(f"Effective analytical BIL floor: {r['effective_reserve_floor']:.2%}. Proposed policy raises the floor to 5% when observed YoY inflation exceeds 3%, without reducing the client's reserve minimum.")
- st.warning('You chose to keep this AI-proposed fallback for Project 2. It was not your original Lab 17 selection. Personal source-value checks are still pending, so it does not authorize deployment.')
+ st.warning('This AI-proposed CPI rule was selected for the coursework model. The student reported checking three source values and the arithmetic, but Cedar has not approved the policy; the signal does not authorize deployment.')
+ with st.expander('Source details and raw signal record'):
+  st.write('Series: CPIAUCSL, seasonally adjusted monthly CPI. The observation date labels the month, not the original release time. The saved vintage is',signal.get('cutoff','unavailable'))
+  st.json({k:v for k,v in signal.items() if k!='history'})
  card=ROOT/'docs/signal-data-card.md'
- if card.exists():st.markdown(card.read_text(encoding='utf-8'))
+ if card.exists():
+  with st.expander('Read the signal data card'):st.markdown(card.read_text(encoding='utf-8'))
 with tabs[4]:
  st.subheader('Required robustness checks')
  st.error('STOP deployment on infeasibility, invalid/missing signal, stale prices, or more than 20 percentage points of weight instability. Unresolved mandate evidence also blocks authorization.')
- for s in r['stress']:
-  with st.expander(s['scenario'],expanded=True):st.json(s)
  if r['stress']:
-  st.caption('Transaction-cost control: inspect transition_cost_sensitivity for a nonzero hypothetical rebalance. Actual client costs cannot be computed without holdings.')
+  rows=[]
+  for s in r['stress']:
+   rows.append({'Scenario':s['scenario'],'Solver':'Pass' if s['success'] else 'Fail',
+    'BIL':f"{s['weights'][0]:.1%}" if s['success'] else '—','IEF':f"{s['weights'][1]:.1%}" if s['success'] else '—',
+    'LQD':f"{s['weights'][2]:.1%}" if s['success'] else '—','VT':f"{s['weights'][3]:.1%}" if s['success'] else '—',
+    'Annual mean':f"{s['expected_return']:.2%}" if s['success'] else '—',
+    'Volatility':f"{s['volatility']:.2%}" if s['success'] else '—',
+    'Largest weight move':f"{s['largest_weight_change']*100:.2f} pp" if s['success'] else '—',
+    'Authorization':s['mandate']['authorization_gate'] if s['success'] else 'Fail'})
+  st.dataframe(pd.DataFrame(rows),hide_index=True,width='stretch')
+  largest=max((s.get('largest_weight_change',0) for s in r['stress']),default=0)
+  st.write(f'**What moved most:** The largest tested allocation change is {largest*100:.2f} percentage points. The analyst stop threshold is 20 percentage points. Passing these scenario optimizations does not establish full Cedar authorization.')
+  for s in r['stress']:
+   with st.expander(s['scenario']+' — interpretation and evidence'):
+    if s['success']:
+     st.write(f"Weights: {', '.join(f'{fund} {weight:.1%}' for fund,weight in zip(c['funds'],s['weights']))}. Estimated annual mean {s['expected_return']:.2%}; volatility {s['volatility']:.2%}. Largest move from the base allocation: {s['largest_weight_change']*100:.2f} percentage points.")
+     st.write(f"Testable constraints: {s['mandate']['testable_constraints']}. Full mandate: {s['mandate']['mandate_status']}. Authorization: {s['mandate']['authorization_gate']}.")
+     if s.get('transition_cost_sensitivity'):
+      t=s['transition_cost_sensitivity']
+      st.write(f"**Cost illustration:** A hypothetical baseline-to-equal-weight transition has {t['hypothetical_one_way_turnover']:.1%} one-way turnover and costs {t['at_stress_50bps']:.2%} of assets at 50 bps per traded side. These are not Cedar's actual holdings or trades.")
+    else:st.error('Solver infeasible or failed: '+s['message'])
+    with st.expander('Raw scenario record'):st.json(s)
+ if r['stress']:
+  st.caption('The cost illustration uses hypothetical holdings. Actual client costs cannot be computed without Cedar holdings and trades.')
  st.write('For customized input stresses, change the sidebar controls. Cost stress uses an explicitly hypothetical baseline holding vector; actual client turnover is unknown.')
  st.info('The separate Locked Changed-Input Record is not run here. Its student-authored AI-off prediction must be committed to GitHub before execution.')
 with tabs[5]:
