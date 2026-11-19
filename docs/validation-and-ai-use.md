@@ -1,6 +1,6 @@
 OpenAI Codex helped recover coursework, implement and debug the application, run automated validation, and draft documentation and scripts.
 
-The student is responsible for the analysis and final decision. The student selected the coursework fund universe, comparator, illustrative reserve stand-in and CPI fallback, and agreed with the draft hold on deployment in AI-assisted discussion on November 18, 2026. Personal source checks and final submission review remain pending. This is educational work, not investment advice.
+The student is responsible for the analysis and final decision. The student selected the coursework fund universe, comparator, illustrative reserve stand-in and CPI fallback, and agreed with the draft hold on deployment in AI-assisted discussion on November 18, 2026. A three-value CPI source check was student-reported on November 19; final submission review remains pending. This is educational work, not investment advice.
 
 # Validation and AI use
 
@@ -8,7 +8,7 @@ The student is responsible for the analysis and final decision. The student sele
 
 Material AI assistance occurred in this Codex session on November 16, 2026. The environment identifies the agent as Codex based on GPT-6; a more precise deployed model/build identifier was not independently exposed. No other AI model use is claimed. Codex generated the new application code, test code, proposed CPI fallback policy, draft memo and video scripts. Original student coursework remains in `recovered/` with provenance hashes.
 
-Disposition: retain the tested code for research. The student selected the CPI fallback for Project 2 and agreed with the recommendation to withhold new investment for now. These choices are recorded, while personal source checks and final review remain open. Earlier coursework decisions are distinguishable from new analytical assumptions in configuration and the recovery inventory. No claim is made that the student personally checked the source values or completed the locked prediction; its fields remain blank.
+Disposition: retain the tested code for research. The student selected the CPI fallback for Project 2 and agreed with the recommendation to withhold new investment for now. These choices are recorded, as is the student's later reported CPI spot check; final judgment and review remain open. Earlier coursework decisions are distinguishable from new analytical assumptions in configuration and the recovery inventory. No claim is made that the student completed the locked prediction; its fields remain blank.
 
 The [student decision log](student-decision-log.md) records the student's actual choices made in AI chat on November 18, including the four-fund universe, comparison benchmark, illustrative BIL stand-in, CPI fallback, and agreement with holding deployment. This is evidence of human direction with AI assistance, not independent AI-off work or source verification.
 
@@ -16,7 +16,7 @@ The [student decision log](student-decision-log.md) records the student's actual
 
 The original Lab 14 Yahoo responses were retrieved October 20, 2026 and supply 61 month-end adjusted prices per fund through September 30. The frozen decision is November 2. `scripts/audit_sources.py` reconciled **244 prices exactly** to the raw adjusted-close field (maximum absolute difference zero for each fund) and verified all **54** recovered file hashes. Raw data, URLs and retrieval metadata are retained. These checks establish copying fidelity, not independent verification of provider adjustment methodology.
 
-The CPIAUCSL signal uses an authentic ALFRED November 1 snapshot; its latest observation is September 2026. The transformation is 336.298 / 324.245 - 1 = approximately 3.71725%. Vintage identity, cutoff and source hash are checked. Current revised FRED observations are not substituted for this historical snapshot. The student chose to keep this AI-proposed fallback for Project 2 but must personally verify source observations; Lab 17 had quarantined its unspecified macro input.
+The CPIAUCSL signal uses an authentic ALFRED November 1 snapshot; its latest observation is September 2026. The transformation is 336.298 / 324.245 - 1 = approximately 3.71725%. Vintage identity, cutoff and source hash are checked. Current revised FRED observations are not substituted for this historical snapshot. On November 19, the student reported finding 2025-09-01 = 324.245, 2026-08-01 = 334.131 and 2026-09-01 = 336.298 in the linked ALFRED CSV, then independently calculating 0.037173 (about 3.7173%). See `signal-data-card.md`. This reported spot check does not certify the proposed policy or Cedar approval; Lab 17 had quarantined its unspecified macro input.
 
 ## Original implementation validation (superseded by the final audit below)
 
@@ -57,7 +57,7 @@ See `docs/changed-input-record.md`. The deterministic experiment is prepared beh
 
 The prepared analytical reserve-floor change is now 3% to 85%. An earlier unrun 35% proposal was replaced because it was below the baseline research allocation's approximately 77% BIL weight and would not test a binding floor. This setup change was AI-assisted; no prediction or outcome has been supplied. The student's own pre-run prediction remains blank.
 
-Student verification status: **design and draft-decision choices stated in AI chat; personal source-value checks, independent classroom evidence and final submission review pending**. Video recordings, corrected actual transcripts and Brightspace attachments are also pending. The public project repository is now published at https://github.com/AndrewK6637/fin439-project2; grader access through the final manifest has not been checked. The full analytic rubric descriptor file returned 404; verified syllabus category weights are recorded in the requirements matrix without inventing descriptors or a score.
+Student verification status: **design and draft-decision choices stated in AI chat; three CPI values and arithmetic student-reported checked November 19; independent classroom evidence and final submission review pending**. Video recordings, corrected actual transcripts and Brightspace attachments are also pending. The public project repository is now published at https://github.com/AndrewK6637/fin439-project2; grader access through the final manifest has not been checked. The full analytic rubric descriptor file returned 404; verified syllabus category weights are recorded in the requirements matrix without inventing descriptors or a score.
 
 
 ## Final independent-method audit ? November 16, 2026

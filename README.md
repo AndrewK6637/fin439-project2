@@ -1,6 +1,6 @@
 OpenAI Codex helped recover coursework, write and debug code, run tests, and draft explanations.
 
-The student is responsible for the analysis and final decision. The student selected the fund universe, comparison benchmark, illustrative BIL proxy and CPI fallback, and agreed with the draft hold on deployment; personal source checks and final submission review remain pending. This is educational work, not investment advice.
+The student is responsible for the analysis and final decision. The student selected the fund universe, comparison benchmark, illustrative BIL proxy and CPI fallback, and agreed with the draft hold on deployment; a three-value CPI source check was student-reported on November 19, 2026, while final submission review remains pending. This is educational work, not investment advice.
 
 # Cedar Scholarship Foundation: FIN 439 Project 2
 
@@ -83,7 +83,7 @@ The default constrained research allocation is approximately 77.04% BIL and 22.9
 
 `data/raw/` preserves the recovered Yahoo chart responses and download metadata. `data/processed/prices.csv` contains 61 month-end adjusted prices. The source audit reconciles every price exactly to raw adjusted close. These are provider-adjusted return proxies; dividends and splits were not independently reconstructed. Missing months are not bridged or forward-filled.
 
-Lab 17 quarantined an unspecified macro signal. The student chose to keep this AI-proposed CPIAUCSL inflation-pressure fallback for Project 2; it was not the original Lab 17 selection. The ALFRED November 1 snapshot precedes the November 2 decision. September 2026 CPI divided by September 2025 CPI implies 3.717% inflation; above 3% raises the analytical BIL floor to 5%. The default solution already exceeds that floor, so its weights do not change. Read `docs/signal-data-card.md` before interpreting it. Personal source-value checks and Cedar deployment approval remain pending.
+Lab 17 quarantined an unspecified macro signal. The student chose to keep this AI-proposed CPIAUCSL inflation-pressure fallback for Project 2; it was not the original Lab 17 selection. The ALFRED November 1 snapshot precedes the November 2 decision. September 2026 CPI divided by September 2025 CPI implies 3.717% inflation; above 3% raises the analytical BIL floor to 5%. The default solution already exceeds that floor, so its weights do not change. Read `docs/signal-data-card.md` before interpreting it. The student reported checking three source observations and the arithmetic on November 19; Cedar deployment approval remains pending.
 
 The snapshot is reproducible, not automatically refreshed. `scripts/download_signal.py` documents retrieval of the frozen vintage. Archived Lab 14 download code is preserved under `recovered/`; a new date/universe requires deliberate source retrieval, metadata updates and validation, not a silent substitution. The holdout diagnostic separates training and evaluation but uses later revised prices, so it is not an implementable point-in-time backtest.
 
