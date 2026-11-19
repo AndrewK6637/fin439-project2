@@ -1,6 +1,6 @@
 OpenAI Codex assisted with source recovery, software development, calculations implemented in Python, testing, and drafting this document.
 
-The student is responsible for the analysis and final decision. This is educational work, not investment advice. Personal source checks and final submission review remain pending.
+The student is responsible for the analysis and final decision. This is educational work, not investment advice. A three-value CPI source check was student-reported on November 19, 2026; final submission review remains pending.
 
 # Cedar Scholarship Foundation - Committee Decision
 
@@ -28,7 +28,7 @@ The comparator has an annual mean estimate of 6.81% and volatility of 12.29%, bu
 
 ## Point-in-time signal
 
-The CPIAUCSL fallback gives year-over-year inflation of 336.298 / 324.245 - 1 = 3.72%. The observation is 2026-09-01, from the 2026-11-01 ALFRED vintage, the calendar day before the decision. The proposed policy raises the analytical BIL floor to 5.00%. This does not change the baseline optimum because its BIL weight already exceeds that floor. The rule influences feasible construction, but is not a proven return predictor or the student's original Lab 17 choice. The student selected this fallback for Project 2; personal source-value checks remain pending.
+The CPIAUCSL fallback gives year-over-year inflation of 336.298 / 324.245 - 1 = 3.72%. The observation is 2026-09-01, from the 2026-11-01 ALFRED vintage, the calendar day before the decision. The proposed policy raises the analytical BIL floor to 5.00%. This does not change the baseline optimum because its BIL weight already exceeds that floor. The rule influences feasible construction, but is not a proven return predictor or the student's original Lab 17 choice. The student selected this fallback for Project 2 and reported checking three source values and the arithmetic on November 19; Cedar policy approval remains unconfirmed.
 
 ## Stress evidence
 
@@ -47,7 +47,7 @@ Estimation error, the BIL reserve proxy, the unresolved forward CPI/cost basis, 
 
 Monitor reserve coverage, vintage identity, price age, solver feasibility, costs, annual turnover, real outcomes and weight stability. Stop on an invalid signal, stale prices, infeasible optimization, a failed required stress, or a weight change above the analyst-defined 20-percentage-point stability threshold. That threshold is a disclosed process choice, not a recovered client limit.
 
-The committee should reject deployment until the missing mandate inputs and proposed signal are reviewed, source checks are complete, and the student finishes the genuine AI-off experiment. Revisit the decision only with that evidence; do not relax the objective merely to obtain an allocation. See validation-and-ai-use.md for tests and limitations.
+The committee should reject deployment until the missing mandate inputs and proposed signal policy are reviewed, the student-reported source check receives independent review, and the student finishes the genuine AI-off experiment. Revisit the decision only with that evidence; do not relax the objective merely to obtain an allocation. See validation-and-ai-use.md for tests and limitations.
 
 ## Decision condition
 

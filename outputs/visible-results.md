@@ -26,7 +26,7 @@ As-of: 2026-11-02. Price end: 2026-09-30. Estimates from 2021-10-31. All returns
     "Cedar numeric risk limit not documented",
     "Actual holdings/trades unavailable; turnover and transition costs unverified",
     "BIL reserve-proxy acceptance not confirmed",
-    "Student selected CPI fallback; personal source-value checks and final evidence review remain incomplete",
+    "CPI fallback selected for coursework and spot-checked by student; Cedar policy approval remains unconfirmed",
     "Cedar benchmark approval not recovered",
     "Forward CPI and cost assumptions not client-confirmed",
     "Realized rolling-five-year real objective is not established by an arithmetic estimate"

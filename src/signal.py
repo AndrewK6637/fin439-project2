@@ -33,7 +33,7 @@ def evaluate_signal(decision_date, path=None):
     prior=frame.loc[frame.date==prior_date,'value']
     if prior.empty or not np.isfinite(prior.iloc[0]) or prior.iloc[0]<=0:return {'status':'Not Known','reason':'Missing same-month prior-year CPI','cutoff':cutoff,'yoy':None}
     if (pd.Timestamp(cutoff)-last.date).days>100:return {'status':'Not Known','reason':'Signal observation older than 100 days','cutoff':cutoff,'yoy':None}
-    return {'status':'Pass','reason':'Authenticated-source vintage identity and prior-day cutoff verified by code; student source checks pending',
+    return {'status':'Pass','reason':'Code verified vintage identity and prior-day cutoff; student-reported three-value spot check is documented separately; Cedar policy approval remains pending',
       'cutoff':cutoff,'observation_date':last.date.date().isoformat(),'value':float(last.value),'prior_value':float(prior.iloc[0]),
       'yoy':float(last.value/prior.iloc[0]-1),'metadata':metadata,'history':frame.tail(24).assign(date=lambda x:x.date.dt.strftime('%Y-%m-%d')).to_dict('records')}
 

@@ -1,12 +1,12 @@
 # Cedar: investment results for the studio
 
-**AI-assisted output; student selected the analytical design and agreed with the draft hold on deployment. Personal source checks and final review remain pending. Educational work, not investment advice.**
+**AI-assisted output; student selected the analytical design and selected the hold on deployment. A three-value CPI source check was student-reported on November 19, 2026; final review remains pending. Educational work, not investment advice.**
 
 ## Decision first
 
 Reject deployment of Cedar's proposed portfolio process; reconsider only after the committee documents the missing mandate approvals and actual holdings/costs, the student validates the signal and completes the genuine locked record, and a rerun shows feasible allocations with acceptable stress results.
 
-The proposed allocation to this unapproved process is **0%-0%**: the AI-assisted draft recommends committing no *new* money to this strategy until the missing evidence is reviewed. The model still calculates the research portfolio shown below. This does not direct liquidation of existing assets or claim the student has approved the recommendation. The full project is published at [AndrewK6637/fin439-project2](https://github.com/AndrewK6637/fin439-project2).
+The proposed allocation to this unapproved process is **0%-0%**: the committee memo recommends committing no *new* money to this strategy until the missing evidence is reviewed. The model still calculates the research portfolio shown below. This does not direct liquidation of existing assets or certify missing client approvals. The full project is published at [AndrewK6637/fin439-project2](https://github.com/AndrewK6637/fin439-project2).
 
 ## Evidence boundary
 
@@ -64,4 +64,4 @@ The present controls cannot certify missing client approvals or actual annual le
 
 ## Reproduction and unfinished evidence
 
-From the project folder in PowerShell, run `.\.venv\Scripts\python.exe scripts\build_checkout_results.py` to regenerate this baseline page from the same pipeline as the app. This command does **not** run either changed-input experiment. See [the machine-readable results](../outputs/results.json), [decision memo](decision-memo.md), [validation](tuesday-checkout-validation.md), and [blank partner record](partner-cold-run-template.md). The partner run, genuine student AI-off prediction, classroom before/after evidence and personal CPI source checks have not been completed. See [assumptions and next steps](student-assumptions-and-actions.md).
+From the project folder in PowerShell, run `.\.venv\Scripts\python.exe scripts\build_checkout_results.py` to regenerate this baseline page from the same pipeline as the app. This command does **not** run either changed-input experiment. See [the machine-readable results](../outputs/results.json), [decision memo](decision-memo.md), [validation](tuesday-checkout-validation.md), and [blank partner record](partner-cold-run-template.md). The partner record, genuine student AI-off prediction, and classroom before/after evidence remain incomplete; the student-reported CPI spot check awaits independent review. See [assumptions and next steps](student-assumptions-and-actions.md).
