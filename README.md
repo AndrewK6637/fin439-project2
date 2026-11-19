@@ -8,7 +8,7 @@ A six-tab Streamlit investment committee dashboard built from the student's reco
 
 ## Start here: results and class materials
 
-**[Submission review - all required files](SUBMISSION_REVIEW.md)** | [Student checklist](WHAT_I_NEED_TO_DO.md) | [Student decision log](docs/student-decision-log.md) | [Investment results](docs/checkout-results.md) | [Decision memo](docs/decision-memo.md) | [Final audit](FINAL_PROJECT_2_AUDIT.md)
+**[Submission review - all required files](SUBMISSION_REVIEW.md)** | [Final submission checklist](FINAL_SUBMISSION_CHECKLIST.md) | [Simple explanation](PROJECT_2_SIMPLE_EXPLANATION.md) | [Student checklist](WHAT_I_NEED_TO_DO.md) | [Student decision log](docs/student-decision-log.md) | [Investment results](docs/checkout-results.md) | [Decision memo](docs/decision-memo.md) | [Final audit](FINAL_PROJECT_2_AUDIT.md)
 
 The application evaluates whether Cedar should deploy the proposed portfolio process. The recommendation is **Reject deployment pending unresolved mandate evidence**. It does not recommend selling existing holdings. Results are a frozen educational analysis, not current market forecasts. [The student decision record](docs/student-decision-log.md) traces the earlier coursework and the student's later choices.
 
@@ -64,6 +64,8 @@ Main controls: estimation window; illustrative CPI; additional annual costs in *
 ```
 
 The report commands regenerate baseline and existing ordinary stress evidence, never either student-only experiment. Test logs and reproduction limits are in [Tuesday validation](docs/tuesday-checkout-validation.md). A partner must fill [their own cold-run record](docs/partner-cold-run-template.md); agent testing is not partner evidence.
+
+If pytest cannot access the Windows system temp folder, run `.venv\Scripts\python.exe -m pytest -q --basetemp outputs\pytest-local -o cache_dir=outputs\pytest-cache`. This changes only where test scratch files go. A clean copy in `C:\fin439-review` installed the pinned requirements, passed `pip check` and 66 tests, started Streamlit, and returned HTTP 200 from its health endpoint on November 18, 2026. This agent-run portability check is not the required partner cold run.
 
 ## Mandate and model
 
