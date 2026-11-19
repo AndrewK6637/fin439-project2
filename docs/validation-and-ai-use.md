@@ -8,7 +8,7 @@ The student is responsible for the analysis and final decision. The student sele
 
 Material AI assistance occurred in this Codex session on November 16, 2026. The environment identifies the agent as Codex based on GPT-6; a more precise deployed model/build identifier was not independently exposed. No other AI model use is claimed. Codex generated the new application code, test code, proposed CPI fallback policy, draft memo and video scripts. Original student coursework remains in `recovered/` with provenance hashes.
 
-Disposition: retain the tested code for research. The student selected the CPI fallback for Project 2 and agreed with the recommendation to withhold new investment for now. These choices are recorded, as is the student's later reported CPI spot check; final judgment and review remain open. Earlier coursework decisions are distinguishable from new analytical assumptions in configuration and the recovery inventory. No claim is made that the student completed the locked prediction; the prediction fields were committed before the run. The record and results are linked below.
+Disposition: retain the tested code for research. The student selected the CPI fallback for Project 2 and agreed with the recommendation to withhold new investment for now. These choices are recorded, as is the student's later reported CPI spot check; final judgment and review remain open. Earlier coursework decisions are distinguishable from new analytical assumptions in configuration and the recovery inventory. The student-authored locked prediction was committed before the run, and the result and reconciliation were committed afterward. The record and results are linked below.
 
 The [student decision log](student-decision-log.md) records the student's actual choices made in AI chat on November 18, including the four-fund universe, comparison benchmark, illustrative BIL stand-in, CPI fallback, and agreement with holding deployment. This is evidence of human direction with AI assistance, not independent AI-off work or source verification.
 
@@ -16,6 +16,10 @@ The [student decision log](student-decision-log.md) records the student's actual
 
 - [Locked experiment record](changed-input-record.md)
 - [Locked experiment results](../outputs/locked_changed_input.json)
+
+## Partner cold-run evidence
+
+[Aidan Klebenow's complete cold-run record](andrew-cold-run-by-aidan.md) reports that the README let him clone, install and launch the Cedar app on macOS with Python 3.14. He saw the baseline Reject decision, 5.50% estimated annual return and 3.53% volatility. His first terminal error came from accidentally pasting two commands together; rerunning them one line at a time worked. The browser was blank for about 1–2 minutes on first load, then showed the dashboard without an app error. He changed **no inputs** during this cold run and used Claude for general Terminal guidance while typing and running the commands himself. He identified the reviewed revision as latest `main` on November 17, without an exact SHA; later repo changes are not covered by his observation. Andrew's separate check of Aidan's app is in [his partner-project review](my-check-of-partners-project2.md); it used Codex assistance and is not Aidan's Cedar cold run.
 
 ## Sources and as-of boundary
 
@@ -58,11 +62,11 @@ The student chose 60% VT / 40% LQD as the coursework comparison and BIL as an il
 
 ## Locked Changed-Input Record and student verification
 
-See `docs/changed-input-record.md`. The deterministic experiment is prepared behind a gate. No student prediction has been written by AI, no pre-run student commit fabricated, and no locked experiment run. The student must author and commit/push the prediction with AI closed, then run and reconcile it with AI closed under the official rule.
+The [completed record](changed-input-record.md) links the student-authored prediction commit `295aa53` and the later result/reconciliation commit `e1adc62`. The saved result identifies `295aa53` as the remote tip checked by the gate before the run. The 85% BIL-floor scenario returned no feasible portfolio meeting the 5.50% return hurdle; the recommendation remained Reject and 0% new capital. Git and the result file verify the sequence, while only the student can attest to AI-off authorship and execution.
 
-The prepared analytical reserve-floor change is now 3% to 85%. An earlier unrun 35% proposal was replaced because it was below the baseline research allocation's approximately 77% BIL weight and would not test a binding floor. This setup change was AI-assisted; no prediction or outcome has been supplied. The student's own pre-run prediction remains blank.
+The analytical reserve-floor change was 3% to 85%. An earlier unrun 35% proposal was replaced because it was below the baseline research allocation's approximately 77% BIL weight and would not test a binding floor. The scenario design was AI-assisted; the committed prediction and observed reconciliation are the student's recorded work.
 
-Student verification status: **design and draft-decision choices stated in AI chat; three CPI values and arithmetic student-reported checked November 19; independent classroom evidence and final submission review pending**. Video recordings, corrected actual transcripts and Brightspace attachments are also pending. The public project repository is now published at https://github.com/AndrewK6637/fin439-project2; grader access through the final manifest has not been checked. The full analytic rubric descriptor file returned 404; verified syllabus category weights are recorded in the requirements matrix without inventing descriptors or a score.
+Student verification status: **design and decision choices stated in AI chat; three CPI values and arithmetic student-reported checked November 19; locked prediction/run/reconciliation recorded; final submission review pending**. Aidan's partner cold run is documented above; he did not change an input. Video recordings, corrected actual transcripts and Brightspace attachments are still pending. The public project repository is now published at https://github.com/AndrewK6637/fin439-project2; grader access through the final manifest has not been checked. The full analytic rubric descriptor file returned 404; verified syllabus category weights are recorded in the requirements matrix without inventing descriptors or a score.
 
 
 ## Final independent-method audit ? November 16, 2026
@@ -80,4 +84,4 @@ See `docs/project2-final-audit.md` for findings and `docs/project2-grade-audit.m
 
 ## November 17 studio preparation
 
-The November 17 preparation evidence is in [Tuesday validation](tuesday-checkout-validation.md): 66 tests, clean setup and preserved installation failure. That document describes Week 12 only. [Week 13 Lab 20](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-13/lab-20-project2-readiness.md) is a distinct 25-or-0 checkout. The public GitHub repository was subsequently published. The README, visible results, blank classroom/partner records and code study guide are prepared; student and partner evidence is not fabricated. The proposed annual-cost classroom scenario and existing locked reserve scenario remain unrun.
+The November 17 preparation evidence is in [Tuesday validation](tuesday-checkout-validation.md): 66 tests, clean setup and preserved installation failure. That document describes Week 12 only. [Week 13 Lab 20](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-13/lab-20-project2-readiness.md) is a distinct checkout. The later student locked reserve experiment and Aidan's partner cold run are linked above. The separate classroom changed-input template remains blank; Aidan made no input change in his Cedar cold run. Earlier preparation documents describe their dated state and should not be read as current evidence status.

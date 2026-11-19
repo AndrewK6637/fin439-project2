@@ -4,7 +4,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 from src.workflow import run,comparison
 DISCLOSURE='OpenAI Codex assisted with source recovery, software development, calculations implemented in Python, testing, and drafting this document.\n\nThe student is responsible for the analysis and final decision. This is educational work, not investment advice. A three-value CPI source check was student-reported on November 19, 2026; final submission review remains pending.\n\n'
-DECISION_LINE="Reject deployment of Cedar's proposed portfolio process; reconsider only after the committee documents the missing mandate approvals and actual holdings/costs, the student validates the signal and completes the genuine locked record, and a rerun shows feasible allocations with acceptable stress results."
+DECISION_LINE="Reject deployment of Cedar's proposed portfolio process; reconsider only after the committee documents the missing mandate approvals and actual holdings/costs, reviews the proposed signal policy, and a rerun shows feasible allocations with acceptable after-cost stress results."
 
 def mdtable(rows):
     cols=list(rows[0]);return '\n'.join(['| '+' | '.join(cols)+' |','| '+' | '.join(['---']*len(cols))+' |']+['| '+' | '.join(str(r[k]).replace('|','/') for k in cols)+' |' for r in rows])

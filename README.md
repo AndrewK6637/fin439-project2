@@ -38,7 +38,9 @@ If Windows cannot find `python`, use `py -3.13` for the first two commands. Inte
 
 Open **http://localhost:8501** when the terminal reports the server is ready. Leave that terminal running; Ctrl+C stops it. No virtual-environment activation or execution-policy change is necessary. If port 8501 is occupied, append `--server.port 8522` and open the port printed in the terminal. If installation reports `OSError: [Errno 2]` for a very long path inside Streamlit, extract a fresh copy into a shorter folder and repeat installation; do not change system security settings. A missing Streamlit module means the installation step used a different interpreter; rerun the exact pip command above.
 
-On macOS/Linux, use `python3 -m venv .venv`, `.venv/bin/python -m pip install -r requirements.txt`, then `.venv/bin/python -m streamlit run app.py`. Those platform steps are provided for convenience; only Windows/Python 3.13 has been verified.
+On macOS/Linux, use `python3 -m venv .venv`, `.venv/bin/python -m pip install -r requirements.txt`, then `.venv/bin/python -m streamlit run app.py`. Windows/Python 3.13 was tested in the project audit; Aidan independently reported a successful macOS/Python 3.14 cold run. Linux remains unverified.
+
+**First-load note:** Aidan's macOS/Python 3.14 cold run showed a blank white browser page for about 1–2 minutes before the dashboard loaded, with no app error. Leave the Streamlit terminal open and allow the initial load to finish. His first terminal error came from pasting two commands together; rerunning the README commands one line at a time worked. See [Aidan's complete cold-run record](docs/andrew-cold-run-by-aidan.md).
 
 ## Find the result and try a documented demonstration
 
@@ -65,7 +67,7 @@ Main controls: estimation window; illustrative CPI; additional annual costs in *
 .venv\Scripts\python.exe scripts/build_checkout_results.py
 ```
 
-The report commands regenerate baseline and existing ordinary stress evidence, never either student-only experiment. Test logs and reproduction limits are in [Tuesday validation](docs/tuesday-checkout-validation.md). A partner must fill [their own cold-run record](docs/partner-cold-run-template.md); agent testing is not partner evidence.
+The report commands regenerate baseline and existing ordinary stress evidence, never either student-only experiment. Test logs and reproduction limits are in [Tuesday validation](docs/tuesday-checkout-validation.md). [Aidan's partner cold-run record](docs/andrew-cold-run-by-aidan.md) documents an independent macOS/Python 3.14 launch and baseline observation; he changed no inputs in that run. Agent tests are separate from partner evidence.
 
 If pytest cannot access the Windows system temp folder, run `.venv\Scripts\python.exe -m pytest -q --basetemp outputs\pytest-local -o cache_dir=outputs\pytest-cache`. This changes only where test scratch files go. In a fresh public clone at commit `1f742f7`, the ordinary command hit that temp-folder permission error, while the documented local-temp command passed 66 tests. That commit also exposed a Git line-ending issue in the source audit; the published fix at `1213cba` preserves the archived source bytes and verifies all 54 recovered files. See [the current audit](docs/current-submission-audit.md). These agent-run checks are not the required partner cold run.
 
@@ -95,13 +97,13 @@ Four ordinary stresses perturb VT returns, use 36 observations, raise trading co
 
 ## Student-only locked experiment
 
-Read `docs/changed-input-record.md`. Write the prediction yourself with AI closed, commit and push it to GitHub, then run the gated command yourself with AI closed. **Do not ask AI for the prediction or execute the experiment beforehand.** The experiment is prepared but has never been run. Ordinary stress tests are separate.
+The [completed locked record](docs/changed-input-record.md) preserves the student-authored prediction committed before the 85% BIL-floor run, the observed infeasible result, and the later reconciliation. The [saved result](outputs/locked_changed_input.json) identifies the prediction commit checked at run time. Ordinary stress tests are separate.
 
 ## Files and submission
 
 - `app.py`: six dashboard tabs.
 - `src/`: data, portfolio engine, vintage checks, shared workflow.
-- `config/`: recovered mandate and blank locked prediction fields.
+- `config/`: recovered mandate and the student's committed locked prediction.
 - `tests/`: numerical, missing-data, feasibility, timing and Streamlit tests.
 - `outputs/`: actual executed results, source audit and validation logs.
 - `docs/`: memo, methodology, AI disclosure, requirement matrix, recovery inventory, final review and manifest.

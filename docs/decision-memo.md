@@ -51,4 +51,4 @@ The committee should reject deployment until the missing mandate inputs and prop
 
 ## Decision condition
 
-Reject deployment of Cedar's proposed portfolio process; reconsider only after the committee documents the missing mandate approvals and actual holdings/costs, the student validates the signal and completes the genuine locked record, and a rerun shows feasible allocations with acceptable stress results.
+Reject deployment of Cedar's proposed portfolio process; reconsider only after the committee documents the missing mandate approvals and actual holdings/costs, reviews the proposed signal policy, and a rerun shows feasible allocations with acceptable after-cost stress results.

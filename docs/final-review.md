@@ -1,5 +1,7 @@
 # Final review and readiness
 
+**Later evidence update (November 19):** The [locked experiment](changed-input-record.md) and [Aidan's partner cold run](andrew-cold-run-by-aidan.md) are now documented. The older readiness rows below are a dated preparation snapshot. For remaining submission work, use [the current review](../SUBMISSION_REVIEW.md).
+
 The application is implemented and tested as a frozen research tool. It is ready for student review, **not ready for submission or live allocation**. The draft decision is Reject deployment because essential mandate evidence remains unknown, even though the default optimizer and four ordinary stress cases are feasible.
 
 | Verified rubric category | Implemented evidence | Tested? | Remaining weakness |

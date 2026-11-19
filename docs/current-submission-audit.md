@@ -1,5 +1,7 @@
 # FIN 439 Project 2 current submission audit
 
+**Later evidence update (November 19):** The [completed locked 85% BIL experiment](changed-input-record.md) and [Aidan's Cedar cold run](andrew-cold-run-by-aidan.md) now exist. Aidan reproduced the baseline on macOS/Python 3.14 but changed no input. The findings below describe the earlier audit snapshot; use [submission review](../SUBMISSION_REVIEW.md) for the current remaining items. Videos, transcripts and final submission are still open.
+
 Audited November 19, 2026. This is an AI-assisted evidence review, not a professor's grade or the student's final committee judgment. Sources: official [Project 2 assignment](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/projects/project-2-investment-management-application.md), [student checklist](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/projects/major-project-student-checklist.md), [Lab 20](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/lessons/week-13/lab-20-project2-readiness.md), and [submission architecture](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/PROJECT-SUBMISSION-ARCHITECTURE.md). The full analytic rubric descriptor file and actual Project 1 professor comments were not available; only six syllabus category weights totaling 300 points could be verified. No precise grade is inferred.
 
 ## Public commit and local fix

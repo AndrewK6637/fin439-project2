@@ -4,7 +4,7 @@
 
 ## Decision first
 
-Reject deployment of Cedar's proposed portfolio process; reconsider only after the committee documents the missing mandate approvals and actual holdings/costs, the student validates the signal and completes the genuine locked record, and a rerun shows feasible allocations with acceptable stress results.
+Reject deployment of Cedar's proposed portfolio process; reconsider only after the committee documents the missing mandate approvals and actual holdings/costs, reviews the proposed signal policy, and a rerun shows feasible allocations with acceptable after-cost stress results.
 
 The proposed allocation to this unapproved process is **0%-0%**: the committee memo recommends committing no *new* money to this strategy until the missing evidence is reviewed. The model still calculates the research portfolio shown below. This does not direct liquidation of existing assets or certify missing client approvals. The full project is published at [AndrewK6637/fin439-project2](https://github.com/AndrewK6637/fin439-project2).
 
@@ -58,10 +58,10 @@ The cost stress uses hypothetical starting weights equal to the baseline candida
 
 ## Monitor and reversal condition
 
-Monitor reserve coverage, price age, signal vintage, feasibility, real after-cost outcomes and turnover. Stop for invalid data, infeasibility, a failed required stress or more than 20 percentage points of allocation instability. Reject deployment of Cedar's proposed portfolio process; reconsider only after the committee documents the missing mandate approvals and actual holdings/costs, the student validates the signal and completes the genuine locked record, and a rerun shows feasible allocations with acceptable stress results.
+Monitor reserve coverage, price age, signal vintage, feasibility, real after-cost outcomes and turnover. Stop for invalid data, infeasibility, a failed required stress or more than 20 percentage points of allocation instability. Reject deployment of Cedar's proposed portfolio process; reconsider only after the committee documents the missing mandate approvals and actual holdings/costs, reviews the proposed signal policy, and a rerun shows feasible allocations with acceptable after-cost stress results.
 
 The present controls cannot certify missing client approvals or actual annual ledger evidence. Reversal requires documented human review and verified evidence; a favorable scenario alone is insufficient.
 
 ## Reproduction and unfinished evidence
 
-From the project folder in PowerShell, run `.\.venv\Scripts\python.exe scripts\build_checkout_results.py` to regenerate this baseline page from the same pipeline as the app. This command does **not** run either changed-input experiment. See [the machine-readable results](../outputs/results.json), [decision memo](decision-memo.md), [validation](tuesday-checkout-validation.md), and [blank partner record](partner-cold-run-template.md). The partner record, genuine student AI-off prediction, and classroom before/after evidence remain incomplete; the student-reported CPI spot check awaits independent review. See [assumptions and next steps](student-assumptions-and-actions.md).
+From the project folder in PowerShell, run `.\.venv\Scripts\python.exe scripts\build_checkout_results.py` to regenerate this baseline page from the same pipeline as the app. This command does **not** run either changed-input experiment. See [the machine-readable results](../outputs/results.json), [decision memo](decision-memo.md), [validation](tuesday-checkout-validation.md), and [Aidan Cedar cold-run record](andrew-cold-run-by-aidan.md). Aidan reproduced the baseline without changing inputs; the locked 85% BIL experiment is recorded separately. Any additional classroom changed-input evidence remains separate, and the student-reported CPI spot check awaits independent review. See [assumptions and next steps](student-assumptions-and-actions.md).
