@@ -1,6 +1,6 @@
-# Locked Changed-Input Record - NOT EXECUTED
+# Locked Changed-Input Record — Completed
 
-**STUDENT ACTION REQUIRED.** This document is an empty protocol, not a prediction or completed record. The professor requires a genuine AI-off prediction committed to GitHub before the run; the shared architecture also calls for the run itself to be AI closed. No expected result or direction has been supplied by the agent.
+The student-authored prediction was committed before the run at `295aa53dabfd930576c1fbe02043e544ed78ac73`. The saved result records that commit and the remote tip verified at run time. The student recorded the actual results and reconciliation afterward at `e1adc623310bcb013c6b1441c828f2912565ba99`.
 
 | Field | Record |
 |---|---|
@@ -23,30 +23,3 @@
 | Difference from prediction |I expected the 85% floor to produce no feasible portfolio and the recommendation to stay at 0% new capital. Both matched. The solver returned no portfolio at 85%, so the run gave me no volatility estimate to compare with my prediction. |
 | Diagnosis and what was learned |At an 85% BIL floor, only 15% was available for the other funds. Even putting that whole 15% into VT gave me a pre-run estimate of about 4.84%, below the 5.50% target. The run confirmed that the model couldn't find a portfolio that met both requirements. |
 | Result file and after-run commit link |`outputs/locked_changed_input.json` — [After-run commit](https://github.com/AndrewK6637/fin439-project2/commit/e1adc62) |
-
-Before running, close AI assistance. In `config/locked_experiment.json`, fill the four blank student fields yourself. Predict the effects on weights, estimated risk/return, feasibility and the committee decision; explain your financial reasoning without asking AI for the answer.
-
-The earlier unrun 35% proposal was replaced during preparation because the baseline research allocation already holds about 77% BIL, so 35% would not test a binding reserve floor. **This 85% scenario was prepared with AI help. Its numerical and decision outcomes have not been run or supplied as a prediction.** The student's pre-run prediction must still be genuinely written with AI closed.
-
-From the project root, inspect and commit your own prediction and freeze all material model/input files first:
-
-Before your student-authored commit, set Git's **local author identity to your own name and GitHub email** (or your verified GitHub no-reply address). Do not use the automation identity from earlier code commits. This changes only this repository's commit metadata, not a financial input:
-
-```powershell
-git config --local user.name "YOUR NAME"
-git config --local user.email "YOUR GITHUB EMAIL"
-```
-
-```powershell
-git status --short
-git add config/locked_experiment.json docs/changed-input-record.md
-git commit -m "Record student AI-off prediction before locked experiment"
-git push origin main
-git rev-parse HEAD
-# Retain the genuine prediction commit hash and GitHub commit URL.
-.venv\Scripts\python.exe scripts\locked_experiment.py --prediction-commit YOUR_REAL_HASH --remote-branch main --student-ai-off-run
-```
-
-Do not run the final command during an AI session. The gate checks nonblank committed student fields, unchanged prediction content and material model/input files, a GitHub origin and reachability from the live remote branch. A script cannot prove independent authorship; your genuine conduct and record remain required. Do not fill fields with placeholders merely to bypass the gate.
-
-Afterward, inspect `outputs/locked_changed_input.json`. Its `before` and `after` objects contain the weights, return, risk, compliance and recommendation. Fill the actual-results rows above in your own words and preserve this record with a **second** commit. Add the result-file and record links to `docs/validation-and-ai-use.md`. The four ordinary stress tests are separate; they are not represented as this locked experiment.
