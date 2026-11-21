@@ -25,8 +25,3 @@ When I raised the annual return target to 10%, why did the app show a portfolio 
 **Partner's answer (from Aidan's email):** His app first finds the lowest-volatility portfolio that reaches the return target while keeping the minimum SGOV cash reserve. It then checks that candidate against the separate 10% volatility limit. At a 10% return target, the safest mix that met the return target and SGOV reserve had 10.84% volatility, so his app displayed it as **FAIL**. That lets the committee see why the target and risk limit cannot both be met. If no mix reaches the return target at all, his app displays only the two comparison portfolios and a **STOP** message.
 
 In plain terms, his 10% case had a candidate that met return and reserve but failed the risk limit. My separate locked 85% BIL-floor test returned **no feasible portfolio** that met both the reserve floor and 5.50% return hurdle; Aidan's description of when his app shows **STOP** is the closer comparison. These are different apps and different tests. Aidan changed no inputs during his cold run of my Cedar app; my 10% target change was during my check of his app.
-
-## Follow-up
-
-- Confirm whether the original return target was restored after the check.
-- The failed `python3` command is a README portability issue on the Windows setup I used; the `py -3.14` command succeeded. Keep the initial failure in the record even if the README is later revised.
