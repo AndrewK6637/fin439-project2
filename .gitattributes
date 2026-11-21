@@ -4,6 +4,7 @@ recovered/** -text
 references/** -text
 *.py text eol=lf
 *.md text eol=lf
+*.pdf binary
 
 # Keep recovered coursework and official references byte-for-byte for hash audits.
 recovered/** -text

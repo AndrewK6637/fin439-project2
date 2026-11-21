@@ -1,29 +1,35 @@
-# Video 3 — Cedar committee presentation
+# Video 3 — Committee recommendation
 
-**Aim: about 4 minutes. Maximum: 5 minutes.** Start recording with the **live app already open on the executive dashboard**, webcam on and audio clear. These are speaking notes, not a transcript.
+**Rehearsal notes, not an actual transcript. Maximum 5 minutes.** Start the recording with the **live app already open** on Executive dashboard. Webcam on; clear audio.
 
-## Opening — executive dashboard on screen from the first frame
+**What this video does:** Give the committee a decision it can evaluate. In the live Streamlit app, click **Executive dashboard → Portfolio comparison → Point-in-time signal → Stress testing → Committee recommendation**. Point to the figures as you discuss them. Do not change sidebar inputs; this presentation uses the frozen default scenario. You may open the separate locked record after Stress testing if time allows.
 
-**Say:** “I used OpenAI Codex to help build and test this application and draft these speaking notes. I am responsible for the analysis and final decision. This is educational work, not investment advice.”
+**Before recording:** In the project folder terminal run `.venv\Scripts\python.exe -m streamlit run app.py`. Open the Local URL printed by Streamlit (usually `http://localhost:8501`). Wait until Executive dashboard is fully loaded and leave that tab visible before pressing Record. Turn on webcam and microphone. Keep the default 60-month and 2.5% illustrative CPI inputs.
 
-“My committee recommendation is **reject deployment for now: 0% new capital to the proposed strategy**. This does not direct Cedar to sell its existing holdings. I would keep the app and its portfolio as research while we resolve the evidence gaps.”
+**Show on screen:** On Executive dashboard, point to Reject deployment, 0% new capital, 77.04% BIL / 22.96% VT, 5.50% return, 3.53% volatility, and Full mandate Not Known. On Portfolio comparison, show why equal weight and inverse volatility miss the 5.50% hurdle. On Point-in-time signal, distinguish the 2.5% illustrative CPI input from the 3.72% historical reading and show the 3%-to-5% floor change. On Stress testing, point to the 36-month weight shift and explain that the 0.52% trading cost is for a separate hypothetical trade. On Committee recommendation, state what Cedar must verify before a small pilot could be considered.
 
-## Mandate and candidate — stay on executive dashboard
+## Opening — executive dashboard, visible from first frame
 
-**Say:** “Cedar has $20 million, pays $150,000 per quarter, and seeks CPI plus 3% after costs over rolling five-year periods. The baseline research candidate is 77.04% BIL and 22.96% VT. It estimates 5.50% annual return and 3.53% annual volatility. These are historical estimates, not guaranteed results. The candidate passes the rules the app can test, but full mandate status is Not Known and deployment authorization fails.”
+“OpenAI Codex helped with the complicated coding, source recovery, tests, and drafting. I used that work to analyze the numbers, question the model, and reach my own committee recommendation. I am responsible for reviewing the analysis and final decision. This is educational work, not investment advice.”
 
-## Alternatives — open Portfolio comparison
+“My recommendation is to reject deployment for now: put 0% of new capital into this proposed strategy and leave Cedar's existing holdings alone. I would keep the app and the portfolio for research.”
 
-**Say:** “Equal weight estimates 3.22% annual return and 7.50% volatility. Inverse volatility estimates 3.33% return and 1.40% volatility. Both fall short of the illustrative 5.50% hurdle. The constrained candidate reaches that hurdle, but only before actual transition costs. A modeled return equal to the hurdle is not a margin of safety.”
+## Candidate — dashboard and comparison tab
 
-## Signal — open Point-in-time signal
+“Cedar pays $150,000 in scholarships each quarter from a $20 million foundation. The app's candidate is 77.04% BIL and 22.96% VT, with an estimated 5.50% annual return and 3.53% annual volatility. The equal-weight and inverse-volatility alternatives miss the 5.50% illustrative return screen. This candidate passes the rules the app can measure, but the full mandate is Not Known and deployment authorization fails.”
 
-**Say:** “The 2.5% CPI value in the sidebar is an illustrative input that helps set the 5.50% nominal hurdle. Separately, the saved historical CPI signal is about 3.72% year over year. I checked its three reported source values and calculated the year-over-year rate. Under a proposed rule, the historical reading raises the entered 3% BIL floor to an effective 5%. Because the candidate already holds over 77% BIL, the floor does not change the baseline weights. Cedar has not approved this signal policy.”
+“This is where I question the AI-assisted result. The optimizer was asked to meet 5.50%, and it landed exactly there. A Pass tells me the math worked under the assumptions; it does not give Cedar a return cushion. A real transition cost or a lower future VT return could put it below the screen. The historical estimate also does not prove Cedar's rolling five-year CPI-plus-3% goal after costs.”
 
-## Sensitivity — open Stress testing, then the completed locked record if time
+“I chose to hold off because I would have to defend an actual allocation of scholarship money, not just a clean calculation. The app helps me identify a candidate and expose missing evidence; it cannot decide Cedar's tolerance for risk.”
 
-**Say:** “The 36-month estimation stress shifts BIL to about 92.86% and VT to about 7.14%, a 15.82 percentage-point change in the largest weight. That shows estimate sensitivity. Raising trading cost to 50 basis points per side leaves the optimized target essentially unchanged; the displayed 0.52% cost belongs to a separate hypothetical trade, not Cedar’s actual holdings. In my locked experiment, I predicted that an 85% BIL minimum would make the 5.50% hurdle infeasible. The saved run confirmed that and left the recommendation at 0% new capital.”
+## Signal — point-in-time tab
 
-## Decision and reversal — open Committee recommendation
+“The 2.5% CPI assumption in the sidebar sets the illustrative hurdle. Separately, the historical CPI reading is about 3.72% year over year. I reported checking its source values and calculation. A proposed rule lifts the BIL floor from 3% to 5%, but 77% BIL already exceeds that. I would not claim this rule improves returns without testing it against a version without the rule.”
 
-**Say:** “I would reconsider only after Cedar documents its numeric risk limit, confirms whether BIL can count as the reserve, supplies its actual holdings and trading costs, and reviews the proposed CPI rule. I would rerun the model under those approved inputs and check after-cost performance, liquidity, turnover, and stability. Until then, the research result is useful, but it is not authorization to invest client money.”
+## Sensitivity — stress tab
+
+“Using 36 months instead of 60 changes the allocation to about 92.86% BIL and 7.14% VT. That makes me cautious about treating one optimized weight as stable. The 50-basis-point cost stress leaves the target almost unchanged because it assumes the target is already held. Its separate 0.52% cost belongs to a hypothetical trade, not Cedar's actual transition. In my locked test, an 85% BIL floor made the 5.50% hurdle infeasible. That shows the reserve-return trade-off, not a new Cedar policy.”
+
+## Action — recommendation tab
+
+“The biggest missing item for my judgment is Cedar's approved volatility limit. I cannot say 3.53% is appropriate just because it sounds low. Cedar also needs to confirm whether BIL counts as reserve coverage and provide current holdings and costs. Those determine scholarship liquidity, turnover, and whether this result survives implementation. With those facts, I would rerun the model and consider a small pilot only if it stays within approved risk and clears the return hurdle after costs. Until then, my recommendation is 0% new capital.”

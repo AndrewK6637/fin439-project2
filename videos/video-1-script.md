@@ -1,25 +1,33 @@
-# Video 1 — What changed in my thinking
+# Video 1 — How my thinking changed
 
-**Aim: about 2 minutes 30 seconds. Maximum: 3 minutes.** Keep your webcam on and audio clear. These are speaking notes, not a transcript. Say only the personal checks you actually performed.
+**Rehearsal notes, not an actual transcript. Maximum 3 minutes.** Webcam on; clear audio. Say only what you agree with and can explain.
 
-## Opening — show the Cedar executive dashboard
+**What this video does:** Show how your own questions and checks affected the recommendation. Click **Executive dashboard → Portfolio comparison → Point-in-time signal → your saved `docs/changed-input-record.md` in a browser tab → Executive dashboard**. Have both tabs open before recording; do not change inputs during this video.
 
-**Say:** “I used OpenAI Codex to help build and test this application and draft these speaking notes. I am responsible for the analysis and final decision. This is educational work, not investment advice.”
+**Before recording:** Open the project folder `fin439_project2_investment_management`. In its terminal run `.venv\Scripts\python.exe -m streamlit run app.py`, then open the Local URL printed by Streamlit (usually `http://localhost:8501`). Also open `docs/changed-input-record.md` in a separate browser or editor tab. Turn on webcam and microphone.
 
-“Cedar Scholarship Foundation has $20 million and pays $150,000 in scholarships each quarter. Its objective is CPI plus 3% after costs over rolling five-year periods. My question was whether the app gives a committee enough evidence to invest new money.”
+**Show on screen:** On Executive dashboard, point to Reject deployment, 0% new capital, 77.04% BIL / 22.96% VT, 5.50% return and 3.53% volatility. On Portfolio comparison, point to the two alternatives that miss the hurdle. On Point-in-time signal, point to the 3.72% historical CPI reading and 5% effective floor. In the locked record, point to your prediction, its earlier commit link, and the infeasible result. Return to the dashboard for your final decision.
 
-## How the project developed — show the README and comparison tab
+## Opening — executive dashboard
 
-**Say:** “I carried forward BIL, IEF, LQD, and VT from earlier coursework. The app compares equal weight, inverse volatility, and a constrained portfolio. Organizing the code, evidence, and README in one reproducible GitHub repository was harder than getting Streamlit to run. A committee needs to see where the inputs came from and what each result means.”
+“OpenAI Codex helped with the complicated coding, source recovery, testing, and drafting. I used it as a tool so I could examine the financial results and make my own recommendation. I am responsible for reviewing the analysis and final decision. This is educational work, not investment advice.”
 
-## One claim I checked — show the signal tab and data card
+“Cedar has $20 million, pays $150,000 in scholarships each quarter, and wants CPI plus 3% after costs over five-year periods. My question is whether the app gives a committee enough evidence to invest new money.”
 
-**Say:** “The app displays a historical CPI increase of about 3.72%. I checked the three dated values reported in my signal data card: September 2025 was 324.245, August 2026 was 334.131, and September 2026 was 336.298. I calculated 336.298 divided by 324.245 minus one, or about 0.037173. That supports the displayed arithmetic. It does not prove that Cedar approved the proposed CPI reserve rule.”
+## What I chose — README and comparison tab
 
-## What changed my decision — show the locked experiment record
+“I kept the four-fund universe from earlier coursework: BIL, IEF, LQD, and VT. I chose to keep a 60% VT / 40% LQD portfolio for comparison and to use BIL as an *illustrative* reserve stand-in. Cedar has not approved those choices. Getting the app to run was only part of the work. Aidan later followed my README on his Mac and reproduced the baseline, but he also saw a blank first load for about one to two minutes.”
 
-**Say:** “My baseline research candidate was 77.04% BIL and 22.96% VT, with a 5.50% estimated annual return and 3.53% volatility. I predicted that an 85% BIL minimum would make the return hurdle infeasible. I committed that prediction before running the test. The saved run found no feasible portfolio at 85%, and I recorded the result afterward. That test made the trade-off between reserve protection and the return objective concrete.”
+“My input was deciding what question the model should answer and whether its answer was strong enough for a committee. I did not treat the portfolio weights as a recommendation just because a solver produced them.”
 
-## Close — return to the executive dashboard
+## One check — signal tab and data card
 
-**Say:** “I recommend rejecting deployment for now and allocating 0% of new capital to this proposed process. That leaves existing holdings in place. I would reconsider after Cedar confirms its risk limit, reserve treatment, actual holdings and trading costs, and the revised portfolio still works under the agreed rules.”
+“I reported checking three values in the historical CPI file. September 2026 was 336.298 and September 2025 was 324.245. Dividing them and subtracting one gives about 3.72%. That supports the displayed arithmetic. I still questioned the AI-proposed rule: correct CPI math does not show that raising the BIL floor improves this portfolio or that Cedar approved the policy.”
+
+## What I questioned — locked record
+
+“The baseline candidate is 77.04% BIL and 22.96% VT. Its estimated return is exactly 5.50%, the illustrative hurdle. I questioned the AI-assisted interpretation of that result: how much comfort does a Pass give us when actual trading costs and future returns are unknown? I also predicted that forcing at least 85% into BIL would leave too little room to reach 5.50%. I committed that prediction before the run, and the saved result found no feasible portfolio. The test challenged whether the feasible baseline would stay feasible under a much larger reserve. It did not change Cedar's actual reserve rule.”
+
+## Close — dashboard
+
+“My recommendation remains 0% of new capital and no change to existing holdings. The missing approved risk limit matters most to me: 3.53% estimated volatility may sound low, but I cannot call it acceptable without Cedar's limit. If Cedar confirms its limit, reserve treatment, holdings, and costs, I would rerun the analysis and consider a small pilot only if the result still clears the hurdle after costs.”

@@ -1,29 +1,39 @@
-# Video 2 — How the code reaches the decision
+# Video 2 — How the app reaches its answer
 
-**Aim: about 4 minutes. Maximum: 5 minutes.** Keep your webcam on and audio clear. Open the editor and a terminal before recording. This is a speaking guide, not an actual transcript.
+**Rehearsal notes, not an actual transcript. Maximum 5 minutes.** Webcam on; clear audio. Show the code and a saved test result. Do not claim a fresh personal test unless you run it.
 
-## Opening — show the project files
+**What this video does:** Trace the displayed decision through code. In your editor, click **`config/mandate.json` → `src/data.py` → `src/engine.py` → `src/signal.py` → `src/workflow.py` → `docs/changed-input-record.md`**. Open `outputs/locked_changed_input.json` for the saved result. End on the running app's Executive dashboard. Put the files in easy-to-read editor tabs before recording.
 
-**Say:** “I used OpenAI Codex to help develop and test this app and draft these speaking notes. I am responsible for the analysis and final decision. This is educational work, not investment advice.”
+**Before recording:** Open the project folder in VS Code. Open the named files as editor tabs, enlarge the text, and open a terminal. If you want the live app for your ending, run `.venv\Scripts\python.exe -m streamlit run app.py` and open the printed Local URL. Turn on webcam and microphone.
 
-“I will trace one result from data to the committee decision. The four fund prices feed return estimates; the optimizer proposes weights; then the mandate and authorization checks determine what we can recommend.”
+**Show on screen:** In `config/mandate.json`, point to `estimation_months: 60`, `cpi_assumption: 0.025`, `real_return_objective: 0.03`, and missing `risk_limit`/`current_weights`. In `src/data.py`, show where saved prices become monthly returns. In `src/engine.py`, show the `metrics`, `rules`, and `optimize` functions. In `src/signal.py`, show the CPI calculation/effective reserve rule. In `src/workflow.py`, show `stop_decision` and `run`. In the locked record and JSON, show the 85% prediction and infeasible result. Finish with the app's Not Known mandate and Reject decision. You do not need to read code line by line.
 
-## Inputs — show `config/mandate.json` and `src/data.py`
+## Opening — project files
 
-**Say:** “The saved configuration sets a 60-month estimation window, a 2.5% illustrative CPI assumption, and Cedar’s 3% real-return spread. The screening hurdle is therefore 5.50% nominal. This 2.5% is a scenario input, not the historical CPI signal. The loader uses saved adjusted monthly prices for BIL, IEF, LQD, and VT, checks dates and values, and does not fill missing prices.”
+“OpenAI Codex helped with the complicated code, automated tests, and drafting. I used those tools to examine the results, challenge the assumptions, and make my own investment decision. I am responsible for reviewing the analysis and final decision. This is educational work, not investment advice.”
 
-## Calculation — show `src/engine.py`
+“I want to show how one number becomes a recommendation. The app estimates returns from saved fund prices, solves for weights, checks rules, and then asks whether Cedar has actually authorized deployment.”
 
-**Say:** “The app estimates arithmetic annual returns from monthly returns and annualizes the sample covariance. For weights w, expected return is the weighted sum of fund means; variance is w-transpose times the covariance matrix times w. The constrained solver minimizes variance while requiring weights to sum to 100%, remain nonnegative, and meet the illustrative hurdle and reserve floor. It checks the returned weights again against the rules. A solver message alone is not proof of feasibility.”
+“My contribution was choosing the research inputs I wanted to keep, questioning whether the output answered Cedar's real decision, and recording a prediction before the locked test. I want to show the calculation so I can defend the result rather than just read a number from the dashboard.”
 
-## Signal and decision — show `src/signal.py`, then `src/workflow.py`
+## Inputs — `config/mandate.json`, `src/data.py`
 
-**Say:** “The saved November 1 ALFRED vintage gives 336.298 divided by 324.245 minus one, about 3.72% historical year-over-year CPI. Under the proposed rule, this raises the BIL floor from the entered 3% to an effective 5%. The baseline candidate already holds 77.04% BIL, so that floor does not bind. The workflow then separates testable constraints from unknown mandate evidence. The candidate passes testable rules, but full mandate status is Not Known and deployment authorization fails. That produces 0% new capital.”
+“The baseline uses 60 monthly returns through September 2026. The 2.5% CPI input is an illustration. Add Cedar's 3% real-return objective and the screening hurdle is 5.50%. This is separate from the historical CPI signal. The data loader uses saved adjusted prices and does not fill missing months with invented prices.”
 
-## One test — show `docs/changed-input-record.md` and `outputs/locked_changed_input.json`
+## Calculation — `src/engine.py`
 
-**Say:** “I wrote and committed a prediction before changing the BIL floor to 85%. I expected no portfolio to meet the 5.50% hurdle. The saved run returned no feasible constrained portfolio; the recommendation stayed at 0% new capital. The output records the prediction commit that the script checked on GitHub. I recorded the actual result in a later commit.”
+“The code annualizes monthly average returns and the sample covariance. Portfolio return is the weighted average of the fund return estimates. Portfolio variance uses the weights and covariance matrix. The optimizer seeks the lowest variance while requiring weights to total 100%, stay in bounds, hold the effective BIL floor, and meet the return screen. Then the rules function checks the result again. A solver message by itself is not investment approval.”
 
-## Validation and limit — show `tests/test_app.py` or the test command in README
+“BIL's annualized historical mean is about 3.59% and VT's is about 11.90%. The selected 77.04% BIL / 22.96% VT mix reaches about 5.50%. This explains the math behind the weight choice. I second-guessed the AI-assisted conclusion that meeting that screen was enough: the estimate has no return cushion for costs or a weaker VT return.”
 
-**Say:** “The automated suite passed 66 tests in the latest local check. The holdout is a diagnostic using a later-downloaded adjusted-price snapshot, so I do not call it an implementable point-in-time backtest. The code cannot infer Cedar’s risk policy, current holdings, actual transaction costs, or approval of the BIL reserve proxy. Those are committee inputs, not missing lines of Python.”
+## Signal and decision — `src/signal.py`, `src/workflow.py`
+
+“The stored CPI calculation is about 3.72% year over year. I reported checking the source values and arithmetic, but that does not prove the AI-proposed reserve rule is a good policy. Under that rule, the effective BIL floor rises from 3% to 5%. Since the candidate already has 77% BIL, the rule does not change its weights here. The workflow keeps unknown client evidence separate from failed numerical checks. This candidate passes testable constraints, but its full mandate is Not Known and authorization fails. That is why the app recommends no new capital.”
+
+## Test — locked record and saved JSON
+
+“I predicted that an 85% BIL floor would prevent the solver from reaching 5.50%. Before running it, I reasoned that even 85% BIL and 15% VT would estimate only about 4.84%. The saved run returned no feasible portfolio, so there is no after-run volatility to compare. My recommendation remained 0%. This is a scenario test of the analytical floor, not a change to Cedar's actual reserve.”
+
+## Limit — dashboard
+
+“The code cannot supply Cedar's approved volatility limit, current holdings, actual transaction costs, or permission to count BIL as the reserve. Those inputs decide whether a mathematically feasible candidate is appropriate for Cedar. My committee decision is to wait for that evidence and rerun the app under approved assumptions.”
