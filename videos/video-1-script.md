@@ -12,7 +12,7 @@
 
 **SHOW:** Keep Executive dashboard visible. Point to the decision banner and 0% new capital.
 
-“OpenAI Codex helped with the complicated coding, source recovery, testing, and drafting. I used it as a tool so I could examine the financial results and make my own recommendation. I am responsible for reviewing the analysis and final decision. This is educational work, not investment advice.”
+“OpenAI Codex helped with the complicated coding, source recovery, testing, and drafting. I used it as a tool so I could examine the financial results and make my own recommendation. I am responsible for reviewing the analysis and final decision.
 
 **SHOW:** Still on Executive dashboard, point to Cedar's objective and scholarship amount.
 
