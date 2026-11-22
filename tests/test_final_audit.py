@@ -26,6 +26,12 @@ def test_independent_signal_fixture(tmp_path):
     s=evaluate_signal('2026-11-02',vintage(tmp_path,'2025-09-01,100\n2026-09-01,110'))
     assert s['status']=='Pass' and s['yoy']==pytest.approx(.1)
 
+def test_signal_history_gap_is_valid_json_null(tmp_path):
+    s=evaluate_signal('2026-11-02',vintage(tmp_path,'2025-09-01,100\n2025-10-01,.\n2026-09-01,110'))
+    assert s['status']=='Pass'
+    assert next(row['value'] for row in s['history'] if row['date']=='2025-10-01') is None
+    assert '"value": null' in json.dumps(s,allow_nan=False)
+
 def test_stale_signal(tmp_path):
     assert evaluate_signal('2026-11-02',vintage(tmp_path,'2024-01-01,100\n2025-01-01,110'))['status']=='Not Known'
 

@@ -20,6 +20,11 @@ h1,h2,h3 {font-family:'Outfit',sans-serif!important;letter-spacing:-.025em;}
 [data-testid="stSidebar"] [data-testid="stTextInput"] [data-baseweb="input"] {background:#fff!important;}
 [data-testid="stSidebar"] [data-testid="stSelectbox"] [data-baseweb="select"] > div {background:#fff!important;}
 [data-testid="stSidebar"] [data-testid="stSelectbox"] [data-baseweb="select"] * {color:#102d29!important;-webkit-text-fill-color:#102d29!important;opacity:1!important;}
+/* Current Streamlit renders this selectbox as a React Aria combobox, not BaseWeb. */
+[data-testid="stSidebar"] [data-testid="stSelectbox"] input[role="combobox"] {
+ color:#102d29!important;-webkit-text-fill-color:#102d29!important;
+ background:#fff!important;opacity:1!important;
+}
 .block-container {padding-top:1.5rem;padding-bottom:3rem;max-width:1480px;}
 .cedar-hero {background:linear-gradient(115deg,#102d29,#155849 60%,#247b62);color:#fff;padding:2rem 2.3rem;border-radius:22px;box-shadow:0 16px 42px #103d3024;margin-bottom:1rem;}
 .cedar-eyebrow {font-size:.73rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#b9e5c9;margin-bottom:.5rem;}
@@ -32,6 +37,7 @@ h1,h2,h3 {font-family:'Outfit',sans-serif!important;letter-spacing:-.025em;}
 [data-testid="stTabs"] button {font-weight:700;}
 [data-testid="stSidebar"] [data-testid="stSlider"] [data-baseweb="slider"] * {opacity:1!important;}
 [data-testid="stSidebar"] [data-testid="stNumberInput"] button {background:#eaf2ed!important;color:#102d29!important;}
+[data-testid="stSidebar"] [data-testid="stNumberInput"] button svg {color:#102d29!important;fill:#102d29!important;}
 [data-testid="stSidebar"] [data-testid="stSelectbox"] svg {fill:#102d29!important;}
 [data-testid="stAlert"] {border-radius:14px;}
 div[data-testid="stDataFrame"], div[data-testid="stPlotlyChart"] {border-radius:16px;overflow:hidden;}
@@ -98,7 +104,9 @@ with tabs[0]:
    st.markdown('<div class="cedar-kicker">Decision boundary</div>',unsafe_allow_html=True)
    st.write('A feasible optimizer result is a research candidate. Missing client approvals and trade evidence keep the authorization gate closed.')
    st.metric('Benchmark annual mean',f"{r['benchmark']['expected_return']:.2%}")
- else:st.error('No verified feasible constrained portfolio: '+r['solver']['message'])
+ else:
+  st.error('No verified feasible constrained portfolio under these inputs. The return hurdle, BIL floor, position bound, or optional risk cap may conflict. No constrained weights are recommended.')
+  with st.expander('Solver detail'):st.write(r['solver']['message'])
  st.subheader('Main blockers to funding')
  if decision['failed']:
   for item in decision['failed']:st.error(item)
@@ -162,7 +170,7 @@ with tabs[3]:
  a,b,d=st.columns(3)
  a.metric('Signal check',signal['status'])
  b.metric('Year-over-year inflation',f"{signal['yoy']:.2%}" if signal.get('yoy') is not None else 'Unavailable')
- d.metric('Historical CPI signal',f"{signal['yoy']:.2%}" if signal.get('yoy') is not None else 'Unavailable')
+ d.metric('CPI observation month',signal['observation_date'][:7] if signal.get('observation_date') else 'Unavailable')
  st.write(f"**BIL floor:** you entered {applied['reserve_min']:.0%}; the solver used {r['effective_reserve_floor']:.0%}. **Return hurdle:** illustrative CPI {applied['cpi_assumption']:.2%} + real spread {applied['real_return_objective']:.2%} = {hurdle:.2%} nominal. The historical CPI signal is separate from that assumption.")
  if signal.get('status')=='Pass':
   st.write(f"**Calculation:** {signal['value']:.3f} (September 2026 CPI) / {signal['prior_value']:.3f} (September 2025 CPI) - 1 = {signal['yoy']:.2%}.")
@@ -218,7 +226,7 @@ with tabs[4]:
  if r['stress']:
   st.caption('The cost illustration uses hypothetical holdings. Actual client costs cannot be computed without Cedar holdings and trades.')
  st.write('For customized input stresses, change the sidebar controls. Cost stress uses an explicitly hypothetical baseline holding vector; actual client turnover is unknown.')
- st.info('The separate Locked Changed-Input Record is not run here. Its student-authored AI-off prediction must be committed to GitHub before execution.')
+ st.info('The completed Locked Changed-Input Record is separate from these ordinary stresses. The student committed the 85% BIL-floor prediction before the run; the saved result found no feasible portfolio, and the recommendation stayed at 0% new capital.')
 with tabs[5]:
  st.subheader('Evidence-based committee ask')
  applied_assumptions()
@@ -226,6 +234,6 @@ with tabs[5]:
  st.write('Monitor: reserve coverage, net real outcomes, annual turnover, signal vintage, price freshness, solver feasibility and allocation stability. Resolve the missing mandate evidence before revisiting deployment.')
  memo=ROOT/'docs/decision-memo.md'
  if memo.exists():
-  st.caption('Frozen memo dated November 2, 2026: documents the saved default decision. The live decision above and the scenario download use the currently applied controls.')
+  st.caption('Memo analyzes the frozen November 2, 2026 baseline and includes later student checks. The live decision above and the scenario download use the currently applied controls.')
   st.markdown(memo.read_text(encoding='utf-8'))
- st.download_button('Download this scenario',json.dumps(r,indent=2),file_name='cedar_scenario.json')
+ st.download_button('Download this scenario',json.dumps(r,indent=2,allow_nan=False),file_name='cedar_scenario.json')

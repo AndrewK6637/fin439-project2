@@ -3,16 +3,44 @@ Video: https://youtu.be/P-bziTgmBHY
 Runtime: 2:44
 Draft corrected transcript from the published recording. Timestamps are approximate. Review against the audio before final submission.
 
-[0:00] Okay, so this is my app. I used ChatGPT and Codex for a lot of the complicated coding, source recovery, testing, and some of the drafting. I used it as a tool to examine the financial results, but I made my own recommendation, my own financial analysis, and my own end decision.
+[0:00] Okay, so this is my app. I used ChatGPT and Codex for a lot of the complicated
+coding, source recovery, testing, and some of the drafting. I used it as a tool to
+examine the financial results, but I made my own recommendation, my own financial
+analysis, and my own end decision.
 
-[0:16] Cedar has $20 million, pays $150,000 in scholarships each quarter, and wants CPI plus 3% after costs over five-year periods. The question I have to answer is: does the app give the committee enough evidence to invest new money?
+[0:16] Cedar has $20 million, pays $150,000 in scholarships each quarter, and wants CPI
+plus 3% after costs over five-year periods. The question I have to answer is: does the
+app give the committee enough evidence to invest new money?
 
-[0:30] If you go over to Portfolio comparison, I kept the four funds we used in earlier coursework. I chose to keep a 60% VT and 40% LQD portfolio for comparison and to use BIL as an illustrative reserve stand-in. Cedar has not approved those choices. Additionally, Aidan, my partner, followed my README on his Mac and reproduced the baseline. He also saw a blank screen for a minute when he initially ran the app, but eventually it got to work.
+[0:30] If you go over to Portfolio comparison, I kept the four funds we used in earlier
+coursework. I chose to keep a 60% VT and 40% LQD portfolio for comparison and to use BIL
+as an illustrative reserve stand-in. Cedar has not approved those choices. Additionally,
+Aidan, my partner, followed my README on his Mac and reproduced the baseline. He also
+saw a blank screen for a minute when he initially ran the app, but eventually it got to
+work.
 
-[0:58] My input was deciding what question the model should answer and whether its answer was strong enough for a committee. I did not treat the portfolio weights as recommendations just because a solver produced them.
+[0:58] My input was deciding what question the model should answer and whether its
+answer was strong enough for a committee. I did not treat the portfolio weights as
+recommendations just because a solver produced them.
 
-[1:13] In Point-in-time signal, I reported checking three values in the historical CPI file, including the September 2026 and September 2025 values. Dividing them and subtracting one gives about 3.72%, the number you see there. I still questioned the proposed rule. Correct CPI math does not show that raising the BIL floor approves this portfolio or that Cedar approved the policy.
+[1:13] In Point-in-time signal, I reported checking three values in the historical CPI
+file, including the September 2026 and September 2025 values. Dividing them and
+subtracting one gives about 3.72%, the number you see there. I still questioned the
+proposed rule. Correct CPI math does not show that raising the BIL floor approves this
+portfolio or that Cedar approved the policy.
 
-[1:40] In my changed-input record, the model came up with about 77% BIL and 23% VT. The estimated return was 5.5%, just at the target. That made me question how much confidence I should put in the app's Pass. Even a small trading cost could put the estimated return below the target. I also wanted to see what would happen if Cedar needed a bigger reserve. Before running the test, I committed my prediction that requiring at least 85% in BIL would make the target unreachable. The saved run confirmed it. That showed me how much the result depended on the reserve assumption and was one reason I recommended putting zero new money into the strategy for now.
+[1:40] In my changed-input record, the model came up with about 77% BIL and 23% VT. The
+estimated return was 5.5%, just at the target. That made me question how much confidence
+I should put in the app's Pass. Even a small trading cost could put the estimated return
+below the target. I also wanted to see what would happen if Cedar needed a bigger
+reserve. Before running the test, I committed my prediction that requiring at least 85%
+in BIL would make the target unreachable. The saved run confirmed it. That showed me how
+much the result depended on the reserve assumption and was one reason I recommended
+putting zero new money into the strategy for now.
 
-[2:17] Back on the Executive dashboard, my recommendation remains 0% of new capital and no change to existing holdings. The missing approved risk limit matters most to me. That 3.53% estimated volatility may sound low, but I cannot call it acceptable without Cedar's limit. If Cedar confirmed its risk limit, reserve treatment, holdings, and costs, I would rerun the analysis and consider a small pilot only if the result still clears the hurdle after costs. Thank you.
+[2:17] Back on the Executive dashboard, my recommendation remains 0% of new capital and
+no change to existing holdings. The missing approved risk limit matters most to me. That
+3.53% estimated volatility may sound low, but I cannot call it acceptable without
+Cedar's limit. If Cedar confirmed its risk limit, reserve treatment, holdings, and
+costs, I would rerun the analysis and consider a small pilot only if the result still
+clears the hurdle after costs. Thank you.

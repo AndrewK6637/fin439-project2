@@ -1,8 +1,8 @@
 # FIN 439 Project 2 final submission checklist
 
-**For November 19, start with [the ordered finish plan](TOMORROW_FINISH_PLAN.md). On Windows, double-click `OPEN_APP.cmd` in the extracted project folder to launch the app.**
+**Current delivery status (November 21): start with the [submission review](SUBMISSION_REVIEW.md). On Windows, double-click `OPEN_APP.cmd` in the extracted project folder to launch the app.**
 
-**Status on November 18, 2026: technical research app verified; mandatory student evidence and delivery remain incomplete. Do not submit as complete yet.** OpenAI Codex assisted with code, tests, source checks, and drafts. The student owns the analysis and final decision. Educational work, not investment advice.
+**Historical checklist:** the sections below describe the November 18 preparation stage. The three videos, transcripts, partner cold run, and locked experiment have since been recorded. Use the [submission review](SUBMISSION_REVIEW.md) for current open actions. OpenAI Codex assisted with code, tests, source checks, and drafts. The student owns the analysis and final decision. Educational work, not investment advice.
 
 ## Completed and checked
 
@@ -39,10 +39,10 @@ The first test command in this session failed 19 test setups because the Windows
 | Decision Markdown | [decision memo](docs/decision-memo.md) | Draft; review, then attach this actual file to Brightspace |
 | Validation and AI-use Markdown | [validation](docs/validation-and-ai-use.md) | Present; update after genuine locked record, then attach this actual file |
 | Locked changed-input record | [record](docs/changed-input-record.md), [classroom template](docs/tuesday-changed-input-template.md) | Student prediction, GitHub chronology, and result missing |
-| Video 1, <=3:00, with corrected transcript | [script](videos/video-1-script.md), `docs/transcript-video-1.txt` | Recording, real transcript, URL missing |
-| Video 2, <=5:00, with corrected transcript | [script](videos/video-2-script.md), `docs/transcript-video-2.txt` | Recording, real transcript, URL missing |
-| Video 3, <=5:00, with corrected transcript | [script](videos/video-3-script.md), `docs/transcript-video-3.txt` | Recording, real transcript, URL missing |
-| Submission manifest | [CSV](docs/submission-manifest.csv), [guide](docs/submission-manifest.md) | Final URLs, durations, timestamps, access checks, commit ID missing |
+| Video 1, <=3:00, with corrected transcript | [recording](https://youtu.be/P-bziTgmBHY), [transcript](docs/transcript-video-1.txt) | 2:44; student transcript review pending |
+| Video 2, <=5:00, with corrected transcript | [recording](https://youtu.be/JV2xpzFfczE), [transcript](docs/transcript-video-2.txt) | 4:25; student transcript review and captions pending |
+| Video 3, <=5:00, with corrected transcript | [replacement recording](https://youtu.be/UfHrL-9ilAM), [transcript](docs/transcript-video-3.txt) | 4:46; student transcript review and captions pending |
+| Submission manifest | [CSV](docs/submission-manifest.csv), [guide](docs/submission-manifest.md) | URLs, durations, and timestamps entered; final viewer check and frozen commit ID pending |
 
 ## Recording guide
 

@@ -15,8 +15,8 @@ All required non-video locations must be GitHub links; videos must be YouTube li
 | Transcript Video 1 | yes | [GitHub transcript](https://github.com/AndrewK6637/fin439-project2/blob/main/docs/transcript-video-1.txt); student audio review pending |
 | Video 2 | yes | [YouTube](https://youtu.be/JV2xpzFfczE), 4:25 |
 | Transcript Video 2 | yes | [GitHub transcript](https://github.com/AndrewK6637/fin439-project2/blob/main/docs/transcript-video-2.txt); student audio review pending |
-| Video 3 | yes | [YouTube](https://youtu.be/Vu8C5MSFX1E), 4:34 |
+| Video 3 | yes | [Replacement YouTube recording](https://youtu.be/UfHrL-9ilAM), 4:46 |
 | Transcript Video 3 | yes | [GitHub transcript](https://github.com/AndrewK6637/fin439-project2/blob/main/docs/transcript-video-3.txt); student audio review pending |
 | Optional deployed output | no | Optional deployment; all required non-video locations use GitHub |
 
-STUDENT ACTION REQUIRED: listen through and correct the transcript drafts, check the videos visually while logged out, and enter the final frozen commit ID. Videos 2 and 3 did not have YouTube caption tracks when checked. Video 3's spoken opening does not include the AI-use disclosure in its speaking guide; review the course video requirement before final submission. Attach `docs/decision-memo.md` and `docs/validation-and-ai-use.md` to Brightspace as well as linking their GitHub versions.
+STUDENT ACTION REQUIRED: listen through and correct the transcript drafts, check the videos visually while logged out, and enter the final frozen commit ID. Videos 2 and the replacement Video 3 did not have YouTube caption tracks when checked. The replacement Video 3 includes the opening AI-use and education statements in its spoken audio. Attach `docs/decision-memo.md` and `docs/validation-and-ai-use.md` to Brightspace as well as linking their GitHub versions.

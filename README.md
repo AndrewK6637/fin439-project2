@@ -38,13 +38,15 @@ If Windows cannot find `python`, use `py -3.13` for the first two commands. Inte
 
 Open **http://localhost:8501** when the terminal reports the server is ready. Leave that terminal running; Ctrl+C stops it. No virtual-environment activation or execution-policy change is necessary. If port 8501 is occupied, append `--server.port 8522` and open the port printed in the terminal. If installation reports `OSError: [Errno 2]` for a very long path inside Streamlit, extract a fresh copy into a shorter folder and repeat installation; do not change system security settings. A missing Streamlit module means the installation step used a different interpreter; rerun the exact pip command above.
 
+On a first Streamlit launch, the terminal may ask for an email address. Press Enter to skip it, then wait for the Local URL before opening the browser.
+
 On macOS/Linux, use `python3 -m venv .venv`, `.venv/bin/python -m pip install -r requirements.txt`, then `.venv/bin/python -m streamlit run app.py`. Windows/Python 3.13 was tested in the project audit; Aidan independently reported a successful macOS/Python 3.14 cold run. Linux remains unverified.
 
 **First-load note:** Aidan's macOS/Python 3.14 cold run showed a blank white browser page for about 1–2 minutes before the dashboard loaded, with no app error. Leave the Streamlit terminal open and allow the initial load to finish. His first terminal error came from pasting two commands together; rerunning the README commands one line at a time worked. See [Aidan's complete cold-run record](docs/andrew-cold-run-by-aidan.md).
 
 ## Find the result and try a documented demonstration
 
-1. Start at **Executive dashboard**. Read the draft decision, estimated annual return, volatility and full mandate status.
+1. Start at **Executive dashboard**. Read the research decision, estimated annual return, volatility and full mandate status.
 2. Open **Portfolio comparison** for all three allocations, benchmark differences, failed rules and unknown evidence. **Fail authorization** can mean missing evidence; it is not a fabricated numerical breach.
 3. In the sidebar change **Estimation months** from **60 to 36**. The app recalculates automatically; **Rerun model** also reruns the page. Compare the new weights and estimates with [the already executed stress table](docs/checkout-results.md). Restore **60** afterward.
 4. Open **Stress testing** for four documented scenarios, and **Committee recommendation** for the decision and monitors. The saved memo describes the frozen default; the live values and **Download this scenario** reflect the current controls.
