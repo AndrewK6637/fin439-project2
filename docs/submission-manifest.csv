@@ -4,10 +4,10 @@ Repository,yes,https://github.com/AndrewK6637/fin439-project2,FIN 439 Project 2 
 Visible executed output,yes,https://github.com/AndrewK6637/fin439-project2/blob/main/docs/checkout-results.md,Cedar investment results,2026-11-02,,automated public clone succeeded,,Read without running Python; final revision pending
 Decision memo or deck,yes,https://github.com/AndrewK6637/fin439-project2/blob/main/docs/decision-memo.md,Draft committee decision,2026-11-02,,automated public clone succeeded,,Student review pending; attach same MD to Brightspace
 Validation-and-AI-Use.pdf,yes,https://github.com/AndrewK6637/fin439-project2/blob/main/docs/validation-and-ai-use.md,Validation and AI use,,,automated public clone succeeded,,Legacy row title; Locked Record and student verification pending; attach same MD to Brightspace
-Video 1,yes,,,,,not checked,,YouTube; <=3:00
-Transcript Video 1,yes,,,,,not checked,,GitHub docs/transcript-video-1.txt after actual recording
-Video 2,yes,,,,,not checked,,YouTube; <=5:00
-Transcript Video 2,yes,,,,,not checked,,GitHub docs/transcript-video-2.txt after actual recording
-Video 3,yes,,,,,not checked,,YouTube; <=5:00; opens live app
-Transcript Video 3,yes,,,,,not checked,,GitHub docs/transcript-video-3.txt after actual recording
+Video 1,yes,https://youtu.be/P-bziTgmBHY,How My Investment Thinking Changed,2:44,0:00 intro | 0:30 comparison | 1:13 CPI check | 1:40 locked experiment | 2:17 decision,public metadata and audio retrieved 2026-11-21; visual check pending,,Within 3-minute limit; student review of transcript pending
+Transcript Video 1,yes,https://github.com/AndrewK6637/fin439-project2/blob/main/docs/transcript-video-1.txt,Video 1 corrected spoken transcript,2:44,0:00 | 0:16 | 0:30 | 0:58 | 1:13 | 1:40 | 2:17,GitHub link pending publication,,Draft corrected from recording; student audio review pending
+Video 2,yes,https://youtu.be/JV2xpzFfczE,How the Cedar App Reaches Its Decision,4:25,0:00 intro | 0:19 mandate | 1:05 optimizer | 2:11 CPI | 2:50 decision rule | 3:15 locked experiment | 3:53 close,public metadata and audio retrieved 2026-11-21; visual check pending,,Within 5-minute limit; YouTube caption track unavailable when checked
+Transcript Video 2,yes,https://github.com/AndrewK6637/fin439-project2/blob/main/docs/transcript-video-2.txt,Video 2 corrected spoken transcript,4:25,0:00 | 0:19 | 0:44 | 1:05 | 1:31 | 2:11 | 2:50 | 3:15 | 3:53,GitHub link pending publication,,Draft corrected from recording; student audio review pending
+Video 3,yes,https://youtu.be/Vu8C5MSFX1E,My Cedar Investment Committee Recommendation,4:34,0:01 decision | 0:53 comparison | 2:17 CPI | 2:42 stress | 3:12 committee action,public metadata and audio retrieved 2026-11-21; visual check pending,,Within 5-minute limit; spoken opening lacks AI-use disclosure; YouTube caption track unavailable when checked
+Transcript Video 3,yes,https://github.com/AndrewK6637/fin439-project2/blob/main/docs/transcript-video-3.txt,Video 3 corrected spoken transcript,4:34,0:01 | 0:16 | 0:30 | 0:53 | 1:32 | 2:17 | 2:42 | 3:12 | 3:56,GitHub link pending publication,,Draft corrected from recording; student audio review pending
 Optional deployed output,no,,,,,not checked,,Optional deployment; all required non-video locations use GitHub

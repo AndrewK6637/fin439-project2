@@ -1,8 +1,8 @@
 # Submission manifest ? pending student completion
 
-The accompanying CSV retains the official legacy twelve-row structure and column names. The Project 2 owner ruling replaces PDF deliverables with Markdown and excludes research-evolution. Legacy row titles are retained for compatibility; notes identify the actual deliverable. GitHub locations for existing written files are filled; video URLs, actual durations, timestamp indices and frozen revision remain blank.
+The accompanying CSV retains the official legacy twelve-row structure and column names. The Project 2 owner ruling replaces PDF deliverables with Markdown and excludes research-evolution. Legacy row titles are retained for compatibility; notes identify the actual deliverable. The three video URLs, measured durations, timestamp indices, and corrected draft transcripts are now entered. The frozen revision and final student access checks remain pending.
 
-All required non-video locations must be GitHub links; videos must be YouTube links. The [public repository](https://github.com/AndrewK6637/fin439-project2) was cloned successfully for technical verification. No video URLs exist yet. Actual transcripts must follow recording, not be generated from these scripts.
+All required non-video locations must be GitHub links; videos must be YouTube links. The [public repository](https://github.com/AndrewK6637/fin439-project2) was cloned successfully for technical verification. The transcripts were drafted from the published recordings and need a final student listen-through before submission.
 
 | Item | Required | Prepared target / remaining action |
 | --- | --- | --- |
@@ -11,12 +11,12 @@ All required non-video locations must be GitHub links; videos must be YouTube li
 | Visible executed output | yes | GitHub outputs/visible-results.md |
 | Decision memo or deck | yes | GitHub docs/decision-memo.md; attach same MD to Brightspace |
 | Validation-and-AI-Use.pdf | yes | Legacy row title; use GitHub docs/validation-and-ai-use.md and attach same MD |
-| Video 1 | yes | YouTube; <=3:00 |
-| Transcript Video 1 | yes | GitHub docs/transcript-video-1.txt after actual recording |
-| Video 2 | yes | YouTube; <=5:00 |
-| Transcript Video 2 | yes | GitHub docs/transcript-video-2.txt after actual recording |
-| Video 3 | yes | YouTube; <=5:00; opens live app |
-| Transcript Video 3 | yes | GitHub docs/transcript-video-3.txt after actual recording |
+| Video 1 | yes | [YouTube](https://youtu.be/P-bziTgmBHY), 2:44 |
+| Transcript Video 1 | yes | [GitHub transcript](https://github.com/AndrewK6637/fin439-project2/blob/main/docs/transcript-video-1.txt); student audio review pending |
+| Video 2 | yes | [YouTube](https://youtu.be/JV2xpzFfczE), 4:25 |
+| Transcript Video 2 | yes | [GitHub transcript](https://github.com/AndrewK6637/fin439-project2/blob/main/docs/transcript-video-2.txt); student audio review pending |
+| Video 3 | yes | [YouTube](https://youtu.be/Vu8C5MSFX1E), 4:34 |
+| Transcript Video 3 | yes | [GitHub transcript](https://github.com/AndrewK6637/fin439-project2/blob/main/docs/transcript-video-3.txt); student audio review pending |
 | Optional deployed output | no | Optional deployment; all required non-video locations use GitHub |
 
-STUDENT ACTION REQUIRED: fill remaining CSV fields with real YouTube/transcript URLs, measured durations, timestamp indices, genuine video/reviewer access confirmation and frozen commit ID. Commit corrected transcripts and the final manifest. Attach `docs/decision-memo.md` and `docs/validation-and-ai-use.md` to Brightspace as well as linking their GitHub versions. The repository is published; video uploads and Brightspace submission have not occurred.
+STUDENT ACTION REQUIRED: listen through and correct the transcript drafts, check the videos visually while logged out, and enter the final frozen commit ID. Videos 2 and 3 did not have YouTube caption tracks when checked. Video 3's spoken opening does not include the AI-use disclosure in its speaking guide; review the course video requirement before final submission. Attach `docs/decision-memo.md` and `docs/validation-and-ai-use.md` to Brightspace as well as linking their GitHub versions.

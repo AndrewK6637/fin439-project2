@@ -1,0 +1,22 @@
+FIN 439 Project 2 — Video 2: How the Cedar App Reaches Its Decision
+Video: https://youtu.be/JV2xpzFfczE
+Runtime: 4:25
+Draft transcript corrected from the published recording. Timestamps are approximate. Review against the audio before final submission.
+
+[0:00] Okay, so this video is going over my code. I used ChatGPT and Codex for a lot of the complicated coding and automated tests. But when there was an AI-off prediction, or I had to reach a final decision or financial analysis, as previously mentioned, I did it all.
+
+[0:19] This here is my mandate file. It tells the app which research assumptions to use. The baseline uses 60 monthly returns through September 2026. The illustrative 2.5% CPI assumption plus Cedar's 3% real-return objective gives a 5.5% screening hurdle. That CPI assumption is separate from the historical signal I will show later.
+
+[0:44] If we go to this data file and look up `def monthly_returns`, saved adjusted prices become monthly returns. The code drops incomplete observations instead of making up prices. Those returns supply the portfolio estimates.
+
+[1:05] If we look up `def optimize`, the optimizer looks for the lowest-volatility mix that reaches the return hurdle. It must keep the weights within bounds and hold the effective BIL floor. Back to `def rules`: this is my concrete check on the proposed weights. The code checks that they add to 100%, meet the BIL floor and return hurdle, and meet a volatility cap if Cedar supplies one. I want to see which rules passed, not only rely on solver success messages.
+
+[1:31] If we go to the results and look up Constrained, the baseline candidate is 77.04% BIL and 22.96% VT. Its estimated return is 5.5% and volatility is 3.53%. BIL's estimated return is about 3.59%, while VT's is about 11.9%. The mix needs some VT to reach the hurdle. I questioned whether a result that lands right on the hurdle leaves enough room for real costs or weaker stock returns.
+
+[2:11] If we go to signal and look for `last.value`, this calculation compares September 2026 with September 2025 CPI data. I checked the reported source values and got about 3.72% year over year, which supports the displayed reading. Next, if we look up `def effective_reserve`, Codex proposed using that reading to raise the analytical BIL floor from 3% to 5%. The baseline already holds 77% BIL, so the proposed floor does not change its weights.
+
+[2:50] In workflow, look up `def stop_decision`. The baseline passes the rules the app can test. This decision step also checks what the app cannot establish: Cedar's risk limit, approval to count BIL as reserve, and actual holdings and trading costs. With those items unresolved, the full mandate is Not Known, deployment is rejected, and new capital stays at 0%.
+
+[3:15] If we go to my changed-input record, here is my AI-off prediction. For the locked run, I predicted that an 85% BIL floor would make the 5.5% target infeasible. Even 85% BIL and 15% VT estimated only about 4.84%. I committed the prediction before running the test. In the saved run, it found no feasible portfolio, so it produced no after-run volatility. My recommendation stayed at 0% new capital. This test of the analytical floor did not change Cedar's real reserve policy.
+
+[3:53] To go back to the mandate and look up risk limit, the code cannot supply Cedar's approved risk limit or current holdings. I would get that evidence, confirm reserve treatment and trading costs, and rerun the app under approved assumptions. That is why I would keep this app for research and hold off on investing Cedar's money. New capital to the proposed strategy is still 0%. Thank you.
