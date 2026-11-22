@@ -39,3 +39,13 @@
 **CLICK:** **Committee recommendation**. **POINT:** The unresolved risk limit in the recommendation/memo. **SAY:** “My first question to Cedar is its approved volatility limit. I cannot call 3.53% acceptable without that boundary, especially with quarterly scholarships. A numerical pass is not deployment authority.”
 
 **POINT:** The reserve, holdings, and cost discussion. **SAY:** “I would also ask whether BIL counts toward the $600,000 reserve, how Cedar will fund payments, and what it currently owns. Those answers determine liquidity, turnover, and costs.” **POINT:** The committee ask. **SAY:** “Then I would rerun the app. If the candidate meets approved limits and an after-cost hurdle, I would bring a small pilot back for a vote. Otherwise, I would revise the strategy rather than lower Cedar's objective. For now, the decision is 0%.”
+
+## Optional 90-second committee follow-up — swap into the recording, do not add past 5:00
+
+This section adds a different question: **Could Cedar adopt the app as an investment process?** Use it in place of some earlier explanation if your rehearsal is close to five minutes. These are proposed words for you to review and say only if they match your judgment.
+
+**SWITCH:** Back to **Executive dashboard**. **POINT:** The three statuses: testable constraints, full mandate, and deployment authorization. **SAY:** “If I were on Cedar's committee, I would separate three questions. Did the math pass the rules we can test? Yes. Do we know the full mandate is met? No. Can we authorize a trade? No. I like that the app shows those answers together. It lets me use the model to narrow the discussion without pretending the missing client decisions have been made.”
+
+**CLICK:** **Portfolio comparison**. **POINT:** The candidate allocation, then scroll to the separate holdout diagnostic. **SAY:** “I would also want a second person to challenge the return estimates before any pilot. The allocation leans on VT to get over the hurdle. If future stock returns are weaker than this sample, the return case changes. The holdout is useful as a diagnostic, but it comes from a later-downloaded price snapshot. I would not present it as a live, point-in-time trading record.”
+
+**CLICK:** **Committee recommendation**. **POINT:** The monitoring and committee ask. **SAY:** “For a pilot, I would ask Cedar to approve the risk limit, reserve treatment, and cost schedule first. Then I would compare the proposed trades with Cedar's actual holdings and check the turnover limit and after-cost return. I would monitor reserve coverage and allocation stability. If the portfolio misses the agreed hurdle or breaks an approved limit, I would bring it back to the committee instead of quietly changing the objective.”
