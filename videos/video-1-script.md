@@ -38,7 +38,7 @@
 
 **SWITCH TAB:** Open `docs/changed-input-record.md`. Point to the prediction, prediction commit link, and actual infeasible result.
 
-“The baseline candidate is 77.04% BIL and 22.96% VT. Its estimated return is exactly 5.50%, the illustrative hurdle. I questioned the AI-assisted interpretation of that result: how much comfort does a Pass give us when actual trading costs and future returns are unknown? I also predicted that forcing at least 85% into BIL would leave too little room to reach 5.50%. I committed that prediction before the run, and the saved result found no feasible portfolio. The test challenged whether the feasible baseline would stay feasible under a much larger reserve. It did not change Cedar's actual reserve rule.”
+“The model came up with 77.04% BIL and 22.96% VT. The estimated return was 5.50%, which just met the target. That made me question how much confidence I should put in the app’s ‘Pass.’ Even a small trading cost could put the estimated return below the target. I also wanted to see what would happen if Cedar needed a bigger reserve. Before running the test, I committed my prediction that requiring at least 85% in BIL would make the target unreachable. The saved run confirmed it. That showed me how much the result depended on the reserve assumption, and it was one reason I recommended putting 0% of new money into the strategy for now.”
 
 ## Close — dashboard
 
