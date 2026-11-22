@@ -14,16 +14,15 @@ The saved research candidate is **77.04% BIL / 22.96% VT**, with **5.50% estimat
 | Visible result | [Checkout results](docs/checkout-results.md), [saved JSON](outputs/results.json) | Present; frozen November 2 research baseline. |
 | Decision memo | [Decision memo](docs/decision-memo.md) | Present; student final read-through and Brightspace attachment needed. |
 | Validation and AI use | [Validation record](docs/validation-and-ai-use.md), [locked experiment](docs/changed-input-record.md) | Present; student final read-through and Brightspace attachment needed. |
-| Video 1 and transcript | [How My Investment Thinking Changed](https://youtu.be/P-bziTgmBHY), [transcript](docs/transcript-video-1.txt) | 2:44; within 3:00 limit. Transcript needs student audio check. |
-| Video 2 and transcript | [How the Cedar App Reaches Its Decision](https://youtu.be/JV2xpzFfczE), [transcript](docs/transcript-video-2.txt) | 4:25; within 5:00 limit. Transcript needs student audio check; no YouTube caption track was available when checked. |
-| Video 3 and transcript | [Cedar Investment Committee Recommendation](https://youtu.be/UfHrL-9ilAM), [replacement transcript](docs/transcript-video-3.txt) | 4:46; within 5:00 limit. Spoken opening includes AI-use and education statements. Transcript needs student audio check; no YouTube caption track was available when checked. |
-| Submission manifest | [CSV](docs/submission-manifest.csv), [reading guide](docs/submission-manifest.md) | Video links, lengths, and timestamp indices entered. Final frozen commit ID and student viewer check remain open. |
+| Video 1 and transcript | [How My Investment Thinking Changed](https://youtu.be/P-bziTgmBHY), [transcript](docs/transcript-video-1.txt) | 2:44; within 3:00 limit. Andrew confirmed the link and transcript; English automatic captions are available. |
+| Video 2 and transcript | [How the Cedar App Reaches Its Decision](https://youtu.be/JV2xpzFfczE), [transcript](docs/transcript-video-2.txt) | 4:25; within 5:00 limit. Andrew confirmed the link and transcript; English automatic captions are available. |
+| Video 3 and transcript | [Cedar Investment Committee Recommendation](https://youtu.be/UfHrL-9ilAM), [replacement transcript](docs/transcript-video-3.txt) | 4:46; within 5:00 limit. Spoken opening includes AI-use and education statements. Andrew confirmed the link and transcript; English automatic captions are available. |
+| Submission manifest | [CSV](docs/submission-manifest.csv), [reading guide](docs/submission-manifest.md) | Video links, lengths, timestamp indices, student confirmations, and frozen content commit entered. |
 
 ## Finish before Brightspace submission
 
-1. Play each recording while reading its transcript. Correct any misheard finance terms, names, numbers, or speaker wording. Enable or upload YouTube captions for Videos 2 and 3, and confirm captions for Video 1.
-2. Open the three YouTube links and all GitHub links as a viewer or while logged out. Confirm Video 3 shows the live app from its first frame, with webcam view and clear audio. Record the genuine check in the [manifest](docs/submission-manifest.csv).
-3. Review the memo and validation record as your own final written work. Confirm they match the recordings and the saved [locked result](outputs/locked_changed_input.json).
-4. Freeze the repository revision, enter its commit ID in the manifest, attach `docs/decision-memo.md` and `docs/validation-and-ai-use.md` in Brightspace, and supply the manifest and transcript links or files. Keep the submission receipt.
+1. Review the memo and validation record as your own final written work. Confirm they match the recordings and the saved [locked result](outputs/locked_changed_input.json).
+2. Attach `docs/decision-memo.md` and `docs/validation-and-ai-use.md` in Brightspace. Supply the [manifest](docs/submission-manifest.csv) and the three transcript files or links.
+3. Confirm the Brightspace receipt and keep a copy.
 
-The files and links are prepared, but this page does not claim that student review, YouTube caption availability, visual access checks, or Brightspace submission have happened.
+The student confirmed the video and transcript links, and public English automatic captions are available. This page does not claim that the written attachments were finally approved or that Brightspace submission has happened.
