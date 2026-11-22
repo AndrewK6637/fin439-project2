@@ -1,57 +1,39 @@
 # Video 2 — How the app reaches its answer
 
-**Rehearsal notes, not an actual transcript. Maximum 5 minutes.** Webcam on; clear audio. Show the code and a saved test result. Do not claim a fresh personal test unless you run it.
+**Rehearsal guide, not an actual transcript. Maximum 5 minutes.** Webcam on; clear audio. The bold directions are actions, not words to read aloud. Do not claim a fresh personal test unless you run it.
 
-**What this video does:** Trace the displayed decision through code. In your editor, click **`config/mandate.json` → `src/data.py` → `src/engine.py` → `src/signal.py` → `src/workflow.py` → `docs/changed-input-record.md`**. Open `outputs/locked_changed_input.json` for the saved result. End on the running app's Executive dashboard. Put the files in easy-to-read editor tabs before recording.
+**Before recording:** Open the repository in VS Code. Put `config/mandate.json`, `src/data.py`, `src/engine.py`, `outputs/results.json`, `src/signal.py`, `src/workflow.py`, `docs/changed-input-record.md`, and `outputs/locked_changed_input.json` in editor tabs, in that order. Enlarge the text. Start the live app using the [README](../README.md) and leave its Executive dashboard ready for the ending. Begin recording with `config/mandate.json` already on screen. Press Esc after each Ctrl+F search so the code remains easy to point to.
 
-**Before recording:** Open the project folder in VS Code. Open the named files as editor tabs, enlarge the text, and open a terminal. Put `config/mandate.json` on screen **before you press Record**. For the live app ending, run `.venv\Scripts\python.exe -m streamlit run app.py` and open the printed Local URL. Turn on webcam and microphone. In VS Code, use **Ctrl+F within the file currently on screen**; press Esc after finding a term so you can point to it.
+## 1. Start on Cedar's inputs
 
-**Show on screen:** In `config/mandate.json`, point to `estimation_months: 60`, `cpi_assumption: 0.025`, `real_return_objective: 0.03`, and missing `risk_limit`/`current_weights`. In `src/data.py`, show where saved prices become monthly returns. In `src/engine.py`, show the `metrics`, `rules`, and `optimize` functions. In `src/signal.py`, show the CPI calculation/effective reserve rule. In `src/workflow.py`, show `stop_decision` and `run`. In the locked record and JSON, show the 85% prediction and infeasible result. Finish with the app's Not Known mandate and Reject decision. You do not need to read code line by line.
+**SHOW:** `config/mandate.json` from the first frame. **SAY:** “This is Cedar's mandate file. It tells the app which research assumptions to use. OpenAI Codex helped with the complicated code, automated tests, and drafting. I used that work to question the numbers and make my own investment decision. I am responsible for the final recommendation. This is educational work, not investment advice.”
 
-## Opening — start on `config/mandate.json`
+**Ctrl+F in `config/mandate.json`:** `"estimation_months": 60`. **SAY:** “The baseline uses 60 monthly returns through September 2026. The illustrative 2.5% CPI assumption plus Cedar's 3% real-return objective gives a 5.50% screening hurdle. That CPI assumption is separate from the historical signal I will show later.” Point to the nearby CPI and real-objective entries without another search.
 
-**SHOW:** Start recording with `config/mandate.json` open and the file explorer visible. **Ctrl+F:** `"estimation_months": 60`.
+**CLICK:** `src/data.py`. **Ctrl+F:** `def monthly_returns`. **SAY:** “Here, saved adjusted prices become monthly returns. The code drops incomplete observations instead of making up missing prices. Those returns supply the portfolio estimates.”
 
-“This is Cedar's mandate file. I used these inputs to test a research portfolio, then decided whether the result was enough to invest. OpenAI Codex helped with the complicated code, automated tests, and drafting. I used that work to examine the numbers and challenge the assumptions. The investment recommendation is mine. This is educational work, not investment advice.”
+## 2. Show the optimizer and check its answer
 
-**SHOW:** Point to the open `config/mandate.json`, `src/engine.py`, and `src/workflow.py` editor tabs. **Ctrl+F:** stay on `"estimation_months": 60`.
+**CLICK:** `src/engine.py`. **Ctrl+F:** `def optimize`. **SAY:** “The optimizer looks for the lowest-volatility mix that reaches the return hurdle. It must keep the weights within bounds and hold the effective BIL floor.”
 
-“I’ll trace how saved prices become portfolio weights, rule checks, and a committee decision.”
+**Ctrl+F in the same file:** `def rules`. **SAY:** “This is my concrete check on the proposed weights. The code checks that they add to 100%, meet the BIL floor and return hurdle, and meet a volatility cap if Cedar supplies one. I want to see which rules passed, not rely only on a solver success message.” Point to the nearby rule names; do not search again.
 
-**SHOW:** Stay on the file tabs. Point to your saved locked record tab. **Ctrl+F after opening that record later:** `Student AI-off prediction`.
+**CLICK:** `outputs/results.json`. **Ctrl+F:** `"Constrained"`. **SAY:** “The baseline candidate is 77.04% BIL and 22.96% VT. Its estimated return is 5.50% and volatility is 3.53%. BIL's estimated return is about 3.59%, while VT's is about 11.90%. The mix needs some VT to reach the hurdle. I questioned whether a result that lands right on the hurdle leaves enough room for real costs or weaker stock returns.”
 
-“I chose the research inputs, questioned the result, and committed a prediction before the locked test.”
+## 3. Separate the CPI calculation from approval
 
-## Inputs — `config/mandate.json`, `src/data.py`
+**CLICK:** `src/signal.py`. **Ctrl+F:** `last.value/prior.iloc[0]-1`. **SAY:** “This calculation compares September 2026 CPI with September 2025 CPI. I checked the reported source values and got about 3.72% year over year. That supports the displayed reading.”
 
-**SHOW:** In `config/mandate.json`, **Ctrl+F:** `"estimation_months": 60`; then `"cpi_assumption": 0.025`; then `"real_return_objective": 0.03`. **CLICK:** `src/data.py`; **Ctrl+F:** `def monthly_returns`, then `pct_change(fill_method=None)`. Point to the missing-month handling.
+**Ctrl+F in the same file:** `def effective_reserve`. **SAY:** “Codex proposed using that reading to raise the analytical BIL floor from 3% to 5%. Cedar has not approved this rule. The baseline already holds 77% BIL, so the proposed floor does not change its weights.”
 
-“The baseline uses 60 monthly returns through September 2026. The illustrative 2.5% CPI input plus Cedar's 3% real objective gives a 5.50% screening hurdle. That input differs from the historical CPI signal. The data loader does not invent missing prices.”
+**CLICK:** `src/workflow.py`. **Ctrl+F:** `def stop_decision`. **SAY:** “The baseline passes the rules the app can test. This decision step also checks what the app cannot establish: Cedar's risk limit, approval to count BIL as reserve, and actual holdings and trading costs. With those items unresolved, the full mandate is Not Known, deployment is rejected, and new capital stays at 0%.” Point to the nearby `unknown` and `recommendation` lines without another search.
 
-## Calculation — `src/engine.py`
+## 4. Show the prediction, result, and committee action
 
-**CLICK:** `src/engine.py`. **Ctrl+F:** `def metrics`, then `def optimize`, then `def rules`. At `def rules`, point to `BIL reserve floor`, `Illustrative return hurdle`, and `Numeric volatility cap`.
+**CLICK:** `docs/changed-input-record.md`. **Ctrl+F:** `Student AI-off prediction`. **SAY:** “Before the locked run, I predicted that an 85% BIL floor would make the 5.50% target infeasible. Even 85% BIL and 15% VT estimated only about 4.84%. I committed the prediction before running the test.” Point to the commit link nearby.
 
-“The optimizer looks for the lowest-volatility mix that reaches the return hurdle. The weights must total 100%, stay within the fund limits, and meet the effective BIL floor. The `rules` function checks the proposed weights again. That second check matters: I want to see which rules actually passed, not rely on a solver success message.”
+**CLICK:** `outputs/locked_changed_input.json`. **Ctrl+F:** `"success": false` in the `"after"` section. **SAY:** “The saved run found no feasible portfolio, so it produced no after-run volatility. My recommendation stayed at 0% new capital. This tested the analytical floor; it did not change Cedar's real reserve policy.”
 
-**SHOW:** Open `outputs/results.json` or the app's Portfolio comparison tab. In the JSON, **Ctrl+F:** `"Constrained"`; point to the BIL/VT weights and 5.50% estimate. If using the app, point to the Constrained research candidate row.
+**CLICK:** Back to `config/mandate.json`. **Ctrl+F:** `"risk_limit": null`. Point to the nearby `current_weights: null` entry. **SAY:** “The code cannot supply Cedar's approved risk limit or current holdings. I would get that evidence, confirm reserve treatment and trading costs, then rerun the app under approved assumptions.”
 
-“BIL's estimated return is about 3.59% and VT's about 11.90%. The 77.04% BIL / 22.96% VT mix reaches 5.50%. I questioned whether that was enough: there is no return cushion for actual costs or weaker VT performance.”
-
-## Signal and decision — `src/signal.py`, `src/workflow.py`
-
-**CLICK:** `src/signal.py`; **Ctrl+F:** `def evaluate_signal`, then `last.value/prior.iloc[0]-1`, then `def effective_reserve`. **CLICK:** `src/workflow.py`; **Ctrl+F:** `def stop_decision`, then `Cedar numeric risk limit not documented`, then `new_process_allocation_range`. You already showed `rules` in `src/engine.py`. Show the app's Executive dashboard statuses after the locked record.
-
-“The stored CPI calculation is about 3.72% year over year. I checked the reported values and arithmetic, but that does not approve Codex's proposed reserve rule. It lifts the effective BIL floor from 3% to 5%; the candidate already holds 77% BIL. The `rules` function we just saw checks the proposed weights against what the app can measure. The baseline passes those testable rules. Here in `stop_decision`, Cedar's approved risk limit, BIL reserve treatment, and actual holdings and trading costs are still unresolved. The full mandate is Not Known, authorization fails, and the recommendation is 0% new capital.”
-
-## Test — locked record and saved JSON
-
-**CLICK:** `docs/changed-input-record.md`; **Ctrl+F:** `Student AI-off prediction`, then `Prediction commit hash`, then `After: BIL`. **CLICK:** `outputs/locked_changed_input.json`; **Ctrl+F:** `"changed": 0.85`, then `"after":`, then `"success": false`. Point to the infeasible result.
-
-“Before the run, I predicted an 85% BIL floor would make 5.50% infeasible. Even 85% BIL and 15% VT estimated only 4.84%. The saved run found no feasible portfolio and no after-run volatility. I kept 0% new capital. This tested the analytical floor; it did not change Cedar's reserve policy.”
-
-## Limit — dashboard
-
-**CLICK:** Return to `config/mandate.json`; **Ctrl+F:** `"risk_limit": null`, then `"current_weights": null`. **SWITCH:** Show the app's Executive dashboard. Point to **Full mandate: Not Known**, **Reject deployment**, and **0% new capital**.
-
-“The code cannot supply Cedar's risk limit, holdings, actual trading costs, or approval to count BIL as reserve. I would wait for that evidence and rerun the app with approved inputs.”
+**SWITCH:** Live app, Executive dashboard. Point to **Full mandate: Not Known**, **Reject deployment**, and **0% new capital**. **SAY:** “That is why I would keep this app for research and hold off on investing Cedar's money.”
