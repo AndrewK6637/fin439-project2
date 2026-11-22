@@ -16,17 +16,17 @@
 
 ## Candidate — dashboard and comparison tab
 
-**POINT:** On Executive dashboard, show the candidate weights, estimated return, and **Full mandate: Not Known**. **SAY:** “The research candidate is about 77% BIL and 23% VT. Its 5.50% estimated return just reaches the hurdle before Cedar's actual transition costs. I would not present it as a trade ticket.”
+**POINT:** On Executive dashboard, show the candidate weights, estimated return, and the three statuses: **testable constraints**, **full mandate**, and **deployment authorization**. **SAY:** “The candidate is about 77% BIL and 23% VT. Its 5.50% estimated return just reaches the hurdle before actual transition costs. I would not present it as a trade ticket. This dashboard separates a numerical pass from a verified mandate and permission to deploy. Those are different committee questions.”
 
 **CLICK:** **Portfolio comparison**. **POINT:** Equal weight, inverse volatility, and constrained candidate rows. **SAY:** “Equal weight and inverse volatility miss the return screen. The constrained candidate reaches it by adding VT. I would not choose a row just for its estimated return; Cedar needs scholarship liquidity and approved risk limits.”
 
 **POINT:** The constrained candidate's **5.50%** return and rule status. **SAY:** “My concern is the thin margin. A small cost or weaker VT return could erase this pass. An annual historical estimate also cannot prove Cedar will meet CPI plus 3% after costs over five-year periods.”
 
-**POINT:** Keep the candidate row visible. **SAY:** “I can use this row for discussion. I cannot defend committing scholarship money from it yet.”
+**POINT:** Keep the candidate row visible, then scroll to the **separate holdout diagnostic**. **SAY:** “I would ask someone else to challenge the return estimates before committing scholarship money. The mix relies on VT to reach the hurdle. Weaker future stock returns would change the case. This holdout adds a check, but its prices came from a later-downloaded snapshot. It is not a live, point-in-time trading record.”
 
 ## Signal — point-in-time tab
 
-**CLICK:** **Point-in-time signal**. **POINT:** The **3.72% historical CPI** reading and **5% effective BIL floor**. **SAY:** “Video 1 covered my CPI check. Cedar has not approved using it to change the reserve rule. This baseline does not show the rule helped because the candidate already exceeds 5% BIL. I would ask Cedar to approve or reject the rule.”
+**CLICK:** **Point-in-time signal**. **POINT:** The **3.72% historical CPI** reading and **5% effective BIL floor**. **SAY:** “Video 1 covered my CPI check. Cedar has not approved using it to change the reserve rule. This baseline does not show the rule helped because the candidate already exceeds 5% BIL. I would ask Cedar to approve or reject the rule and compare results over the same dates with the rule turned off.”
 
 ## Sensitivity — stress tab
 
@@ -38,14 +38,4 @@
 
 **CLICK:** **Committee recommendation**. **POINT:** The unresolved risk limit in the recommendation/memo. **SAY:** “My first question to Cedar is its approved volatility limit. I cannot call 3.53% acceptable without that boundary, especially with quarterly scholarships. A numerical pass is not deployment authority.”
 
-**POINT:** The reserve, holdings, and cost discussion. **SAY:** “I would also ask whether BIL counts toward the $600,000 reserve, how Cedar will fund payments, and what it currently owns. Those answers determine liquidity, turnover, and costs.” **POINT:** The committee ask. **SAY:** “Then I would rerun the app. If the candidate meets approved limits and an after-cost hurdle, I would bring a small pilot back for a vote. Otherwise, I would revise the strategy rather than lower Cedar's objective. For now, the decision is 0%.”
-
-## Optional 90-second committee follow-up — swap into the recording, do not add past 5:00
-
-This section adds a different question: **Could Cedar adopt the app as an investment process?** Use it in place of some earlier explanation if your rehearsal is close to five minutes. These are proposed words for you to review and say only if they match your judgment.
-
-**SWITCH:** Back to **Executive dashboard**. **POINT:** The three statuses: testable constraints, full mandate, and deployment authorization. **SAY:** “If I were on Cedar's committee, I would separate three questions. Did the math pass the rules we can test? Yes. Do we know the full mandate is met? No. Can we authorize a trade? No. I like that the app shows those answers together. It lets me use the model to narrow the discussion without pretending the missing client decisions have been made.”
-
-**CLICK:** **Portfolio comparison**. **POINT:** The candidate allocation, then scroll to the separate holdout diagnostic. **SAY:** “I would also want a second person to challenge the return estimates before any pilot. The allocation leans on VT to get over the hurdle. If future stock returns are weaker than this sample, the return case changes. The holdout is useful as a diagnostic, but it comes from a later-downloaded price snapshot. I would not present it as a live, point-in-time trading record.”
-
-**CLICK:** **Committee recommendation**. **POINT:** The monitoring and committee ask. **SAY:** “For a pilot, I would ask Cedar to approve the risk limit, reserve treatment, and cost schedule first. Then I would compare the proposed trades with Cedar's actual holdings and check the turnover limit and after-cost return. I would monitor reserve coverage and allocation stability. If the portfolio misses the agreed hurdle or breaks an approved limit, I would bring it back to the committee instead of quietly changing the objective.”
+**POINT:** The reserve, holdings, and cost discussion. **SAY:** “I would also ask whether BIL counts toward the $600,000 reserve, how Cedar will fund payments, and what it currently owns. Those answers determine liquidity, turnover, and costs.” **POINT:** The committee ask and monitoring list. **SAY:** “Then I would rerun the app and check proposed trades against Cedar's actual holdings. If the candidate meets approved limits and an after-cost hurdle, I would bring a small pilot back for a vote. During a pilot, I would monitor reserve coverage and whether the allocation stays stable. If the strategy misses the agreed hurdle or breaks an approved limit, I would return to the committee and revise the strategy rather than quietly lower Cedar's objective. For now, the decision is 0%.”
