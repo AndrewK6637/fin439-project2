@@ -20,13 +20,15 @@
 
 **CLICK:** **Portfolio comparison**. **POINT:** Equal weight, inverse volatility, and constrained candidate rows. **SAY:** “Equal weight and inverse volatility miss the return screen. The constrained candidate reaches it by adding VT. I would not choose a row just for its estimated return; Cedar needs scholarship liquidity and approved risk limits.”
 
+**POINT:** The BIL, IEF, LQD, and VT columns in the allocation chart. **SAY:** “I kept these four funds from earlier coursework. The solver gives IEF and LQD zero weight in this sample. I would not tell Cedar those funds are worthless; this estimation window simply did not favor them.”
+
 **POINT:** The constrained candidate's **5.50%** return and rule status. **SAY:** “My concern is the thin margin. A small cost or weaker VT return could erase this pass. An annual historical estimate also cannot prove Cedar will meet CPI plus 3% after costs over five-year periods.”
 
 **POINT:** Keep the candidate row visible, then scroll to the **separate holdout diagnostic**. **SAY:** “I would ask someone else to challenge the return estimates before committing scholarship money. The mix relies on VT to reach the hurdle. Weaker future stock returns would change the case. This holdout adds a check, but its prices came from a later-downloaded snapshot. It is not a live, point-in-time trading record.”
 
 ## Signal — point-in-time tab
 
-**CLICK:** **Point-in-time signal**. **POINT:** The **3.72% historical CPI** reading and **5% effective BIL floor**. **SAY:** “Video 1 covered my CPI check. Cedar has not approved using it to change the reserve rule. This baseline does not show the rule helped because the candidate already exceeds 5% BIL. I would ask Cedar to approve or reject the rule and compare results over the same dates with the rule turned off.”
+**CLICK:** **Point-in-time signal**. **POINT:** The **3.72% historical CPI** reading and **5% effective BIL floor**. **SAY:** “Video 1 covered my CPI check. I kept Codex's proposed series as a disclosed research fallback. Checking its arithmetic supported the number, but did not prove the policy is useful. Cedar has not approved it, and the baseline does not show it helped because BIL already exceeds 5%. I would compare results over the same dates with the rule turned off.”
 
 ## Sensitivity — stress tab
 
@@ -36,6 +38,6 @@
 
 ## Action — recommendation tab
 
-**CLICK:** **Committee recommendation**. **POINT:** The unresolved risk limit in the recommendation/memo. **SAY:** “My first question to Cedar is its approved volatility limit. I cannot call 3.53% acceptable without that boundary, especially with quarterly scholarships. A numerical pass is not deployment authority.”
+**CLICK:** **Committee recommendation**. **POINT:** The unresolved risk limit in the recommendation/memo. **SAY:** “My first question to Cedar is its approved volatility limit. I cannot call 3.53% acceptable without that boundary, especially with quarterly scholarships. That is why I chose 0% instead of treating the solver's Pass as approval. If Cedar's limit is below 3.53%, this candidate fails its risk test. Even if the limit is higher, I would still check the reserve and costs before a pilot. I would not change Cedar's risk boundary just to make this portfolio pass.”
 
 **POINT:** The reserve, holdings, and cost discussion. **SAY:** “I would also ask whether BIL counts toward the $600,000 reserve, how Cedar will fund payments, and what it currently owns. Those answers determine liquidity, turnover, and costs.” **POINT:** The committee ask and monitoring list. **SAY:** “Then I would rerun the app and check proposed trades against Cedar's actual holdings. If the candidate meets approved limits and an after-cost hurdle, I would bring a small pilot back for a vote. During a pilot, I would monitor reserve coverage and whether the allocation stays stable. If the strategy misses the agreed hurdle or breaks an approved limit, I would return to the committee and revise the strategy rather than quietly lower Cedar's objective. For now, the decision is 0%.”
