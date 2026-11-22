@@ -2,6 +2,8 @@
 
 The accompanying CSV retains the official legacy twelve-row structure and column names. The Project 2 owner ruling replaces PDF deliverables with Markdown and excludes research-evolution. Legacy row titles are retained for compatibility; notes identify the actual deliverable. The three video URLs, measured durations, timestamp indices, and corrected draft transcripts are now entered. The frozen revision and final student access checks remain pending.
 
+**Opening in Excel:** Import `submission-manifest.csv` as UTF-8. It has one deliverable per row and no multiline cells. Turn on **Wrap Text** for the timestamp, access-check and notes columns; the link column can be widened or opened directly from its cell. Blank commit-ID cells are intentionally awaiting the final frozen revision.
+
 All required non-video locations must be GitHub links; videos must be YouTube links. The [public repository](https://github.com/AndrewK6637/fin439-project2) was cloned successfully for technical verification. The transcripts were drafted from the published recordings and need a final student listen-through before submission.
 
 | Item | Required | Prepared target / remaining action |
