@@ -6,46 +6,36 @@
 
 **Before recording:** In the project folder terminal run `.venv\Scripts\python.exe -m streamlit run app.py`. Open the Local URL printed by Streamlit (usually `http://localhost:8501`). Wait until Executive dashboard is fully loaded and leave that tab visible before pressing Record. Turn on webcam and microphone. Keep the default 60-month and 2.5% illustrative CPI inputs.
 
-**Show on screen:** On Executive dashboard, point to Reject deployment, 0% new capital, 77.04% BIL / 22.96% VT, 5.50% return, 3.53% volatility, and Full mandate Not Known. On Portfolio comparison, show why equal weight and inverse volatility miss the 5.50% hurdle. On Point-in-time signal, distinguish the 2.5% illustrative CPI input from the 3.72% historical reading and show the 3%-to-5% floor change. On Stress testing, point to the 36-month weight shift and explain that the 0.52% trading cost is for a separate hypothetical trade. On Committee recommendation, state what Cedar must verify before a small pilot could be considered.
+**How to use this guide:** Read only the words in quotation marks. Follow each bold **POINT**, **CLICK**, or **SWITCH** cue as it appears beside the sentence you are saying. Keep the sidebar at its default inputs throughout.
 
 ## Opening — executive dashboard, visible from first frame
 
-**SHOW:** Start recording with Executive dashboard already loaded. Point to Reject deployment and 0% new capital.
+**POINT:** On the already loaded Executive dashboard, show the **Reject deployment** banner and **0% new capital**. **SAY:** “OpenAI Codex helped with the complicated coding, source recovery, tests, and drafting. I used that work to analyze the numbers, question the model, and reach my own committee recommendation. I am responsible for reviewing the analysis and final decision. This is educational work, not investment advice.”
 
-“OpenAI Codex helped with the complicated coding, source recovery, tests, and drafting. I used that work to analyze the numbers, question the model, and reach my own committee recommendation. I am responsible for reviewing the analysis and final decision. This is educational work, not investment advice.”
-
-**SHOW:** Stay on the decision banner; point to the sentence about leaving existing holdings in place.
-
-“My recommendation is to reject deployment for now: put 0% of new capital into this proposed strategy and leave Cedar's existing holdings alone. I would keep the app and the portfolio for research.”
+**POINT:** Stay on the banner and show the sentence about existing holdings. **SAY:** “My recommendation is to reject deployment for now: put 0% of new capital into this proposed strategy and leave Cedar's existing holdings alone. I’d keep the app for research and hold off on using it to invest Cedar’s money.”
 
 ## Candidate — dashboard and comparison tab
 
-**SHOW:** Point to the candidate weights, 5.50% annual return, 3.53% volatility, and Full mandate Not Known. Then **CLICK** Portfolio comparison and point to the equal-weight and inverse-volatility rows.
+**POINT:** On Executive dashboard, show the candidate weights, 5.50% estimated return, 3.53% volatility, and **Full mandate: Not Known**. **SAY:** “Cedar pays $150,000 in scholarships each quarter from a $20 million foundation. The app's research candidate is 77.04% BIL and 22.96% VT, with an estimated 5.50% annual return and 3.53% volatility.”
 
-“Cedar pays $150,000 in scholarships each quarter from a $20 million foundation. The app's candidate is 77.04% BIL and 22.96% VT, with an estimated 5.50% annual return and 3.53% annual volatility. The equal-weight and inverse-volatility alternatives miss the 5.50% illustrative return screen. This candidate passes the rules the app can measure, but the full mandate is Not Known and deployment authorization fails.”
+**CLICK:** **Portfolio comparison**. **POINT:** Equal weight, inverse volatility, and the constrained candidate rows. **SAY:** “The equal-weight and inverse-volatility alternatives miss the 5.50% illustrative return screen. The constrained candidate passes the rules the app can measure, but its full mandate is Not Known and deployment authorization fails.”
 
-**SHOW:** Keep Portfolio comparison visible. Point to the constrained candidate's 5.50% return and its rule status.
+**POINT:** The constrained candidate's **5.50%** return and rule status. **SAY:** “This is where I question the AI-assisted result. The optimizer was asked to meet 5.50%, and it landed right on that hurdle before Cedar's actual transition costs. A Pass tells me the math worked under these assumptions. Even a small cost or a lower future VT return could put the portfolio below the screen. The historical estimate also does not prove Cedar's rolling five-year CPI-plus-3% goal after costs.”
 
-“This is where I question the AI-assisted result. The optimizer was asked to meet 5.50%, and it landed exactly there. A Pass tells me the math worked under the assumptions; it does not give Cedar a return cushion. A real transition cost or a lower future VT return could put it below the screen. The historical estimate also does not prove Cedar's rolling five-year CPI-plus-3% goal after costs.”
-
-**SHOW:** Point to the candidate again; no new click is needed.
-
-“I chose to hold off because I would have to defend an actual allocation of scholarship money, not just a clean calculation. The app helps me identify a candidate and expose missing evidence; it cannot decide Cedar's tolerance for risk.”
+**POINT:** Keep the candidate row visible. **SAY:** “I chose to hold off because I would have to defend an actual allocation of scholarship money, not just a clean calculation. The app helps me identify a candidate and expose missing evidence; it cannot decide Cedar's tolerance for risk.”
 
 ## Signal — point-in-time tab
 
-**CLICK:** Point-in-time signal. Point first to the 2.5% illustrative CPI input in the sidebar, then to the 3.72% historical CPI reading and the effective 5% BIL floor.
-
-“The 2.5% CPI assumption in the sidebar sets the illustrative hurdle. Separately, the historical CPI reading is about 3.72% year over year. I reported checking its source values and calculation. A proposed rule lifts the BIL floor from 3% to 5%, but 77% BIL already exceeds that. I would not claim this rule improves returns without testing it against a version without the rule.”
+**CLICK:** **Point-in-time signal**. **POINT:** The sidebar's **2.5% illustrative CPI** input. **SAY:** “The 2.5% CPI assumption sets the illustrative return hurdle.” **POINT:** The tab's **3.72% historical CPI** reading and **5% effective BIL floor**. **SAY:** “Separately, the historical CPI reading is about 3.72% year over year. I reported checking its source values and calculation. A proposed rule lifts the BIL floor from 3% to 5%, but 77% BIL already exceeds that. I would not claim the rule improves returns without comparing it with a version that does not use the rule.”
 
 ## Sensitivity — stress tab
 
-**CLICK:** Stress testing. Point to the Last 36 monthly observations row (92.86% BIL / 7.14% VT), then the trading-cost explanation. If time permits, switch to the saved locked record for the 85% BIL result.
+**CLICK:** **Stress testing**. **POINT:** The **Last 36 monthly observations** row, especially **92.86% BIL / 7.14% VT**. **SAY:** “Using 36 months instead of 60 changes the allocation to about 92.86% BIL and 7.14% VT. That makes me cautious about treating one optimized weight as stable.”
 
-“Using 36 months instead of 60 changes the allocation to about 92.86% BIL and 7.14% VT. That makes me cautious about treating one optimized weight as stable. The 50-basis-point cost stress leaves the target almost unchanged because it assumes the target is already held. Its separate 0.52% cost belongs to a hypothetical trade, not Cedar's actual transition. In my locked test, an 85% BIL floor made the 5.50% hurdle infeasible. That shows the reserve-return trade-off, not a new Cedar policy.”
+**POINT:** The **Trading cost 50 bps per side** row and its explanation. **SAY:** “This cost stress leaves the target almost unchanged because it assumes the target is already held. The separate 0.52% cost belongs to a hypothetical trade, not Cedar's actual transition.” **POINT:** The locked-experiment note on the tab; if time permits, **SWITCH** to the [saved locked record](../docs/changed-input-record.md). **SAY:** “In my locked test, an 85% BIL floor made the 5.50% hurdle infeasible. That shows the reserve-return trade-off, not a new Cedar policy.”
 
 ## Action — recommendation tab
 
-**CLICK:** Committee recommendation. Point to the missing risk limit, reserve approval, holdings/costs, and the 0% new-capital action.
+**CLICK:** **Committee recommendation**. **POINT:** The unresolved risk limit in the recommendation/memo. **SAY:** “The first client decision I would check is Cedar's approved volatility limit. I cannot say 3.53% is acceptable just because it sounds low, especially when the foundation must fund scholarships every quarter.”
 
-“The biggest missing item for my judgment is Cedar's approved volatility limit. I cannot say 3.53% is appropriate just because it sounds low. Cedar also needs to confirm whether BIL counts as reserve coverage and provide current holdings and costs. Those determine scholarship liquidity, turnover, and whether this result survives implementation. With those facts, I would rerun the model and consider a small pilot only if it stays within approved risk and clears the return hurdle after costs. Until then, my recommendation is 0% new capital.”
+**POINT:** The reserve, holdings, and cost discussion. **SAY:** “Cedar also needs to decide whether BIL counts as reserve coverage and provide current holdings and trading costs. Those tell me how scholarships will be funded, how much trading is needed, and whether the portfolio still clears the hurdle after implementation.” **POINT:** The committee ask. **SAY:** “I would rerun the app with those facts and bring back a small pilot only if the result meets Cedar's approved limits. Until then, my recommendation is 0% new capital.”
