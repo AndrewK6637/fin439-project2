@@ -1,4 +1,4 @@
-OpenAI Codex helped with the complicated source recovery, coding, automated tests, and drafting. I used that work to examine the financial results, question assumptions, and make my own committee recommendation. I am responsible for reviewing the analysis and final decision. This is educational work, not investment advice.
+OpenAI Codex helped with the complicated source recovery, coding, automated tests, and some drafting. I used that work to examine the financial results, question assumptions, and make my own committee recommendation. I am responsible for reviewing the analysis and final decision. This is educational work, not investment advice.
 
 # Cedar Scholarship Foundation — investment committee decision
 
