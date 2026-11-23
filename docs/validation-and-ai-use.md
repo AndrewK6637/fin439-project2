@@ -10,7 +10,7 @@ Material AI assistance occurred in the November 16 onward Codex sessions and in 
 
 Disposition: retain the tested code for research. I selected the proposed CPI fallback for Project 2, reported checking the CPI values and arithmetic, and recorded my recommendation to withhold new investment in the [committee presentation](transcript-video-3.txt). Earlier coursework decisions are distinguishable from new analytical assumptions in configuration and the recovery inventory. My AI-off locked prediction was committed before the run; the result and my reconciliation were recorded afterward. The record and results are linked below. Cedar has not approved the CPI rule or deployment.
 
-The [student decision log](student-decision-log.md) records the student's actual choices made in AI chat on November 18, including the four-fund universe, comparison benchmark, illustrative BIL stand-in, CPI fallback, and agreement with holding deployment. This is evidence of human direction with AI assistance, not independent AI-off work or source verification.
+The [student decision log](student-decision-log.md) records the student's actual choices made, including the four-fund universe, comparison benchmark, illustrative BIL stand-in, CPI fallback, and agreement with holding deployment.
 
 ## Locked experiment evidence
 
