@@ -1,6 +1,8 @@
 # Student direction and decision record
 
-This record shows how the student's coursework and later choices shaped Project 2. It distinguishes **documented project direction**, **AI-assisted discussion**, and **evidence still missing**. It does not claim the student completed an AI-closed exercise, independently verified source values, or obtained approval from the fictional Cedar Scholarship Foundation.
+This record shows how the student's coursework and later choices shaped Project 2. It distinguishes **documented project direction**, **AI-assisted discussion**, **later student-reported or committed checks**, and **evidence still missing**. It does not claim Cedar approved the proposed policy or portfolio.
+
+**Later evidence update, November 23:** The November 18 discussion below is a dated snapshot. Andrew subsequently reported a three-value CPI spot check in the [data card](signal-data-card.md), committed a prediction before the [locked 85% BIL run](changed-input-record.md), recorded the result, and stated his committee decision in [Video 3](transcript-video-3.txt). Those records support the current [optional research-evolution summary](research-evolution.md). Cedar's actual risk and implementation evidence remains unavailable.
 
 ## Direction carried forward from earlier coursework
 
@@ -21,15 +23,15 @@ On **November 18, 2026**, the student gave these directions. They are genuine st
 
 | Decision | Student's direction | Effect on the project |
 | --- | --- | --- |
-| Investment recommendation | The student said the strategy is good and agreed with the recommendation to reject **deployment for now**. | Preserve the research process and recommend no new allocation until unresolved evidence is reviewed. The specific personal reason and reversal condition still require the student's own explanation. |
+| Investment recommendation | The student said the strategy is good and agreed with the recommendation to reject **deployment for now**. | Preserve the research process and recommend no new allocation until unresolved evidence is reviewed. The later [committee video](transcript-video-3.txt) states the personal reason and reversal condition. |
 | Fund universe | Keep BIL, IEF, LQD and VT. | Preserve the recovered data and model. |
 | Benchmark | Use 60% VT / 40% LQD **as a comparison**. | Display it as a comparator, without treating it as a Cedar-approved mandate constraint. |
 | Reserve | BIL “should be good” as an illustrative stand-in. | Keep BIL in the course model while leaving Cedar's formal reserve-proxy acceptance Not Known. |
-| Signal | Keep the proposed CPI signal. | Retain CPIAUCSL as a disclosed fallback; the student's personal source-value check is still pending. |
+| Signal | Keep the proposed CPI signal. | Retain CPIAUCSL as a disclosed fallback; a later student-reported source-value check is documented in the [data card](signal-data-card.md). |
 | Actual holdings | The student does not have Cedar's current investments beyond what is in the repository. | Do not invent starting weights, actual turnover or transition costs. |
 
-Earlier cost-scenario comments in AI chat were preliminary expectations, **not** the required AI-off pre-run prediction or observed outcome. The [blank locked record](changed-input-record.md) remains separate.
+Earlier cost-scenario comments in AI chat were preliminary expectations, **not** the required AI-off pre-run prediction or observed outcome. The later [completed locked record](changed-input-record.md) is separate and preserves its prediction and result sequence.
 
 ## Human work still needed for the final evidence
 
-The student's choices above materially direct the model, but they do not prove all Project 2 requirements are complete. The student still needs to explain in their own words **why** a promising strategy should wait, identify the evidence that would reverse the decision, personally check the CPI observations, complete the genuine locked changed-input record, and record the videos and transcripts. The [validation document](validation-and-ai-use.md) identifies which checks were performed by code/AI and which have not been performed by the student.
+The student's choices above materially direct the model. The later [decision memo](decision-memo.md), [CPI data card](signal-data-card.md), [locked record](changed-input-record.md), and [video transcripts](transcript-video-3.txt) document the additional judgment and checks. Cedar's approved volatility limit, reserve treatment, current holdings, and actual trading costs remain unknown. The student must still review the final written attachments and complete Brightspace delivery. The [validation document](validation-and-ai-use.md) distinguishes code checks, student-reported checks, and unresolved client evidence.

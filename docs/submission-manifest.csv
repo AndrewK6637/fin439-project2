@@ -1,5 +1,5 @@
 item,required,location_or_url,title,duration_or_as_of,timestamp_index,access_checked,frozen_or_commit_id,notes
-Research-Evolution.pdf,no,,,,,not applicable,,Project 2 does not submit this item
+Research-Evolution.pdf,no,https://github.com/AndrewK6637/fin439-project2/blob/main/docs/research-evolution.md,Optional Cedar research evolution,2026-11-23,,publication pending,,Optional Markdown supplement; no Edition A/B or PDF required
 Repository,yes,https://github.com/AndrewK6637/fin439-project2,Cedar Project 2,,,public clone passed; student confirmed links,bea4db1cfb4b78ed7dc0c3b08753fc8077dc2af9,Frozen content revision
 Visible executed output,yes,https://github.com/AndrewK6637/fin439-project2/blob/main/docs/checkout-results.md,Cedar investment results,2026-11-02,,public GitHub fetch passed,,Frozen baseline; final viewer check pending
 Decision memo or deck,yes,https://github.com/AndrewK6637/fin439-project2/blob/main/docs/decision-memo.md,Cedar committee decision,2026-11-02,,public GitHub fetch passed,,Attach this Markdown file to Brightspace

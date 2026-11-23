@@ -2,6 +2,8 @@
 
 This page is the current delivery checklist. The [official Project 2 instructions](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/projects/project-2-investment-management-application.md) require the repository, decision and validation Markdown files, three YouTube videos with transcripts, and a manifest. A Research Evolution PDF and Editions A/B are **not** submitted for Project 2. The Locked Changed-Input Record remains required.
 
+An [optional research-evolution reflection](docs/research-evolution.md) is linked in the manifest for additional context. It is not a replacement for either required Markdown attachment. Read the [November 23 audit](docs/submission-audit-2026-11-23.md) before submitting: the published openings of Videos 1 and 2 appear to omit the required education/not-investment-advice statement.
+
 ## The committee decision
 
 The saved research candidate is **77.04% BIL / 22.96% VT**, with **5.50% estimated annual return** and **3.53% estimated annual volatility**. Andrew's recorded recommendation is **Reject deployment for now: 0% of new capital** to the proposed strategy, leaving Cedar's existing holdings in place. The candidate passes the rules the app can measure, while the full mandate is **Not Known** because Cedar's approved risk limit, reserve treatment, current holdings, and trading costs remain unresolved. See the [decision memo](docs/decision-memo.md) and [Video 3 transcript](docs/transcript-video-3.txt).

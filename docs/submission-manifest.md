@@ -8,7 +8,7 @@ All required non-video locations must be GitHub links; videos must be YouTube li
 
 | Item | Required | Prepared target / remaining action |
 | --- | --- | --- |
-| Research-Evolution.pdf | no | Not required for Project 2 by current checklist |
+| Research-Evolution.pdf | no | [Optional research-evolution Markdown](research-evolution.md); Project 2 does not require a PDF or Editions A/B |
 | Repository | yes | GitHub project root |
 | Visible executed output | yes | GitHub outputs/visible-results.md |
 | Decision memo or deck | yes | GitHub docs/decision-memo.md; attach same MD to Brightspace |
