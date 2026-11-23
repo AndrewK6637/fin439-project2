@@ -1,6 +1,6 @@
 item,required,location_or_url,title,duration_or_as_of,timestamp_index,access_checked,frozen_or_commit_id,notes
 Research-Evolution.pdf,no,https://github.com/AndrewK6637/fin439-project2/blob/main/docs/research-evolution.md,Optional Cedar research evolution,2026-11-23,,public GitHub fetch passed,,Optional Markdown supplement; no Edition A/B or PDF required
-Repository,yes,https://github.com/AndrewK6637/fin439-project2,Cedar Project 2,,,public clone passed; student confirmed links,e3e1481,Published content revision with corrected transcript disclaimers
+Repository,yes,https://github.com/AndrewK6637/fin439-project2,Cedar Project 2,,,public clone passed; student confirmed links,68ddc65,Published content revision with finalized memo and validation record
 Visible executed output,yes,https://github.com/AndrewK6637/fin439-project2/blob/main/docs/checkout-results.md,Cedar investment results,2026-11-02,,public GitHub fetch passed,,Frozen baseline; final viewer check pending
 Decision memo or deck,yes,https://github.com/AndrewK6637/fin439-project2/blob/main/docs/decision-memo.md,Cedar committee decision,2026-11-02,,public GitHub fetch passed,,Attach this Markdown file to Brightspace
 Validation-and-AI-Use.pdf,yes,https://github.com/AndrewK6637/fin439-project2/blob/main/docs/validation-and-ai-use.md,Validation and AI use,,,public GitHub fetch passed,,Legacy row name; attach the Markdown file
