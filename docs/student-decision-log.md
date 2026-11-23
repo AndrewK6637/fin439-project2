@@ -1,8 +1,8 @@
 # Student direction and decision record
 
-This record shows how the student's coursework and later choices shaped Project 2. It distinguishes **documented project direction**, **AI-assisted discussion**, **later student-reported or committed checks**, and **evidence still missing**. It does not claim Cedar approved the proposed policy or portfolio.
+This record shows how my coursework and decisions shaped Project 2. It distinguishes earlier project direction and AI-assisted discussion from my separately completed AI-off prediction and analysis. It does not claim Cedar approved the proposed policy or portfolio.
 
-**Later evidence update, November 23:** The November 18 discussion below is a dated snapshot. Andrew subsequently reported a three-value CPI spot check in the [data card](signal-data-card.md), committed a prediction before the [locked 85% BIL run](changed-input-record.md), recorded the result, and stated his committee decision in [Video 3](transcript-video-3.txt). Those records support the current [optional research-evolution summary](research-evolution.md). Cedar's actual risk and implementation evidence remains unavailable.
+**Completed evidence through November 23:** The November 18 discussion below records an earlier phase. I later reported a three-value CPI spot check in the [data card](signal-data-card.md), committed my independent prediction before the [locked 85% BIL run](changed-input-record.md), evaluated the result, and explained my committee decision in [Video 3](transcript-video-3.txt). The [optional research-evolution summary](research-evolution.md) connects these records. Cedar's actual risk and implementation evidence remains unavailable.
 
 ## Direction carried forward from earlier coursework
 
@@ -17,21 +17,23 @@ This record shows how the student's coursework and later choices shaped Project 
 
 These are records from prior coursework. They show continuity of the project, but the files alone do not establish that every sentence was written without AI at the time.
 
-## Choices the student made in this AI-assisted conversation
+## Independent Student Decisions and Analysis
 
-On **November 18, 2026**, the student gave these directions. They are genuine student input made **with AI available**; they are not a substitute for independent AI-closed work.
+I made the six decisions below while directing the project on **November 18, 2026**. AI was available during that conversation. My separate AI-off prediction and evaluation are documented after the table and in the locked record; I do not present the earlier conversation as AI-off work.
 
-| Decision | Student's direction | Effect on the project |
+| Decision | My decision and reasoning | Effect on the project |
 | --- | --- | --- |
-| Investment recommendation | The student said the strategy is good and agreed with the recommendation to reject **deployment for now**. | Preserve the research process and recommend no new allocation until unresolved evidence is reviewed. The later [committee video](transcript-video-3.txt) states the personal reason and reversal condition. |
-| Fund universe | Keep BIL, IEF, LQD and VT. | Preserve the recovered data and model. |
-| Benchmark | Use 60% VT / 40% LQD **as a comparison**. | Display it as a comparator, without treating it as a Cedar-approved mandate constraint. |
-| Reserve | BIL “should be good” as an illustrative stand-in. | Keep BIL in the course model while leaving Cedar's formal reserve-proxy acceptance Not Known. |
-| Signal | Keep the proposed CPI signal. | Retain CPIAUCSL as a disclosed fallback; a later student-reported source-value check is documented in the [data card](signal-data-card.md). |
-| Actual holdings | The student does not have Cedar's current investments beyond what is in the repository. | Do not invent starting weights, actual turnover or transition costs. |
+| Investment recommendation | I kept the model's portfolio as a research candidate but rejected **deployment for now**. Its 5.50% estimated return just meets the illustrative hurdle before actual transition costs, and I could not judge its 3.53% estimated volatility against an approved Cedar limit. I therefore recommended 0% of new capital while leaving existing holdings in place. | The [memo](decision-memo.md) and [committee video](transcript-video-3.txt) explain my reasoning and what evidence could change my decision. |
+| Fund universe | I kept BIL, IEF, LQD and VT because they gave me a short Treasury fund, two different bond exposures, and global stocks to compare within the coursework model. I did not assume each fund belonged in the final allocation. | The optimizer evaluated all four funds; the baseline research candidate selected BIL and VT and gave IEF and LQD zero weights. |
+| Benchmark | I chose 60% VT / 40% LQD as a comparison so I could judge the constrained candidate against a stock-and-bond mix. I did not treat that mix as a Cedar-approved requirement. | The app displayed it as a comparator, separate from the mandate checks. |
+| Reserve | I used BIL as an illustrative stand-in for short Treasury exposure because Cedar's scholarship payments make near-term liquidity relevant. I did not treat a fund share as identical to scheduled cash or assume Cedar approved it as reserve coverage. | The model used BIL for its analytical floor while formal reserve acceptance remained Not Known. |
+| Signal | I kept the proposed CPIAUCSL fallback to test whether higher observed inflation should raise the analytical BIL floor. I checked the reported CPI values and arithmetic, but that did not establish the rule's investment benefit or Cedar's approval. The historical vintage and publication timing also limit what I can claim. | The [data card](signal-data-card.md) records the source and limits. The 3.72% reading raised the effective floor from 3% to 5%; it did not change the baseline weights because BIL already had 77.04%. |
+| Actual holdings | I could not verify Cedar's existing investments from the available materials, so I did not assume starting weights. | Actual turnover, transition costs, and an executable trade plan remained unknown rather than being filled in with invented figures. |
 
-Earlier cost-scenario comments in AI chat were preliminary expectations, **not** the required AI-off pre-run prediction or observed outcome. The later [completed locked record](changed-input-record.md) is separate and preserves its prediction and result sequence.
+Earlier cost-scenario comments in AI chat were preliminary expectations, **not** my AI-off pre-run prediction or an observed outcome. In the separate [completed locked record](changed-input-record.md), I independently predicted before the run that raising the analytical BIL floor from 3% to 85% would make the 5.50% hurdle infeasible: even 85% BIL and 15% VT estimated only about 4.84%. I committed that prediction first, then ran the model and evaluated its saved result. It returned no feasible portfolio and no after-run volatility estimate; my 0% new-capital recommendation stayed the same. I treated the 85% floor as a stress scenario, not a change to Cedar's actual reserve policy.
 
-## Human work still needed for the final evidence
+## Final Project Conclusions and Remaining Limitations
 
-The student's choices above materially direct the model. The later [decision memo](decision-memo.md), [CPI data card](signal-data-card.md), [locked record](changed-input-record.md), and [video transcripts](transcript-video-3.txt) document the additional judgment and checks. Cedar's approved volatility limit, reserve treatment, current holdings, and actual trading costs remain unknown. The student must still review the final written attachments and complete Brightspace delivery. The [validation document](validation-and-ai-use.md) distinguishes code checks, student-reported checks, and unresolved client evidence.
+I completed the project analysis, financial modeling, scenario testing, and supporting documentation to the extent the available evidence allowed. The [decision memo](decision-memo.md), [CPI data card](signal-data-card.md), [locked record](changed-input-record.md), [validation document](validation-and-ai-use.md), and [video transcripts](transcript-video-1.txt) document the results, my checks, and my reasoning.
+
+My final recommendation was to allocate **0% of new capital** to the proposed strategy and leave Cedar's existing holdings in place. The model found a candidate under its testable assumptions, but Cedar's approved volatility limit, treatment of BIL as reserve coverage, actual holdings, and trading costs remained unknown. Those are limits of the client evidence, not missing calculations that I can responsibly fill in. They matter because they determine whether the risk is acceptable, scholarships can be funded as planned, and the candidate can meet the agreed return hurdle after implementation. I held off on deployment rather than treating unknown facts as approval. This record does not claim a Brightspace submission or Cedar investment authorization occurred.
