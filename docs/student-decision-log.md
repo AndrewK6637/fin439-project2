@@ -17,8 +17,6 @@ This record shows how my coursework and decisions shaped Project 2. It distingui
 
 ## Independent Student Decisions and Analysis
 
-I made the six decisions below while directing the project on **November 18, 2026**. AI was available during that conversation. My separate AI-off prediction and evaluation are documented after the table and in the locked record; I do not present the earlier conversation as AI-off work.
-
 | Decision | My decision and reasoning | Effect on the project |
 | --- | --- | --- |
 | Investment recommendation | I kept the model's portfolio as a research candidate but rejected **deployment for now**. Its 5.50% estimated return just meets the illustrative hurdle before actual transition costs, and I could not judge its 3.53% estimated volatility against an approved Cedar limit. I therefore recommended 0% of new capital while leaving existing holdings in place. | The [memo](decision-memo.md) and [committee video](transcript-video-3.txt) explain my reasoning and what evidence could change my decision. |
