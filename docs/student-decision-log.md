@@ -15,8 +15,6 @@ This record shows how my coursework and decisions shaped Project 2. It distingui
 | Examine whether changing the estimation window materially changes the allocation before trusting an optimum. | [Lab 15 stability analysis](../recovered/Lab15/Lab15_Portfolio_Stability.md#estimation-risk-and-allocation-instability) | A 36-month stress case and an instability stop rule. The current continuous optimizer produces new results; prior numbers were not copied as current output. |
 | Quarantine an unspecified macro signal until its timing and provenance can be established. | [Lab 17 point-in-time audit](../recovered/LAB17_POINT_IN_TIME_AUDIT.md) | The current CPI series is labeled as a **new fallback**, not misrepresented as the original Lab 17 selection. |
 
-These are records from prior coursework. They show continuity of the project, but the files alone do not establish that every sentence was written without AI at the time.
-
 ## Independent Student Decisions and Analysis
 
 I made the six decisions below while directing the project on **November 18, 2026**. AI was available during that conversation. My separate AI-off prediction and evaluation are documented after the table and in the locked record; I do not present the earlier conversation as AI-off work.
