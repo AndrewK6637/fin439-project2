@@ -2,8 +2,8 @@ FIN 439 Project 2 — Video 3: Cedar Investment Committee Recommendation
 Recording: https://youtu.be/UfHrL-9ilAM
 Length: 4:46
 
-Corrected draft from the new recording. Timestamps are approximate. Andrew should listen
-along once before submitting, especially where the audio was unclear.
+Written disclaimer: This is educational work, not investment advice.
+This statement is also spoken in Video 3 at approximately 0:16. The timed text below transcribes the recording; timestamps are approximate.
 
 [0:01] All right, so I used ChatGPT and Codex, as I did in every video. I used Codex
 with a lot of the coding and testing, but I made the financial analysis and the

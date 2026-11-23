@@ -1,7 +1,8 @@
 FIN 439 Project 2 — Video 1: How My Investment Thinking Changed
 Video: https://youtu.be/P-bziTgmBHY
 Runtime: 2:44
-Draft corrected transcript from the published recording. Timestamps are approximate. Review against the audio before final submission.
+Written disclaimer (not spoken in Video 1): This is educational work, not investment advice.
+The timed text below transcribes the recording; this disclaimer was added in writing after the recording. Timestamps are approximate.
 
 [0:00] Okay, so this is my app. I used ChatGPT and Codex for a lot of the complicated
 coding, source recovery, testing, and some of the drafting. I used it as a tool to

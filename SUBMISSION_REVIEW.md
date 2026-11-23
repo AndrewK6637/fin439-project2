@@ -2,7 +2,7 @@
 
 This page is the current delivery checklist. The [official Project 2 instructions](https://github.com/CinderZhang/FIN43900-Fall2026/blob/main/projects/project-2-investment-management-application.md) require the repository, decision and validation Markdown files, three YouTube videos with transcripts, and a manifest. A Research Evolution PDF and Editions A/B are **not** submitted for Project 2. The Locked Changed-Input Record remains required.
 
-An [optional research-evolution reflection](docs/research-evolution.md) is linked in the manifest for additional context. It is not a replacement for either required Markdown attachment. Read the [November 23 audit](docs/submission-audit-2026-11-23.md) before submitting: the published openings of Videos 1 and 2 appear to omit the required education/not-investment-advice statement.
+An [optional research-evolution reflection](docs/research-evolution.md) is linked in the manifest for additional context. It is not a replacement for either required Markdown attachment. Andrew reports that his professor clarified the education disclaimer need not be spoken in every video. It appears at the top of each transcript; the Video 1 and 2 transcripts explicitly identify it as written, not spoken. See the [November 23 audit](docs/submission-audit-2026-11-23.md).
 
 ## The committee decision
 

@@ -1,7 +1,8 @@
 FIN 439 Project 2 — Video 2: How the Cedar App Reaches Its Decision
 Video: https://youtu.be/JV2xpzFfczE
 Runtime: 4:25
-Draft transcript corrected from the published recording. Timestamps are approximate. Review against the audio before final submission.
+Written disclaimer (not spoken in Video 2): This is educational work, not investment advice.
+The timed text below transcribes the recording; this disclaimer was added in writing after the recording. Timestamps are approximate.
 
 [0:00] Okay, so this video is going over my code. I used ChatGPT and Codex for a lot of
 the complicated coding and automated tests. But when there was an AI-off prediction, or
